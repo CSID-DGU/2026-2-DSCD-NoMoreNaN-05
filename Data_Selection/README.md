@@ -113,6 +113,43 @@ scripts/collect_*.py      미구현을 알리고 종료하는 자리표시자
 
 ## 다음 단계의 공식 데이터 출처
 
+## 심평원 질병명·상병코드 수집
+
+심평원 질병정보 API의 `getDissNameCodeList1`을 사용해 질병명, 상병코드, 영문 상병명을 수집합니다.
+성별·연령별 또는 의료기관별 통계는 이번 collector의 범위에 포함하지 않습니다.
+
+`.env`에 API 키를 설정합니다.
+
+```dotenv
+HIRA_DISEASE_API_KEY=YOUR_KEY
+```
+
+API는 전체 목록을 반환하는 unfiltered 조회를 제공하지 않고 `searchText`를 필수로 요구합니다.
+따라서 `diseaseType=SICK_CD`로 지정하고 코드 접두어 `0–9`, `A–Z`를 순회합니다.
+양방·한방(`medTp=1,2`)과 3단·4단 상병(`sickType=1,2`)을 모두 수집합니다.
+
+```powershell
+python scripts/collect_diseases.py
+```
+
+원본 XML은 `data/raw/diseases/<run-id>/`, 정리된 JSONL은
+`data/processed/diseases/<run-id>/disease_codes.jsonl`에 저장됩니다.
+중단되면 출력된 run ID로 재개할 수 있습니다.
+
+```powershell
+python scripts/collect_diseases.py --run-id "출력된_RUN_ID"
+```
+
+기존 XML 페이지를 재사용하고 JSONL을 처음부터 다시 생성하므로 재개 실행 시 행이 중복 추가되지 않습니다.
+`manifest.json`의 모든 query 상태가 `complete`이고 `collected_count`가 총계와 일치하는지 확인하세요.
+
+### API 전체 수집 검증 (2026-09-18)
+
+- 실행 ID: `20260918T100807877490Z`
+- 144개 코드 접두어·상병구분·의료구분 질의, 원본 XML 425페이지 완료
+- 정리된 질병명·상병코드: 34,861행
+- 조합별 상병코드 중복 0건, 빈 질병명·상병코드 0건
+
 ## YouTube 광고 후보 URL 수집
 
 이 수집기는 YouTube Data API v3로 건강기능식품 **광고 후보**의 URL과 metadata만 수집합니다.
