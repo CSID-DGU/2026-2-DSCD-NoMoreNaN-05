@@ -12,3 +12,8 @@ data/raw/**/*
 data/processed/**/*
 !data/processed/**/
 !data/processed/**/.gitkeep
+data/raw/youtube_search/**
+!data/raw/youtube_search/**/
+!data/raw/youtube_search/**/.gitkeep
+data/processed/youtube_ad_candidates.csv
+data/input/ad_urls.csv
