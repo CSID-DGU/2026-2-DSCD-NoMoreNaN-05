@@ -205,6 +205,8 @@ def collect(max_results, max_pages_per_keyword=1, run_id=None, client=None, slee
                     if video_id in candidates:
                         add_search_context(candidates[video_id], keyword, category)
                         continue
+                    if video_id not in discovered and len(candidates) + len(discovered) >= max_results:
+                        continue
                     record = discovered.setdefault(video_id, {
                         "video_id": video_id, "source_url": f"https://www.youtube.com/watch?v={video_id}",
                         "title": "", "description": "", "channel_id": "", "channel_title": "",

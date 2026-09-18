@@ -83,6 +83,14 @@ class YouTubeCollectorTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "YOUTUBE_API_KEY is missing"):
                 y.require_api_key()
 
+    def test_max_results_is_a_hard_final_unique_limit(self):
+        with tempfile.TemporaryDirectory() as directory, self.configured_paths(directory):
+            client = FakeClient([search(["A", "B", "C"]), videos(["A", "B"])])
+            manifest = y.collect(2, client=client, run_id="limit", sleep_seconds=0)
+            self.assertEqual(manifest["final_unique_videos"], 2)
+            with y.CANDIDATES_PATH.open(encoding="utf-8", newline="") as stream:
+                self.assertEqual({row["video_id"] for row in csv.DictReader(stream)}, {"A", "B"})
+
 
 if __name__ == "__main__":
     unittest.main()
