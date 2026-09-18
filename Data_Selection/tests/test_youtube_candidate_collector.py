@@ -42,7 +42,7 @@ class YouTubeCollectorTests(unittest.TestCase):
         config.write_text("general:\n  - 일반 광고\nomega:\n  - 오메가 광고\n", encoding="utf-8")
         return patch.multiple(y, ROOT=root, KEYWORDS_PATH=config, RAW_ROOT=root / "data/raw/youtube_search",
                               CANDIDATES_PATH=root / "data/processed/youtube_ad_candidates.csv",
-                              URLS_PATH=root / "data/input/ad_urls.csv")
+                              CANDIDATE_URLS_PATH=root / "data/input/youtube_candidate_urls.csv")
 
     def test_deduplicates_context_batches_metadata_and_writes_csvs(self):
         with tempfile.TemporaryDirectory() as directory, self.configured_paths(directory):
@@ -59,7 +59,7 @@ class YouTubeCollectorTests(unittest.TestCase):
             self.assertEqual(rows["A"]["view_count"], "5")
             self.assertEqual(y.candidate_scoring_inputs(rows["A"])["title"], "title A")
             self.assertTrue((y.RAW_ROOT / "test" / "001_일반_광고_page_001.json").is_file())
-            with y.URLS_PATH.open(encoding="utf-8", newline="") as stream:
+            with y.CANDIDATE_URLS_PATH.open(encoding="utf-8", newline="") as stream:
                 self.assertEqual(len(list(csv.DictReader(stream))), 3)
 
     def test_pagination_and_existing_candidate_are_preserved(self):

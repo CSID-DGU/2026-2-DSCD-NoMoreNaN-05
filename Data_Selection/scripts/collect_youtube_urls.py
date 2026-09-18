@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from src.collectors.youtube_candidate_collector import collect, CANDIDATES_PATH, ROOT, URLS_PATH
+from src.collectors.youtube_candidate_collector import collect, CANDIDATES_PATH, ROOT, CANDIDATE_URLS_PATH
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     print("Collection completed")
     print(f"Total API results: {manifest['total_api_results']}")
     print(f"Unique videos: {manifest['final_unique_videos']}")
-    print(f"Saved:\n{CANDIDATES_PATH.relative_to(ROOT)}\n{URLS_PATH.relative_to(ROOT)}")
+    print(f"Saved:\n{CANDIDATES_PATH.relative_to(ROOT)}\n{CANDIDATE_URLS_PATH.relative_to(ROOT)}")
     return 0
 
 

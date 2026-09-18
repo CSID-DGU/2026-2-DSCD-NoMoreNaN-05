@@ -17,3 +17,6 @@ data/raw/youtube_search/**
 !data/raw/youtube_search/**/.gitkeep
 data/processed/youtube_ad_candidates.csv
 data/input/ad_urls.csv
+data/input/youtube_candidate_urls.csv
+data/processed/youtube_rule_filtered.csv
+data/processed/youtube_ad_classifications.csv

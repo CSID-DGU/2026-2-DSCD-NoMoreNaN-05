@@ -20,7 +20,7 @@ API_URL = "https://www.googleapis.com/youtube/v3"
 KEYWORDS_PATH = ROOT / "configs" / "youtube_search_keywords.yaml"
 RAW_ROOT = ROOT / "data" / "raw" / "youtube_search"
 CANDIDATES_PATH = ROOT / "data" / "processed" / "youtube_ad_candidates.csv"
-URLS_PATH = ROOT / "data" / "input" / "ad_urls.csv"
+CANDIDATE_URLS_PATH = ROOT / "data" / "input" / "youtube_candidate_urls.csv"
 CANDIDATE_FIELDS = [
     "video_id", "source_url", "title", "description", "channel_id", "channel_title",
     "published_at", "duration", "view_count", "search_keywords", "search_categories", "collected_at",
@@ -251,7 +251,7 @@ def collect(max_results, max_pages_per_keyword=1, run_id=None, client=None, slee
         candidates.update(discovered)
         rows = sorted(candidates.values(), key=lambda row: (row["collected_at"], row["video_id"]))
         atomic_csv(CANDIDATES_PATH, CANDIDATE_FIELDS, rows)
-        atomic_csv(URLS_PATH, URL_FIELDS, [
+        atomic_csv(CANDIDATE_URLS_PATH, URL_FIELDS, [
             {"source_url": row["source_url"], "platform": "youtube", "video_id": row["video_id"]}
             for row in rows
         ])
