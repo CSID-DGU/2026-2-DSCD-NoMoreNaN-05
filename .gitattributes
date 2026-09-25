@@ -1,0 +1,60 @@
+# 기본: 텍스트 파일은 모두 LF로 저장·체크아웃 (Linux 서버 기준)
+* text=auto eol=lf
+
+# 소스·설정
+*.py      text eol=lf
+*.sh      text eol=lf
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.toml    text eol=lf
+*.cfg     text eol=lf
+*.ini     text eol=lf
+*.env*    text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.csv     text eol=lf
+*.html    text eol=lf
+*.css     text eol=lf
+Dockerfile text eol=lf
+
+# Windows 전용 스크립트만 CRLF
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.ps1     text eol=crlf
+
+# 노트북: diff 가독성 위해 LF 텍스트로
+*.ipynb   text eol=lf
+
+# 바이너리 (줄바꿈 변환·diff 금지)
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.webp    binary
+*.ico     binary
+*.pdf     binary
+*.mp4     binary
+*.mov     binary
+*.webm    binary
+*.mp3     binary
+*.wav     binary
+*.zip     binary
+*.tar     binary
+*.gz      binary
+*.mat     binary
+*.npy     binary
+*.npz     binary
+*.pt      binary
+*.pth     binary
+*.bin     binary
+*.safetensors binary
+*.onnx    binary
+*.parquet binary
+*.xlsx    binary
+*.pptx    binary
+*.docx    binary
