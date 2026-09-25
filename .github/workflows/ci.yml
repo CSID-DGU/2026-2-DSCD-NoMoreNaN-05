@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    name: Backend (FastAPI · Python)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check backend exists
+        id: check
+        working-directory: .
+        run: |
+          if [ -f backend/requirements-ci.txt ]; then
+            echo "req=requirements-ci.txt" >> "$GITHUB_OUTPUT"
+          elif [ -f backend/requirements.txt ]; then
+            echo "req=requirements.txt" >> "$GITHUB_OUTPUT"
+          else
+            echo "req=" >> "$GITHUB_OUTPUT"
+            echo "backend/ 없음 → 건너뜀"
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.req != ''
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+
+      - name: Install dependencies
+        if: steps.check.outputs.req != ''
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ${{ steps.check.outputs.req }}
+          pip install ruff pytest
+
+      - name: Lint
+        if: steps.check.outputs.req != ''
+        run: ruff check .
+
+      - name: Test (GPU 필요한 테스트 제외)
+        if: steps.check.outputs.req != ''
+        run: pytest -q -m "not gpu" || [ $? -eq 5 ]
+
+  frontend:
+    name: Frontend (React · Vite)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check frontend exists
+        id: check
+        working-directory: .
+        run: |
+          if [ -f frontend/package-lock.json ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "frontend/ 없음 → 건너뜀"
+          fi
+
+      - name: Set up Node
+        if: steps.check.outputs.exists == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        if: steps.check.outputs.exists == 'true'
+        run: npm ci
+
+      - name: Lint
+        if: steps.check.outputs.exists == 'true'
+        run: npm run lint --if-present
+
+      - name: Build
+        if: steps.check.outputs.exists == 'true'
+        run: npm run build
