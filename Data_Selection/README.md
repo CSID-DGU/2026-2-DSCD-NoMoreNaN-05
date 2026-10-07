@@ -1,6 +1,6 @@
 # TRUEAD — 1차 MVP 데이터 수집 준비
 
-저장소의 `Data_Selection/` 폴더가 TRUEAD 데이터 수집 프로젝트 루트입니다.
+현재 작업 폴더(`DSCD_NNN`)가 TRUEAD 프로젝트 루트입니다.
 STEP 1~4: 폴더 구조, 공개 영상 URL → 로컬 MP4 다운로드, 최소 의존성,
 실행 안내를 제공합니다. 식약처 건강기능식품정보 collector를 추가 구현했으며,
 나머지 공식 API collector와 공통 유틸은 TODO입니다.

@@ -20,3 +20,10 @@ data/input/ad_urls.csv
 data/input/youtube_candidate_urls.csv
 data/processed/youtube_rule_filtered.csv
 data/processed/youtube_ad_classifications.csv
+Data_List_Claim_Verification/*.sqlite
+Data_List_Claim_Verification/*.sqlite-*
+text_test_data/mmce.csv
+text_test_data/mmce_manifest.json
+text_test_data/images/**
+!text_test_data/images/
+!text_test_data/images/.gitkeep
