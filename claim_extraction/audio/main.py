@@ -4,10 +4,11 @@ import sys
 from dataclasses import asdict
 from pathlib import Path
 
-from claim import ClaimExtractor, LLMClient
-from stt import Transcriber, extract_wav, list_inputs, segment_words
-
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from claim_extraction.audio.claim import ClaimExtractor, LLMClient          # noqa: E402
+from claim_extraction.audio.stt import (Transcriber, extract_wav,          # noqa: E402
+                                        list_inputs, segment_words)
 
 # ── 입출력 ─────────────────────────────────────────────
 INPUT_PATH = ROOT / "data"              # mp4 파일 하나 또는 폴더
@@ -56,16 +57,19 @@ def run(video: Path, stt: Transcriber, extractor: ClaimExtractor) -> Path:
     claims = extractor.extract(segments)
     print(f"  claims: {len(claims)}")
     for c in claims:
-        print(f"    - [{'/'.join(c.types)}] {c.claim}  ({c.start:.1f}~{c.end:.1f}s)")
+        print(f"    - {c.claim_id} [{'/'.join(c.types) or '-'}] {c.text}  ({c.t_start:.1f}~{c.t_end:.1f}s, {c.scope})")
 
     out = OUTPUT_DIR / f"{video.stem}.audio_claims.json"
     out.write_text(
         json.dumps(
             {
+                "video_id": video.stem,
                 "video": video.name,
                 "language": LANGUAGE,
-                "transcript": text,
-                "segments": [asdict(s) for s in segments],
+                "transcript": [
+                    {"segment_id": s.id, "t_start": s.start, "t_end": s.end, "text": s.text}
+                    for s in segments
+                ],
                 "claims": [asdict(c) for c in claims],
             },
             ensure_ascii=False,
