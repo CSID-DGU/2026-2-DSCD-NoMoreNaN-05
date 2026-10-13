@@ -21,7 +21,7 @@ class Transcriber:
             audio=str(wav), language=language, return_time_stamps=True
         )[0]
         words = [
-            Word(t.text, float(t.start_time), float(t.end_time))
+            Word(t.text, round(float(t.start_time), 3), round(float(t.end_time), 3))
             for t in (result.time_stamps or [])
         ]
         return result.text, words
