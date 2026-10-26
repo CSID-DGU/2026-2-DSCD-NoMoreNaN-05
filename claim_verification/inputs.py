@@ -27,7 +27,9 @@ def load_handoff(path: str | Path) -> dict:
 def validate_video(video: dict) -> None:
     _require(video, VIDEO_FIELDS, "video")
     vid = video["video_id"]
-    # 영상 하나에 제품 하나(DB 담당이 정제해서 넘김). judge가 이 제품을 모든 클레임에 쓴다.
+    # 영상 하나에 제품 하나(DB 담당이 정제해서 넘김).
+    # product_ref("p01")는 그 제품을 가리키고, null이면 광고가 말하는 제품에 대한 설명으로 본다.
+    # 두 경우 모두 대상이 같은 제품이라 judge는 이 제품 하나를 모든 클레임에 쓴다.
     if len(video["products"]) != 1:
         raise HandoffError(f"{vid}: products는 1개여야 함 (현재 {len(video['products'])}개)")
     refs = {p.get("product_ref") for p in video["products"]}
