@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 
 VIDEO_FIELDS = ("video_id", "products", "claims")
-CLAIM_FIELDS = ("claim_id", "product_ref", "text", "evidences")
+CLAIM_FIELDS = ("claim_id", "text", "evidences")
 EVIDENCE_FIELDS = ("source_ref", "text", "source")
 
 
@@ -27,18 +27,13 @@ def load_handoff(path: str | Path) -> dict:
 def validate_video(video: dict) -> None:
     _require(video, VIDEO_FIELDS, "video")
     vid = video["video_id"]
-    # 영상 하나에 제품 하나(DB 담당이 정제해서 넘김).
-    # product_ref("p01")는 그 제품을 가리키고, null이면 광고가 말하는 제품에 대한 설명으로 본다.
-    # 두 경우 모두 대상이 같은 제품이라 judge는 이 제품 하나를 모든 클레임에 쓴다.
+    # 영상 하나에 제품 하나(DB 담당이 정제해서 넘김). judge는 이 제품 하나를 모든 클레임에 쓴다.
+    # 그래서 판정에는 product_ref가 필요 없다(있으면 결과에 그대로 넘긴다).
     if len(video["products"]) != 1:
         raise HandoffError(f"{vid}: products는 1개여야 함 (현재 {len(video['products'])}개)")
-    refs = {p.get("product_ref") for p in video["products"]}
     for claim in video["claims"]:
         where = f"{vid}/{claim.get('claim_id', '?')}"
         _require(claim, CLAIM_FIELDS, where)
-        ref = claim["product_ref"]
-        if ref is not None and ref not in refs:
-            raise HandoffError(f"{where}: product_ref {ref!r}가 products에 없음")
         for i, ev in enumerate(claim["evidences"]):
             _require(ev, EVIDENCE_FIELDS, f"{where}/evidences[{i}]")
 

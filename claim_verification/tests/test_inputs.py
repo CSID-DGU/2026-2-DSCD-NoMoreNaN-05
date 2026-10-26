@@ -33,13 +33,10 @@ def test_products_must_be_exactly_one(n):
         validate_video(data)
 
 
-def test_unknown_product_ref():
-    with pytest.raises(HandoffError, match="p09"):
-        validate_video(video(product_ref="p09"))
-
-
-def test_null_product_ref_allowed():
-    validate_video(video(product_ref=None))
+def test_product_ref_not_required():
+    data = video()
+    del data["claims"][0]["product_ref"]
+    validate_video(data)
 
 
 def test_missing_evidence_field():
