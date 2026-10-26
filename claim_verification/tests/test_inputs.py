@@ -25,6 +25,14 @@ def test_missing_claim_field_names_location():
         validate_video(data)
 
 
+@pytest.mark.parametrize("n", [0, 2])
+def test_products_must_be_exactly_one(n):
+    data = video()
+    data["products"] = [{"product_ref": f"p0{i + 1}"} for i in range(n)]
+    with pytest.raises(HandoffError, match=f"현재 {n}개"):
+        validate_video(data)
+
+
 def test_unknown_product_ref():
     with pytest.raises(HandoffError, match="p09"):
         validate_video(video(product_ref="p09"))
