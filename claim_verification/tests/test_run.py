@@ -4,9 +4,10 @@ from claim_verification.run import main
 
 HANDOFF = {
     "video_id": "v1",
-    "products": [{"product_ref": "p01", "product_name": "관절연골엔 난각막NEM"}],
-    "claims": [{"claim_id": "c01", "product_ref": "p01", "text": "건강기능식품",
-                "claim_type": "CERTIFICATION", "evidences": []}],
+    "db_version": "2026-09-20T09:51:18Z",
+    "product": {"match": {"status": "not_found", "method": None, "note": None},
+                "evi_product": None},
+    "claims": [{"claim_id": "c01", "text": "건강기능식품", "claim_type": "CERTIFICATION"}],
 }
 
 

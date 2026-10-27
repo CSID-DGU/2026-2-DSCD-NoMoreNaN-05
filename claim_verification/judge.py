@@ -1,9 +1,11 @@
 """클레임마다 조항 검사를 돌리고 라벨을 붙인다.
 
-영상 하나에는 제품이 하나만 온다(DB 담당이 정제해서 넘김). product_ref가 null인 클레임도
-그 제품에 대한 설명으로 보고 같은 제품으로 판정한다.
+영상 하나에는 제품이 하나만 온다(DB 담당이 광고 제품을 DB에서 찾아 넘김).
+모든 클레임을 그 제품 하나에 대해 판정한다.
 
 조항 함수 모양: check(claim, product) -> Finding | None
+    product는 handoff의 "product" 그대로다: {"match": {...}, "evi_product": {...} | None}.
+    제품에 의존하는 조항은 match.status가 confirmed가 아니면 위반을 내지 않는다.
     자기 대상이 아니면 None을 돌려준다(기록 안 함). claim_type으로 거르지 않고 모든 클레임에 돌린다.
 """
 
@@ -21,8 +23,8 @@ LABEL_ORDER = (VIOLATION, OVERCLAIM, UNCLEAR, SUPPORTED)
 CHECKED = "CHECKED"
 NO_CLAIMS = "NO_CLAIMS"
 
-# 결과 클레임에 그대로 넘기는 handoff 필드. evidences 원본은 넣지 않는다.
-PASS_THROUGH = ("claim_id", "product_ref", "text", "claim_type")
+# 결과 클레임에 그대로 넘기는 handoff 필드.
+PASS_THROUGH = ("claim_id", "text", "claim_type")
 
 
 def label(findings: list[Finding]) -> str:
@@ -44,9 +46,10 @@ def judge_claim(claim: dict, product: dict, checks: list[Check]) -> dict:
 def judge_video(video: dict, checks: list[Check] | None = None) -> dict:
     checks = CHECKS if checks is None else checks
     claims = video["claims"]
-    product = video["products"][0]
+    product = video["product"]
     return {
         "video_id": video["video_id"],
+        "db_version": video.get("db_version"),
         "status": CHECKED if claims else NO_CLAIMS,
         "product": product,
         "claims": [judge_claim(c, product, checks) for c in claims],

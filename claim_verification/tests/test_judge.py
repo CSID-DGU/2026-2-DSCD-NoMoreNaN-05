@@ -1,7 +1,8 @@
 from claim_verification.finding import OVERCLAIM, SUPPORTED, UNCLEAR, VIOLATION, Finding
 from claim_verification.judge import CHECKED, NO_CLAIMS, OUT_OF_SCOPE, judge_video, label
 
-PRODUCT = {"product_ref": "p01", "product_name": "관절연골엔 난각막NEM"}
+PRODUCT = {"match": {"status": "confirmed", "method": "report_number", "note": None},
+           "evi_product": {"product_id": 6411, "main_functionality": "관절 및 연골 건강에 도움을 줄 수 있음"}}
 
 
 def f(status):
@@ -9,12 +10,12 @@ def f(status):
 
 
 def video(*claims):
-    return {"video_id": "v1", "products": [PRODUCT], "claims": list(claims)}
+    return {"video_id": "v1", "db_version": "2026-09-20T09:51:18Z",
+            "product": PRODUCT, "claims": list(claims)}
 
 
-def claim(cid, text, product_ref="p01"):
-    return {"claim_id": cid, "product_ref": product_ref, "text": text,
-            "claim_type": "ETC", "evidences": [{"source_ref": "x", "text": "y", "source": {}}]}
+def claim(cid, text):
+    return {"claim_id": cid, "text": text, "claim_type": "ETC", "effect": "x"}
 
 
 def test_label_order():
@@ -50,14 +51,17 @@ def test_every_check_runs_on_every_claim():
     assert len(out["claims"][1]["findings"]) == 1
 
 
-def test_null_product_ref_gets_video_product():
+def test_every_claim_gets_video_product():
     seen = []
-    judge_video(video(claim("c01", "세계판매 1위", product_ref=None)),
+    judge_video(video(claim("c01", "세계판매 1위"), claim("c02", "제조원")),
                 checks=[lambda c, p: seen.append(p) or None])
-    assert seen == [PRODUCT]
+    assert seen == [PRODUCT, PRODUCT]
 
 
-def test_output_passes_claim_fields_and_drops_evidences():
-    out = judge_video(video(claim("c01", "건강기능식품")), checks=[])["claims"][0]
+def test_output_passes_claim_fields_only():
+    result = judge_video(video(claim("c01", "건강기능식품")), checks=[])
+    assert result["db_version"] == "2026-09-20T09:51:18Z"
+    assert result["product"] == PRODUCT
+    out = result["claims"][0]
     assert out["claim_type"] == "ETC"
-    assert "evidences" not in out
+    assert "effect" not in out

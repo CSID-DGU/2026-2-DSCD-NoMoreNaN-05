@@ -1,6 +1,6 @@
 import pytest
 
-from claim_verification.finding import SUPPORTED, Finding, cite
+from claim_verification.finding import SUPPORTED, Finding
 
 
 def test_to_dict_has_all_fields():
@@ -15,8 +15,3 @@ def test_unknown_status_rejected():
     with pytest.raises(ValueError, match="PASS"):
         Finding("PASS", "CERT", "4호 마", "", "")
 
-
-def test_cite_keeps_only_source_ref_and_text():
-    ev = {"source_ref": "product:6411:company_name", "text": "(주)서흥",
-          "source": {"table": "products"}, "similarity": 0.89}
-    assert cite(ev) == {"source_ref": "product:6411:company_name", "text": "(주)서흥"}

@@ -29,7 +29,3 @@ class Finding:
     def to_dict(self) -> dict:
         return asdict(self)
 
-
-def cite(evidence: dict) -> dict:
-    """handoff evidence 한 건에서 결과에 남길 부분만 꺼낸다."""
-    return {"source_ref": evidence["source_ref"], "text": evidence["text"]}
