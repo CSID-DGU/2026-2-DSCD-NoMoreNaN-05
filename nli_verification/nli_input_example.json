@@ -1,0 +1,132 @@
+{
+  "description": "premise = 주어(target) + 정리된 공식 문장(core). 주의사항은 주어 없이 그대로. hypothesis = 주어를 맞춘 광고 주장. pairs의 (premise, hypothesis)를 nli.py의 NLIScorer.score()에 넣는다.",
+  "product_id": 2,
+  "product_name": "6년근 고려홍삼정 PREMIUM",
+  "claims": [
+    {
+      "claim_id": "demo-c1",
+      "span": "면역력을 확 올려주는",
+      "target": "고려홍삼정",
+      "hypothesis": "고려홍삼정은 면역력을 높여 준다",
+      "expected": "기능성 문장 F0과 Entailment",
+      "pairs": [
+        {
+          "claim_id": "demo-c1",
+          "premise_ref": "product:2:F0",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 면역력 증진에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 면역력을 높여 준다"
+        },
+        {
+          "claim_id": "demo-c1",
+          "premise_ref": "product:2:F1",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 피로개선에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 면역력을 높여 준다"
+        },
+        {
+          "claim_id": "demo-c1",
+          "premise_ref": "product:2:F2",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 혈소판 응집 억제를 통한 혈액흐름에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 면역력을 높여 준다"
+        },
+        {
+          "claim_id": "demo-c1",
+          "premise_ref": "product:2:F3",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 기억력 개선에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 면역력을 높여 준다"
+        },
+        {
+          "claim_id": "demo-c1",
+          "premise_ref": "product:2:F4",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 항산화에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 면역력을 높여 준다"
+        }
+      ]
+    },
+    {
+      "claim_id": "demo-c2",
+      "span": "암까지 예방해 주는",
+      "target": "고려홍삼정",
+      "hypothesis": "고려홍삼정은 암을 예방한다",
+      "expected": "모든 기능성 문장과 Neutral (인정 범위 밖)",
+      "pairs": [
+        {
+          "claim_id": "demo-c2",
+          "premise_ref": "product:2:F0",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 면역력 증진에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 암을 예방한다"
+        },
+        {
+          "claim_id": "demo-c2",
+          "premise_ref": "product:2:F1",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 피로개선에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 암을 예방한다"
+        },
+        {
+          "claim_id": "demo-c2",
+          "premise_ref": "product:2:F2",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 혈소판 응집 억제를 통한 혈액흐름에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 암을 예방한다"
+        },
+        {
+          "claim_id": "demo-c2",
+          "premise_ref": "product:2:F3",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 기억력 개선에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 암을 예방한다"
+        },
+        {
+          "claim_id": "demo-c2",
+          "premise_ref": "product:2:F4",
+          "evidence_type": "FUNCTIONALITY",
+          "premise": "고려홍삼정은 항산화에 도움을 줄 수 있다",
+          "hypothesis": "고려홍삼정은 암을 예방한다"
+        }
+      ]
+    },
+    {
+      "claim_id": "demo-c3",
+      "span": "당뇨약 드시는 분도 걱정 없이",
+      "target": "고려홍삼정",
+      "hypothesis": "당뇨약을 먹는 사람도 고려홍삼정을 걱정 없이 먹어도 된다",
+      "expected": "주의사항 P0과 Contradiction",
+      "pairs": [
+        {
+          "claim_id": "demo-c3",
+          "premise_ref": "product:2:P0",
+          "evidence_type": "PRECAUTION",
+          "premise": "의약품(당뇨치료제, 혈액항응고제) 복용 시 섭취에 주의해야 한다",
+          "hypothesis": "당뇨약을 먹는 사람도 고려홍삼정을 걱정 없이 먹어도 된다"
+        },
+        {
+          "claim_id": "demo-c3",
+          "premise_ref": "product:2:P1",
+          "evidence_type": "PRECAUTION",
+          "premise": "특이체질등 알레르기 체질의 경우 제품성분을 확인 후 섭취해야 한다",
+          "hypothesis": "당뇨약을 먹는 사람도 고려홍삼정을 걱정 없이 먹어도 된다"
+        },
+        {
+          "claim_id": "demo-c3",
+          "premise_ref": "product:2:P2",
+          "evidence_type": "PRECAUTION",
+          "premise": "15세 이하의 어린이는 상기 섭취량의 절반 정도를 섭취해야 한다",
+          "hypothesis": "당뇨약을 먹는 사람도 고려홍삼정을 걱정 없이 먹어도 된다"
+        },
+        {
+          "claim_id": "demo-c3",
+          "premise_ref": "product:2:P3",
+          "evidence_type": "PRECAUTION",
+          "premise": "제품 개봉 또는 섭취시에 포장재로 인한 상처를 입을수 있으니주의 해야 한다",
+          "hypothesis": "당뇨약을 먹는 사람도 고려홍삼정을 걱정 없이 먹어도 된다"
+        }
+      ]
+    }
+  ]
+}
