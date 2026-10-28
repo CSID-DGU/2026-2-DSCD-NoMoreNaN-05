@@ -1,0 +1,11 @@
+{
+  "rules_pdf": "C:\\Users\\박이정\\Downloads\\c3e51e49-9723-43b8-9eb2-7e144c413a06_Clam__Evidence_번뇌_찐막.pdf",
+  "rules_pdf_sha256": "ea297675d35999b5eb551417513b184b099c2b6777d07d8790943d1acef33358",
+  "rules_pages": 8,
+  "database_sha256": "e047fe013730fcc1bf40d5ba415b5d6caf90679490c0fabda10aef966d2d723b",
+  "source_files_modified": false,
+  "requested_sample_unit": "claims",
+  "claimed_pdf_precision_not_used_as_guarantee": true,
+  "model": "BAAI/bge-reranker-v2-m3",
+  "model_reference": "https://huggingface.co/BAAI/bge-reranker-v2-m3"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "paused_by_user",
+  "completed_pairs": 15360,
+  "pending_pairs": 64269,
+  "elapsed_seconds": 4381.44,
+  "total_unique_pairs": 82542,
+  "cached_pairs_at_start": 2913,
+  "total_scored_pairs": 18273,
+  "model": "BAAI/bge-reranker-v2-m3",
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "pause_reason": "User requested stopping due to PC load. No additional model inference will run.",
+  "paused_at": "2026-10-26T14:36:38.448357+00:00",
+  "saved_unique_scores": 18273,
+  "pause_summary": "paused_summary.json",
+  "no_new_inference": true
+}

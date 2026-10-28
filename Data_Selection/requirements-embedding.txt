@@ -1,0 +1,4 @@
+# Optional local embedding dependencies; install when starting the model test.
+-r requirements.txt
+sentence-transformers>=3,<6
+pgvector>=0.3,<1

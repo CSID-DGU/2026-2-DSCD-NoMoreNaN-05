@@ -1,0 +1,76 @@
+{
+  "claim_count": 100,
+  "video_count": 100,
+  "claims_with_candidates": 84,
+  "claims_without_candidates": 16,
+  "candidate_count_distribution": {
+    "0": 16,
+    "3": 2,
+    "6": 2,
+    "8": 3,
+    "9": 2,
+    "13": 1,
+    "14": 3,
+    "15": 1,
+    "17": 1,
+    "18": 2,
+    "21": 1,
+    "22": 1,
+    "23": 2,
+    "24": 3,
+    "25": 6,
+    "26": 8,
+    "28": 2,
+    "30": 1,
+    "32": 1,
+    "33": 1,
+    "36": 1,
+    "38": 1,
+    "40": 1,
+    "41": 4,
+    "43": 2,
+    "44": 2,
+    "48": 1,
+    "51": 4,
+    "54": 2,
+    "55": 2,
+    "58": 1,
+    "59": 1,
+    "62": 2,
+    "63": 2,
+    "64": 9,
+    "68": 1,
+    "82": 2,
+    "100": 1,
+    "103": 1,
+    "173": 1
+  },
+  "matched_video_product_entries": 96,
+  "identity_reason_counts": {
+    "unique_candidate_without_known_identity_conflict": 96,
+    "manufacturer_missing_for_typo_route": 9,
+    "multiple_candidates": 6,
+    "conflicting_input_identity_observations": 3,
+    "manufacturer_missing": 4,
+    "known_identity_conflict": 18
+  },
+  "top_k_comparison": {
+    "1": {
+      "total_links": 84,
+      "claims_with_k_candidates": 84
+    },
+    "3": {
+      "total_links": 252,
+      "claims_with_k_candidates": 84
+    },
+    "5": {
+      "total_links": 416,
+      "claims_with_k_candidates": 82
+    },
+    "10": {
+      "total_links": 810,
+      "claims_with_k_candidates": 75
+    }
+  },
+  "caution": "Candidate counts are not evidence sufficiency or ground-truth relevance judgments."
+}

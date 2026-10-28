@@ -1,0 +1,3083 @@
+{
+  "rule": "explicit_product_composition_claim_only",
+  "counts": {
+    "total_claims": 3400,
+    "product_source_claims": 3226,
+    "ingredient_only_claims": 0,
+    "no_sources": 174,
+    "ingredient_search_eligible_claims": 353
+  },
+  "candidate_connected_claims": 3226,
+  "ranking_executed": false,
+  "observations": [
+    {
+      "video_id": "db_001_AKyDb1Yhaio",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_002_Phrb198ghJI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_003_VABlVWjX9t4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_003_VABlVWjX9t4",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_004_dqks_z0q9Go",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_005_Ehq6ZhkzjIk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_006_oUr4voFFuBo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "전통 원료"
+      ],
+      "declaration_claim_ids": {
+        "전통원료": [
+          "c03"
+        ]
+      },
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_007_syrZeF8GkjQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_008_fS7Uzx-hdDI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "루테인",
+        "지아잔틴"
+      ],
+      "declaration_claim_ids": {
+        "루테인": [
+          "c03",
+          "c03"
+        ],
+        "지아잔틴": [
+          "c03"
+        ]
+      },
+      "ingredient_ids": [
+        148
+      ]
+    },
+    {
+      "video_id": "db_008_fS7Uzx-hdDI",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지"
+      ],
+      "declaration_claim_ids": {
+        "epa및dha함유유지": [
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20",
+          "c20"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_008_fS7Uzx-hdDI",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_008_fS7Uzx-hdDI",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_008_fS7Uzx-hdDI",
+      "product_ref": "p05",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_009_l4gd8qQFSak",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_009_l4gd8qQFSak",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_010_cQZBp9O3Blk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_011_8OrRhb8sQnw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_011_8OrRhb8sQnw",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_011_8OrRhb8sQnw",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_011_8OrRhb8sQnw",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_012___ElznvtLdE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지"
+      ],
+      "declaration_claim_ids": {
+        "epa및dha함유유지": [
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04",
+          "c04"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_012___ElznvtLdE",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_012___ElznvtLdE",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_012___ElznvtLdE",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_013_NrsycE3cMV8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "비타민E",
+        "코엔자임Q10"
+      ],
+      "declaration_claim_ids": {
+        "코엔자임q10": [
+          "c09"
+        ],
+        "비타민e": [
+          "c09"
+        ]
+      },
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_014_E5uL0UwVQsQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_014_E5uL0UwVQsQ",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_015_l9l353eNlY8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_016_hgr3QrFdKqk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_017_ibzN_kNSftI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_018_cQrorHG5fFY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "옥수수"
+      ],
+      "declaration_claim_ids": {
+        "옥수수": [
+          "c01"
+        ]
+      },
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_018_cQrorHG5fFY",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_019_Z3SBdiibF_o",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_020_cBZk8yOvCC0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "MSM"
+      ],
+      "declaration_claim_ids": {
+        "msm": [
+          "c06",
+          "c06"
+        ]
+      },
+      "ingredient_ids": [
+        452
+      ]
+    },
+    {
+      "video_id": "db_021_7cxBqUhRcXs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "MSM",
+        "N-아세틸글루코사민",
+        "글루코사민",
+        "칼슘"
+      ],
+      "declaration_claim_ids": {
+        "msm": [
+          "c06",
+          "c06"
+        ],
+        "칼슘": [
+          "c06"
+        ],
+        "n아세틸글루코사민": [
+          "c06"
+        ],
+        "글루코사민": [
+          "c06",
+          "c06"
+        ]
+      },
+      "ingredient_ids": [
+        4,
+        77,
+        452
+      ]
+    },
+    {
+      "video_id": "db_022_Y6gkveTxNxc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "망간",
+        "뮤코다당(콘드로이친황산)·단백",
+        "비타민D"
+      ],
+      "declaration_claim_ids": {
+        "뮤코다당콘드로이친황산단백": [
+          "c08"
+        ],
+        "비타민d": [
+          "c08"
+        ],
+        "망간": [
+          "c08"
+        ]
+      },
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_023_Cf6dBCMBMmE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_024_5S-gGzTZ_ng",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_025_5JoqajKpR_o",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_026_Rn9Jm1VdZm0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_027_V5k04vnSlJo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_028_iNXbFlVtaHI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_029_eSEvvCSq95I",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_030_q8I4k7ST-PY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_031_7Gp4DKcVBkg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_032_JpDiqZCmxt4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_033_iemqoCEprgg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_034_1AxHPTHGxEI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_035_y_0fmF3xgck",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_036_vVXaNzwDQ3E",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_037_GfXTXY4Cojo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_038_-56FN2YCC-I",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_039_zptASsSd0nY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_039_zptASsSd0nY",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_040_1dcPKN8GH8Y",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_041_csK3fHk-MRw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_042_hs4yOrpqvRI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_043_pqKwSu8og9A",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_044_mwH9HYTRZrQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_045_kzP_81Cub6Y",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_046_MWx5nDT8pDk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_047_gnvNr4R4Brc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_048_qdPDY6T86PU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_049_P-YTAviQgIM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지",
+        "rTG오메가3",
+        "rTG오메가3(EPA 및 DHA 함유 유지)",
+        "루테인",
+        "루테인(마리골드꽃추출물)",
+        "멀티비타민&미네랄",
+        "프로바이오틱스"
+      ],
+      "declaration_claim_ids": {
+        "rtg오메가3": [
+          "c10"
+        ],
+        "epa및dha함유유지": [
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c10",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12",
+          "c12"
+        ],
+        "루테인마리골드꽃추출물": [
+          "c12"
+        ],
+        "프로바이오틱스": [
+          "c12"
+        ],
+        "rtg오메가3epa및dha함유유지": [
+          "c12"
+        ],
+        "멀티비타민미네랄": [
+          "c12"
+        ],
+        "루테인": [
+          "c12"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        148,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_050_OuBJfCjsgak",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_050_OuBJfCjsgak",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_051_KUwvWs-chM4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_052_h04VTADNgfI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "product_ref": "p05",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "product_ref": "p06",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_054_oqIL8C4Y4g8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_054_oqIL8C4Y4g8",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_054_oqIL8C4Y4g8",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_054_oqIL8C4Y4g8",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_054_oqIL8C4Y4g8",
+      "product_ref": "p05",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_055_UPPksFnfOcU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_055_UPPksFnfOcU",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_055_UPPksFnfOcU",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_055_UPPksFnfOcU",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_056_VMB1clucLeE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_057_TpqG2KZ0aRk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_057_TpqG2KZ0aRk",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_057_TpqG2KZ0aRk",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_058_EZd5mIHLLew",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_059_NaLc-_bwGw8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_059_NaLc-_bwGw8",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_060_wKE98OOcdPU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_061_5ED9Yi0UfBI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_062_qmesmHU6NEM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_063_q3xSu0OHNPQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_064_a5vX2dHtxUI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_065_d1vRPXhgJAY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_065_d1vRPXhgJAY",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_065_d1vRPXhgJAY",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_066_Qk_qjEMCsY8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_067_mAyGdVi1ErI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_068_y9-P6WLcE78",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_068_y9-P6WLcE78",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_068_y9-P6WLcE78",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_069_BYfLFgblezo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_070_LxuL9MwWRU4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_071_Xl9VSIn8qRY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_072_IDAK_qBMhYk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_073_4iKwv9LP0sg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_074_tHG5O5CMHSA",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_075_ThVffF2zpl8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_076_mAtb7Cf69nk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_077_OP3AH0OqWjs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_078_mhzAWG1-UGw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_079_WCQtPkMGCYE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_080_yPMKj9wxiKc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_080_yPMKj9wxiKc",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_081_fN51LUYpxFE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_082_AnT61olLCjY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_083_OSzLEscspuU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_084_cqQLmZc6e-Y",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_085_53dM_1gHF_Y",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_086_UvRGjZ0WJTc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_087_YPWh0N0eRn8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_088_ZiHnof9A28Y",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_089_Qn0R5CD2ocY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_090_2D8qJ6NROCs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_090_2D8qJ6NROCs",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_090_2D8qJ6NROCs",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_090_2D8qJ6NROCs",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_091_RmbfFdrWBdo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_092_5PUV8qgHtI4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_093_qHU1meSxfco",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_094_l9KlwI5YX44",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_095_e2JpCbQWuvo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_096_LGDnFYgymEQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_097_un653gDaVwY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_098_6-u-FnfXyZs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_099_dSjddyyEbrQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_100_X6OK887LWyA",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "미네랄",
+        "보스웰리아 추출물 등 복합물",
+        "보스웰리아 추출물(Boswellia serrata R. extract)",
+        "보스웰리아추출물",
+        "보스웰리아추출물(FJH-BS)",
+        "보스웰리아추출물(SERRATRIN)",
+        "보스웰리아추출물등 복합물(Flexir)",
+        "비타민"
+      ],
+      "declaration_claim_ids": {
+        "보스웰리아추출물등복합물": [
+          "c09"
+        ],
+        "비타민": [
+          "c09"
+        ],
+        "미네랄": [
+          "c09"
+        ],
+        "보스웰리아추출물serratrin": [
+          "c09"
+        ],
+        "보스웰리아추출물등복합물flexir": [
+          "c09",
+          "c09"
+        ],
+        "보스웰리아추출물boswelliaserratarextract": [
+          "c09",
+          "c09"
+        ],
+        "보스웰리아추출물": [
+          "c09",
+          "c09",
+          "c09"
+        ],
+        "보스웰리아추출물fjhbs": [
+          "c09"
+        ]
+      },
+      "ingredient_ids": [
+        518,
+        555,
+        588,
+        925,
+        1050,
+        1124
+      ]
+    },
+    {
+      "video_id": "db_101_k9HPaTy2jAc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_102_j2gn9xONdJE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_102_j2gn9xONdJE",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_103_B1QC0IfbbBg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_104_2DMM40MV6do",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_105_ZvdLzOq3RmI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_106_o0Phkzlsh0M",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_106_o0Phkzlsh0M",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_107_vGLl-CPSrKY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_107_vGLl-CPSrKY",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_107_vGLl-CPSrKY",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_108_KHBsiGaxmc8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_109_ReV-nF8-YjE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_109_ReV-nF8-YjE",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_109_ReV-nF8-YjE",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_110_1iCNGuRKt2w",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_110_1iCNGuRKt2w",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_110_1iCNGuRKt2w",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_110_1iCNGuRKt2w",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_111_LVYFleyCAk4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_111_LVYFleyCAk4",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_112_o3J1gXJxpa8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_113_OIr_XNBj_a4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_113_OIr_XNBj_a4",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_113_OIr_XNBj_a4",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_114_g7TzMEZKjaU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_115_qzINw249IOU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_116_m_w5BCSok00",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_117_d5L0nVIMMM0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_118_vUsqYEacSKM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_119_i7nhobUKNeg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_120_QUwiyY9Qh_k",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_121_p3YufTgQRHA",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지",
+        "대두",
+        "쇠고기"
+      ],
+      "declaration_claim_ids": {
+        "대두": [
+          "c06"
+        ],
+        "쇠고기": [
+          "c06"
+        ],
+        "epa및dha함유유지": [
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07",
+          "c07"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_122_pKOtz25IIbs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_123_seN7xZFP5eE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_124_h7te3HAxv-A",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_124_h7te3HAxv-A",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_125_M4AD7_oBfp4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_125_M4AD7_oBfp4",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_125_M4AD7_oBfp4",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_125_M4AD7_oBfp4",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_125_M4AD7_oBfp4",
+      "product_ref": "p05",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_126_1c3ZmUXrc8A",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_127_kNWjguHhRs4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_128_0nXNWl3B1Z4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_129_ZRtOaodVT-U",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_130_iBZsQk9ykAQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_131_J5Ofe99LM0U",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_132__MNYBmy24nk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지"
+      ],
+      "declaration_claim_ids": {
+        "epa및dha함유유지": [
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08",
+          "c08"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_133_lGVQDIid77Q",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_134_eBXQtWMPUGM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_135_0EkaCDWmB04",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_136_40OyEPJBj1E",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_137_e89OkELFbBY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_138_PTmYGvz-n84",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_139_3ClBJSsUX04",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_140_TrU6ClZh2Gk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_141_F1owLR8fI-Y",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "product_ref": "p04",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "product_ref": "p05",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "product_ref": "p06",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_143_iPlIpMrGcp0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_144_5ykRFN8-k8s",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_145_7m0KUQskVVA",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_146_Z8k8OLPv2Zw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_146_Z8k8OLPv2Zw",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [
+        "멀티비타민",
+        "칼슘"
+      ],
+      "declaration_claim_ids": {
+        "멀티비타민": [
+          "c06"
+        ],
+        "칼슘": [
+          "c06"
+        ]
+      },
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_147_68LD5c_NAQ8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_148_14tl3hRHPhY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_149_oFkaj0c3LoE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_150_2E-n2nFG6fU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_151_xZrp2A0uYqM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_152_r2yYfz_JtlU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_153_np4kl0sP9d4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_154_O0VmSF9Ks0U",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_155_OJHR-vtZ2ew",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_156_DQi8J-8WkZ0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_157_-kjoqO9Um6Q",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_158_5XrgbvRPUx8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_159_BreFh0ffGLw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지",
+        "결명자",
+        "빌베리 추출물",
+        "빌베리추출물",
+        "빌베리추출물 분말",
+        "식물성 오메가3 (EPA 및 DHA 함유유지)"
+      ],
+      "declaration_claim_ids": {
+        "결명자": [
+          "c21"
+        ],
+        "빌베리추출물분말": [
+          "c21"
+        ],
+        "식물성오메가3epa및dha함유유지": [
+          "c21"
+        ],
+        "epa및dha함유유지": [
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21",
+          "c21"
+        ],
+        "빌베리추출물": [
+          "c21",
+          "c21",
+          "c21",
+          "c21"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        233,
+        234,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657,
+        980,
+        987
+      ]
+    },
+    {
+      "video_id": "db_160_qBFBNIBlB3Q",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_160_qBFBNIBlB3Q",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_162_4jXlKg_Wko8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_163_mIzLM0ZWBCU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지",
+        "비타민A",
+        "비타민E"
+      ],
+      "declaration_claim_ids": {
+        "epa및dha함유유지": [
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14",
+          "c14"
+        ],
+        "비타민e": [
+          "c14"
+        ],
+        "비타민a": [
+          "c14"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_164_Gl7-zKA-GwI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "EPA 및 DHA 함유 유지",
+        "EPA 및 DHA 함유유지",
+        "EPA및DHA함유유지",
+        "비타민E"
+      ],
+      "declaration_claim_ids": {
+        "epa및dha함유유지": [
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11",
+          "c11"
+        ],
+        "비타민e": [
+          "c11"
+        ]
+      },
+      "ingredient_ids": [
+        33,
+        34,
+        55,
+        61,
+        63,
+        64,
+        67,
+        69,
+        151,
+        152,
+        153,
+        155,
+        158,
+        172,
+        236,
+        239,
+        280,
+        281,
+        342,
+        359,
+        367,
+        368,
+        370,
+        417,
+        420,
+        511,
+        633,
+        657
+      ]
+    },
+    {
+      "video_id": "db_165_3L_QXEbwxpA",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_166_eoe2GUtz4v8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_167_pLQ_w6U6lx8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_168_a5WbO4EBBHc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_169_fFoA1gsYAr4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_170_2w9to5aSbYY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_171_5_h6huHbNfM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_172_4cxxyiYdnQk",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_173_go-uppdIkg0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_174_Bmw8jdvxdLw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_175_HMToSnKluxE",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_176_6o8pxrOwFtQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_177_nxaYvc4IY18",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_178_4S96NKXWpU8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "비타민B₁",
+        "비타민B₂",
+        "비타민B₆",
+        "오미자추출물",
+        "옥타코사놀 함유 유지",
+        "테아닌",
+        "테아닌(Theanine)",
+        "판토텐산"
+      ],
+      "declaration_claim_ids": {
+        "오미자추출물": [
+          "c09",
+          "c09",
+          "c09",
+          "c09",
+          "c09"
+        ],
+        "옥타코사놀함유유지": [
+          "c09"
+        ],
+        "테아닌": [
+          "c09",
+          "c09"
+        ],
+        "판토텐산": [
+          "c09"
+        ],
+        "비타민b": [
+          "c09",
+          "c09",
+          "c09"
+        ],
+        "테아닌theanine": [
+          "c09"
+        ]
+      },
+      "ingredient_ids": [
+        149,
+        160,
+        203,
+        344,
+        970,
+        986
+      ]
+    },
+    {
+      "video_id": "db_179_mnl8jo33nD4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_180_eliz4irOChY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_181_NIjAo7fh-Kg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_183_sofweMTrfjw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_184_EAeo2q28-Po",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_185_Pev0dJ78QSU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_185_Pev0dJ78QSU",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_185_Pev0dJ78QSU",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_186_HrN_Oujgivs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_187_xxRw4tRt7-0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_188_OH4NPEmrC5Q",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_189__mZYh80V4l0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_190_3hloKanT9NI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_191_YbhvQeQ7_BI",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_191_YbhvQeQ7_BI",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_192_jdu8bGXSDt4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_193_6LRb_cwbwBw",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_194_VNwKAMpEeLU",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_195_-RaTg6NEMZ0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_196_CHOw23s17GA",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_197_X0jCGgzhae0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "비타민 D"
+      ],
+      "declaration_claim_ids": {
+        "비타민d": [
+          "c08"
+        ]
+      },
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_198_JkqRTHd0Nsg",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_199_fgMIEID1N30",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_200_WLfMEmR3ZF4",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_201_YBn7emsawpQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "구리",
+        "나이아신",
+        "루테인",
+        "루테인(마리골드꽃추출물)",
+        "마그네슘",
+        "망간",
+        "밀크씨슬 추출물",
+        "밀크씨슬 추출물(Milk Thistle Extract)",
+        "밀크씨슬추출물",
+        "비오틴",
+        "비타민 B1",
+        "비타민A",
+        "비타민B12",
+        "비타민B2",
+        "비타민B6",
+        "비타민C",
+        "비타민D",
+        "비타민E",
+        "셀렌",
+        "아연",
+        "엽산",
+        "오메가3(EPA 및 DHA함유)",
+        "철",
+        "크롬",
+        "판토텐산"
+      ],
+      "declaration_claim_ids": {
+        "비타민b1": [
+          "c05"
+        ],
+        "비타민b2": [
+          "c05"
+        ],
+        "비타민b6": [
+          "c05"
+        ],
+        "비타민b12": [
+          "c05"
+        ],
+        "비타민c": [
+          "c05"
+        ],
+        "비타민a": [
+          "c05"
+        ],
+        "비타민d": [
+          "c05"
+        ],
+        "비타민e": [
+          "c05"
+        ],
+        "철": [
+          "c05"
+        ],
+        "마그네슘": [
+          "c05"
+        ],
+        "판토텐산": [
+          "c05"
+        ],
+        "엽산": [
+          "c05"
+        ],
+        "비오틴": [
+          "c05"
+        ],
+        "셀렌": [
+          "c05"
+        ],
+        "크롬": [
+          "c05"
+        ],
+        "아연": [
+          "c05"
+        ],
+        "망간": [
+          "c05"
+        ],
+        "구리": [
+          "c05"
+        ],
+        "오메가3epa및dha함유": [
+          "c05"
+        ],
+        "나이아신": [
+          "c05"
+        ],
+        "루테인마리골드꽃추출물": [
+          "c05"
+        ],
+        "밀크씨슬추출물": [
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05",
+          "c05"
+        ],
+        "루테인": [
+          "c05"
+        ],
+        "밀크씨슬추출물milkthistleextract": [
+          "c05",
+          "c05"
+        ]
+      },
+      "ingredient_ids": [
+        22,
+        44,
+        76,
+        114,
+        126,
+        128,
+        148,
+        220,
+        258,
+        262,
+        267,
+        326,
+        406,
+        442,
+        453,
+        507,
+        514,
+        609,
+        642
+      ]
+    },
+    {
+      "video_id": "db_201_YBn7emsawpQ",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_202_oTg1JYJBG6I",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_203_hBfs_yl13uQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_204_73yGR-979W0",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "MSM",
+        "비타민B2",
+        "아연",
+        "오미자추출물"
+      ],
+      "declaration_claim_ids": {
+        "msm": [
+          "c02",
+          "c02"
+        ],
+        "오미자추출물": [
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02"
+        ],
+        "비타민b2": [
+          "c02"
+        ],
+        "아연": [
+          "c02"
+        ]
+      },
+      "ingredient_ids": [
+        203,
+        344,
+        452,
+        970,
+        986
+      ]
+    },
+    {
+      "video_id": "db_205_myFgNLXC58I",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "MSM",
+        "비타민B2",
+        "아연",
+        "오미자추출물"
+      ],
+      "declaration_claim_ids": {
+        "msm": [
+          "c02",
+          "c02"
+        ],
+        "오미자추출물": [
+          "c02",
+          "c02",
+          "c02",
+          "c02",
+          "c02"
+        ],
+        "비타민b2": [
+          "c02"
+        ],
+        "아연": [
+          "c02"
+        ]
+      },
+      "ingredient_ids": [
+        203,
+        344,
+        452,
+        970,
+        986
+      ]
+    },
+    {
+      "video_id": "db_206_iGsiTT2xZMY",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_206_iGsiTT2xZMY",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_206_iGsiTT2xZMY",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_207_2gBANzYTC5U",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_207_2gBANzYTC5U",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_207_2gBANzYTC5U",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_208_0drznbKPJgc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_209_roKU_LDwQkM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "구아바 잎 추출물",
+        "구아바잎",
+        "구아바잎추출물"
+      ],
+      "declaration_claim_ids": {
+        "구아바잎추출물": [
+          "c05",
+          "c05"
+        ],
+        "구아바잎": [
+          "c05"
+        ]
+      },
+      "ingredient_ids": [
+        341,
+        656
+      ]
+    },
+    {
+      "video_id": "db_209_roKU_LDwQkM",
+      "product_ref": "p02",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_209_roKU_LDwQkM",
+      "product_ref": "p03",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_210_NKyAOi6Hrg8",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_211_L4KfNfwGB1s",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_212_qbQfBqPEqGQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_213_P8VZYBOsflM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_214_bhFZouAiiGc",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_215_-afH55ajzSo",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_216_FgCUShwwLPs",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_217_SHhSMRCCVEM",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [],
+      "declaration_claim_ids": {},
+      "ingredient_ids": []
+    },
+    {
+      "video_id": "db_218_ZBdUgPEQmxQ",
+      "product_ref": "p01",
+      "observed_ingredient_terms": [
+        "비타민 A"
+      ],
+      "declaration_claim_ids": {
+        "비타민a": [
+          "c04"
+        ]
+      },
+      "ingredient_ids": []
+    }
+  ],
+  "note": "Advertisement composition assertion is not verified composition. Previous unconditional ingredient fallback is obsolete."
+}

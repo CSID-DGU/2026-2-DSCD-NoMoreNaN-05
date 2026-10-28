@@ -1,0 +1,802 @@
+{
+  "video_id": "ad_001",
+  "products": [
+    {
+      "product_ref": "p01",
+      "product_name": "관절연골엔 난각막NEM",
+      "brand_name": "종근당건강",
+      "db_match": {
+        "status": "unresolved_manufacturer_conflict",
+        "name_match": "exact",
+        "candidate_product_id": 6411,
+        "candidate_product_name": "관절연골엔 난각막NEM",
+        "database_manufacturer": "(주)서흥",
+        "extracted_manufacturer": "(주)서흥헬스케어 제2공장",
+        "manufacturer_source_claim_id": "c22",
+        "manufacturing_report_number": "200400200062168",
+        "required_confirmation": "광고 포장의 품목제조신고번호·제품 버전 확인"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "c01",
+      "product_ref": "p01",
+      "text": "관절 연골 건강 제대로 채우려면 난각막 NEM.",
+      "claim_type": "EFFECT",
+      "ingredients": [],
+      "effect": "관절 및 연골 건강 증진",
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "관절 연골 건강 제대로 채우려면 난각막 NEM. 관절 및 연골 건강 증진",
+      "evidences": [
+        {
+          "source_ref": "product:6411:functionality:1",
+          "text": "난각막가수분해물(NEM®)(제2024-9호) : (국문) 관절 및 연골 건강에 도움을 줄 수 있음, (영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "main_functionality",
+            "line": 1
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.27391533,
+          "rank": 1
+        },
+        {
+          "source_ref": "evidence:2864",
+          "text": "(국문) 관절 및 연골 건강에 도움을 줄 수 있음\n(영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "evidence",
+            "record_id": 2864,
+            "column": "evidence_text",
+            "ingredient_id": 1151,
+            "recognition_number": "제2024-9호",
+            "evidence_type": "OFFICIAL_FUNCTIONALITY",
+            "source_authority": "MFDS"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.24423543,
+          "rank": 2
+        }
+      ],
+      "evidence_count": 2,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "관련 기능성 근거이며 최종 판정은 수행하지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c02",
+      "product_ref": "p01",
+      "text": "빈틈없는 관절 연골 건강을 위한 새로운 선택",
+      "claim_type": "EFFECT",
+      "ingredients": [],
+      "effect": "관절 및 연골 건강 증진",
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "빈틈없는 관절 연골 건강을 위한 새로운 선택 관절 및 연골 건강 증진",
+      "evidences": [
+        {
+          "source_ref": "evidence:2864",
+          "text": "(국문) 관절 및 연골 건강에 도움을 줄 수 있음\n(영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "evidence",
+            "record_id": 2864,
+            "column": "evidence_text",
+            "ingredient_id": 1151,
+            "recognition_number": "제2024-9호",
+            "evidence_type": "OFFICIAL_FUNCTIONALITY",
+            "source_authority": "MFDS"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.26380442,
+          "rank": 1
+        },
+        {
+          "source_ref": "product:6411:functionality:1",
+          "text": "난각막가수분해물(NEM®)(제2024-9호) : (국문) 관절 및 연골 건강에 도움을 줄 수 있음, (영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "main_functionality",
+            "line": 1
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.23246329,
+          "rank": 2
+        }
+      ],
+      "evidence_count": 2,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "관련 기능성 근거이며 최종 판정은 수행하지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c03",
+      "product_ref": "p01",
+      "text": "인체연골 구성성분 함유",
+      "claim_type": "COMPOSITION",
+      "ingredients": [
+        "인체연골 구성성분"
+      ],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "인체연골 구성성분 함유 인체연골 구성성분",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "현재 자료에는 인체연골 구성성분 목록이나 해당 제품의 전체 원재료 목록이 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c04",
+      "product_ref": "p01",
+      "text": "콜라겐",
+      "claim_type": "COMPOSITION",
+      "ingredients": [
+        "콜라겐"
+      ],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "콜라겐",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "콜라겐 계열 원료 자료는 DB에 있으나 이 제품의 콜라겐 함유를 확인하는 자료는 선택한 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c05",
+      "product_ref": "p01",
+      "text": "콘드로이친황산",
+      "claim_type": "COMPOSITION",
+      "ingredients": [
+        "콘드로이친황산"
+      ],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "콘드로이친황산",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "콘드로이친 계열 자료만으로 이 제품의 콘드로이친황산 함유를 연결하지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c06",
+      "product_ref": "p01",
+      "text": "히알루론산",
+      "claim_type": "COMPOSITION",
+      "ingredients": [
+        "히알루론산"
+      ],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "히알루론산",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "히알루론산 원료 자료만으로 이 제품의 히알루론산 함유를 연결하지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c07",
+      "product_ref": "p01",
+      "text": "기능성원료 NEM 인체적용시험 결과 관절기능평가(WOMAC) 24개 전 항목 개선 확인",
+      "claim_type": "QUANTITY",
+      "ingredients": [],
+      "effect": "관절기능평가 전 항목 개선",
+      "quantity": "24개 전 항목",
+      "intake_basis": "12주 인체적용시험",
+      "retrieval_query": "기능성원료 NEM 인체적용시험 결과 관절기능평가(WOMAC) 24개 전 항목 개선 확인 관절기능평가 전 항목 개선",
+      "evidences": [
+        {
+          "source_ref": "product:6411:functionality:1",
+          "text": "난각막가수분해물(NEM®)(제2024-9호) : (국문) 관절 및 연골 건강에 도움을 줄 수 있음, (영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "main_functionality",
+            "line": 1
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.19115541,
+          "rank": 1
+        },
+        {
+          "source_ref": "evidence:2864",
+          "text": "(국문) 관절 및 연골 건강에 도움을 줄 수 있음\n(영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "evidence",
+            "record_id": 2864,
+            "column": "evidence_text",
+            "ingredient_id": 1151,
+            "recognition_number": "제2024-9호",
+            "evidence_type": "OFFICIAL_FUNCTIONALITY",
+            "source_authority": "MFDS"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.1301564,
+          "rank": 2
+        }
+      ],
+      "evidence_count": 2,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "관련 기능성 자료만 연결합니다. WOMAC 24개 전 항목 개선과 12주 임상시험 결과는 확인되지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c08",
+      "product_ref": "p01",
+      "text": "대상자: 무릎 관절이 불편한 40~75세 성인",
+      "claim_type": "QUANTITY",
+      "ingredients": [],
+      "effect": null,
+      "quantity": "40~75세",
+      "intake_basis": null,
+      "retrieval_query": "대상자: 무릎 관절이 불편한 40~75세 성인",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "인체적용시험 대상자의 연령 자료가 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c09",
+      "product_ref": "p01",
+      "text": "인원: NEM 섭취군 46명, 대조군 45명",
+      "claim_type": "QUANTITY",
+      "ingredients": [],
+      "effect": null,
+      "quantity": "섭취군 46명, 대조군 45명",
+      "intake_basis": null,
+      "retrieval_query": "인원: NEM 섭취군 46명, 대조군 45명",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "섭취군 46명·대조군 45명에 대응하는 시험 보고서가 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c10",
+      "product_ref": "p01",
+      "text": "시험기간: 12주",
+      "claim_type": "QUANTITY",
+      "ingredients": [],
+      "effect": null,
+      "quantity": "12주",
+      "intake_basis": null,
+      "retrieval_query": "시험기간: 12주",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "12주 인체적용시험 기간에 대응하는 자료가 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c11",
+      "product_ref": "p01",
+      "text": "섭취량: 난각막가수분해물(NEM) 500mg",
+      "claim_type": "QUANTITY",
+      "ingredients": [
+        "난각막가수분해물(NEM)"
+      ],
+      "effect": null,
+      "quantity": "500mg",
+      "intake_basis": "인체적용시험 섭취량; 일일 기준은 화면에 명시되지 않음",
+      "retrieval_query": "섭취량: 난각막가수분해물(NEM) 500mg 난각막가수분해물(NEM)",
+      "evidences": [
+        {
+          "source_ref": "evidence:2865",
+          "text": "500 (mg/일) 500 (mg/일)",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "evidence",
+            "record_id": 2865,
+            "column": "evidence_text",
+            "ingredient_id": 1151,
+            "recognition_number": "제2024-9호",
+            "evidence_type": "OFFICIAL_INTAKE",
+            "source_authority": "MFDS"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.24516981,
+          "rank": 1
+        }
+      ],
+      "evidence_count": 1,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "500mg/일은 원료 인정 섭취량입니다. 광고가 인용한 시험의 섭취량·제품 함량을 확인한 것은 아닙니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c12",
+      "product_ref": "p01",
+      "text": "출처: 난각막추출물(NEM)의 관절건강개선 | 무작위배정, 이중눈가림, 대조군 비교 중심 연구 인체적용시험 보고서(2023년)",
+      "claim_type": "CERTIFICATION",
+      "ingredients": [],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "출처: 난각막추출물(NEM)의 관절건강개선 | 무작위배정, 이중눈가림, 대조군 비교 중심 연구 인체적용시험 보고서(2023년)",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "광고가 인용한 2023년 인체적용시험 보고서는 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c13",
+      "product_ref": "p01",
+      "text": "인체적용 시험 결과가 모든 사람에게 동일하게 적용되는 것은 아닙니다",
+      "claim_type": "EFFECT",
+      "ingredients": [],
+      "effect": "인체적용시험 결과에 개인차가 있음",
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "인체적용 시험 결과가 모든 사람에게 동일하게 적용되는 것은 아닙니다 인체적용시험 결과에 개인차가 있음",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "해당 개인차 고지에 직접 대응하는 문장이 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c14",
+      "product_ref": "p01",
+      "text": "관절연골건강 제대로 채우면, 바뀝니다.",
+      "claim_type": "EFFECT",
+      "ingredients": [],
+      "effect": "관절 및 연골 건강 개선",
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "관절연골건강 제대로 채우면, 바뀝니다. 관절 및 연골 건강 개선",
+      "evidences": [
+        {
+          "source_ref": "evidence:2864",
+          "text": "(국문) 관절 및 연골 건강에 도움을 줄 수 있음\n(영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "evidence",
+            "record_id": 2864,
+            "column": "evidence_text",
+            "ingredient_id": 1151,
+            "recognition_number": "제2024-9호",
+            "evidence_type": "OFFICIAL_FUNCTIONALITY",
+            "source_authority": "MFDS"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.26380442,
+          "rank": 1
+        },
+        {
+          "source_ref": "product:6411:functionality:1",
+          "text": "난각막가수분해물(NEM®)(제2024-9호) : (국문) 관절 및 연골 건강에 도움을 줄 수 있음, (영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "main_functionality",
+            "line": 1
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.23246329,
+          "rank": 2
+        }
+      ],
+      "evidence_count": 2,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "관련 기능성 근거이며 최종 판정은 수행하지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c15",
+      "product_ref": "p01",
+      "text": "난각막가수분해물, 비타민D.",
+      "claim_type": "COMPOSITION",
+      "ingredients": [
+        "난각막가수분해물",
+        "비타민D"
+      ],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "난각막가수분해물, 비타민D. 난각막가수분해물 비타민D",
+      "evidences": [
+        {
+          "source_ref": "ingredient:1151:name",
+          "text": "난각막가수분해물(NEM®)(제2024-9호)",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "ingredients",
+            "record_id": 1151,
+            "column": "ingredient_name",
+            "recognition_number": "제2024-9호"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.53372609,
+          "rank": 1
+        },
+        {
+          "source_ref": "product:6411:functionality:1",
+          "text": "난각막가수분해물(NEM®)(제2024-9호) : (국문) 관절 및 연골 건강에 도움을 줄 수 있음, (영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "main_functionality",
+            "line": 1
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.23294309,
+          "rank": 2
+        },
+        {
+          "source_ref": "product:6411:specification:3",
+          "text": "(3) 비타민D : 표시량(10 ㎍/0.72g)의 80%~180%",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "specification",
+            "line": 3
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.15210389,
+          "rank": 3
+        }
+      ],
+      "evidence_count": 3,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "DB 제품 후보의 기능성·규격에 원료명이 나타납니다. 광고 제품과의 동일성은 제조원 불일치로 미확정입니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c16",
+      "product_ref": "p01",
+      "text": "관절 및 연골건강에 도움을 줄 수 있음.",
+      "claim_type": "EFFECT",
+      "ingredients": [],
+      "effect": "관절 및 연골 건강에 도움을 줄 수 있음",
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "관절 및 연골건강에 도움을 줄 수 있음. 관절 및 연골 건강에 도움을 줄 수 있음",
+      "evidences": [
+        {
+          "source_ref": "evidence:2864",
+          "text": "(국문) 관절 및 연골 건강에 도움을 줄 수 있음\n(영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "evidence",
+            "record_id": 2864,
+            "column": "evidence_text",
+            "ingredient_id": 1151,
+            "recognition_number": "제2024-9호",
+            "evidence_type": "OFFICIAL_FUNCTIONALITY",
+            "source_authority": "MFDS"
+          },
+          "relationship": "ingredient_reference",
+          "requires_product_identity_confirmation": false,
+          "similarity": 0.44140627,
+          "rank": 1
+        },
+        {
+          "source_ref": "product:6411:functionality:1",
+          "text": "난각막가수분해물(NEM®)(제2024-9호) : (국문) 관절 및 연골 건강에 도움을 줄 수 있음, (영문) May help to maintain joint and cartilage health",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "main_functionality",
+            "line": 1
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.38896526,
+          "rank": 2
+        }
+      ],
+      "evidence_count": 2,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "관련 기능성 근거이며 최종 판정은 수행하지 않았습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c17",
+      "product_ref": "p01",
+      "text": "특허 받은 난각막가수분해물 NEM.",
+      "claim_type": "CERTIFICATION",
+      "ingredients": [
+        "난각막가수분해물(NEM)"
+      ],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "특허 받은 난각막가수분해물 NEM. 난각막가수분해물(NEM)",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "특허번호·특허 등록 자료는 이번 검색 범위에 없습니다. 기능성 인정번호를 특허번호로 대체하지 않습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c18",
+      "product_ref": "p01",
+      "text": "건강기능식품.",
+      "claim_type": "CERTIFICATION",
+      "ingredients": [],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "건강기능식품.",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "건강기능식품 제품정보 DB의 동명 제품은 있으나 제품 동일성 및 등록 지위 확인은 별도 단계입니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c19",
+      "product_ref": "p01",
+      "text": "총 21.6g(1캡슐 당 360mg × 60캡슐).",
+      "claim_type": "QUANTITY",
+      "ingredients": [],
+      "effect": null,
+      "quantity": "총 21.6g; 1캡슐당 360mg; 60캡슐",
+      "intake_basis": "제품 포장 총량 및 1캡슐 기준",
+      "retrieval_query": "총 21.6g(1캡슐 당 360mg × 60캡슐).",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "DB의 0.72g 규격·1회 2캡슐 자료는 관련 맥락입니다. 총 21.6g·60캡슐 포장을 입증한 것은 아닙니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c20",
+      "product_ref": "p01",
+      "text": "종근당건강 관절건강기능식품 1등. 2023년 관절건강기능식품 구입률 1위(한국건강기능식품협회 소비자실태조사, 2023 MSM, 글루코사민 기준).",
+      "claim_type": "QUANTITY",
+      "ingredients": [],
+      "effect": null,
+      "quantity": "2023년 구입률 1위",
+      "intake_basis": null,
+      "retrieval_query": "종근당건강 관절건강기능식품 1등. 2023년 관절건강기능식품 구입률 1위(한국건강기능식품협회 소비자실태조사, 2023 MSM, 글루코사민 기준).",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "구입률 1위·시장점유율 조사 자료가 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c21",
+      "product_ref": "p01",
+      "text": "건강기능식품광고 / 광고심의필.",
+      "claim_type": "CERTIFICATION",
+      "ingredients": [],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "건강기능식품광고 / 광고심의필.",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "이 광고의 심의번호·심의 결과 자료가 현재 검색 범위에 없습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c22",
+      "product_ref": "p01",
+      "text": "제조원: (주)서흥헬스케어 제2공장.",
+      "claim_type": "PRODUCT_RELATION",
+      "ingredients": [],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "제조원: (주)서흥헬스케어 제2공장.",
+      "evidences": [
+        {
+          "source_ref": "product:6411:company_name",
+          "text": "(주)서흥",
+          "source": {
+            "database": "claim_verification.sqlite",
+            "table": "products",
+            "record_id": 6411,
+            "column": "company_name"
+          },
+          "relationship": "unconfirmed_product_candidate_reference",
+          "requires_product_identity_confirmation": true,
+          "similarity": 0.89674729,
+          "rank": 1
+        }
+      ],
+      "evidence_count": 1,
+      "retrieval_status": "evidence_candidates_found",
+      "retrieval_message": "관련 Evidence 후보 있음",
+      "coverage_note": "광고 제조원은 (주)서흥헬스케어 제2공장, DB 동명 제품 제조사는 (주)서흥으로 다릅니다. 검토 자료로만 연결합니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    },
+    {
+      "claim_id": "c23",
+      "product_ref": "p01",
+      "text": "판매원: 종근당건강(주).",
+      "claim_type": "PRODUCT_RELATION",
+      "ingredients": [],
+      "effect": null,
+      "quantity": null,
+      "intake_basis": null,
+      "retrieval_query": "판매원: 종근당건강(주).",
+      "evidences": [],
+      "evidence_count": 0,
+      "retrieval_status": "no_linkable_evidence",
+      "retrieval_message": "연결 가능한 Evidence 없음",
+      "coverage_note": "종근당건강은 입력의 브랜드·판매원 정보입니다. DB 제조사 필드로 판매원 일치를 대체하지 않습니다.",
+      "judgment": {
+        "status": "pending",
+        "verdict": null,
+        "reason": null
+      }
+    }
+  ],
+  "retrieval": {
+    "method": "character_ngram_tfidf_cosine",
+    "embedding_model": null,
+    "query_fields": [
+      "text",
+      "effect",
+      "ingredients"
+    ],
+    "character_ngram_range": [
+      2,
+      4
+    ],
+    "threshold": 0.1,
+    "threshold_operator": ">",
+    "max_evidences_per_claim": 5,
+    "ordering": "similarity_descending",
+    "scores_are_measured": true,
+    "threshold_validation": "재현율을 우선한 임시 비영(非零) 기준. 정밀도 검증 및 임베딩 점수와의 호환성 없음.",
+    "candidate_selection": "이 23개 Claim에 대해 검토한 사례별 출처 경로. 범용 자동 검색 엔진이 아님.",
+    "source_scope": "SQLite 동명 제품 6411 및 NEM 원료 1151 관련 선택 문장. 외부 임상·특허·브랜드 DB 미검색.",
+    "product_identity_warning": "제품 직접 자료는 동일성 미확정 후보 자료입니다. 원료 근거는 별도로 구분합니다.",
+    "corpus_document_count": 11,
+    "corpus_sha256": "b83a84c194725890c4c97b51e3c44144ce805d678b0c145e7b6bfd546efd6243",
+    "input_sha256": "07e9612aa501fb33597e7baf49f43289e06da4610d2b72d6aa6e4b06fe3eb69a"
+  },
+  "summary": {
+    "claim_count": 23,
+    "claims_with_evidence": 8,
+    "claims_without_evidence": 15,
+    "evidence_link_count": 15
+  }
+}

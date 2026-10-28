@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "total": 3400,
+    "product_candidate": 3226,
+    "product_source_available": 3226,
+    "product_core_source_available": 3226,
+    "ingredient_source_available": 2065,
+    "product_or_existing_ingredient_source_available": 3282,
+    "ingredient_only_without_product": 56,
+    "no_sources": 118
+  },
+  "ranking_executed": false,
+  "description": "Source availability only; no reranking or relevance threshold. Existing ingredient candidates retained; relaxed product candidates are not confirmed identities."
+}

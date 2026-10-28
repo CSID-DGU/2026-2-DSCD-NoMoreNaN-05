@@ -1,0 +1,23 @@
+{
+  "input_sha256": "c03751a6bf45bcedecd8d05ecc97ccab0f9194cc1c9630c79cc3a373cbcbf1bb",
+  "db_version": "2026-09-20T09:51:18Z",
+  "input_video_count": 216,
+  "input_claim_count": 3400,
+  "product_entry_count": 289,
+  "selected_product_records": 238,
+  "selected_record_statuses": {
+    "confirmed": 113,
+    "unresolved": 125
+  },
+  "selected_claims": 2912,
+  "confirmed_records": 113,
+  "confirmed_claims": 1513,
+  "all_records": 295,
+  "all_claims": 3400,
+  "notes": [
+    "One record per video/product_ref; original claims and URL preserved.",
+    "confirmed means passed configured identity rules, not independent human verification or claim truth.",
+    "Multiple unresolved products use candidates array and evi_product=null; no arbitrary first candidate.",
+    "No ingredient retrieval, evidence reranking or truth judgment."
+  ]
+}

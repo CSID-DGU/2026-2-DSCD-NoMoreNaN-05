@@ -1,0 +1,42 @@
+{
+  "claim_count": 3400,
+  "baseline": {
+    "matched": 2427,
+    "unresolved_product_ref": 49,
+    "unmatched": 924
+  },
+  "filtered": {
+    "matched": 2655,
+    "unresolved_product_ref": 49,
+    "unmatched": 696
+  },
+  "claim_transitions": {
+    "matched->matched": 2427,
+    "unmatched->unmatched": 696,
+    "unmatched->matched": 228
+  },
+  "matched_routes": {
+    "exact_name": 2577,
+    "full_name_damerau_levenshtein": 3,
+    "exact_name_approved_manufacturer_pair": 66,
+    "whole_phrase_and_manufacturer": 9
+  },
+  "unmatched_reasons": {
+    "unresolved_product_ref": 49,
+    "manufacturer_missing_for_typo_route": 102,
+    "multiple_candidates": 230,
+    "no_same_manufacturer_product_at_80_or_above": 21,
+    "multiple_candidates_after_approved_pair": 13,
+    "missing_product_name_and_report_number": 27,
+    "known_identity_conflict": 180,
+    "conflicting_input_identity_observations": 95,
+    "manufacturer_missing": 28
+  },
+  "accuracy": "Not measured: no independently annotated ground truth. Match rate is not accuracy.",
+  "threshold": 80,
+  "metric": "100 * (1 - true Damerau-Levenshtein distance / max full-name length)",
+  "evidence_retrieval_executed": false,
+  "normalization": "Factory suffix cleanup; explicitly approved pairs on exact product names only.",
+  "approved_pairs_config": "configs\\manufacturer_pairs.json",
+  "caveat": "Distinct report numbers remain distinct products; multiple survivors are not auto-selected."
+}

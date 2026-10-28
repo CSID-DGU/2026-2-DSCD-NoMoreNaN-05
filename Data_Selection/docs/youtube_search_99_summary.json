@@ -1,0 +1,967 @@
+{
+  "requested_products": 99,
+  "completed_products": 99,
+  "pending_products": 0,
+  "completed_ids": [
+    2031,
+    2034,
+    2035,
+    9064,
+    9065,
+    9066,
+    9069,
+    9070,
+    9077,
+    9416,
+    9417,
+    9418,
+    9419,
+    9424,
+    9429,
+    9430,
+    11221,
+    11223,
+    11603,
+    11605,
+    11645,
+    11652,
+    11662,
+    11678,
+    11680,
+    11681,
+    11688,
+    11737,
+    11738,
+    11743,
+    11754,
+    11765,
+    11770,
+    11771,
+    11772,
+    11775,
+    12719,
+    12729,
+    12730,
+    12734,
+    12735,
+    12754,
+    12760,
+    12761,
+    12764,
+    13074,
+    13075,
+    13082,
+    13088,
+    13095,
+    13096,
+    13107,
+    13109,
+    22114,
+    22769,
+    22770,
+    22771,
+    22772,
+    22774,
+    22775,
+    22777,
+    22779,
+    25586,
+    27243,
+    27245,
+    27247,
+    27248,
+    27249,
+    27250,
+    27269,
+    27274,
+    27276,
+    29297,
+    30743,
+    33108,
+    33112,
+    33113,
+    33117,
+    33120,
+    33121,
+    33122,
+    33126,
+    37538,
+    37539,
+    37541,
+    37544,
+    37546,
+    37548,
+    37549,
+    37554,
+    37555,
+    39360,
+    39361,
+    39362,
+    39363,
+    39395,
+    39396,
+    39398,
+    41778
+  ],
+  "pending_ids": [],
+  "counts": {
+    "confirmed": 26,
+    "needs_review": 198,
+    "rejected": 2109
+  },
+  "accepted_product_video_pairs": 224,
+  "unique_accepted_videos": 214,
+  "products_with_candidates": 51,
+  "exit_code": 0,
+  "per_product": [
+    {
+      "id": 2031,
+      "product_name": "GNM 건강한 간 밀크씨슬",
+      "completed": true,
+      "counts": {
+        "rejected": 20,
+        "needs_review": 5
+      }
+    },
+    {
+      "id": 2034,
+      "product_name": "GNM 칼슘 마그네슘 아연 비타민D",
+      "completed": true,
+      "counts": {
+        "rejected": 20,
+        "needs_review": 3
+      }
+    },
+    {
+      "id": 2035,
+      "product_name": "GNM 품격있는 올인원 솔루션 멀티팩",
+      "completed": true,
+      "counts": {
+        "rejected": 22,
+        "needs_review": 3
+      }
+    },
+    {
+      "id": 9064,
+      "product_name": "다이어트 유산균 비에날씬 R",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9065,
+      "product_name": "다이어트 유산균 비에날씬 UP",
+      "completed": true,
+      "counts": {
+        "rejected": 23
+      }
+    },
+    {
+      "id": 9066,
+      "product_name": "다이어트 유산균 비에날씬 슬림+",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9069,
+      "product_name": "다이어트 유산균 비에날씬 알엑스(RX)",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9070,
+      "product_name": "다이어트 유산균 비에날씬 알파",
+      "completed": true,
+      "counts": {
+        "rejected": 22
+      }
+    },
+    {
+      "id": 9077,
+      "product_name": "다이어트 유산균 비에날씬+ 서흥",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9416,
+      "product_name": "닥터린 멀티비타민 미네랄 이뮨샷",
+      "completed": true,
+      "counts": {
+        "needs_review": 5,
+        "rejected": 20
+      }
+    },
+    {
+      "id": 9417,
+      "product_name": "닥터린 비오틴",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9418,
+      "product_name": "닥터린 비타민C",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9419,
+      "product_name": "닥터린 세라티크 세라마이드",
+      "completed": true,
+      "counts": {
+        "needs_review": 16,
+        "rejected": 9
+      }
+    },
+    {
+      "id": 9424,
+      "product_name": "닥터린 유기농 밀크씨슬 플러스",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 9429,
+      "product_name": "닥터린 유기농 엽산620",
+      "completed": true,
+      "counts": {
+        "rejected": 3
+      }
+    },
+    {
+      "id": 9430,
+      "product_name": "닥터린 철분 플러스",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11221,
+      "product_name": "덴프스 유산균이야기 다이어트",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11223,
+      "product_name": "덴프스 유산균이야기 더마",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11603,
+      "product_name": "듀오락 12",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11605,
+      "product_name": "듀오락 골드",
+      "completed": true,
+      "counts": {
+        "needs_review": 7,
+        "rejected": 18
+      }
+    },
+    {
+      "id": 11645,
+      "product_name": "듀오락 스탑",
+      "completed": true,
+      "counts": {
+        "rejected": 22,
+        "needs_review": 3
+      }
+    },
+    {
+      "id": 11652,
+      "product_name": "듀오락 얌얌",
+      "completed": true,
+      "counts": {
+        "needs_review": 2,
+        "rejected": 23
+      }
+    },
+    {
+      "id": 11662,
+      "product_name": "듀오락 우먼",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11678,
+      "product_name": "듀오락 케어",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 11680,
+      "product_name": "듀오락 클린",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11681,
+      "product_name": "듀오락 키즈",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 11688,
+      "product_name": "듀오락 포맨",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11737,
+      "product_name": "드시모네 1200",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11738,
+      "product_name": "드시모네 2000",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11743,
+      "product_name": "드시모네 4500",
+      "completed": true,
+      "counts": {
+        "needs_review": 6,
+        "rejected": 19
+      }
+    },
+    {
+      "id": 11754,
+      "product_name": "드시모네 캡슐(De Simone Capsule)",
+      "completed": true,
+      "counts": {
+        "rejected": 21,
+        "needs_review": 4
+      }
+    },
+    {
+      "id": 11765,
+      "product_name": "드시모네 키즈 케어",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 11770,
+      "product_name": "드시모네 팜 베이비",
+      "completed": true,
+      "counts": {
+        "rejected": 14
+      }
+    },
+    {
+      "id": 11771,
+      "product_name": "드시모네 팜 키즈",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11772,
+      "product_name": "드시모네 패밀리",
+      "completed": true,
+      "counts": {
+        "rejected": 23,
+        "needs_review": 2
+      }
+    },
+    {
+      "id": 11775,
+      "product_name": "드시모네 프라임",
+      "completed": true,
+      "counts": {
+        "rejected": 23,
+        "needs_review": 2
+      }
+    },
+    {
+      "id": 12719,
+      "product_name": "락토핏 골드",
+      "completed": true,
+      "counts": {
+        "rejected": 15,
+        "needs_review": 8,
+        "confirmed": 2
+      }
+    },
+    {
+      "id": 12729,
+      "product_name": "락토핏 로얄",
+      "completed": true,
+      "counts": {
+        "confirmed": 1,
+        "rejected": 24
+      }
+    },
+    {
+      "id": 12730,
+      "product_name": "락토핏 맘스",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 12734,
+      "product_name": "락토핏 베베",
+      "completed": true,
+      "counts": {
+        "rejected": 21,
+        "needs_review": 3,
+        "confirmed": 1
+      }
+    },
+    {
+      "id": 12735,
+      "product_name": "락토핏 뷰티",
+      "completed": true,
+      "counts": {
+        "rejected": 22,
+        "confirmed": 3
+      }
+    },
+    {
+      "id": 12754,
+      "product_name": "락토핏 슬림",
+      "completed": true,
+      "counts": {
+        "needs_review": 4,
+        "rejected": 19,
+        "confirmed": 2
+      }
+    },
+    {
+      "id": 12760,
+      "product_name": "락토핏 이뮨",
+      "completed": true,
+      "counts": {
+        "confirmed": 2,
+        "rejected": 23
+      }
+    },
+    {
+      "id": 12761,
+      "product_name": "락토핏 이브",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 12764,
+      "product_name": "락토핏 코어",
+      "completed": true,
+      "counts": {
+        "rejected": 18,
+        "confirmed": 5,
+        "needs_review": 2
+      }
+    },
+    {
+      "id": 13074,
+      "product_name": "락피도 다이어트 나잇",
+      "completed": true,
+      "counts": {
+        "rejected": 2
+      }
+    },
+    {
+      "id": 13075,
+      "product_name": "락피도 루테인",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 13082,
+      "product_name": "락피도 면역 프로폴리스",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 13088,
+      "product_name": "락피도 액상 멀티비타민",
+      "completed": true,
+      "counts": {
+        "needs_review": 4,
+        "rejected": 19
+      }
+    },
+    {
+      "id": 13095,
+      "product_name": "락피도 철분 키즈",
+      "completed": true,
+      "counts": {
+        "needs_review": 11,
+        "rejected": 14
+      }
+    },
+    {
+      "id": 13096,
+      "product_name": "락피도 티니핑 면역스틱",
+      "completed": true,
+      "counts": {
+        "rejected": 12,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 13107,
+      "product_name": "락피도멀티비타민맨",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 13109,
+      "product_name": "락피도징크키즈",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 22114,
+      "product_name": "서흥 - 프로메가 오메가3",
+      "completed": true,
+      "counts": {
+        "rejected": 11
+      }
+    },
+    {
+      "id": 22769,
+      "product_name": "셀티아이 50플러스(CellTi 50+)",
+      "completed": true,
+      "counts": {
+        "rejected": 22,
+        "needs_review": 3
+      }
+    },
+    {
+      "id": 22770,
+      "product_name": "셀티아이 FOS (CellTi FOS)",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 22771,
+      "product_name": "셀티아이 골드(CellTi Gold)",
+      "completed": true,
+      "counts": {
+        "rejected": 20,
+        "needs_review": 2,
+        "confirmed": 3
+      }
+    },
+    {
+      "id": 22772,
+      "product_name": "셀티아이 맘(CellTi Mom)",
+      "completed": true,
+      "counts": {
+        "rejected": 22,
+        "needs_review": 3
+      }
+    },
+    {
+      "id": 22774,
+      "product_name": "셀티아이 베이비(CellTi Baby)",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 22775,
+      "product_name": "셀티아이 주니어(CellTi Junior)",
+      "completed": true,
+      "counts": {
+        "needs_review": 1,
+        "rejected": 24
+      }
+    },
+    {
+      "id": 22777,
+      "product_name": "셀티아이 키즈 스텝2(CellTi KIDS STEP2)",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 22779,
+      "product_name": "셀티아이 키즈(CellTi KIDS)",
+      "completed": true,
+      "counts": {
+        "confirmed": 4,
+        "rejected": 18,
+        "needs_review": 3
+      }
+    },
+    {
+      "id": 25586,
+      "product_name": "아이클타임",
+      "completed": true,
+      "counts": {
+        "needs_review": 15,
+        "rejected": 9
+      }
+    },
+    {
+      "id": 27243,
+      "product_name": "에버콜라겐 고-백",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 27245,
+      "product_name": "에버콜라겐 레티놀A",
+      "completed": true,
+      "counts": {
+        "rejected": 19,
+        "needs_review": 6
+      }
+    },
+    {
+      "id": 27247,
+      "product_name": "에버콜라겐 바이탈",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 27248,
+      "product_name": "에버콜라겐 뷰티 앰플",
+      "completed": true,
+      "counts": {
+        "rejected": 23,
+        "needs_review": 2
+      }
+    },
+    {
+      "id": 27249,
+      "product_name": "에버콜라겐 블랙",
+      "completed": true,
+      "counts": {
+        "needs_review": 11,
+        "rejected": 14
+      }
+    },
+    {
+      "id": 27250,
+      "product_name": "에버콜라겐 블랙F",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 27269,
+      "product_name": "에버콜라겐 타임",
+      "completed": true,
+      "counts": {
+        "rejected": 17,
+        "needs_review": 8
+      }
+    },
+    {
+      "id": 27274,
+      "product_name": "에버콜라겐 타임 제로",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 27276,
+      "product_name": "에버콜라겐 타임F",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 29297,
+      "product_name": "올인원 뉴트리션 멀티비타민 유산균",
+      "completed": true,
+      "counts": {
+        "needs_review": 4,
+        "rejected": 18
+      }
+    },
+    {
+      "id": 30743,
+      "product_name": "유산균 비에날씬 S+ (PROBIOTIC BNRThin S+)",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 33108,
+      "product_name": "정관장 고려삼분",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 33112,
+      "product_name": "정관장 바이탈 토닉(CheongKwanJang Vital Tonic)",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 33113,
+      "product_name": "정관장 아이칼슘",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 33117,
+      "product_name": "정관장 홍삼분캡슐",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 33120,
+      "product_name": "정관장 홍삼정로얄",
+      "completed": true,
+      "counts": {
+        "rejected": 12,
+        "needs_review": 13
+      }
+    },
+    {
+      "id": 33121,
+      "product_name": "정관장 홍삼정화액",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 33122,
+      "product_name": "정관장 홍삼정화캡슐",
+      "completed": true,
+      "counts": {
+        "rejected": 6,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 33126,
+      "product_name": "정관장홍삼정환",
+      "completed": true,
+      "counts": {
+        "rejected": 24,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 37538,
+      "product_name": "트루바이타민",
+      "completed": true,
+      "counts": {
+        "rejected": 15,
+        "needs_review": 7
+      }
+    },
+    {
+      "id": 37539,
+      "product_name": "트루바이타민 B 맥스",
+      "completed": true,
+      "counts": {
+        "rejected": 21
+      }
+    },
+    {
+      "id": 37541,
+      "product_name": "트루바이타민 C 맥스",
+      "completed": true,
+      "counts": {
+        "rejected": 20
+      }
+    },
+    {
+      "id": 37544,
+      "product_name": "트루바이타민 D&E",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 37546,
+      "product_name": "트루바이타민 I",
+      "completed": true,
+      "counts": {
+        "rejected": 20,
+        "needs_review": 5
+      }
+    },
+    {
+      "id": 37548,
+      "product_name": "트루바이타민 X",
+      "completed": true,
+      "counts": {
+        "rejected": 16,
+        "needs_review": 9
+      }
+    },
+    {
+      "id": 37549,
+      "product_name": "트루바이타민 구미",
+      "completed": true,
+      "counts": {
+        "rejected": 16,
+        "needs_review": 2
+      }
+    },
+    {
+      "id": 37554,
+      "product_name": "트루바이타민 이뮨",
+      "completed": true,
+      "counts": {
+        "rejected": 19
+      }
+    },
+    {
+      "id": 37555,
+      "product_name": "트루바이타민 키즈",
+      "completed": true,
+      "counts": {
+        "rejected": 20,
+        "needs_review": 1
+      }
+    },
+    {
+      "id": 39360,
+      "product_name": "프로메가 뉴티지 오메가3",
+      "completed": true,
+      "counts": {
+        "rejected": 22,
+        "confirmed": 3
+      }
+    },
+    {
+      "id": 39361,
+      "product_name": "프로메가 듀얼케어",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 39362,
+      "product_name": "프로메가 레볼루션",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 39363,
+      "product_name": "프로메가 바이탈우먼",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 39395,
+      "product_name": "프로메가 오메가3S",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 39396,
+      "product_name": "프로메가 올케어",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 39398,
+      "product_name": "프로메가클렌즈",
+      "completed": true,
+      "counts": {
+        "rejected": 23,
+        "needs_review": 2
+      }
+    },
+    {
+      "id": 41778,
+      "product_name": "한미 프로메가맥스골드",
+      "completed": true,
+      "counts": {
+        "rejected": 25
+      }
+    }
+  ]
+}

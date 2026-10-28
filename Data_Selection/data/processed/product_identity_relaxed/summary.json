@@ -1,0 +1,26 @@
+{
+  "product_entries": 289,
+  "videos": 216,
+  "previous_confirmed_product_entries": 214,
+  "candidate_connected_product_entries": 262,
+  "statuses": {
+    "single_candidate": 210,
+    "no_candidates": 27,
+    "multiple_candidates": 52
+  },
+  "routes": {
+    "exact_name": 249,
+    "full_name_distance_80_candidates": 6,
+    "brand_removed_exact_name": 6,
+    "previous_identity_match": 1
+  },
+  "previous_confirmed_claims": 2655,
+  "candidate_connected_claims": 3226,
+  "total_claims": 3400,
+  "accuracy": "Not measured; candidate coverage is not precision or confirmed identity.",
+  "rules": [
+    "Exact product name; strip only observed brand prefix/suffix; full-name normalized Damerau-Levenshtein >=80",
+    "Manufacturer mismatch and multiple DB products allowed as candidates; report conflicts not overridden",
+    "No Evidence retrieval or model inference"
+  ]
+}

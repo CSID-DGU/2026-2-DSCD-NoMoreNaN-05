@@ -1,0 +1,2355 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "created_at": "2026-10-18T10:53:38.657190+00:00",
+    "db": "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\Data_List_Claim_Verification\\claim_verification.sqlite",
+    "db_open_mode": "ro; PRAGMA query_only=ON",
+    "catalog_fingerprint_sha256": "d930ec639157a0e0f590c32c43ee0498dde6a821884e032791aa39aaec06f851",
+    "products": 46165,
+    "distinct_normalized_names": 40788,
+    "company_count": 509,
+    "trials": 1000,
+    "seed": 20261018,
+    "rapidfuzz_version": "3.14.6",
+    "python_version": "3.12.5",
+    "split": "60% calibration / 40% held-out test per kind",
+    "synthetic": true,
+    "production_ready": false,
+    "identity_definition": "Exact product record/report number; not general product family or sales option.",
+    "kind_proportions": {
+      "exact": 0.1,
+      "typo_1": 0.2,
+      "typo_2": 0.15,
+      "omission": 0.25,
+      "omission_typo": 0.1,
+      "absent_omission": 0.1,
+      "absent_typo": 0.1
+    },
+    "generic_guard_words": [
+      "단백질",
+      "루테인",
+      "마그네슘",
+      "멀티비타민",
+      "미네랄",
+      "분말",
+      "비타민",
+      "아연",
+      "오메가",
+      "오메가3",
+      "유산균",
+      "인삼",
+      "정제",
+      "젤리",
+      "철",
+      "칼슘",
+      "캡슐",
+      "콜라겐",
+      "프로바이오틱스",
+      "홍삼"
+    ],
+    "company_scope": "Exact normalized source manufacturer, or unknown; no brand-to-maker inference.",
+    "trial_fingerprint_sha256": "f2cb6229718d7d5e5cb5956af5980820284e6a48471953d972cfed4132fd95c3"
+  },
+  "finished_at": "2026-10-18T10:58:35.419409+00:00",
+  "total_trials": 1000,
+  "target_precision": 0.95,
+  "min_calibration_acceptances": 30,
+  "threshold_grid_step": 0.5,
+  "recommendations": {
+    "company_known/omission": {
+      "calibration_queries": 210,
+      "test_queries": 140,
+      "recommended_threshold": null,
+      "status": "no_cutoff_meets_calibration_requirements",
+      "highest_calibration_precision_diagnostic": {
+        "threshold": 22.0,
+        "not_a_recommendation": true,
+        "calibration_metrics": {
+          "total": 210,
+          "known_queries": 150,
+          "absent_queries": 60,
+          "accepted": 97,
+          "correct_links": 90,
+          "wrong_links": 7,
+          "absent_wrong_links": 6,
+          "abstained": 113,
+          "ambiguous": 72,
+          "below_threshold_or_no_candidate": 41,
+          "correct_absent_rejections": 54,
+          "precision": 0.9278350515463918,
+          "recall": 0.6,
+          "coverage": 0.46190476190476193,
+          "precision_wilson_95_lower": 0.8584683281060499,
+          "f1": 0.7287449392712552
+        },
+        "test_metrics": {
+          "total": 140,
+          "known_queries": 100,
+          "absent_queries": 40,
+          "accepted": 56,
+          "correct_links": 48,
+          "wrong_links": 8,
+          "absent_wrong_links": 3,
+          "abstained": 84,
+          "ambiguous": 55,
+          "below_threshold_or_no_candidate": 29,
+          "correct_absent_rejections": 37,
+          "precision": 0.8571428571428571,
+          "recall": 0.48,
+          "coverage": 0.4,
+          "precision_wilson_95_lower": 0.7426407877129466,
+          "f1": 0.6153846153846153
+        },
+        "wrong_test_examples": [
+          {
+            "trial_id": 97,
+            "kind": "omission",
+            "route": "omission",
+            "query": "촉촉",
+            "source_index": 42031,
+            "source_product_id": 42032,
+            "source_name": "하루 한 알 촉촉 히알루론산",
+            "source_company": "주식회사한미양행",
+            "expected_product_id": 42032,
+            "full_name_distance": 9,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 10714,
+                    "product_name": "더 촉촉 히알루론산",
+                    "company_name": "주식회사한미양행",
+                    "score": 25.0,
+                    "distance": 6
+                  },
+                  {
+                    "product_id": 42032,
+                    "product_name": "하루 한 알 촉촉 히알루론산",
+                    "company_name": "주식회사한미양행",
+                    "score": 18.181818181818176,
+                    "distance": 9
+                  }
+                ],
+                "candidate_count": 2,
+                "literal_candidates_before_company": 6,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 35834,
+                    "product_name": "촉촉 히알루론산",
+                    "company_name": "(주)아오스",
+                    "score": 28.57142857142857,
+                    "distance": 5
+                  },
+                  {
+                    "product_id": 10714,
+                    "product_name": "더 촉촉 히알루론산",
+                    "company_name": "주식회사한미양행",
+                    "score": 25.0,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 6,
+                "literal_candidates_before_company": 6,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 194,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "바나바잎추출물",
+            "source_index": 24981,
+            "source_product_id": 24982,
+            "source_name": "식후엔 당케어 장케어 바나바잎추출물 10억 프로바이오틱스",
+            "source_company": "엠에스바이오텍(주)",
+            "expected_product_id": null,
+            "full_name_distance": 19,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 18250,
+                    "product_name": "바나바잎추출물 크롬혈판토텐산 비오틴당셀레늄 5종복합기능성",
+                    "company_name": "엠에스바이오텍(주)",
+                    "score": 25.0,
+                    "distance": 21
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 31,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 18244,
+                    "product_name": "바나바잎추출물",
+                    "company_name": "주식회사 현대바이오랜드 안산",
+                    "score": 100.0,
+                    "distance": 0
+                  },
+                  {
+                    "product_id": 18245,
+                    "product_name": "바나바잎추출물",
+                    "company_name": "코스맥스바이오(주)",
+                    "score": 100.0,
+                    "distance": 0
+                  }
+                ],
+                "candidate_count": 30,
+                "literal_candidates_before_company": 31,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 268,
+            "kind": "omission",
+            "route": "omission",
+            "query": "웰업",
+            "source_index": 30987,
+            "source_product_id": 30988,
+            "source_name": "웰업 혈압메이트 코엔자임Q10코큐텐",
+            "source_company": "주식회사한미양행",
+            "expected_product_id": 30988,
+            "full_name_distance": 15,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 30986,
+                    "product_name": "웰업 프로바이오틱스",
+                    "company_name": "주식회사한미양행",
+                    "score": 22.22222222222222,
+                    "distance": 7
+                  },
+                  {
+                    "product_id": 30988,
+                    "product_name": "웰업 혈압메이트 코엔자임Q10코큐텐",
+                    "company_name": "주식회사한미양행",
+                    "score": 11.764705882352944,
+                    "distance": 15
+                  }
+                ],
+                "candidate_count": 2,
+                "literal_candidates_before_company": 5,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 30984,
+                    "product_name": "웰업 밀크씨슬 케어",
+                    "company_name": "대원헬스케어 주식회사 2공장",
+                    "score": 25.0,
+                    "distance": 6
+                  },
+                  {
+                    "product_id": 30986,
+                    "product_name": "웰업 프로바이오틱스",
+                    "company_name": "주식회사한미양행",
+                    "score": 22.22222222222222,
+                    "distance": 7
+                  }
+                ],
+                "candidate_count": 5,
+                "literal_candidates_before_company": 5,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 751,
+            "kind": "omission",
+            "route": "omission",
+            "query": "케어",
+            "source_index": 11376,
+            "source_product_id": 11377,
+            "source_name": "데일리 케어 비타민C 1000",
+            "source_company": "코스맥스바이오(주)",
+            "expected_product_id": 11377,
+            "full_name_distance": 11,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 34150,
+                    "product_name": "젠타민 스트레스 케어",
+                    "company_name": "코스맥스바이오(주)",
+                    "score": 22.22222222222222,
+                    "distance": 7
+                  },
+                  {
+                    "product_id": 19849,
+                    "product_name": "뷰빗 유브이 케어 로즈마리",
+                    "company_name": "코스맥스바이오(주)",
+                    "score": 18.181818181818176,
+                    "distance": 9
+                  }
+                ],
+                "candidate_count": 6,
+                "literal_candidates_before_company": 259,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 18,
+                    "product_name": "당 케어",
+                    "company_name": "(주)화진바이오코스메틱",
+                    "score": 66.66666666666667,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 13570,
+                    "product_name": "렁 케어",
+                    "company_name": "(주)아오스",
+                    "score": 66.66666666666667,
+                    "distance": 1
+                  }
+                ],
+                "candidate_count": 259,
+                "literal_candidates_before_company": 259,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 952,
+            "kind": "omission",
+            "route": "omission",
+            "query": "이너",
+            "source_index": 13128,
+            "source_product_id": 13129,
+            "source_name": "락티끄 이너 프로바이오틱스",
+            "source_company": "(주)메디오젠 충주공장",
+            "expected_product_id": 13129,
+            "full_name_distance": 10,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 31845,
+                    "product_name": "이너 프로바이오틱스",
+                    "company_name": "(주)메디오젠 충주공장",
+                    "score": 22.22222222222222,
+                    "distance": 7
+                  },
+                  {
+                    "product_id": 31840,
+                    "product_name": "이너 케어 프로바이오틱스",
+                    "company_name": "(주)메디오젠 충주공장",
+                    "score": 18.181818181818176,
+                    "distance": 9
+                  }
+                ],
+                "candidate_count": 13,
+                "literal_candidates_before_company": 35,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 31849,
+                    "product_name": "이너 혈당",
+                    "company_name": "(주)유유헬스케어",
+                    "score": 50.0,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 31829,
+                    "product_name": "이너 바울케어",
+                    "company_name": "(주)씨이에스팜",
+                    "score": 33.333333333333336,
+                    "distance": 4
+                  }
+                ],
+                "candidate_count": 35,
+                "literal_candidates_before_company": 35,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 982,
+            "kind": "omission",
+            "route": "omission",
+            "query": "람노서스",
+            "source_index": 13243,
+            "source_product_id": 13244,
+            "source_name": "락티카제이바실러스 람노서스 MG4706",
+            "source_company": "(주)메디오젠",
+            "expected_product_id": 13244,
+            "full_name_distance": 15,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 13516,
+                    "product_name": "람노서스 MG4706 에잇포",
+                    "company_name": "(주)메디오젠",
+                    "score": 30.76923076923077,
+                    "distance": 9
+                  },
+                  {
+                    "product_id": 13242,
+                    "product_name": "락티카제이바실러스 람노서스 MG4644",
+                    "company_name": "(주)메디오젠",
+                    "score": 21.052631578947366,
+                    "distance": 15
+                  }
+                ],
+                "candidate_count": 4,
+                "literal_candidates_before_company": 53,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 13517,
+                    "product_name": "람노서스 엘알 유산균",
+                    "company_name": "(주)메디오젠 제천공장",
+                    "score": 44.44444444444444,
+                    "distance": 5
+                  },
+                  {
+                    "product_id": 12679,
+                    "product_name": "락토바실러스 람노서스 V",
+                    "company_name": "(주)레인보우바이오테크",
+                    "score": 36.36363636363637,
+                    "distance": 7
+                  }
+                ],
+                "candidate_count": 53,
+                "literal_candidates_before_company": 53,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 984,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "순(純)",
+            "source_index": 23626,
+            "source_product_id": 23627,
+            "source_name": "순(純) 클로렐라 프리미엄",
+            "source_company": "이앤에스(주)",
+            "expected_product_id": null,
+            "full_name_distance": 8,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 23625,
+                    "product_name": "순(純) 스피루리나 프리미엄",
+                    "company_name": "이앤에스(주)",
+                    "score": 30.76923076923077,
+                    "distance": 9
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 5,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 23625,
+                    "product_name": "순(純) 스피루리나 프리미엄",
+                    "company_name": "이앤에스(주)",
+                    "score": 30.76923076923077,
+                    "distance": 9
+                  },
+                  {
+                    "product_id": 35146,
+                    "product_name": "천년보감 6년근 홍삼정 순(純)",
+                    "company_name": "주식회사 휴럼",
+                    "score": 28.57142857142857,
+                    "distance": 10
+                  }
+                ],
+                "candidate_count": 4,
+                "literal_candidates_before_company": 5,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 995,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "키즈텐",
+            "source_index": 37800,
+            "source_product_id": 37801,
+            "source_name": "키즈텐 유산균",
+            "source_company": "코스맥스엔비티(주)",
+            "expected_product_id": null,
+            "full_name_distance": 3,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 37804,
+                    "product_name": "키즈텐 홍삼",
+                    "company_name": "코스맥스엔비티(주)",
+                    "score": 60.0,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 4,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 37804,
+                    "product_name": "키즈텐 홍삼",
+                    "company_name": "코스맥스엔비티(주)",
+                    "score": 60.0,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 37802,
+                    "product_name": "키즈텐 칼슘업 사과맛",
+                    "company_name": "(주)한미양행 선유공장",
+                    "score": 33.333333333333336,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 3,
+                "literal_candidates_before_company": 4,
+                "blocked_reason": null
+              }
+            }
+          }
+        ]
+      }
+    },
+    "company_known/typo": {
+      "calibration_queries": 330,
+      "test_queries": 220,
+      "recommended_threshold": 75.0,
+      "status": "synthetic_only_not_production_validated",
+      "highest_calibration_precision_diagnostic": {
+        "threshold": 90.5,
+        "not_a_recommendation": true,
+        "calibration_metrics": {
+          "total": 330,
+          "known_queries": 270,
+          "absent_queries": 60,
+          "accepted": 73,
+          "correct_links": 72,
+          "wrong_links": 1,
+          "absent_wrong_links": 0,
+          "abstained": 257,
+          "ambiguous": 2,
+          "below_threshold_or_no_candidate": 255,
+          "correct_absent_rejections": 60,
+          "precision": 0.9863013698630136,
+          "recall": 0.26666666666666666,
+          "coverage": 0.22121212121212122,
+          "precision_wilson_95_lower": 0.9264026272903616,
+          "f1": 0.4198250728862974
+        },
+        "test_metrics": {
+          "total": 220,
+          "known_queries": 180,
+          "absent_queries": 40,
+          "accepted": 36,
+          "correct_links": 33,
+          "wrong_links": 3,
+          "absent_wrong_links": 1,
+          "abstained": 184,
+          "ambiguous": 1,
+          "below_threshold_or_no_candidate": 183,
+          "correct_absent_rejections": 39,
+          "precision": 0.9166666666666666,
+          "recall": 0.18333333333333332,
+          "coverage": 0.16363636363636364,
+          "precision_wilson_95_lower": 0.7817330875072737,
+          "f1": 0.3055555555555556
+        },
+        "wrong_test_examples": [
+          {
+            "trial_id": 571,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "4년근홍삼농축액분말21",
+            "source_index": 688,
+            "source_product_id": 689,
+            "source_name": "4년근홍삼농축액분말21",
+            "source_company": "대동고려삼(주)",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 673,
+                    "product_name": "4년근 홍삼농축액분말11",
+                    "company_name": "대동고려삼(주)",
+                    "score": 91.66666666666666,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 688,
+                    "product_name": "4년근홍삼농축액분말18",
+                    "company_name": "대동고려삼(주)",
+                    "score": 83.33333333333334,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 509,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 673,
+                    "product_name": "4년근 홍삼농축액분말11",
+                    "company_name": "대동고려삼(주)",
+                    "score": 91.66666666666666,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 688,
+                    "product_name": "4년근홍삼농축액분말18",
+                    "company_name": "대동고려삼(주)",
+                    "score": 83.33333333333334,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 615,
+            "kind": "omission_typo",
+            "route": "typo",
+            "query": "초임계알티지오초메가3",
+            "source_index": 35731,
+            "source_product_id": 35732,
+            "source_name": "초임계 알티지 오메가3 데일리 업",
+            "source_company": "광동헬스바이오(주) 2공장",
+            "expected_product_id": 35732,
+            "full_name_distance": 5,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 35714,
+                    "product_name": "초임계 알티지 오메가3",
+                    "company_name": "광동헬스바이오(주) 2공장",
+                    "score": 90.9090909090909,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 6932,
+                    "product_name": "굿모닝 초임계 알티지 오메가 3",
+                    "company_name": "광동헬스바이오(주) 2공장",
+                    "score": 69.23076923076923,
+                    "distance": 4
+                  }
+                ],
+                "candidate_count": 914,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 35707,
+                    "product_name": "초임계 알티지 오메가3",
+                    "company_name": "코스맥스바이오(주)",
+                    "score": 90.9090909090909,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 35708,
+                    "product_name": "초임계 알티지 오메가3",
+                    "company_name": "주식회사한미양행",
+                    "score": 90.9090909090909,
+                    "distance": 1
+                  }
+                ],
+                "candidate_count": 46165,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 811,
+            "kind": "typo_1",
+            "route": "typo",
+            "query": "메타트롤골드",
+            "source_index": 17175,
+            "source_product_id": 17176,
+            "source_name": "메타트롤 골드 업",
+            "source_company": "우리바이오(주)",
+            "expected_product_id": 17176,
+            "full_name_distance": 1,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 17175,
+                    "product_name": "메타트롤 골드",
+                    "company_name": "우리바이오(주)",
+                    "score": 100.0,
+                    "distance": 0
+                  },
+                  {
+                    "product_id": 17176,
+                    "product_name": "메타트롤 골드 업",
+                    "company_name": "우리바이오(주)",
+                    "score": 85.71428571428572,
+                    "distance": 1
+                  }
+                ],
+                "candidate_count": 804,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 17175,
+                    "product_name": "메타트롤 골드",
+                    "company_name": "우리바이오(주)",
+                    "score": 100.0,
+                    "distance": 0
+                  },
+                  {
+                    "product_id": 17176,
+                    "product_name": "메타트롤 골드 업",
+                    "company_name": "우리바이오(주)",
+                    "score": 85.71428571428572,
+                    "distance": 1
+                  }
+                ],
+                "candidate_count": 46165,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          }
+        ]
+      },
+      "calibration_metrics": {
+        "total": 330,
+        "known_queries": 270,
+        "absent_queries": 60,
+        "accepted": 157,
+        "correct_links": 151,
+        "wrong_links": 6,
+        "absent_wrong_links": 5,
+        "abstained": 173,
+        "ambiguous": 39,
+        "below_threshold_or_no_candidate": 134,
+        "correct_absent_rejections": 55,
+        "precision": 0.9617834394904459,
+        "recall": 0.5592592592592592,
+        "coverage": 0.47575757575757577,
+        "precision_wilson_95_lower": 0.9191395164500098,
+        "f1": 0.7072599531615924
+      },
+      "test_metrics": {
+        "total": 220,
+        "known_queries": 180,
+        "absent_queries": 40,
+        "accepted": 110,
+        "correct_links": 101,
+        "wrong_links": 9,
+        "absent_wrong_links": 7,
+        "abstained": 110,
+        "ambiguous": 28,
+        "below_threshold_or_no_candidate": 82,
+        "correct_absent_rejections": 33,
+        "precision": 0.9181818181818182,
+        "recall": 0.5611111111111111,
+        "coverage": 0.5,
+        "precision_wilson_95_lower": 0.8517820822110996,
+        "f1": 0.696551724137931
+      },
+      "test_by_kind": {
+        "absent_typo": {
+          "total": 40,
+          "known_queries": 0,
+          "absent_queries": 40,
+          "accepted": 7,
+          "correct_links": 0,
+          "wrong_links": 7,
+          "absent_wrong_links": 7,
+          "abstained": 33,
+          "ambiguous": 7,
+          "below_threshold_or_no_candidate": 26,
+          "correct_absent_rejections": 33,
+          "precision": 0.0,
+          "recall": null,
+          "coverage": 0.175,
+          "precision_wilson_95_lower": 3.584186086443356e-17,
+          "f1": 0.0
+        },
+        "omission_typo": {
+          "total": 40,
+          "known_queries": 40,
+          "absent_queries": 0,
+          "accepted": 3,
+          "correct_links": 1,
+          "wrong_links": 2,
+          "absent_wrong_links": 0,
+          "abstained": 37,
+          "ambiguous": 1,
+          "below_threshold_or_no_candidate": 36,
+          "correct_absent_rejections": 0,
+          "precision": 0.3333333333333333,
+          "recall": 0.025,
+          "coverage": 0.075,
+          "precision_wilson_95_lower": 0.061491944720396215,
+          "f1": 0.046511627906976744
+        },
+        "typo_1": {
+          "total": 80,
+          "known_queries": 80,
+          "absent_queries": 0,
+          "accepted": 61,
+          "correct_links": 61,
+          "wrong_links": 0,
+          "absent_wrong_links": 0,
+          "abstained": 19,
+          "ambiguous": 16,
+          "below_threshold_or_no_candidate": 3,
+          "correct_absent_rejections": 0,
+          "precision": 1.0,
+          "recall": 0.7625,
+          "coverage": 0.7625,
+          "precision_wilson_95_lower": 0.9407561321018872,
+          "f1": 0.8652482269503545
+        },
+        "typo_2": {
+          "total": 60,
+          "known_queries": 60,
+          "absent_queries": 0,
+          "accepted": 39,
+          "correct_links": 39,
+          "wrong_links": 0,
+          "absent_wrong_links": 0,
+          "abstained": 21,
+          "ambiguous": 4,
+          "below_threshold_or_no_candidate": 17,
+          "correct_absent_rejections": 0,
+          "precision": 1.0,
+          "recall": 0.65,
+          "coverage": 0.65,
+          "precision_wilson_95_lower": 0.9103331462924287,
+          "f1": 0.787878787878788
+        }
+      },
+      "test_meets_point_precision_target": false,
+      "wrong_test_examples": [
+        {
+          "trial_id": 59,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "밀크씨슬&홍경천",
+          "source_index": 18179,
+          "source_product_id": 18180,
+          "source_name": "밀크씨슬&홍경천",
+          "source_company": "(주)한국씨엔에스팜",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 18172,
+                  "product_name": "밀크씨슬 홍경천",
+                  "company_name": "(주)한국씨엔에스팜",
+                  "score": 87.5,
+                  "distance": 1
+                },
+                {
+                  "product_id": 18074,
+                  "product_name": "밀크씨슬",
+                  "company_name": "(주)한국씨엔에스팜",
+                  "score": 50.0,
+                  "distance": 4
+                }
+              ],
+              "candidate_count": 1400,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 2074,
+                  "product_name": "D밀크씨슬&홍경천",
+                  "company_name": "풀무원건강생활(주)",
+                  "score": 88.88888888888889,
+                  "distance": 1
+                },
+                {
+                  "product_id": 18172,
+                  "product_name": "밀크씨슬 홍경천",
+                  "company_name": "(주)한국씨엔에스팜",
+                  "score": 87.5,
+                  "distance": 1
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 206,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "함소아유산균12",
+          "source_index": 42793,
+          "source_product_id": 42794,
+          "source_name": "함소아유산균12",
+          "source_company": "(주)메디오젠 제천공장",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 42796,
+                  "product_name": "함소아유산균7",
+                  "company_name": "(주)메디오젠 제천공장",
+                  "score": 75.0,
+                  "distance": 2
+                },
+                {
+                  "product_id": 42798,
+                  "product_name": "함소아유산균7-2800",
+                  "company_name": "(주)메디오젠 제천공장",
+                  "score": 58.33333333333333,
+                  "distance": 5
+                }
+              ],
+              "candidate_count": 547,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 42795,
+                  "product_name": "함소아유산균12",
+                  "company_name": "(주)메디오젠",
+                  "score": 100.0,
+                  "distance": 0
+                },
+                {
+                  "product_id": 42796,
+                  "product_name": "함소아유산균7",
+                  "company_name": "(주)메디오젠 제천공장",
+                  "score": 75.0,
+                  "distance": 2
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 357,
+          "kind": "omission_typo",
+          "route": "typo",
+          "query": "건강루테인",
+          "source_index": 39596,
+          "source_product_id": 39597,
+          "source_name": "포켓 눈건강 루테인",
+          "source_company": "주식회사한미양행",
+          "expected_product_id": 39597,
+          "full_name_distance": 3,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 8414,
+                  "product_name": "눈건강 루테인",
+                  "company_name": "주식회사한미양행",
+                  "score": 83.33333333333334,
+                  "distance": 1
+                },
+                {
+                  "product_id": 4885,
+                  "product_name": "건강더함 루테인",
+                  "company_name": "주식회사한미양행",
+                  "score": 71.42857142857143,
+                  "distance": 2
+                }
+              ],
+              "candidate_count": 1687,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 8369,
+                  "product_name": "눈 건강 루테인",
+                  "company_name": "엠에스바이오텍(주)",
+                  "score": 83.33333333333334,
+                  "distance": 1
+                },
+                {
+                  "product_id": 8370,
+                  "product_name": "눈 건강 루테인",
+                  "company_name": "이앤에스(주)",
+                  "score": 83.33333333333334,
+                  "distance": 1
+                }
+              ],
+              "candidate_count": 46165,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 381,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "바디톡에스파인골드플러스",
+          "source_index": 18325,
+          "source_product_id": 18326,
+          "source_name": "바디톡에스파인골드플러스",
+          "source_company": "엠에스바이오텍(주)",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 18325,
+                  "product_name": "바디톡에스파인골드",
+                  "company_name": "엠에스바이오텍(주)",
+                  "score": 75.0,
+                  "distance": 3
+                },
+                {
+                  "product_id": 18324,
+                  "product_name": "바디톡에스키토에스",
+                  "company_name": "엠에스바이오텍(주)",
+                  "score": 50.0,
+                  "distance": 6
+                }
+              ],
+              "candidate_count": 1415,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 18325,
+                  "product_name": "바디톡에스파인골드",
+                  "company_name": "엠에스바이오텍(주)",
+                  "score": 75.0,
+                  "distance": 3
+                },
+                {
+                  "product_id": 14023,
+                  "product_name": "루테인 골드 플러스",
+                  "company_name": "(주)유니쎌팜",
+                  "score": 50.0,
+                  "distance": 6
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 475,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "고상발효태극삼농축액",
+          "source_index": 5801,
+          "source_product_id": 5802,
+          "source_name": "고상발효태극삼농축액",
+          "source_company": "주식회사케이지이",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 5803,
+                  "product_name": "고상발효태극삼농축액분말",
+                  "company_name": "주식회사케이지이",
+                  "score": 83.33333333333334,
+                  "distance": 2
+                },
+                {
+                  "product_id": 18858,
+                  "product_name": "발효홍삼농축액",
+                  "company_name": "주식회사케이지이",
+                  "score": 60.0,
+                  "distance": 4
+                }
+              ],
+              "candidate_count": 51,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 5803,
+                  "product_name": "고상발효태극삼농축액분말",
+                  "company_name": "주식회사케이지이",
+                  "score": 83.33333333333334,
+                  "distance": 2
+                },
+                {
+                  "product_id": 11691,
+                  "product_name": "동일발효태극삼농축액",
+                  "company_name": "(주)화인내츄럴",
+                  "score": 80.0,
+                  "distance": 2
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 533,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "츄어블감마리놀렌산",
+          "source_index": 35883,
+          "source_product_id": 35884,
+          "source_name": "츄어블감마리놀렌산",
+          "source_company": "(주)알피바이오",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 39810,
+                  "product_name": "퓨어 감마리놀렌산",
+                  "company_name": "(주)알피바이오",
+                  "score": 77.77777777777779,
+                  "distance": 2
+                },
+                {
+                  "product_id": 4743,
+                  "product_name": "감마리놀렌산",
+                  "company_name": "(주)알피바이오",
+                  "score": 66.66666666666667,
+                  "distance": 3
+                }
+              ],
+              "candidate_count": 1417,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 39810,
+                  "product_name": "퓨어 감마리놀렌산",
+                  "company_name": "(주)알피바이오",
+                  "score": 77.77777777777779,
+                  "distance": 2
+                },
+                {
+                  "product_id": 4740,
+                  "product_name": "감마리놀렌산",
+                  "company_name": "(주)유유헬스케어",
+                  "score": 66.66666666666667,
+                  "distance": 3
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 600,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "홍삼정마스터",
+          "source_index": 45030,
+          "source_product_id": 45031,
+          "source_name": "홍삼정마스터",
+          "source_company": "대동고려삼(주)",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 45995,
+                  "product_name": "흑삼정마스터",
+                  "company_name": "대동고려삼(주)",
+                  "score": 83.33333333333334,
+                  "distance": 1
+                },
+                {
+                  "product_id": 44897,
+                  "product_name": "홍삼정 마일드",
+                  "company_name": "대동고려삼(주)",
+                  "score": 66.66666666666667,
+                  "distance": 2
+                }
+              ],
+              "candidate_count": 509,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 44894,
+                  "product_name": "홍삼정 마이스터",
+                  "company_name": "풍기인삼농협",
+                  "score": 85.71428571428572,
+                  "distance": 1
+                },
+                {
+                  "product_id": 45044,
+                  "product_name": "홍삼정부스터",
+                  "company_name": "고려인삼주식회사",
+                  "score": 83.33333333333334,
+                  "distance": 1
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 615,
+          "kind": "omission_typo",
+          "route": "typo",
+          "query": "초임계알티지오초메가3",
+          "source_index": 35731,
+          "source_product_id": 35732,
+          "source_name": "초임계 알티지 오메가3 데일리 업",
+          "source_company": "광동헬스바이오(주) 2공장",
+          "expected_product_id": 35732,
+          "full_name_distance": 5,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 35714,
+                  "product_name": "초임계 알티지 오메가3",
+                  "company_name": "광동헬스바이오(주) 2공장",
+                  "score": 90.9090909090909,
+                  "distance": 1
+                },
+                {
+                  "product_id": 6932,
+                  "product_name": "굿모닝 초임계 알티지 오메가 3",
+                  "company_name": "광동헬스바이오(주) 2공장",
+                  "score": 69.23076923076923,
+                  "distance": 4
+                }
+              ],
+              "candidate_count": 914,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 35707,
+                  "product_name": "초임계 알티지 오메가3",
+                  "company_name": "코스맥스바이오(주)",
+                  "score": 90.9090909090909,
+                  "distance": 1
+                },
+                {
+                  "product_id": 35708,
+                  "product_name": "초임계 알티지 오메가3",
+                  "company_name": "주식회사한미양행",
+                  "score": 90.9090909090909,
+                  "distance": 1
+                }
+              ],
+              "candidate_count": 46165,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        },
+        {
+          "trial_id": 793,
+          "kind": "absent_typo",
+          "route": "typo",
+          "query": "체인징S(에스)1",
+          "source_index": 35528,
+          "source_product_id": 35529,
+          "source_name": "체인징S(에스)1",
+          "source_company": "(주)힐링바이오",
+          "expected_product_id": null,
+          "full_name_distance": 0,
+          "split": "test",
+          "rankings": {
+            "company_known": {
+              "top": [
+                {
+                  "product_id": 35530,
+                  "product_name": "체인징S(에스)2",
+                  "company_name": "(주)힐링바이오",
+                  "score": 88.88888888888889,
+                  "distance": 1
+                },
+                {
+                  "product_id": 35531,
+                  "product_name": "체인징S(에스)프리미엄",
+                  "company_name": "(주)힐링바이오",
+                  "score": 66.66666666666667,
+                  "distance": 4
+                }
+              ],
+              "candidate_count": 42,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            },
+            "company_unknown": {
+              "top": [
+                {
+                  "product_id": 35530,
+                  "product_name": "체인징S(에스)2",
+                  "company_name": "(주)힐링바이오",
+                  "score": 88.88888888888889,
+                  "distance": 1
+                },
+                {
+                  "product_id": 35531,
+                  "product_name": "체인징S(에스)프리미엄",
+                  "company_name": "(주)힐링바이오",
+                  "score": 66.66666666666667,
+                  "distance": 4
+                }
+              ],
+              "candidate_count": 46164,
+              "literal_candidates_before_company": 46165,
+              "blocked_reason": null
+            }
+          }
+        }
+      ]
+    },
+    "company_unknown/omission": {
+      "calibration_queries": 210,
+      "test_queries": 140,
+      "recommended_threshold": null,
+      "status": "no_cutoff_meets_calibration_requirements",
+      "highest_calibration_precision_diagnostic": {
+        "threshold": 35.0,
+        "not_a_recommendation": true,
+        "calibration_metrics": {
+          "total": 210,
+          "known_queries": 150,
+          "absent_queries": 60,
+          "accepted": 61,
+          "correct_links": 53,
+          "wrong_links": 8,
+          "absent_wrong_links": 7,
+          "abstained": 149,
+          "ambiguous": 113,
+          "below_threshold_or_no_candidate": 36,
+          "correct_absent_rejections": 53,
+          "precision": 0.8688524590163934,
+          "recall": 0.35333333333333333,
+          "coverage": 0.2904761904761905,
+          "precision_wilson_95_lower": 0.7619811980700654,
+          "f1": 0.5023696682464455
+        },
+        "test_metrics": {
+          "total": 140,
+          "known_queries": 100,
+          "absent_queries": 40,
+          "accepted": 33,
+          "correct_links": 27,
+          "wrong_links": 6,
+          "absent_wrong_links": 4,
+          "abstained": 107,
+          "ambiguous": 76,
+          "below_threshold_or_no_candidate": 31,
+          "correct_absent_rejections": 36,
+          "precision": 0.8181818181818182,
+          "recall": 0.27,
+          "coverage": 0.2357142857142857,
+          "precision_wilson_95_lower": 0.6561176836533009,
+          "f1": 0.40601503759398494
+        },
+        "wrong_test_examples": [
+          {
+            "trial_id": 7,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "옵티젠 리프레쉬 마그네슘",
+            "source_index": 30185,
+            "source_product_id": 30186,
+            "source_name": "옵티젠 리프레쉬 마그네슘 & 징코 플러스",
+            "source_company": "(주)서흥헬스케어",
+            "expected_product_id": null,
+            "full_name_distance": 6,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [],
+                "candidate_count": 0,
+                "literal_candidates_before_company": 2,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 30185,
+                    "product_name": "옵티젠 리프레쉬 마그네슘 & 징코 플러스",
+                    "company_name": "주식회사 네추럴웨이 포천 제2공장",
+                    "score": 64.70588235294117,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 2,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 67,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "세브란스케어",
+            "source_index": 22842,
+            "source_product_id": 22843,
+            "source_name": "세브란스케어 멀티바이오틱스 면역플러스",
+            "source_company": "코스맥스엔비티(주)",
+            "expected_product_id": null,
+            "full_name_distance": 12,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [],
+                "candidate_count": 0,
+                "literal_candidates_before_company": 2,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 22844,
+                    "product_name": "세브란스케어 키즈오메가3",
+                    "company_name": "코스맥스바이오(주)",
+                    "score": 50.0,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 2,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 147,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "스프링멜로디",
+            "source_index": 24361,
+            "source_product_id": 24362,
+            "source_name": "스프링멜로디 종합비타민",
+            "source_company": "엠에스바이오텍(주)",
+            "expected_product_id": null,
+            "full_name_distance": 5,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [],
+                "candidate_count": 0,
+                "literal_candidates_before_company": 2,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 24361,
+                    "product_name": "스프링멜로디",
+                    "company_name": "(주)아오스",
+                    "score": 100.0,
+                    "distance": 0
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 2,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 410,
+            "kind": "omission",
+            "route": "omission",
+            "query": "푸룬맛",
+            "source_index": 26385,
+            "source_product_id": 26386,
+            "source_name": "악마다이어트 슬림컷 젤리 푸룬맛",
+            "source_company": "주식회사 네추럴웨이 포천 제2공장",
+            "expected_product_id": 26386,
+            "full_name_distance": 11,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 26386,
+                    "product_name": "악마다이어트 슬림컷 젤리 푸룬맛",
+                    "company_name": "주식회사 네추럴웨이 포천 제2공장",
+                    "score": 21.42857142857143,
+                    "distance": 11
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 6,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 39158,
+                    "product_name": "팻다운톡 푸룬맛",
+                    "company_name": "(주)서흥헬스케어",
+                    "score": 42.85714285714286,
+                    "distance": 4
+                  },
+                  {
+                    "product_id": 37251,
+                    "product_name": "쾌변비워 스피드액 푸룬맛",
+                    "company_name": "주식회사웰파인",
+                    "score": 27.27272727272727,
+                    "distance": 8
+                  }
+                ],
+                "candidate_count": 6,
+                "literal_candidates_before_company": 6,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 952,
+            "kind": "omission",
+            "route": "omission",
+            "query": "이너",
+            "source_index": 13128,
+            "source_product_id": 13129,
+            "source_name": "락티끄 이너 프로바이오틱스",
+            "source_company": "(주)메디오젠 충주공장",
+            "expected_product_id": 13129,
+            "full_name_distance": 10,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 31845,
+                    "product_name": "이너 프로바이오틱스",
+                    "company_name": "(주)메디오젠 충주공장",
+                    "score": 22.22222222222222,
+                    "distance": 7
+                  },
+                  {
+                    "product_id": 31840,
+                    "product_name": "이너 케어 프로바이오틱스",
+                    "company_name": "(주)메디오젠 충주공장",
+                    "score": 18.181818181818176,
+                    "distance": 9
+                  }
+                ],
+                "candidate_count": 13,
+                "literal_candidates_before_company": 35,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 31849,
+                    "product_name": "이너 혈당",
+                    "company_name": "(주)유유헬스케어",
+                    "score": 50.0,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 31829,
+                    "product_name": "이너 바울케어",
+                    "company_name": "(주)씨이에스팜",
+                    "score": 33.333333333333336,
+                    "distance": 4
+                  }
+                ],
+                "candidate_count": 35,
+                "literal_candidates_before_company": 35,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 995,
+            "kind": "absent_omission",
+            "route": "omission",
+            "query": "키즈텐",
+            "source_index": 37800,
+            "source_product_id": 37801,
+            "source_name": "키즈텐 유산균",
+            "source_company": "코스맥스엔비티(주)",
+            "expected_product_id": null,
+            "full_name_distance": 3,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 37804,
+                    "product_name": "키즈텐 홍삼",
+                    "company_name": "코스맥스엔비티(주)",
+                    "score": 60.0,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 1,
+                "literal_candidates_before_company": 4,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 37804,
+                    "product_name": "키즈텐 홍삼",
+                    "company_name": "코스맥스엔비티(주)",
+                    "score": 60.0,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 37802,
+                    "product_name": "키즈텐 칼슘업 사과맛",
+                    "company_name": "(주)한미양행 선유공장",
+                    "score": 33.333333333333336,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 3,
+                "literal_candidates_before_company": 4,
+                "blocked_reason": null
+              }
+            }
+          }
+        ]
+      }
+    },
+    "company_unknown/typo": {
+      "calibration_queries": 330,
+      "test_queries": 220,
+      "recommended_threshold": null,
+      "status": "no_cutoff_meets_calibration_requirements",
+      "highest_calibration_precision_diagnostic": {
+        "threshold": 75.0,
+        "not_a_recommendation": true,
+        "calibration_metrics": {
+          "total": 330,
+          "known_queries": 270,
+          "absent_queries": 60,
+          "accepted": 126,
+          "correct_links": 117,
+          "wrong_links": 9,
+          "absent_wrong_links": 8,
+          "abstained": 204,
+          "ambiguous": 99,
+          "below_threshold_or_no_candidate": 105,
+          "correct_absent_rejections": 52,
+          "precision": 0.9285714285714286,
+          "recall": 0.43333333333333335,
+          "coverage": 0.38181818181818183,
+          "precision_wilson_95_lower": 0.8698147742111428,
+          "f1": 0.5909090909090909
+        },
+        "test_metrics": {
+          "total": 220,
+          "known_queries": 180,
+          "absent_queries": 40,
+          "accepted": 90,
+          "correct_links": 80,
+          "wrong_links": 10,
+          "absent_wrong_links": 8,
+          "abstained": 130,
+          "ambiguous": 63,
+          "below_threshold_or_no_candidate": 67,
+          "correct_absent_rejections": 32,
+          "precision": 0.8888888888888888,
+          "recall": 0.4444444444444444,
+          "coverage": 0.4090909090909091,
+          "precision_wilson_95_lower": 0.8074221497873896,
+          "f1": 0.5925925925925926
+        },
+        "wrong_test_examples": [
+          {
+            "trial_id": 3,
+            "kind": "omission_typo",
+            "route": "typo",
+            "query": "이너클",
+            "source_index": 32021,
+            "source_product_id": 32022,
+            "source_name": "이너클린 프로바이오틱스",
+            "source_company": "우리바이오(주)",
+            "expected_product_id": 32022,
+            "full_name_distance": 8,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 31831,
+                    "product_name": "이너 서클 알파",
+                    "company_name": "우리바이오(주)",
+                    "score": 50.0,
+                    "distance": 3
+                  },
+                  {
+                    "product_id": 31852,
+                    "product_name": "이너겐 플러스",
+                    "company_name": "우리바이오(주)",
+                    "score": 33.333333333333336,
+                    "distance": 4
+                  }
+                ],
+                "candidate_count": 804,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 32020,
+                    "product_name": "이너클린",
+                    "company_name": "(주)오투바이오",
+                    "score": 75.0,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 31923,
+                    "product_name": "이너비",
+                    "company_name": "(주)서흥",
+                    "score": 66.66666666666667,
+                    "distance": 1
+                  }
+                ],
+                "candidate_count": 46165,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 218,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "혼합유산균a-1카0",
+            "source_index": 44067,
+            "source_product_id": 44068,
+            "source_name": "혼합유산균a-10",
+            "source_company": "(주)메디오젠",
+            "expected_product_id": null,
+            "full_name_distance": 1,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 44042,
+                    "product_name": "혼합유산균-50",
+                    "company_name": "(주)메디오젠",
+                    "score": 70.0,
+                    "distance": 3
+                  },
+                  {
+                    "product_id": 44076,
+                    "product_name": "혼합유산균알파-10",
+                    "company_name": "(주)메디오젠",
+                    "score": 70.0,
+                    "distance": 3
+                  }
+                ],
+                "candidate_count": 488,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 44067,
+                    "product_name": "혼합유산균a-10",
+                    "company_name": "(주)메디오젠 제천공장",
+                    "score": 90.0,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 44041,
+                    "product_name": "혼합유산균-50",
+                    "company_name": "(주)메디오젠 제천공장",
+                    "score": 70.0,
+                    "distance": 3
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 381,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "바디톡에스파인골드플러스",
+            "source_index": 18325,
+            "source_product_id": 18326,
+            "source_name": "바디톡에스파인골드플러스",
+            "source_company": "엠에스바이오텍(주)",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 18325,
+                    "product_name": "바디톡에스파인골드",
+                    "company_name": "엠에스바이오텍(주)",
+                    "score": 75.0,
+                    "distance": 3
+                  },
+                  {
+                    "product_id": 18324,
+                    "product_name": "바디톡에스키토에스",
+                    "company_name": "엠에스바이오텍(주)",
+                    "score": 50.0,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 1415,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 18325,
+                    "product_name": "바디톡에스파인골드",
+                    "company_name": "엠에스바이오텍(주)",
+                    "score": 75.0,
+                    "distance": 3
+                  },
+                  {
+                    "product_id": 14023,
+                    "product_name": "루테인 골드 플러스",
+                    "company_name": "(주)유니쎌팜",
+                    "score": 50.0,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 523,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "면역N피코민",
+            "source_index": 17306,
+            "source_product_id": 17307,
+            "source_name": "면역N피코민",
+            "source_company": "케이지랩 주식회사",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 17312,
+                    "product_name": "면역ㆍ피로개선에 좋은 홍삼",
+                    "company_name": "케이지랩 주식회사",
+                    "score": 25.0,
+                    "distance": 9
+                  },
+                  {
+                    "product_id": 17425,
+                    "product_name": "면역엔 어린이홍삼",
+                    "company_name": "케이지랩 주식회사",
+                    "score": 25.0,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 242,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 17445,
+                    "product_name": "면역엔피코민",
+                    "company_name": "(주)오투바이오",
+                    "score": 83.33333333333334,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 17214,
+                    "product_name": "면역 강타민",
+                    "company_name": "(주)알피바이오",
+                    "score": 50.0,
+                    "distance": 3
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 533,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "츄어블감마리놀렌산",
+            "source_index": 35883,
+            "source_product_id": 35884,
+            "source_name": "츄어블감마리놀렌산",
+            "source_company": "(주)알피바이오",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 39810,
+                    "product_name": "퓨어 감마리놀렌산",
+                    "company_name": "(주)알피바이오",
+                    "score": 77.77777777777779,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 4743,
+                    "product_name": "감마리놀렌산",
+                    "company_name": "(주)알피바이오",
+                    "score": 66.66666666666667,
+                    "distance": 3
+                  }
+                ],
+                "candidate_count": 1417,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 39810,
+                    "product_name": "퓨어 감마리놀렌산",
+                    "company_name": "(주)알피바이오",
+                    "score": 77.77777777777779,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 4740,
+                    "product_name": "감마리놀렌산",
+                    "company_name": "(주)유유헬스케어",
+                    "score": 66.66666666666667,
+                    "distance": 3
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 793,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "체인징S(에스)1",
+            "source_index": 35528,
+            "source_product_id": 35529,
+            "source_name": "체인징S(에스)1",
+            "source_company": "(주)힐링바이오",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 35530,
+                    "product_name": "체인징S(에스)2",
+                    "company_name": "(주)힐링바이오",
+                    "score": 88.88888888888889,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 35531,
+                    "product_name": "체인징S(에스)프리미엄",
+                    "company_name": "(주)힐링바이오",
+                    "score": 66.66666666666667,
+                    "distance": 4
+                  }
+                ],
+                "candidate_count": 42,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 35530,
+                    "product_name": "체인징S(에스)2",
+                    "company_name": "(주)힐링바이오",
+                    "score": 88.88888888888889,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 35531,
+                    "product_name": "체인징S(에스)프리미엄",
+                    "company_name": "(주)힐링바이오",
+                    "score": 66.66666666666667,
+                    "distance": 4
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 812,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "오즈다이어트",
+            "source_index": 29597,
+            "source_product_id": 29598,
+            "source_name": "오즈다이어트",
+            "source_company": "엠에스바이오텍(주)",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 29410,
+                    "product_name": "오마이다이어트",
+                    "company_name": "엠에스바이오텍(주)",
+                    "score": 71.42857142857143,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 30756,
+                    "product_name": "원컷 다이어트",
+                    "company_name": "엠에스바이오텍(주)",
+                    "score": 66.66666666666667,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 1415,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 14855,
+                    "product_name": "리즈 다이어트",
+                    "company_name": "대원헬스케어 주식회사 2공장",
+                    "score": 83.33333333333334,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 14865,
+                    "product_name": "리즈턴다이어트",
+                    "company_name": "노비스바이오(주)",
+                    "score": 71.42857142857143,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 827,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "유1산균브이(v)3-1000",
+            "source_index": 31470,
+            "source_product_id": 31471,
+            "source_name": "유산균브이(V)3-1000",
+            "source_company": "(주)메디오젠 제천공장",
+            "expected_product_id": null,
+            "full_name_distance": 1,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 413,
+                    "product_name": "17종혼합유산균브이(V)3-2000",
+                    "company_name": "(주)메디오젠 제천공장",
+                    "score": 68.42105263157895,
+                    "distance": 6
+                  },
+                  {
+                    "product_id": 31462,
+                    "product_name": "유산균디(D)2-1000",
+                    "company_name": "(주)메디오젠 제천공장",
+                    "score": 66.66666666666667,
+                    "distance": 5
+                  }
+                ],
+                "candidate_count": 547,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 31472,
+                    "product_name": "유산균브이(V)3-1000",
+                    "company_name": "(주)메디오젠",
+                    "score": 93.33333333333333,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 413,
+                    "product_name": "17종혼합유산균브이(V)3-2000",
+                    "company_name": "(주)메디오젠 제천공장",
+                    "score": 68.42105263157895,
+                    "distance": 6
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 837,
+            "kind": "absent_typo",
+            "route": "typo",
+            "query": "생앤홍삼정에브리데이",
+            "source_index": 22504,
+            "source_product_id": 22505,
+            "source_name": "생앤홍삼정에브리데이",
+            "source_company": "(주)휴온스엔",
+            "expected_product_id": null,
+            "full_name_distance": 0,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 17517,
+                    "product_name": "면역홍삼 에브리데이",
+                    "company_name": "(주)휴온스엔",
+                    "score": 70.0,
+                    "distance": 3
+                  },
+                  {
+                    "product_id": 45166,
+                    "product_name": "홍삼진 에브리스틱",
+                    "company_name": "(주)휴온스엔",
+                    "score": 50.0,
+                    "distance": 5
+                  }
+                ],
+                "candidate_count": 542,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 5109,
+                    "product_name": "고려 홍삼정 에브리데이",
+                    "company_name": "대동고려삼(주)",
+                    "score": 80.0,
+                    "distance": 2
+                  },
+                  {
+                    "product_id": 913,
+                    "product_name": "6년근 홍삼정 에브리데이",
+                    "company_name": "(주)화인내츄럴",
+                    "score": 72.72727272727273,
+                    "distance": 3
+                  }
+                ],
+                "candidate_count": 46164,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          },
+          {
+            "trial_id": 944,
+            "kind": "omission_typo",
+            "route": "typo",
+            "query": "혈당&하유산균",
+            "source_index": 43494,
+            "source_product_id": 43495,
+            "source_name": "혈당&유산균 비피더스 당장큐",
+            "source_company": "(주)비피도",
+            "expected_product_id": 43495,
+            "full_name_distance": 8,
+            "split": "test",
+            "rankings": {
+              "company_known": {
+                "top": [
+                  {
+                    "product_id": 21439,
+                    "product_name": "비피더스 유산균",
+                    "company_name": "(주)비피도",
+                    "score": 42.85714285714286,
+                    "distance": 4
+                  },
+                  {
+                    "product_id": 43495,
+                    "product_name": "혈당&유산균 비피더스 당장큐",
+                    "company_name": "(주)비피도",
+                    "score": 38.46153846153846,
+                    "distance": 8
+                  }
+                ],
+                "candidate_count": 248,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              },
+              "company_unknown": {
+                "top": [
+                  {
+                    "product_id": 43494,
+                    "product_name": "혈당&유산균",
+                    "company_name": "우리바이오(주)",
+                    "score": 85.71428571428572,
+                    "distance": 1
+                  },
+                  {
+                    "product_id": 43420,
+                    "product_name": "혈당 N 유산균",
+                    "company_name": "(주)메디오젠 충주공장",
+                    "score": 71.42857142857143,
+                    "distance": 2
+                  }
+                ],
+                "candidate_count": 46165,
+                "literal_candidates_before_company": 46165,
+                "blocked_reason": null
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "exact_name_controls_at_100": {
+    "company_known": {
+      "total": 100,
+      "known_queries": 100,
+      "absent_queries": 0,
+      "accepted": 99,
+      "correct_links": 99,
+      "wrong_links": 0,
+      "absent_wrong_links": 0,
+      "abstained": 1,
+      "ambiguous": 1,
+      "below_threshold_or_no_candidate": 0,
+      "correct_absent_rejections": 0,
+      "precision": 1.0,
+      "recall": 0.99,
+      "coverage": 0.99,
+      "precision_wilson_95_lower": 0.9626467879321727,
+      "f1": 0.9949748743718593
+    },
+    "company_unknown": {
+      "total": 100,
+      "known_queries": 100,
+      "absent_queries": 0,
+      "accepted": 72,
+      "correct_links": 72,
+      "wrong_links": 0,
+      "absent_wrong_links": 0,
+      "abstained": 28,
+      "ambiguous": 28,
+      "below_threshold_or_no_candidate": 0,
+      "correct_absent_rejections": 0,
+      "precision": 1.0,
+      "recall": 0.72,
+      "coverage": 0.72,
+      "precision_wilson_95_lower": 0.9493488274035422,
+      "f1": 0.8372093023255813
+    }
+  },
+  "production_ready": false
+}

@@ -1,0 +1,19 @@
+{
+  "product_entries": 289,
+  "original_single": 210,
+  "original_multiple": 52,
+  "newly_resolved_multiple": 28,
+  "selected_product_entries": 238,
+  "selected_product_rate": 82.35,
+  "unresolved_multiple": 24,
+  "not_found": 27,
+  "unresolved_reasons": {
+    "manufacturer_missing": 20,
+    "manufacturer_original": 1,
+    "manufacturer_factory_normalized": 1,
+    "conflicting_input_manufacturers": 2
+  },
+  "claim_count_with_selected_product": 2912,
+  "note": "Single search candidate includes relaxed manufacturer mismatches; selection is not independently verified identity.",
+  "evidence_retrieval_executed": false
+}

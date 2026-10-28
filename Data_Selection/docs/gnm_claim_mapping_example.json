@@ -1,0 +1,33 @@
+{
+  "claim": "뉴트리션 멀티비타민 유산균에는 비타민과 미네랄이 포함되어있다",
+  "product_candidate": {
+    "product_id": 29940,
+    "product_name": "올인원 뉴트리션 멀티비타민 유산균",
+    "company_name": "콜마비앤에이치(주)음성공장",
+    "manufacturing_report_number": "200600200033162"
+  },
+  "identity_status": "Product-name and manufacturer corroborated by brand page; exact package/report number and formulation version remain unconfirmed",
+  "brand_source": "https://www.gnm.kr/product/detail.html?cate_no=327&display_group=1&product_no=2417",
+  "evidence_candidates": [
+    {
+      "reference": "claim_verification.products:29940:specification",
+      "role": "PRODUCT_COMPOSITION_SPECIFICATION",
+      "vitamin_excerpts": [
+        "2) 비타민 B1 : 표시량 (12 mg / 2,340 mg)의 80~180%",
+        "6) 비타민 C : 표시량 (100 mg / 2,340 mg)의 80~150%",
+        "7) 비타민 D : 표시량(10 μg / 2,340 mg)의 80 ~ 180%"
+      ],
+      "mineral_excerpts": [
+        "8) 마그네슘 : 표시량 (94.5 mg / 2,340 mg)의 80~150%",
+        "8) 아연 : 표시량(8.5 mg / 2,340 mg)의 80 ~ 150%",
+        "14) 철 : 표시량 (6 mg / 2,340 mg)의 80 ~ 150%"
+      ]
+    }
+  ],
+  "notes": [
+    "Read-only manual retrieval example; not an automated embedding mapping run.",
+    "Specifications establish reported composition, not batch laboratory test results.",
+    "No evidence table IDs were invented; evidence comes from the products table.",
+    "Brand owner, seller and manufacturing company must be resolved as distinct entity roles."
+  ]
+}

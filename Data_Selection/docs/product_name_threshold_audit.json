@@ -1,0 +1,166 @@
+{
+  "method": "exploratory score audit only; proposed thresholds are not literature-validated or identity decisions",
+  "rows_checked": 46165,
+  "queries": [
+    {
+      "query": "뉴트리션 멀티비타민 유산균",
+      "normalized_length": 12,
+      "partial_90_candidates": 1,
+      "reserve_80_90": 3,
+      "scored_candidates": [
+        {
+          "product_id": 29940,
+          "product_name": "올인원 뉴트리션 멀티비타민 유산균",
+          "partial_ratio": 100.0,
+          "length_ratio": 0.8,
+          "best_span_distance": 0,
+          "best_span": "뉴트리션멀티비타민유산균",
+          "span_normalized_similarity": 1.0
+        },
+        {
+          "product_id": 29938,
+          "product_name": "올인원 뉴트리션 멀티비타민",
+          "partial_ratio": 85.7143,
+          "length_ratio": 1.0,
+          "best_span_distance": 4,
+          "best_span": "원뉴트리션멀티비타민",
+          "span_normalized_similarity": 0.6667
+        },
+        {
+          "product_id": 29944,
+          "product_name": "올인원 뉴트리션 멀티비타민+",
+          "partial_ratio": 81.8182,
+          "length_ratio": 0.9231,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민+",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 17076,
+          "product_name": "메이준뉴트리 멀티비타민",
+          "partial_ratio": 80.0,
+          "length_ratio": 0.9167,
+          "best_span_distance": 6,
+          "best_span": "이준뉴트리멀티비타민",
+          "span_normalized_similarity": 0.5
+        },
+        {
+          "product_id": 29939,
+          "product_name": "올인원 뉴트리션 멀티비타민 원팩",
+          "partial_ratio": 78.2609,
+          "length_ratio": 0.8571,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민원팩",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 29941,
+          "product_name": "올인원 뉴트리션 멀티비타민 칼슘 마그네슘",
+          "partial_ratio": 75.0,
+          "length_ratio": 0.6667,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민칼슘마",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 29942,
+          "product_name": "올인원 뉴트리션 멀티비타민 칼슘 마그네슘",
+          "partial_ratio": 75.0,
+          "length_ratio": 0.6667,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민칼슘마",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 29943,
+          "product_name": "올인원 뉴트리션 멀티비타민 코큐텐",
+          "partial_ratio": 75.0,
+          "length_ratio": 0.8,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민코큐텐",
+          "span_normalized_similarity": 0.75
+        }
+      ]
+    },
+    {
+      "query": "뉴트리션 멀티비타민 유산근",
+      "normalized_length": 12,
+      "partial_90_candidates": 1,
+      "reserve_80_90": 3,
+      "scored_candidates": [
+        {
+          "product_id": 29940,
+          "product_name": "올인원 뉴트리션 멀티비타민 유산균",
+          "partial_ratio": 91.6667,
+          "length_ratio": 0.8,
+          "best_span_distance": 1,
+          "best_span": "뉴트리션멀티비타민유산균",
+          "span_normalized_similarity": 0.9167
+        },
+        {
+          "product_id": 29938,
+          "product_name": "올인원 뉴트리션 멀티비타민",
+          "partial_ratio": 85.7143,
+          "length_ratio": 1.0,
+          "best_span_distance": 4,
+          "best_span": "원뉴트리션멀티비타민",
+          "span_normalized_similarity": 0.6667
+        },
+        {
+          "product_id": 29944,
+          "product_name": "올인원 뉴트리션 멀티비타민+",
+          "partial_ratio": 81.8182,
+          "length_ratio": 0.9231,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민+",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 17076,
+          "product_name": "메이준뉴트리 멀티비타민",
+          "partial_ratio": 80.0,
+          "length_ratio": 0.9167,
+          "best_span_distance": 6,
+          "best_span": "이준뉴트리멀티비타민",
+          "span_normalized_similarity": 0.5
+        },
+        {
+          "product_id": 29939,
+          "product_name": "올인원 뉴트리션 멀티비타민 원팩",
+          "partial_ratio": 78.2609,
+          "length_ratio": 0.8571,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민원팩",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 29941,
+          "product_name": "올인원 뉴트리션 멀티비타민 칼슘 마그네슘",
+          "partial_ratio": 75.0,
+          "length_ratio": 0.6667,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민칼슘마",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 29942,
+          "product_name": "올인원 뉴트리션 멀티비타민 칼슘 마그네슘",
+          "partial_ratio": 75.0,
+          "length_ratio": 0.6667,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민칼슘마",
+          "span_normalized_similarity": 0.75
+        },
+        {
+          "product_id": 29943,
+          "product_name": "올인원 뉴트리션 멀티비타민 코큐텐",
+          "partial_ratio": 75.0,
+          "length_ratio": 0.8,
+          "best_span_distance": 3,
+          "best_span": "뉴트리션멀티비타민코큐텐",
+          "span_normalized_similarity": 0.75
+        }
+      ]
+    }
+  ]
+}

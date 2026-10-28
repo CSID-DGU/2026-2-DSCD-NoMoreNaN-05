@@ -1,0 +1,15 @@
+{
+  "status": "paused_by_user",
+  "pid": 12824,
+  "started_at": "2026-10-26T13:20:57.111821+00:00",
+  "claim_count": 3400,
+  "video_count": 216,
+  "input_sha256": "c03751a6bf45bcedecd8d05ecc97ccab0f9194cc1c9630c79cc3a373cbcbf1bb",
+  "threads": 4,
+  "worker_pid": 8436,
+  "pause_reason": "User requested stopping due to PC load. No additional model inference will run.",
+  "paused_at": "2026-10-26T14:36:38.448357+00:00",
+  "saved_unique_scores": 18273,
+  "pause_summary": "paused_summary.json",
+  "no_new_inference": true
+}

@@ -1,0 +1,919 @@
+[
+  {
+    "company_a": "서흥",
+    "company_b": "코스맥스엔비티",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 39,
+    "shared_product_examples": [
+      "100억 유산균",
+      "가르시니아",
+      "마그네슘",
+      "멀티 비타 구미",
+      "멀티비타민&미네랄"
+    ],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_160_qBFBNIBlB3Q",
+        "product_name": "프로바이오틱스 유산균 스페셜핏",
+        "input_manufacturer": "(주)서흥",
+        "db_manufacturer": "코스맥스엔비티(주)",
+        "product_id": 40349,
+        "claim_count": 9
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "한국바이오팜",
+    "company_b": "한국바이오팜에이치피",
+    "name_similarity": 60.0,
+    "shared_product_name_count": 38,
+    "shared_product_examples": [
+      "CereLucid(전량수출용)",
+      "간 케어(LIVER CARE)",
+      "기억력 그린라이트(Memory Green Light)",
+      "다모더랩에프 캡슐(DAMOTHE LAB F CAPSULE)",
+      "닥터그레잇 포스파티딜세린 징코"
+    ],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "노바렉스",
+    "company_b": "비오팜",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 32,
+    "shared_product_examples": [
+      "MSM 2000",
+      "뉴오리진 밀크씨슬",
+      "루테인",
+      "루테인지아잔틴",
+      "루테인 플러스"
+    ],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_215_-afH55ajzSo",
+        "product_name": "트루바이타민",
+        "input_manufacturer": "(주)노바렉스",
+        "db_manufacturer": "(주)비오팜",
+        "product_id": 38286,
+        "claim_count": 11
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "광동헬스바이오",
+    "company_b": "노바렉스",
+    "name_similarity": 14.29,
+    "shared_product_name_count": 28,
+    "shared_product_examples": [
+      "굿썸 리:본 Re:born",
+      "굿썸 오메가 밸런스",
+      "나토칸골드 2000",
+      "데일리 리포좀 비타민C",
+      "두뇌엔PS 포스파티딜세린"
+    ],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_198_JkqRTHd0Nsg",
+        "product_name": "위건강엔 그린세라",
+        "input_manufacturer": "(주)노바렉스",
+        "db_manufacturer": "광동헬스바이오(주) 2공장",
+        "product_id": 31050,
+        "claim_count": 8
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "서흥",
+    "company_b": "서흥헬스케어",
+    "name_similarity": 33.33,
+    "shared_product_name_count": 27,
+    "shared_product_examples": [
+      "n * a day",
+      "다이어트 유산균 비에날씬",
+      "다이어트 유산균 비에날씬 프로틴",
+      "다이어트 유산균 비에날씬 프로틴 UP",
+      "루테인지아잔틴"
+    ],
+    "affected_video_count": 2,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_059_NaLc-_bwGw8",
+        "product_name": "락토핏 솔루션 2",
+        "input_manufacturer": "(주)서흥",
+        "db_manufacturer": "(주)서흥헬스케어",
+        "product_id": 13104,
+        "claim_count": 11
+      },
+      {
+        "video_id": "db_211_L4KfNfwGB1s",
+        "product_name": "콜라겐 히알루론산 앰플샷",
+        "input_manufacturer": "(주)서흥",
+        "db_manufacturer": "(주)서흥헬스케어",
+        "product_id": 37111,
+        "claim_count": 27
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "대한홍삼",
+    "company_b": "대한홍삼진흥원",
+    "name_similarity": 57.14,
+    "shared_product_name_count": 6,
+    "shared_product_examples": [
+      "6년근고려홍삼정골드",
+      "6년근홍삼농축액",
+      "고려6년근천맥홍삼정A(에이)",
+      "고려6년근홍삼정프리미엄골드",
+      "고려6년근홍삼정플러스"
+    ],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "휴엔비",
+    "company_b": "휴온스엔",
+    "name_similarity": 25.0,
+    "shared_product_name_count": 1,
+    "shared_product_examples": [
+      "인지코어 스틱"
+    ],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_089_Qn0R5CD2ocY",
+        "product_name": "메리트C산 3,000mg",
+        "input_manufacturer": "(주)휴온스엔",
+        "db_manufacturer": "(주)휴엔비",
+        "product_id": 17037,
+        "claim_count": 13
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "아모레퍼시픽",
+    "company_b": "풀무원건강생활",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 1,
+    "shared_product_examples": [
+      "멀티비타민미네랄"
+    ],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_090_2D8qJ6NROCs",
+        "product_name": "메타그린",
+        "input_manufacturer": "(주)아모레퍼시픽",
+        "db_manufacturer": "풀무원건강생활(주)",
+        "product_id": 17117,
+        "claim_count": 14
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "고려인삼",
+    "company_b": "고려인삼과학",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 1,
+    "shared_product_examples": [
+      "홍삼정"
+    ],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "고려인삼",
+    "company_b": "충북인삼농협고려인삼창",
+    "name_similarity": 36.36,
+    "shared_product_name_count": 1,
+    "shared_product_examples": [
+      "홍삼정"
+    ],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "chr.hansena/s(크리스찬한센/덴마크)",
+    "company_b": "빅솔",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 7,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_188_OH4NPEmrC5Q",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr.Hansen A/S(크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 11
+      },
+      {
+        "video_id": "db_189__mZYh80V4l0",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr.Hansen A/S (크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 7
+      },
+      {
+        "video_id": "db_190_3hloKanT9NI",
+        "product_name": "엘레나",
+        "input_manufacturer": "CHR.HANSEN A/S(크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 6
+      },
+      {
+        "video_id": "db_191_YbhvQeQ7_BI",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr.Hansen A/S(크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 14
+      },
+      {
+        "video_id": "db_192_jdu8bGXSDt4",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr.Hansen A/S(크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 6
+      },
+      {
+        "video_id": "db_193_6LRb_cwbwBw",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr.Hansen A/S(크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 11
+      },
+      {
+        "video_id": "db_194_VNwKAMpEeLU",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr.Hansen A/S(크리스찬한센/덴마크)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 10
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "내추럴웨이",
+    "company_b": "네추럴웨이",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_131_J5Ofe99LM0U",
+        "product_name": "시그니처 파이토 이뮨",
+        "input_manufacturer": "내추럴웨이(주)",
+        "db_manufacturer": "주식회사 네추럴웨이 포천 제2공장",
+        "product_id": 24705,
+        "claim_count": 9
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "맥널티바이오",
+    "company_b": "메이준바이오텍",
+    "name_similarity": 42.86,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_210_NKyAOi6Hrg8",
+        "product_name": "코어틴 그린프로틴",
+        "input_manufacturer": "(주)메이준바이오텍",
+        "db_manufacturer": "맥널티바이오(주)",
+        "product_id": 36843,
+        "claim_count": 16
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "삼진gnf",
+    "company_b": "삼진지엔에프",
+    "name_similarity": 33.33,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_208_0drznbKPJgc",
+        "product_name": "총총",
+        "input_manufacturer": "(주)삼진지엔에프",
+        "db_manufacturer": "(주)삼진GNF",
+        "product_id": 35845,
+        "claim_count": 19
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "녹십자웰빙",
+    "company_b": "알피바이오",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_034_1AxHPTHGxEI",
+        "product_name": "관절연골엔 구절초",
+        "input_manufacturer": "(주)녹십자웰빙",
+        "db_manufacturer": "(주)알피바이오",
+        "product_id": 6407,
+        "claim_count": 18
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "chrhansena/s[크리스찬한센/덴마크]",
+    "company_b": "빅솔",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_187_xxRw4tRt7-0",
+        "product_name": "엘레나",
+        "input_manufacturer": "Chr Hansen A/S [크리스찬 한센/덴마크]",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 11
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "biofarms.r.l(이탈리아)",
+    "company_b": "빅솔",
+    "name_similarity": 0.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 1,
+    "observed_exact_product_conflicts": [
+      {
+        "video_id": "db_185_Pev0dJ78QSU",
+        "product_name": "엘레나",
+        "input_manufacturer": "BIOFARM S.R.L(이탈리아)",
+        "db_manufacturer": "(주)빅솔 반월공장",
+        "product_id": 28578,
+        "claim_count": 15
+      }
+    ],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "농업회사법인케이앤바이오",
+    "company_b": "농업회사법인케이웰바이오",
+    "name_similarity": 91.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "식약처test업소(건기벤처제조)",
+    "company_b": "식약처test업소(건기전문제조)",
+    "name_similarity": 88.24,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "엠에스바이오텍",
+    "company_b": "이에스바이오텍",
+    "name_similarity": 85.71,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "(재)진주바이오산업진흥원",
+    "company_b": "(재)춘천바이오산업진흥원",
+    "name_similarity": 84.62,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "케이바이오",
+    "company_b": "케이바이오젠",
+    "name_similarity": 83.33,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "넥스트바이오",
+    "company_b": "퍼스트바이오",
+    "name_similarity": 83.33,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "비케이바이오",
+    "company_b": "케이바이오",
+    "name_similarity": 83.33,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "농업회사법인고려홍삼공사",
+    "company_b": "농업회사법인고려홍삼원",
+    "name_similarity": 83.33,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "다원바이오",
+    "company_b": "다원바이오텍",
+    "name_similarity": 83.33,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "소백인삼영농조합법인",
+    "company_b": "포천인삼영농조합법인",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "원바이오",
+    "company_b": "원일바이오",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "고려원인삼",
+    "company_b": "고려인삼",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "제이바이오",
+    "company_b": "케이바이오",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "쎌바이오텍",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "다원바이오",
+    "company_b": "원바이오",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "소백인삼영농조합법인",
+    "company_b": "화성인삼영농조합법인",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "포천인삼영농조합법인",
+    "company_b": "화성인삼영농조합법인",
+    "name_similarity": 80.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "한국고려홍삼",
+    "company_b": "한국고려홍삼조합",
+    "name_similarity": 75.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "상아생명과학",
+    "company_b": "상아생명과학f1",
+    "name_similarity": 75.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "다원바이오텍",
+    "company_b": "바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "세움바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "유한바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "농심태경",
+    "company_b": "농심태경sd",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "대웅생명과학",
+    "company_b": "생명과학",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "우린바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "hk바이오텍",
+    "company_b": "바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "다원바이오텍",
+    "company_b": "원바이오",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "원바이오",
+    "company_b": "중원바이오팜",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "내츄럴엔",
+    "company_b": "내츄럴엔도텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "에프엔바이오",
+    "company_b": "엔바이오",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "고센바이오텍",
+    "company_b": "바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "상아생명과학",
+    "company_b": "생명과학",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "충청바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "티지바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "리즈바이오텍",
+    "company_b": "바이오텍",
+    "name_similarity": 66.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "코리아화인에프티",
+    "company_b": "화인에프티",
+    "name_similarity": 62.5,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "한국식품산업클러스터진흥원",
+    "company_b": "한국식품산업클러스터진흥원기능성식품제형센터",
+    "name_similarity": 59.09,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "엠에스바이오텍",
+    "name_similarity": 57.14,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "생명과학",
+    "company_b": "엔지켐생명과학",
+    "name_similarity": 57.14,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "유니크바이오텍",
+    "name_similarity": 57.14,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "이에스바이오텍",
+    "name_similarity": 57.14,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "쎌바이오텍",
+    "company_b": "쎌바이오텍1공장,",
+    "name_similarity": 55.56,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "씨엔에이바이오텍",
+    "name_similarity": 50.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "엔바이오",
+    "company_b": "케이씨엔바이오텍",
+    "name_similarity": 50.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "상아생명과학f1",
+    "company_b": "생명과학",
+    "name_similarity": 50.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "고려은단",
+    "company_b": "고려은단헬스케어",
+    "name_similarity": 50.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "케이씨엔바이오텍",
+    "name_similarity": 50.0,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "쎌바이오텍1공장,",
+    "name_similarity": 44.44,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "엔에이치씨바이오텍",
+    "name_similarity": 44.44,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "고려인삼",
+    "company_b": "고려인삼엑스포공사",
+    "name_similarity": 44.44,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "바이오텍",
+    "company_b": "백천바이오텍(biotech)",
+    "name_similarity": 26.67,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "(재)전남바이오진흥원그린바이오본부식품센터",
+    "company_b": "그린바이오",
+    "name_similarity": 22.73,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  },
+  {
+    "company_a": "원바이오",
+    "company_b": "재단법인경북바이오산업연구원바이오벤처프라자",
+    "name_similarity": 18.18,
+    "shared_product_name_count": 0,
+    "shared_product_examples": [],
+    "affected_video_count": 0,
+    "observed_exact_product_conflicts": [],
+    "status": "review_only_not_verified_equivalent"
+  }
+]

@@ -1,4 +1,7 @@
 .env
+state/
+ad_video_urls.json
+products_for_search.json
 .env.*
 !.env.example
 .venv/

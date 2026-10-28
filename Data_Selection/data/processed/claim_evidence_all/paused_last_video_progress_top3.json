@@ -1,0 +1,5111 @@
+{
+  "metadata": {
+    "input_sha256": "c03751a6bf45bcedecd8d05ecc97ccab0f9194cc1c9630c79cc3a373cbcbf1bb",
+    "source_database": "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\Data_List_Claim_Verification\\claim_verification.sqlite",
+    "sample_seed": 42,
+    "selection": "seeded round-robin across videos",
+    "claim_count": 31,
+    "video_count": 1,
+    "candidate_pair_count": 121331,
+    "identity_rule": "PDF: exact report/name; whole phrase plus manufacturer; full-name Damerau-Levenshtein >=80 plus manufacturer; no conflict override",
+    "identity_normalization": "NFC/case/whitespace; corporate markers and ordinal 제2공장/2공장 only. No factory/company aliases.",
+    "default_top_k": 3,
+    "ranking_threshold": null,
+    "pdf_statistical_note": "PDF의 95.6% 문구를 보장값으로 사용하지 않음. 80점은 초기 실험 규칙.",
+    "status": "paused_by_user",
+    "model": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "score_threshold": null,
+    "no_new_inference": true,
+    "relationship_labels": {
+      "product_direct": "식별 제품의 직접 자료",
+      "ingredient_reference": "원료 참고자료"
+    },
+    "input_claim_count": 3400,
+    "input_video_count": 216
+  },
+  "summary": {
+    "status": "paused_by_user",
+    "paused_at": "2026-10-26T14:36:38.448357+00:00",
+    "input_claim_count": 3400,
+    "input_video_count": 216,
+    "saved_unique_scores": 18273,
+    "total_unique_pairs": 82542,
+    "score_progress_percent": 22.14,
+    "claim_states": {
+      "complete_scored": 178,
+      "partial": 1715,
+      "not_started": 1142,
+      "complete_no_candidates": 365
+    },
+    "fully_processed_claims": 543,
+    "fully_processed_videos": 20,
+    "fully_processed_video_ids": [
+      "db_025_5JoqajKpR_o",
+      "db_026_Rn9Jm1VdZm0",
+      "db_029_eSEvvCSq95I",
+      "db_077_OP3AH0OqWjs",
+      "db_081_fN51LUYpxFE",
+      "db_089_Qn0R5CD2ocY",
+      "db_101_k9HPaTy2jAc",
+      "db_104_2DMM40MV6do",
+      "db_128_0nXNWl3B1Z4",
+      "db_129_ZRtOaodVT-U",
+      "db_131_J5Ofe99LM0U",
+      "db_151_xZrp2A0uYqM",
+      "db_176_6o8pxrOwFtQ",
+      "db_189__mZYh80V4l0",
+      "db_192_jdu8bGXSDt4",
+      "db_208_0drznbKPJgc",
+      "db_210_NKyAOi6Hrg8",
+      "db_215_-afH55ajzSo",
+      "db_217_SHhSMRCCVEM",
+      "db_218_ZBdUgPEQmxQ"
+    ],
+    "complete_scored_claim_top3_links": 534,
+    "latest_saved_pair_contexts": [
+      {
+        "saved_batch_key_order": 0,
+        "video_id": "db_113_OIr_XNBj_a4",
+        "url": "https://www.youtube.com/watch?v=OIr_XNBj_a4",
+        "claim_id": "c14",
+        "source_ref": "products:22960/specification@308:349"
+      }
+    ],
+    "ordering_note": "Scored by input-pair length across videos, not a sequential URL queue. The latest saved pair can belong to multiple video URLs.",
+    "video_stats": [
+      {
+        "video_id": "db_001_AKyDb1Yhaio",
+        "url": "https://www.youtube.com/watch?v=AKyDb1Yhaio",
+        "claim_count": 50,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 768,
+        "states": {
+          "complete_scored": 1,
+          "partial": 24,
+          "not_started": 25
+        }
+      },
+      {
+        "video_id": "db_002_Phrb198ghJI",
+        "url": "https://www.youtube.com/watch?v=Phrb198ghJI",
+        "claim_count": 46,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 701,
+        "states": {
+          "complete_scored": 1,
+          "partial": 22,
+          "not_started": 23
+        }
+      },
+      {
+        "video_id": "db_003_VABlVWjX9t4",
+        "url": "https://www.youtube.com/watch?v=VABlVWjX9t4",
+        "claim_count": 19,
+        "completed_claims": 10,
+        "all_claims_complete": false,
+        "pending_candidate_links": 165,
+        "states": {
+          "not_started": 4,
+          "complete_scored": 1,
+          "partial": 5,
+          "complete_no_candidates": 9
+        }
+      },
+      {
+        "video_id": "db_004_dqks_z0q9Go",
+        "url": "https://www.youtube.com/watch?v=dqks_z0q9Go",
+        "claim_count": 6,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 220,
+        "states": {
+          "not_started": 2,
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_005_Ehq6ZhkzjIk",
+        "url": "https://www.youtube.com/watch?v=Ehq6ZhkzjIk",
+        "claim_count": 7,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 240,
+        "states": {
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_006_oUr4voFFuBo",
+        "url": "https://www.youtube.com/watch?v=oUr4voFFuBo",
+        "claim_count": 24,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 317,
+        "states": {
+          "not_started": 14,
+          "partial": 9,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_007_syrZeF8GkjQ",
+        "url": "https://www.youtube.com/watch?v=syrZeF8GkjQ",
+        "claim_count": 16,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 817,
+        "states": {
+          "not_started": 10,
+          "partial": 6
+        }
+      },
+      {
+        "video_id": "db_008_fS7Uzx-hdDI",
+        "url": "https://www.youtube.com/watch?v=fS7Uzx-hdDI",
+        "claim_count": 41,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 2424,
+        "states": {
+          "not_started": 18,
+          "partial": 23
+        }
+      },
+      {
+        "video_id": "db_009_l4gd8qQFSak",
+        "url": "https://www.youtube.com/watch?v=l4gd8qQFSak",
+        "claim_count": 42,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 2615,
+        "states": {
+          "partial": 16,
+          "not_started": 26
+        }
+      },
+      {
+        "video_id": "db_010_cQZBp9O3Blk",
+        "url": "https://www.youtube.com/watch?v=cQZBp9O3Blk",
+        "claim_count": 33,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1918,
+        "states": {
+          "partial": 26,
+          "not_started": 6,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_011_8OrRhb8sQnw",
+        "url": "https://www.youtube.com/watch?v=8OrRhb8sQnw",
+        "claim_count": 22,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1254,
+        "states": {
+          "partial": 16,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_012___ElznvtLdE",
+        "url": "https://www.youtube.com/watch?v=__ElznvtLdE",
+        "claim_count": 20,
+        "completed_claims": 6,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1022,
+        "states": {
+          "partial": 6,
+          "not_started": 8,
+          "complete_no_candidates": 6
+        }
+      },
+      {
+        "video_id": "db_013_NrsycE3cMV8",
+        "url": "https://www.youtube.com/watch?v=NrsycE3cMV8",
+        "claim_count": 15,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 262,
+        "states": {
+          "not_started": 6,
+          "partial": 8,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_014_E5uL0UwVQsQ",
+        "url": "https://www.youtube.com/watch?v=E5uL0UwVQsQ",
+        "claim_count": 8,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 60,
+        "states": {
+          "partial": 5,
+          "not_started": 1,
+          "complete_no_candidates": 1,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_015_l9l353eNlY8",
+        "url": "https://www.youtube.com/watch?v=l9l353eNlY8",
+        "claim_count": 9,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 88,
+        "states": {
+          "partial": 8,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_016_hgr3QrFdKqk",
+        "url": "https://www.youtube.com/watch?v=hgr3QrFdKqk",
+        "claim_count": 8,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 61,
+        "states": {
+          "complete_scored": 2,
+          "not_started": 2,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_017_ibzN_kNSftI",
+        "url": "https://www.youtube.com/watch?v=ibzN_kNSftI",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 73,
+        "states": {
+          "not_started": 3,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_018_cQrorHG5fFY",
+        "url": "https://www.youtube.com/watch?v=cQrorHG5fFY",
+        "claim_count": 9,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 89,
+        "states": {
+          "not_started": 4,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_019_Z3SBdiibF_o",
+        "url": "https://www.youtube.com/watch?v=Z3SBdiibF_o",
+        "claim_count": 25,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 441,
+        "states": {
+          "partial": 7,
+          "not_started": 18
+        }
+      },
+      {
+        "video_id": "db_020_cBZk8yOvCC0",
+        "url": "https://www.youtube.com/watch?v=cBZk8yOvCC0",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 242,
+        "states": {
+          "not_started": 7,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_021_7cxBqUhRcXs",
+        "url": "https://www.youtube.com/watch?v=7cxBqUhRcXs",
+        "claim_count": 13,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 166,
+        "states": {
+          "partial": 11,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_022_Y6gkveTxNxc",
+        "url": "https://www.youtube.com/watch?v=Y6gkveTxNxc",
+        "claim_count": 15,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 344,
+        "states": {
+          "not_started": 12,
+          "complete_scored": 1,
+          "partial": 2
+        }
+      },
+      {
+        "video_id": "db_023_Cf6dBCMBMmE",
+        "url": "https://www.youtube.com/watch?v=Cf6dBCMBMmE",
+        "claim_count": 10,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 387,
+        "states": {
+          "partial": 8,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_024_5S-gGzTZ_ng",
+        "url": "https://www.youtube.com/watch?v=5S-gGzTZ_ng",
+        "claim_count": 13,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 127,
+        "states": {
+          "not_started": 6,
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_025_5JoqajKpR_o",
+        "url": "https://www.youtube.com/watch?v=5JoqajKpR_o",
+        "claim_count": 6,
+        "completed_claims": 6,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 6
+        }
+      },
+      {
+        "video_id": "db_026_Rn9Jm1VdZm0",
+        "url": "https://www.youtube.com/watch?v=Rn9Jm1VdZm0",
+        "claim_count": 9,
+        "completed_claims": 9,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 9
+        }
+      },
+      {
+        "video_id": "db_027_V5k04vnSlJo",
+        "url": "https://www.youtube.com/watch?v=V5k04vnSlJo",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 237,
+        "states": {
+          "partial": 8,
+          "not_started": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_028_iNXbFlVtaHI",
+        "url": "https://www.youtube.com/watch?v=iNXbFlVtaHI",
+        "claim_count": 6,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 109,
+        "states": {
+          "partial": 2,
+          "not_started": 3,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_029_eSEvvCSq95I",
+        "url": "https://www.youtube.com/watch?v=eSEvvCSq95I",
+        "claim_count": 12,
+        "completed_claims": 12,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 12
+        }
+      },
+      {
+        "video_id": "db_030_q8I4k7ST-PY",
+        "url": "https://www.youtube.com/watch?v=q8I4k7ST-PY",
+        "claim_count": 19,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 324,
+        "states": {
+          "partial": 13,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_031_7Gp4DKcVBkg",
+        "url": "https://www.youtube.com/watch?v=7Gp4DKcVBkg",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 215,
+        "states": {
+          "partial": 5,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_032_JpDiqZCmxt4",
+        "url": "https://www.youtube.com/watch?v=JpDiqZCmxt4",
+        "claim_count": 16,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 318,
+        "states": {
+          "partial": 8,
+          "not_started": 7,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_033_iemqoCEprgg",
+        "url": "https://www.youtube.com/watch?v=iemqoCEprgg",
+        "claim_count": 11,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 192,
+        "states": {
+          "partial": 4,
+          "not_started": 5,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_034_1AxHPTHGxEI",
+        "url": "https://www.youtube.com/watch?v=1AxHPTHGxEI",
+        "claim_count": 18,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 49,
+        "states": {
+          "not_started": 15,
+          "complete_scored": 1,
+          "partial": 2
+        }
+      },
+      {
+        "video_id": "db_035_y_0fmF3xgck",
+        "url": "https://www.youtube.com/watch?v=y_0fmF3xgck",
+        "claim_count": 14,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 463,
+        "states": {
+          "not_started": 7,
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_036_vVXaNzwDQ3E",
+        "url": "https://www.youtube.com/watch?v=vVXaNzwDQ3E",
+        "claim_count": 13,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 437,
+        "states": {
+          "not_started": 6,
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_037_GfXTXY4Cojo",
+        "url": "https://www.youtube.com/watch?v=GfXTXY4Cojo",
+        "claim_count": 17,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 92,
+        "states": {
+          "not_started": 13,
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_038_-56FN2YCC-I",
+        "url": "https://www.youtube.com/watch?v=-56FN2YCC-I",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 174,
+        "states": {
+          "partial": 9,
+          "not_started": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_039_zptASsSd0nY",
+        "url": "https://www.youtube.com/watch?v=zptASsSd0nY",
+        "claim_count": 9,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 39,
+        "states": {
+          "partial": 7,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_040_1dcPKN8GH8Y",
+        "url": "https://www.youtube.com/watch?v=1dcPKN8GH8Y",
+        "claim_count": 29,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 529,
+        "states": {
+          "not_started": 7,
+          "partial": 22
+        }
+      },
+      {
+        "video_id": "db_041_csK3fHk-MRw",
+        "url": "https://www.youtube.com/watch?v=csK3fHk-MRw",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 284,
+        "states": {
+          "not_started": 3,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_042_hs4yOrpqvRI",
+        "url": "https://www.youtube.com/watch?v=hs4yOrpqvRI",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 284,
+        "states": {
+          "not_started": 3,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_043_pqKwSu8og9A",
+        "url": "https://www.youtube.com/watch?v=pqKwSu8og9A",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 271,
+        "states": {
+          "not_started": 3,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_044_mwH9HYTRZrQ",
+        "url": "https://www.youtube.com/watch?v=mwH9HYTRZrQ",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 271,
+        "states": {
+          "not_started": 3,
+          "partial": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_045_kzP_81Cub6Y",
+        "url": "https://www.youtube.com/watch?v=kzP_81Cub6Y",
+        "claim_count": 7,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 45,
+        "states": {
+          "not_started": 1,
+          "partial": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_046_MWx5nDT8pDk",
+        "url": "https://www.youtube.com/watch?v=MWx5nDT8pDk",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 335,
+        "states": {
+          "not_started": 6,
+          "complete_scored": 1,
+          "partial": 1
+        }
+      },
+      {
+        "video_id": "db_047_gnvNr4R4Brc",
+        "url": "https://www.youtube.com/watch?v=gnvNr4R4Brc",
+        "claim_count": 6,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 56,
+        "states": {
+          "partial": 4,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_048_qdPDY6T86PU",
+        "url": "https://www.youtube.com/watch?v=qdPDY6T86PU",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 210,
+        "states": {
+          "partial": 4,
+          "not_started": 3,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_049_P-YTAviQgIM",
+        "url": "https://www.youtube.com/watch?v=P-YTAviQgIM",
+        "claim_count": 21,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 2110,
+        "states": {
+          "partial": 17,
+          "complete_scored": 1,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_050_OuBJfCjsgak",
+        "url": "https://www.youtube.com/watch?v=OuBJfCjsgak",
+        "claim_count": 30,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 336,
+        "states": {
+          "partial": 13,
+          "not_started": 15,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_051_KUwvWs-chM4",
+        "url": "https://www.youtube.com/watch?v=KUwvWs-chM4",
+        "claim_count": 30,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 323,
+        "states": {
+          "partial": 20,
+          "not_started": 9,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_052_h04VTADNgfI",
+        "url": "https://www.youtube.com/watch?v=h04VTADNgfI",
+        "claim_count": 14,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 123,
+        "states": {
+          "partial": 12,
+          "not_started": 1,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_053_t6SkBUwkzZ8",
+        "url": "https://www.youtube.com/watch?v=t6SkBUwkzZ8",
+        "claim_count": 17,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 333,
+        "states": {
+          "not_started": 4,
+          "complete_scored": 1,
+          "partial": 11,
+          "complete_no_candidates": 1
+        }
+      },
+      {
+        "video_id": "db_054_oqIL8C4Y4g8",
+        "url": "https://www.youtube.com/watch?v=oqIL8C4Y4g8",
+        "claim_count": 18,
+        "completed_claims": 5,
+        "all_claims_complete": false,
+        "pending_candidate_links": 253,
+        "states": {
+          "partial": 11,
+          "not_started": 2,
+          "complete_no_candidates": 5
+        }
+      },
+      {
+        "video_id": "db_055_UPPksFnfOcU",
+        "url": "https://www.youtube.com/watch?v=UPPksFnfOcU",
+        "claim_count": 24,
+        "completed_claims": 6,
+        "all_claims_complete": false,
+        "pending_candidate_links": 308,
+        "states": {
+          "partial": 15,
+          "not_started": 3,
+          "complete_scored": 1,
+          "complete_no_candidates": 5
+        }
+      },
+      {
+        "video_id": "db_056_VMB1clucLeE",
+        "url": "https://www.youtube.com/watch?v=VMB1clucLeE",
+        "claim_count": 8,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 150,
+        "states": {
+          "partial": 7,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_057_TpqG2KZ0aRk",
+        "url": "https://www.youtube.com/watch?v=TpqG2KZ0aRk",
+        "claim_count": 15,
+        "completed_claims": 5,
+        "all_claims_complete": false,
+        "pending_candidate_links": 212,
+        "states": {
+          "partial": 7,
+          "not_started": 3,
+          "complete_no_candidates": 5
+        }
+      },
+      {
+        "video_id": "db_058_EZd5mIHLLew",
+        "url": "https://www.youtube.com/watch?v=EZd5mIHLLew",
+        "claim_count": 10,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 144,
+        "states": {
+          "partial": 9,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_059_NaLc-_bwGw8",
+        "url": "https://www.youtube.com/watch?v=NaLc-_bwGw8",
+        "claim_count": 16,
+        "completed_claims": 11,
+        "all_claims_complete": false,
+        "pending_candidate_links": 62,
+        "states": {
+          "complete_no_candidates": 11,
+          "not_started": 2,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_060_wKE98OOcdPU",
+        "url": "https://www.youtube.com/watch?v=wKE98OOcdPU",
+        "claim_count": 21,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 263,
+        "states": {
+          "partial": 16,
+          "not_started": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_061_5ED9Yi0UfBI",
+        "url": "https://www.youtube.com/watch?v=5ED9Yi0UfBI",
+        "claim_count": 8,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 302,
+        "states": {
+          "not_started": 2,
+          "partial": 4,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_062_qmesmHU6NEM",
+        "url": "https://www.youtube.com/watch?v=qmesmHU6NEM",
+        "claim_count": 12,
+        "completed_claims": 4,
+        "all_claims_complete": false,
+        "pending_candidate_links": 412,
+        "states": {
+          "partial": 4,
+          "not_started": 4,
+          "complete_scored": 4
+        }
+      },
+      {
+        "video_id": "db_063_q3xSu0OHNPQ",
+        "url": "https://www.youtube.com/watch?v=q3xSu0OHNPQ",
+        "claim_count": 9,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 302,
+        "states": {
+          "not_started": 2,
+          "partial": 4,
+          "complete_scored": 3
+        }
+      },
+      {
+        "video_id": "db_064_a5vX2dHtxUI",
+        "url": "https://www.youtube.com/watch?v=a5vX2dHtxUI",
+        "claim_count": 10,
+        "completed_claims": 4,
+        "all_claims_complete": false,
+        "pending_candidate_links": 284,
+        "states": {
+          "partial": 4,
+          "not_started": 2,
+          "complete_scored": 4
+        }
+      },
+      {
+        "video_id": "db_065_d1vRPXhgJAY",
+        "url": "https://www.youtube.com/watch?v=d1vRPXhgJAY",
+        "claim_count": 17,
+        "completed_claims": 4,
+        "all_claims_complete": false,
+        "pending_candidate_links": 711,
+        "states": {
+          "partial": 10,
+          "complete_scored": 4,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_066_Qk_qjEMCsY8",
+        "url": "https://www.youtube.com/watch?v=Qk_qjEMCsY8",
+        "claim_count": 11,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 428,
+        "states": {
+          "partial": 4,
+          "not_started": 4,
+          "complete_scored": 3
+        }
+      },
+      {
+        "video_id": "db_067_mAyGdVi1ErI",
+        "url": "https://www.youtube.com/watch?v=mAyGdVi1ErI",
+        "claim_count": 10,
+        "completed_claims": 4,
+        "all_claims_complete": false,
+        "pending_candidate_links": 277,
+        "states": {
+          "partial": 5,
+          "not_started": 1,
+          "complete_scored": 4
+        }
+      },
+      {
+        "video_id": "db_068_y9-P6WLcE78",
+        "url": "https://www.youtube.com/watch?v=y9-P6WLcE78",
+        "claim_count": 19,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 747,
+        "states": {
+          "partial": 9,
+          "not_started": 7,
+          "complete_scored": 3
+        }
+      },
+      {
+        "video_id": "db_069_BYfLFgblezo",
+        "url": "https://www.youtube.com/watch?v=BYfLFgblezo",
+        "claim_count": 11,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 428,
+        "states": {
+          "partial": 4,
+          "not_started": 4,
+          "complete_scored": 3
+        }
+      },
+      {
+        "video_id": "db_070_LxuL9MwWRU4",
+        "url": "https://www.youtube.com/watch?v=LxuL9MwWRU4",
+        "claim_count": 8,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 280,
+        "states": {
+          "not_started": 4,
+          "complete_scored": 3,
+          "partial": 1
+        }
+      },
+      {
+        "video_id": "db_071_Xl9VSIn8qRY",
+        "url": "https://www.youtube.com/watch?v=Xl9VSIn8qRY",
+        "claim_count": 26,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1719,
+        "states": {
+          "not_started": 19,
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_072_IDAK_qBMhYk",
+        "url": "https://www.youtube.com/watch?v=IDAK_qBMhYk",
+        "claim_count": 10,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 616,
+        "states": {
+          "not_started": 4,
+          "partial": 6
+        }
+      },
+      {
+        "video_id": "db_073_4iKwv9LP0sg",
+        "url": "https://www.youtube.com/watch?v=4iKwv9LP0sg",
+        "claim_count": 20,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 55,
+        "states": {
+          "not_started": 17,
+          "complete_scored": 1,
+          "partial": 2
+        }
+      },
+      {
+        "video_id": "db_074_tHG5O5CMHSA",
+        "url": "https://www.youtube.com/watch?v=tHG5O5CMHSA",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 28,
+        "states": {
+          "partial": 2,
+          "not_started": 8,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_075_ThVffF2zpl8",
+        "url": "https://www.youtube.com/watch?v=ThVffF2zpl8",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 28,
+        "states": {
+          "partial": 2,
+          "not_started": 8,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_076_mAtb7Cf69nk",
+        "url": "https://www.youtube.com/watch?v=mAtb7Cf69nk",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 28,
+        "states": {
+          "partial": 2,
+          "not_started": 8,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_077_OP3AH0OqWjs",
+        "url": "https://www.youtube.com/watch?v=OP3AH0OqWjs",
+        "claim_count": 9,
+        "completed_claims": 9,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 9
+        }
+      },
+      {
+        "video_id": "db_078_mhzAWG1-UGw",
+        "url": "https://www.youtube.com/watch?v=mhzAWG1-UGw",
+        "claim_count": 9,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 142,
+        "states": {
+          "partial": 5,
+          "not_started": 2,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_079_WCQtPkMGCYE",
+        "url": "https://www.youtube.com/watch?v=WCQtPkMGCYE",
+        "claim_count": 9,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 140,
+        "states": {
+          "partial": 5,
+          "not_started": 2,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_080_yPMKj9wxiKc",
+        "url": "https://www.youtube.com/watch?v=yPMKj9wxiKc",
+        "claim_count": 15,
+        "completed_claims": 10,
+        "all_claims_complete": false,
+        "pending_candidate_links": 95,
+        "states": {
+          "complete_no_candidates": 9,
+          "partial": 4,
+          "not_started": 1,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_081_fN51LUYpxFE",
+        "url": "https://www.youtube.com/watch?v=fN51LUYpxFE",
+        "claim_count": 5,
+        "completed_claims": 5,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 5
+        }
+      },
+      {
+        "video_id": "db_082_AnT61olLCjY",
+        "url": "https://www.youtube.com/watch?v=AnT61olLCjY",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 411,
+        "states": {
+          "not_started": 6,
+          "partial": 6,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_083_OSzLEscspuU",
+        "url": "https://www.youtube.com/watch?v=OSzLEscspuU",
+        "claim_count": 13,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 359,
+        "states": {
+          "partial": 9,
+          "not_started": 4
+        }
+      },
+      {
+        "video_id": "db_084_cqQLmZc6e-Y",
+        "url": "https://www.youtube.com/watch?v=cqQLmZc6e-Y",
+        "claim_count": 14,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 388,
+        "states": {
+          "partial": 10,
+          "not_started": 4
+        }
+      },
+      {
+        "video_id": "db_085_53dM_1gHF_Y",
+        "url": "https://www.youtube.com/watch?v=53dM_1gHF_Y",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 316,
+        "states": {
+          "partial": 9,
+          "complete_scored": 1,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_086_UvRGjZ0WJTc",
+        "url": "https://www.youtube.com/watch?v=UvRGjZ0WJTc",
+        "claim_count": 18,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 95,
+        "states": {
+          "partial": 15,
+          "not_started": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_087_YPWh0N0eRn8",
+        "url": "https://www.youtube.com/watch?v=YPWh0N0eRn8",
+        "claim_count": 16,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 90,
+        "states": {
+          "partial": 14,
+          "not_started": 1,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_088_ZiHnof9A28Y",
+        "url": "https://www.youtube.com/watch?v=ZiHnof9A28Y",
+        "claim_count": 13,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 225,
+        "states": {
+          "partial": 7,
+          "not_started": 6
+        }
+      },
+      {
+        "video_id": "db_089_Qn0R5CD2ocY",
+        "url": "https://www.youtube.com/watch?v=Qn0R5CD2ocY",
+        "claim_count": 13,
+        "completed_claims": 13,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 13
+        }
+      },
+      {
+        "video_id": "db_090_2D8qJ6NROCs",
+        "url": "https://www.youtube.com/watch?v=2D8qJ6NROCs",
+        "claim_count": 31,
+        "completed_claims": 14,
+        "all_claims_complete": false,
+        "pending_candidate_links": 524,
+        "states": {
+          "complete_no_candidates": 14,
+          "partial": 11,
+          "not_started": 6
+        }
+      },
+      {
+        "video_id": "db_091_RmbfFdrWBdo",
+        "url": "https://www.youtube.com/watch?v=RmbfFdrWBdo",
+        "claim_count": 9,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 256,
+        "states": {
+          "partial": 7,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_092_5PUV8qgHtI4",
+        "url": "https://www.youtube.com/watch?v=5PUV8qgHtI4",
+        "claim_count": 17,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 362,
+        "states": {
+          "not_started": 4,
+          "partial": 13
+        }
+      },
+      {
+        "video_id": "db_093_qHU1meSxfco",
+        "url": "https://www.youtube.com/watch?v=qHU1meSxfco",
+        "claim_count": 10,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 511,
+        "states": {
+          "not_started": 4,
+          "partial": 6
+        }
+      },
+      {
+        "video_id": "db_094_l9KlwI5YX44",
+        "url": "https://www.youtube.com/watch?v=l9KlwI5YX44",
+        "claim_count": 9,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 452,
+        "states": {
+          "not_started": 3,
+          "partial": 6
+        }
+      },
+      {
+        "video_id": "db_095_e2JpCbQWuvo",
+        "url": "https://www.youtube.com/watch?v=e2JpCbQWuvo",
+        "claim_count": 29,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 166,
+        "states": {
+          "partial": 25,
+          "not_started": 4
+        }
+      },
+      {
+        "video_id": "db_096_LGDnFYgymEQ",
+        "url": "https://www.youtube.com/watch?v=LGDnFYgymEQ",
+        "claim_count": 16,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 331,
+        "states": {
+          "not_started": 14,
+          "partial": 2
+        }
+      },
+      {
+        "video_id": "db_097_un653gDaVwY",
+        "url": "https://www.youtube.com/watch?v=un653gDaVwY",
+        "claim_count": 8,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 647,
+        "states": {
+          "partial": 7,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_098_6-u-FnfXyZs",
+        "url": "https://www.youtube.com/watch?v=6-u-FnfXyZs",
+        "claim_count": 9,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 123,
+        "states": {
+          "not_started": 5,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_099_dSjddyyEbrQ",
+        "url": "https://www.youtube.com/watch?v=dSjddyyEbrQ",
+        "claim_count": 5,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 24,
+        "states": {
+          "partial": 1,
+          "not_started": 1,
+          "complete_scored": 3
+        }
+      },
+      {
+        "video_id": "db_100_X6OK887LWyA",
+        "url": "https://www.youtube.com/watch?v=X6OK887LWyA",
+        "claim_count": 19,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 834,
+        "states": {
+          "partial": 11,
+          "not_started": 7,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_101_k9HPaTy2jAc",
+        "url": "https://www.youtube.com/watch?v=k9HPaTy2jAc",
+        "claim_count": 8,
+        "completed_claims": 8,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 8
+        }
+      },
+      {
+        "video_id": "db_102_j2gn9xONdJE",
+        "url": "https://www.youtube.com/watch?v=j2gn9xONdJE",
+        "claim_count": 17,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 478,
+        "states": {
+          "not_started": 7,
+          "partial": 9,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_103_B1QC0IfbbBg",
+        "url": "https://www.youtube.com/watch?v=B1QC0IfbbBg",
+        "claim_count": 20,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 392,
+        "states": {
+          "not_started": 8,
+          "partial": 11,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_104_2DMM40MV6do",
+        "url": "https://www.youtube.com/watch?v=2DMM40MV6do",
+        "claim_count": 17,
+        "completed_claims": 17,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 17
+        }
+      },
+      {
+        "video_id": "db_105_ZvdLzOq3RmI",
+        "url": "https://www.youtube.com/watch?v=ZvdLzOq3RmI",
+        "claim_count": 22,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1170,
+        "states": {
+          "not_started": 4,
+          "partial": 17,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_106_o0Phkzlsh0M",
+        "url": "https://www.youtube.com/watch?v=o0Phkzlsh0M",
+        "claim_count": 17,
+        "completed_claims": 8,
+        "all_claims_complete": false,
+        "pending_candidate_links": 402,
+        "states": {
+          "not_started": 3,
+          "complete_no_candidates": 8,
+          "partial": 6
+        }
+      },
+      {
+        "video_id": "db_107_vGLl-CPSrKY",
+        "url": "https://www.youtube.com/watch?v=vGLl-CPSrKY",
+        "claim_count": 29,
+        "completed_claims": 15,
+        "all_claims_complete": false,
+        "pending_candidate_links": 661,
+        "states": {
+          "not_started": 5,
+          "complete_no_candidates": 15,
+          "partial": 9
+        }
+      },
+      {
+        "video_id": "db_108_KHBsiGaxmc8",
+        "url": "https://www.youtube.com/watch?v=KHBsiGaxmc8",
+        "claim_count": 25,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1303,
+        "states": {
+          "not_started": 4,
+          "partial": 21
+        }
+      },
+      {
+        "video_id": "db_109_ReV-nF8-YjE",
+        "url": "https://www.youtube.com/watch?v=ReV-nF8-YjE",
+        "claim_count": 40,
+        "completed_claims": 13,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1306,
+        "states": {
+          "not_started": 4,
+          "partial": 23,
+          "complete_no_candidates": 13
+        }
+      },
+      {
+        "video_id": "db_110_1iCNGuRKt2w",
+        "url": "https://www.youtube.com/watch?v=1iCNGuRKt2w",
+        "claim_count": 35,
+        "completed_claims": 7,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1331,
+        "states": {
+          "not_started": 11,
+          "complete_no_candidates": 7,
+          "partial": 17
+        }
+      },
+      {
+        "video_id": "db_111_LVYFleyCAk4",
+        "url": "https://www.youtube.com/watch?v=LVYFleyCAk4",
+        "claim_count": 14,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 652,
+        "states": {
+          "not_started": 5,
+          "complete_scored": 1,
+          "partial": 8
+        }
+      },
+      {
+        "video_id": "db_112_o3J1gXJxpa8",
+        "url": "https://www.youtube.com/watch?v=o3J1gXJxpa8",
+        "claim_count": 18,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 859,
+        "states": {
+          "not_started": 8,
+          "partial": 8,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_113_OIr_XNBj_a4",
+        "url": "https://www.youtube.com/watch?v=OIr_XNBj_a4",
+        "claim_count": 31,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1588,
+        "states": {
+          "not_started": 12,
+          "partial": 18,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_114_g7TzMEZKjaU",
+        "url": "https://www.youtube.com/watch?v=g7TzMEZKjaU",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 140,
+        "states": {
+          "not_started": 2,
+          "partial": 10,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_115_qzINw249IOU",
+        "url": "https://www.youtube.com/watch?v=qzINw249IOU",
+        "claim_count": 38,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 2181,
+        "states": {
+          "not_started": 4,
+          "partial": 34
+        }
+      },
+      {
+        "video_id": "db_116_m_w5BCSok00",
+        "url": "https://www.youtube.com/watch?v=m_w5BCSok00",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 410,
+        "states": {
+          "not_started": 9,
+          "partial": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_117_d5L0nVIMMM0",
+        "url": "https://www.youtube.com/watch?v=d5L0nVIMMM0",
+        "claim_count": 17,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 600,
+        "states": {
+          "not_started": 14,
+          "partial": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_118_vUsqYEacSKM",
+        "url": "https://www.youtube.com/watch?v=vUsqYEacSKM",
+        "claim_count": 8,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 258,
+        "states": {
+          "not_started": 5,
+          "partial": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_119_i7nhobUKNeg",
+        "url": "https://www.youtube.com/watch?v=i7nhobUKNeg",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 448,
+        "states": {
+          "not_started": 10,
+          "partial": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_120_QUwiyY9Qh_k",
+        "url": "https://www.youtube.com/watch?v=QUwiyY9Qh_k",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 151,
+        "states": {
+          "partial": 8,
+          "complete_scored": 1,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_121_p3YufTgQRHA",
+        "url": "https://www.youtube.com/watch?v=p3YufTgQRHA",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 705,
+        "states": {
+          "partial": 7,
+          "not_started": 4,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_122_pKOtz25IIbs",
+        "url": "https://www.youtube.com/watch?v=pKOtz25IIbs",
+        "claim_count": 7,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 112,
+        "states": {
+          "not_started": 3,
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_123_seN7xZFP5eE",
+        "url": "https://www.youtube.com/watch?v=seN7xZFP5eE",
+        "claim_count": 12,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 155,
+        "states": {
+          "partial": 3,
+          "not_started": 9
+        }
+      },
+      {
+        "video_id": "db_124_h7te3HAxv-A",
+        "url": "https://www.youtube.com/watch?v=h7te3HAxv-A",
+        "claim_count": 19,
+        "completed_claims": 10,
+        "all_claims_complete": false,
+        "pending_candidate_links": 225,
+        "states": {
+          "not_started": 9,
+          "complete_no_candidates": 10
+        }
+      },
+      {
+        "video_id": "db_125_M4AD7_oBfp4",
+        "url": "https://www.youtube.com/watch?v=M4AD7_oBfp4",
+        "claim_count": 32,
+        "completed_claims": 8,
+        "all_claims_complete": false,
+        "pending_candidate_links": 543,
+        "states": {
+          "partial": 15,
+          "not_started": 9,
+          "complete_scored": 2,
+          "complete_no_candidates": 6
+        }
+      },
+      {
+        "video_id": "db_126_1c3ZmUXrc8A",
+        "url": "https://www.youtube.com/watch?v=1c3ZmUXrc8A",
+        "claim_count": 18,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 495,
+        "states": {
+          "partial": 7,
+          "not_started": 10,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_127_kNWjguHhRs4",
+        "url": "https://www.youtube.com/watch?v=kNWjguHhRs4",
+        "claim_count": 16,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 777,
+        "states": {
+          "not_started": 2,
+          "partial": 13,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_128_0nXNWl3B1Z4",
+        "url": "https://www.youtube.com/watch?v=0nXNWl3B1Z4",
+        "claim_count": 16,
+        "completed_claims": 16,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 16
+        }
+      },
+      {
+        "video_id": "db_129_ZRtOaodVT-U",
+        "url": "https://www.youtube.com/watch?v=ZRtOaodVT-U",
+        "claim_count": 14,
+        "completed_claims": 14,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 14
+        }
+      },
+      {
+        "video_id": "db_130_iBZsQk9ykAQ",
+        "url": "https://www.youtube.com/watch?v=iBZsQk9ykAQ",
+        "claim_count": 8,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 489,
+        "states": {
+          "not_started": 7,
+          "partial": 1
+        }
+      },
+      {
+        "video_id": "db_131_J5Ofe99LM0U",
+        "url": "https://www.youtube.com/watch?v=J5Ofe99LM0U",
+        "claim_count": 9,
+        "completed_claims": 9,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 9
+        }
+      },
+      {
+        "video_id": "db_132__MNYBmy24nk",
+        "url": "https://www.youtube.com/watch?v=_MNYBmy24nk",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 883,
+        "states": {
+          "partial": 9,
+          "complete_scored": 1,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_133_lGVQDIid77Q",
+        "url": "https://www.youtube.com/watch?v=lGVQDIid77Q",
+        "claim_count": 4,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 5,
+        "states": {
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_134_eBXQtWMPUGM",
+        "url": "https://www.youtube.com/watch?v=eBXQtWMPUGM",
+        "claim_count": 4,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 5,
+        "states": {
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_135_0EkaCDWmB04",
+        "url": "https://www.youtube.com/watch?v=0EkaCDWmB04",
+        "claim_count": 9,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 452,
+        "states": {
+          "partial": 3,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_136_40OyEPJBj1E",
+        "url": "https://www.youtube.com/watch?v=40OyEPJBj1E",
+        "claim_count": 14,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 575,
+        "states": {
+          "partial": 8,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_137_e89OkELFbBY",
+        "url": "https://www.youtube.com/watch?v=e89OkELFbBY",
+        "claim_count": 14,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 575,
+        "states": {
+          "partial": 8,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_138_PTmYGvz-n84",
+        "url": "https://www.youtube.com/watch?v=PTmYGvz-n84",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 342,
+        "states": {
+          "partial": 10,
+          "complete_scored": 1,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_139_3ClBJSsUX04",
+        "url": "https://www.youtube.com/watch?v=3ClBJSsUX04",
+        "claim_count": 14,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 421,
+        "states": {
+          "partial": 12,
+          "complete_scored": 1,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_140_TrU6ClZh2Gk",
+        "url": "https://www.youtube.com/watch?v=TrU6ClZh2Gk",
+        "claim_count": 18,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 536,
+        "states": {
+          "partial": 15,
+          "complete_scored": 1,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_141_F1owLR8fI-Y",
+        "url": "https://www.youtube.com/watch?v=F1owLR8fI-Y",
+        "claim_count": 16,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 474,
+        "states": {
+          "partial": 14,
+          "complete_scored": 1,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_142_nUgOnoNbEfU",
+        "url": "https://www.youtube.com/watch?v=nUgOnoNbEfU",
+        "claim_count": 27,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 139,
+        "states": {
+          "partial": 17,
+          "not_started": 9,
+          "complete_no_candidates": 1
+        }
+      },
+      {
+        "video_id": "db_143_iPlIpMrGcp0",
+        "url": "https://www.youtube.com/watch?v=iPlIpMrGcp0",
+        "claim_count": 7,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 306,
+        "states": {
+          "partial": 4,
+          "not_started": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_144_5ykRFN8-k8s",
+        "url": "https://www.youtube.com/watch?v=5ykRFN8-k8s",
+        "claim_count": 7,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 477,
+        "states": {
+          "partial": 4,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_145_7m0KUQskVVA",
+        "url": "https://www.youtube.com/watch?v=7m0KUQskVVA",
+        "claim_count": 19,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 961,
+        "states": {
+          "partial": 11,
+          "not_started": 8
+        }
+      },
+      {
+        "video_id": "db_146_Z8k8OLPv2Zw",
+        "url": "https://www.youtube.com/watch?v=Z8k8OLPv2Zw",
+        "claim_count": 21,
+        "completed_claims": 5,
+        "all_claims_complete": false,
+        "pending_candidate_links": 492,
+        "states": {
+          "partial": 13,
+          "complete_no_candidates": 5,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_147_68LD5c_NAQ8",
+        "url": "https://www.youtube.com/watch?v=68LD5c_NAQ8",
+        "claim_count": 23,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 604,
+        "states": {
+          "partial": 15,
+          "complete_scored": 3,
+          "not_started": 5
+        }
+      },
+      {
+        "video_id": "db_148_14tl3hRHPhY",
+        "url": "https://www.youtube.com/watch?v=14tl3hRHPhY",
+        "claim_count": 23,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 609,
+        "states": {
+          "partial": 15,
+          "complete_scored": 3,
+          "not_started": 5
+        }
+      },
+      {
+        "video_id": "db_149_oFkaj0c3LoE",
+        "url": "https://www.youtube.com/watch?v=oFkaj0c3LoE",
+        "claim_count": 23,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 609,
+        "states": {
+          "partial": 15,
+          "complete_scored": 3,
+          "not_started": 5
+        }
+      },
+      {
+        "video_id": "db_150_2E-n2nFG6fU",
+        "url": "https://www.youtube.com/watch?v=2E-n2nFG6fU",
+        "claim_count": 24,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 641,
+        "states": {
+          "partial": 16,
+          "complete_scored": 3,
+          "not_started": 5
+        }
+      },
+      {
+        "video_id": "db_151_xZrp2A0uYqM",
+        "url": "https://www.youtube.com/watch?v=xZrp2A0uYqM",
+        "claim_count": 12,
+        "completed_claims": 12,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 12
+        }
+      },
+      {
+        "video_id": "db_152_r2yYfz_JtlU",
+        "url": "https://www.youtube.com/watch?v=r2yYfz_JtlU",
+        "claim_count": 17,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 450,
+        "states": {
+          "not_started": 6,
+          "partial": 11
+        }
+      },
+      {
+        "video_id": "db_153_np4kl0sP9d4",
+        "url": "https://www.youtube.com/watch?v=np4kl0sP9d4",
+        "claim_count": 16,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 88,
+        "states": {
+          "not_started": 8,
+          "complete_scored": 3,
+          "partial": 5
+        }
+      },
+      {
+        "video_id": "db_154_O0VmSF9Ks0U",
+        "url": "https://www.youtube.com/watch?v=O0VmSF9Ks0U",
+        "claim_count": 15,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 80,
+        "states": {
+          "not_started": 7,
+          "complete_scored": 3,
+          "partial": 5
+        }
+      },
+      {
+        "video_id": "db_155_OJHR-vtZ2ew",
+        "url": "https://www.youtube.com/watch?v=OJHR-vtZ2ew",
+        "claim_count": 12,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 59,
+        "states": {
+          "not_started": 5,
+          "complete_scored": 3,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_156_DQi8J-8WkZ0",
+        "url": "https://www.youtube.com/watch?v=DQi8J-8WkZ0",
+        "claim_count": 13,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 67,
+        "states": {
+          "not_started": 6,
+          "complete_scored": 3,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_157_-kjoqO9Um6Q",
+        "url": "https://www.youtube.com/watch?v=-kjoqO9Um6Q",
+        "claim_count": 14,
+        "completed_claims": 3,
+        "all_claims_complete": false,
+        "pending_candidate_links": 75,
+        "states": {
+          "not_started": 7,
+          "complete_scored": 3,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_158_5XrgbvRPUx8",
+        "url": "https://www.youtube.com/watch?v=5XrgbvRPUx8",
+        "claim_count": 16,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 411,
+        "states": {
+          "not_started": 6,
+          "partial": 10
+        }
+      },
+      {
+        "video_id": "db_159_BreFh0ffGLw",
+        "url": "https://www.youtube.com/watch?v=BreFh0ffGLw",
+        "claim_count": 26,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 2577,
+        "states": {
+          "not_started": 19,
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_160_qBFBNIBlB3Q",
+        "url": "https://www.youtube.com/watch?v=qBFBNIBlB3Q",
+        "claim_count": 36,
+        "completed_claims": 9,
+        "all_claims_complete": false,
+        "pending_candidate_links": 387,
+        "states": {
+          "not_started": 21,
+          "partial": 6,
+          "complete_no_candidates": 9
+        }
+      },
+      {
+        "video_id": "db_162_4jXlKg_Wko8",
+        "url": "https://www.youtube.com/watch?v=4jXlKg_Wko8",
+        "claim_count": 22,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 495,
+        "states": {
+          "not_started": 12,
+          "partial": 10
+        }
+      },
+      {
+        "video_id": "db_163_mIzLM0ZWBCU",
+        "url": "https://www.youtube.com/watch?v=mIzLM0ZWBCU",
+        "claim_count": 19,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1670,
+        "states": {
+          "not_started": 10,
+          "partial": 9
+        }
+      },
+      {
+        "video_id": "db_164_Gl7-zKA-GwI",
+        "url": "https://www.youtube.com/watch?v=Gl7-zKA-GwI",
+        "claim_count": 24,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1831,
+        "states": {
+          "partial": 13,
+          "not_started": 10,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_165_3L_QXEbwxpA",
+        "url": "https://www.youtube.com/watch?v=3L_QXEbwxpA",
+        "claim_count": 33,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1252,
+        "states": {
+          "not_started": 18,
+          "partial": 15
+        }
+      },
+      {
+        "video_id": "db_166_eoe2GUtz4v8",
+        "url": "https://www.youtube.com/watch?v=eoe2GUtz4v8",
+        "claim_count": 10,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 184,
+        "states": {
+          "partial": 4,
+          "not_started": 5,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_167_pLQ_w6U6lx8",
+        "url": "https://www.youtube.com/watch?v=pLQ_w6U6lx8",
+        "claim_count": 32,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 615,
+        "states": {
+          "partial": 22,
+          "not_started": 9,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_168_a5WbO4EBBHc",
+        "url": "https://www.youtube.com/watch?v=a5WbO4EBBHc",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 192,
+        "states": {
+          "partial": 11,
+          "not_started": 1,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_169_fFoA1gsYAr4",
+        "url": "https://www.youtube.com/watch?v=fFoA1gsYAr4",
+        "claim_count": 15,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 273,
+        "states": {
+          "partial": 11,
+          "not_started": 4
+        }
+      },
+      {
+        "video_id": "db_170_2w9to5aSbYY",
+        "url": "https://www.youtube.com/watch?v=2w9to5aSbYY",
+        "claim_count": 4,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 56,
+        "states": {
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_171_5_h6huHbNfM",
+        "url": "https://www.youtube.com/watch?v=5_h6huHbNfM",
+        "claim_count": 14,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 173,
+        "states": {
+          "partial": 13,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_172_4cxxyiYdnQk",
+        "url": "https://www.youtube.com/watch?v=4cxxyiYdnQk",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 149,
+        "states": {
+          "partial": 11,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_173_go-uppdIkg0",
+        "url": "https://www.youtube.com/watch?v=go-uppdIkg0",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 158,
+        "states": {
+          "partial": 11,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_174_Bmw8jdvxdLw",
+        "url": "https://www.youtube.com/watch?v=Bmw8jdvxdLw",
+        "claim_count": 12,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 158,
+        "states": {
+          "partial": 11,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_175_HMToSnKluxE",
+        "url": "https://www.youtube.com/watch?v=HMToSnKluxE",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 160,
+        "states": {
+          "partial": 12,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_176_6o8pxrOwFtQ",
+        "url": "https://www.youtube.com/watch?v=6o8pxrOwFtQ",
+        "claim_count": 1,
+        "completed_claims": 1,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_177_nxaYvc4IY18",
+        "url": "https://www.youtube.com/watch?v=nxaYvc4IY18",
+        "claim_count": 1,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 26,
+        "states": {
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_178_4S96NKXWpU8",
+        "url": "https://www.youtube.com/watch?v=4S96NKXWpU8",
+        "claim_count": 13,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 544,
+        "states": {
+          "partial": 10,
+          "complete_scored": 1,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_179_mnl8jo33nD4",
+        "url": "https://www.youtube.com/watch?v=mnl8jo33nD4",
+        "claim_count": 17,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 210,
+        "states": {
+          "partial": 10,
+          "not_started": 6,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_180_eliz4irOChY",
+        "url": "https://www.youtube.com/watch?v=eliz4irOChY",
+        "claim_count": 20,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1326,
+        "states": {
+          "partial": 16,
+          "not_started": 4
+        }
+      },
+      {
+        "video_id": "db_181_NIjAo7fh-Kg",
+        "url": "https://www.youtube.com/watch?v=NIjAo7fh-Kg",
+        "claim_count": 24,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1399,
+        "states": {
+          "partial": 16,
+          "not_started": 8
+        }
+      },
+      {
+        "video_id": "db_183_sofweMTrfjw",
+        "url": "https://www.youtube.com/watch?v=sofweMTrfjw",
+        "claim_count": 16,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 499,
+        "states": {
+          "partial": 13,
+          "not_started": 2,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_184_EAeo2q28-Po",
+        "url": "https://www.youtube.com/watch?v=EAeo2q28-Po",
+        "claim_count": 7,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 36,
+        "states": {
+          "not_started": 3,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_185_Pev0dJ78QSU",
+        "url": "https://www.youtube.com/watch?v=Pev0dJ78QSU",
+        "claim_count": 24,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 242,
+        "states": {
+          "not_started": 12,
+          "partial": 12
+        }
+      },
+      {
+        "video_id": "db_186_HrN_Oujgivs",
+        "url": "https://www.youtube.com/watch?v=HrN_Oujgivs",
+        "claim_count": 22,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 329,
+        "states": {
+          "not_started": 2,
+          "partial": 20
+        }
+      },
+      {
+        "video_id": "db_187_xxRw4tRt7-0",
+        "url": "https://www.youtube.com/watch?v=xxRw4tRt7-0",
+        "claim_count": 11,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 64,
+        "states": {
+          "not_started": 9,
+          "partial": 2
+        }
+      },
+      {
+        "video_id": "db_188_OH4NPEmrC5Q",
+        "url": "https://www.youtube.com/watch?v=OH4NPEmrC5Q",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 56,
+        "states": {
+          "not_started": 7,
+          "complete_scored": 1,
+          "partial": 3
+        }
+      },
+      {
+        "video_id": "db_189__mZYh80V4l0",
+        "url": "https://www.youtube.com/watch?v=_mZYh80V4l0",
+        "claim_count": 7,
+        "completed_claims": 7,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 7
+        }
+      },
+      {
+        "video_id": "db_190_3hloKanT9NI",
+        "url": "https://www.youtube.com/watch?v=3hloKanT9NI",
+        "claim_count": 6,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 34,
+        "states": {
+          "not_started": 5,
+          "partial": 1
+        }
+      },
+      {
+        "video_id": "db_191_YbhvQeQ7_BI",
+        "url": "https://www.youtube.com/watch?v=YbhvQeQ7_BI",
+        "claim_count": 17,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 96,
+        "states": {
+          "not_started": 13,
+          "partial": 4
+        }
+      },
+      {
+        "video_id": "db_192_jdu8bGXSDt4",
+        "url": "https://www.youtube.com/watch?v=jdu8bGXSDt4",
+        "claim_count": 6,
+        "completed_claims": 6,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 6
+        }
+      },
+      {
+        "video_id": "db_193_6LRb_cwbwBw",
+        "url": "https://www.youtube.com/watch?v=6LRb_cwbwBw",
+        "claim_count": 11,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 64,
+        "states": {
+          "not_started": 10,
+          "partial": 1
+        }
+      },
+      {
+        "video_id": "db_194_VNwKAMpEeLU",
+        "url": "https://www.youtube.com/watch?v=VNwKAMpEeLU",
+        "claim_count": 10,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 58,
+        "states": {
+          "not_started": 9,
+          "partial": 1
+        }
+      },
+      {
+        "video_id": "db_195_-RaTg6NEMZ0",
+        "url": "https://www.youtube.com/watch?v=-RaTg6NEMZ0",
+        "claim_count": 11,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 303,
+        "states": {
+          "not_started": 4,
+          "partial": 6,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_196_CHOw23s17GA",
+        "url": "https://www.youtube.com/watch?v=CHOw23s17GA",
+        "claim_count": 59,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 321,
+        "states": {
+          "not_started": 34,
+          "partial": 25
+        }
+      },
+      {
+        "video_id": "db_197_X0jCGgzhae0",
+        "url": "https://www.youtube.com/watch?v=X0jCGgzhae0",
+        "claim_count": 10,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 162,
+        "states": {
+          "partial": 8,
+          "complete_scored": 1,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_198_JkqRTHd0Nsg",
+        "url": "https://www.youtube.com/watch?v=JkqRTHd0Nsg",
+        "claim_count": 8,
+        "completed_claims": 7,
+        "all_claims_complete": false,
+        "pending_candidate_links": 3,
+        "states": {
+          "complete_no_candidates": 7,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_199_fgMIEID1N30",
+        "url": "https://www.youtube.com/watch?v=fgMIEID1N30",
+        "claim_count": 21,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 858,
+        "states": {
+          "not_started": 14,
+          "partial": 7
+        }
+      },
+      {
+        "video_id": "db_200_WLfMEmR3ZF4",
+        "url": "https://www.youtube.com/watch?v=WLfMEmR3ZF4",
+        "claim_count": 9,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 129,
+        "states": {
+          "not_started": 3,
+          "partial": 6
+        }
+      },
+      {
+        "video_id": "db_201_YBn7emsawpQ",
+        "url": "https://www.youtube.com/watch?v=YBn7emsawpQ",
+        "claim_count": 21,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 2267,
+        "states": {
+          "not_started": 10,
+          "partial": 10,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_202_oTg1JYJBG6I",
+        "url": "https://www.youtube.com/watch?v=oTg1JYJBG6I",
+        "claim_count": 50,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 759,
+        "states": {
+          "partial": 30,
+          "not_started": 20
+        }
+      },
+      {
+        "video_id": "db_203_hBfs_yl13uQ",
+        "url": "https://www.youtube.com/watch?v=hBfs_yl13uQ",
+        "claim_count": 10,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 372,
+        "states": {
+          "partial": 8,
+          "not_started": 2
+        }
+      },
+      {
+        "video_id": "db_204_73yGR-979W0",
+        "url": "https://www.youtube.com/watch?v=73yGR-979W0",
+        "claim_count": 8,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 260,
+        "states": {
+          "partial": 2,
+          "not_started": 4,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_205_myFgNLXC58I",
+        "url": "https://www.youtube.com/watch?v=myFgNLXC58I",
+        "claim_count": 11,
+        "completed_claims": 2,
+        "all_claims_complete": false,
+        "pending_candidate_links": 365,
+        "states": {
+          "partial": 5,
+          "not_started": 4,
+          "complete_scored": 2
+        }
+      },
+      {
+        "video_id": "db_206_iGsiTT2xZMY",
+        "url": "https://www.youtube.com/watch?v=iGsiTT2xZMY",
+        "claim_count": 25,
+        "completed_claims": 4,
+        "all_claims_complete": false,
+        "pending_candidate_links": 219,
+        "states": {
+          "not_started": 3,
+          "partial": 18,
+          "complete_scored": 1,
+          "complete_no_candidates": 3
+        }
+      },
+      {
+        "video_id": "db_207_2gBANzYTC5U",
+        "url": "https://www.youtube.com/watch?v=2gBANzYTC5U",
+        "claim_count": 25,
+        "completed_claims": 4,
+        "all_claims_complete": false,
+        "pending_candidate_links": 219,
+        "states": {
+          "not_started": 3,
+          "partial": 18,
+          "complete_scored": 1,
+          "complete_no_candidates": 3
+        }
+      },
+      {
+        "video_id": "db_208_0drznbKPJgc",
+        "url": "https://www.youtube.com/watch?v=0drznbKPJgc",
+        "claim_count": 19,
+        "completed_claims": 19,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 19
+        }
+      },
+      {
+        "video_id": "db_209_roKU_LDwQkM",
+        "url": "https://www.youtube.com/watch?v=roKU_LDwQkM",
+        "claim_count": 11,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 262,
+        "states": {
+          "partial": 8,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_210_NKyAOi6Hrg8",
+        "url": "https://www.youtube.com/watch?v=NKyAOi6Hrg8",
+        "claim_count": 16,
+        "completed_claims": 16,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 16
+        }
+      },
+      {
+        "video_id": "db_211_L4KfNfwGB1s",
+        "url": "https://www.youtube.com/watch?v=L4KfNfwGB1s",
+        "claim_count": 27,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 1002,
+        "states": {
+          "not_started": 13,
+          "partial": 13,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_212_qbQfBqPEqGQ",
+        "url": "https://www.youtube.com/watch?v=qbQfBqPEqGQ",
+        "claim_count": 16,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 427,
+        "states": {
+          "partial": 14,
+          "not_started": 1,
+          "complete_scored": 1
+        }
+      },
+      {
+        "video_id": "db_213_P8VZYBOsflM",
+        "url": "https://www.youtube.com/watch?v=P8VZYBOsflM",
+        "claim_count": 8,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 168,
+        "states": {
+          "partial": 7,
+          "not_started": 1
+        }
+      },
+      {
+        "video_id": "db_214_bhFZouAiiGc",
+        "url": "https://www.youtube.com/watch?v=bhFZouAiiGc",
+        "claim_count": 6,
+        "completed_claims": 1,
+        "all_claims_complete": false,
+        "pending_candidate_links": 242,
+        "states": {
+          "complete_scored": 1,
+          "partial": 2,
+          "not_started": 3
+        }
+      },
+      {
+        "video_id": "db_215_-afH55ajzSo",
+        "url": "https://www.youtube.com/watch?v=-afH55ajzSo",
+        "claim_count": 11,
+        "completed_claims": 11,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 11
+        }
+      },
+      {
+        "video_id": "db_216_FgCUShwwLPs",
+        "url": "https://www.youtube.com/watch?v=FgCUShwwLPs",
+        "claim_count": 2,
+        "completed_claims": 0,
+        "all_claims_complete": false,
+        "pending_candidate_links": 27,
+        "states": {
+          "partial": 2
+        }
+      },
+      {
+        "video_id": "db_217_SHhSMRCCVEM",
+        "url": "https://www.youtube.com/watch?v=SHhSMRCCVEM",
+        "claim_count": 2,
+        "completed_claims": 2,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 2
+        }
+      },
+      {
+        "video_id": "db_218_ZBdUgPEQmxQ",
+        "url": "https://www.youtube.com/watch?v=ZBdUgPEQmxQ",
+        "claim_count": 21,
+        "completed_claims": 21,
+        "all_claims_complete": true,
+        "pending_candidate_links": 0,
+        "states": {
+          "complete_no_candidates": 21
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "video_id": "db_113_OIr_XNBj_a4",
+      "url": "https://www.youtube.com/watch?v=OIr_XNBj_a4",
+      "products": [
+        {
+          "product_ref": "p01",
+          "product_name": "센트룸 실버 우먼",
+          "brand_name": "센트룸",
+          "manufacturer_name": null,
+          "manufacturing_report_number": null,
+          "identity_observations": [],
+          "identity_observation_conflicts": false,
+          "db_match": {
+            "status": "matched",
+            "product_id": 22960,
+            "route": "exact_name",
+            "name_score": 100.0,
+            "reason": "unique_candidate_without_known_identity_conflict",
+            "candidate_count": 1,
+            "candidate_examples": [
+              {
+                "product_id": 22960,
+                "product_name": "센트룸 실버 우먼",
+                "company_name": "콜마비앤에이치(주)세종3공장",
+                "manufacturing_report_number": "20240028080325"
+              }
+            ],
+            "observed_manufacturer": null,
+            "observed_report_number": null,
+            "matched_product_name": "센트룸 실버 우먼",
+            "matched_manufacturer": "콜마비앤에이치(주)세종3공장",
+            "matched_report_number": "20240028080325"
+          }
+        },
+        {
+          "product_ref": "p02",
+          "product_name": "센트룸 실버 맨",
+          "brand_name": "센트룸",
+          "manufacturer_name": null,
+          "manufacturing_report_number": null,
+          "identity_observations": [],
+          "identity_observation_conflicts": false,
+          "db_match": {
+            "status": "matched",
+            "product_id": 22959,
+            "route": "exact_name",
+            "name_score": 100.0,
+            "reason": "unique_candidate_without_known_identity_conflict",
+            "candidate_count": 1,
+            "candidate_examples": [
+              {
+                "product_id": 22959,
+                "product_name": "센트룸 실버 맨",
+                "company_name": "콜마비앤에이치(주)세종3공장",
+                "manufacturing_report_number": "20240028080323"
+              }
+            ],
+            "observed_manufacturer": null,
+            "observed_report_number": null,
+            "matched_product_name": "센트룸 실버 맨",
+            "matched_manufacturer": "콜마비앤에이치(주)세종3공장",
+            "matched_report_number": "20240028080323"
+          }
+        },
+        {
+          "product_ref": "p03",
+          "product_name": "센트룸 실버 프로",
+          "brand_name": "센트룸",
+          "manufacturer_name": "콜마비앤에이치 (주) 음성공장",
+          "manufacturing_report_number": null,
+          "identity_observations": [
+            {
+              "field": "manufacturer_name",
+              "value": "콜마비앤에이치 (주) 음성공장",
+              "claim_id": "c28"
+            },
+            {
+              "field": "manufacturer_name",
+              "value": "콜마비앤에이치 (주) 음성공장",
+              "claim_id": null
+            }
+          ],
+          "identity_observation_conflicts": false,
+          "db_match": {
+            "status": "matched",
+            "product_id": 22961,
+            "route": "exact_name",
+            "name_score": 100.0,
+            "reason": "unique_candidate_without_known_identity_conflict",
+            "candidate_count": 2,
+            "candidate_examples": [
+              {
+                "product_id": 22961,
+                "product_name": "센트룸 실버 프로",
+                "company_name": "콜마비앤에이치(주)음성공장",
+                "manufacturing_report_number": "200600200032054"
+              },
+              {
+                "product_id": 22962,
+                "product_name": "센트룸 실버 프로",
+                "company_name": "콜마비앤에이치(주)세종3공장",
+                "manufacturing_report_number": "20240028080428"
+              }
+            ],
+            "observed_manufacturer": "콜마비앤에이치 (주) 음성공장",
+            "observed_report_number": null,
+            "matched_product_name": "센트룸 실버 프로",
+            "matched_manufacturer": "콜마비앤에이치(주)음성공장",
+            "matched_report_number": "200600200032054"
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "c01",
+          "product_ref": "p01",
+          "text": "성별, 나이별 맞춤 영양으로 내게 맞춰주니까 매일이 즐거워요.",
+          "claim_type": "EFFECT",
+          "ingredients": [],
+          "effect": "성별·나이별 맞춤 영양",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "성별·나이별 맞춤 영양",
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c02",
+          "product_ref": "p01",
+          "text": "활력\n비타민 B2 · 나이아신",
+          "claim_type": "EFFECT",
+          "ingredients": [
+            "비타민 B2",
+            "나이아신"
+          ],
+          "effect": "활력",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "활력",
+            "ingredients": [
+              "비타민 B2",
+              "나이아신"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c03",
+          "product_ref": "p01",
+          "text": "정상적인 면역기능\n아연",
+          "claim_type": "EFFECT",
+          "ingredients": [
+            "아연"
+          ],
+          "effect": "정상적인 면역기능",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "정상적인 면역기능",
+            "ingredients": [
+              "아연"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c04",
+          "product_ref": "p01",
+          "text": "눈 건강\n비타민 A",
+          "claim_type": "EFFECT",
+          "ingredients": [
+            "비타민 A"
+          ],
+          "effect": "눈 건강",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "눈 건강",
+            "ingredients": [
+              "비타민 A"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c05",
+          "product_ref": "p01",
+          "text": "뼈 건강\n칼슘 · 망간 · 비타민D · 비타민K",
+          "claim_type": "EFFECT",
+          "ingredients": [
+            "칼슘",
+            "망간",
+            "비타민D",
+            "비타민K"
+          ],
+          "effect": "뼈 건강",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "뼈 건강",
+            "ingredients": [
+              "칼슘",
+              "망간",
+              "비타민D",
+              "비타민K"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c06",
+          "product_ref": "p01",
+          "text": "항산화\n비타민C · 비타민E · 셀레늄",
+          "claim_type": "EFFECT",
+          "ingredients": [
+            "비타민C",
+            "비타민E",
+            "셀레늄"
+          ],
+          "effect": "항산화",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "항산화",
+            "ingredients": [
+              "비타민C",
+              "비타민E",
+              "셀레늄"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c07",
+          "product_ref": "p01",
+          "text": "건강한 이들의 이유있는 선택",
+          "claim_type": "EFFECT",
+          "ingredients": [],
+          "effect": "건강",
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": "건강",
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 5,
+          "pending_candidate_count": 57,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.9411747455596924,
+              "relevance_score": 0.1255188551584637,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.6516425609588623,
+              "relevance_score": 0.06588784327638786,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.7448232173919678,
+              "relevance_score": 0.06037968209270972,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c08",
+          "product_ref": "p01",
+          "text": "세계판매 1위 멀티비타민 브랜드",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "1위",
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "complete_scored",
+          "ranking_is_final": true,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 62,
+          "pending_candidate_count": 0,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/main_functionality@287:354",
+              "text": "- 비타민 D :  칼슘과 인이 흡수되고 이용되는데 필요, 뼈의 형성과 유지에 필요, 골다공증발생 위험 감소에 도움을 줌",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "main_functionality",
+                "start_char": 287,
+                "end_char": 354
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "main_functionality",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": 0.30737584829330444,
+              "relevance_score": 0.5762446065772692,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/specification@225:266",
+              "text": "6) 비타민 B12 : 표시량(35 ug/1,534 mg)의 80~180%",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 225,
+                "end_char": 266
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.45137688517570496,
+              "relevance_score": 0.38903344917783733,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/specification@0:51",
+              "text": "1) 성상 : 고유의 향미가 있고 이미, 이취가 없는 연한 자줏빛 분홍색의 장타원형 제피정제",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 0,
+                "end_char": 51
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.46465033292770386,
+              "relevance_score": 0.38588321709553547,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "candidates_ranked",
+          "retrieval_message": "근거 후보 순위 완료"
+        },
+        {
+          "claim_id": "c09",
+          "product_ref": "p01",
+          "text": "*2024 니콜라스홀 Global CHC database, DB6 멀티비타민 기준",
+          "claim_type": "CERTIFICATION",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "CERTIFICATION",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c10",
+          "product_ref": "p01",
+          "text": "건강기능식품",
+          "claim_type": "CERTIFICATION",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "CERTIFICATION",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 48,
+          "pending_candidate_count": 14,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/appearance@0:43",
+              "text": "고유의 향미가 있고 이미, 이취가 없는 연한 자줏빛 분홍색의 장타원형 제피정제",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "appearance",
+                "start_char": 0,
+                "end_char": 43
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "appearance",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.6613893508911133,
+              "relevance_score": 0.34042758223554026,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/main_functionality@397:431",
+              "text": "- 비타민 K : 정상적인 혈액응고에 필요, 뼈의 구성에 필요",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "main_functionality",
+                "start_char": 397,
+                "end_char": 431
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "main_functionality",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.704948902130127,
+              "relevance_score": 0.3307159072752135,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/main_functionality@104:128",
+              "text": "- 비타민 B2 : 체내 에너지 생성에 필요",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "main_functionality",
+                "start_char": 104,
+                "end_char": 128
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "main_functionality",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.7986617684364319,
+              "relevance_score": 0.31031185233180386,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c11",
+          "product_ref": "p01",
+          "text": "2601PM-KR-CNT-26-00011",
+          "claim_type": "CERTIFICATION",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "CERTIFICATION",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 9,
+          "pending_candidate_count": 53,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.2318689823150635,
+              "relevance_score": 0.22585447752779375,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/intake_method@0:27",
+              "text": "1일 1회, 1회 1정을 물과 함께 섭취하십시오.",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "intake_method",
+                "start_char": 0,
+                "end_char": 27
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "intake_method",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.423724889755249,
+              "relevance_score": 0.1940783024631006,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.7504758834838867,
+              "relevance_score": 0.1479871852691694,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c12",
+          "product_ref": "p01",
+          "text": "국내판매 1위",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "1위",
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 48,
+          "pending_candidate_count": 14,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/appearance@0:43",
+              "text": "고유의 향미가 있고 이미, 이취가 없는 연한 자줏빛 분홍색의 장타원형 제피정제",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "appearance",
+                "start_char": 0,
+                "end_char": 43
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "appearance",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.9571393132209778,
+              "relevance_score": 0.2774513174507815,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.7474801540374756,
+              "relevance_score": 0.1483653062018,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.8248381614685059,
+              "relevance_score": 0.13885434406693684,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c13",
+          "product_ref": "p01",
+          "text": "**월드패널 바이 뉴머레이터(2024/06/17~2025/06/15) 국내 종합 비타민 전체 시장 내 구매액 점유율 기준",
+          "claim_type": "CERTIFICATION",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "CERTIFICATION",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c14",
+          "product_ref": "p01",
+          "text": "87%가 만족한¹",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "87%",
+          "intake_basis": "소비자만족도 조사",
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 45,
+          "pending_candidate_count": 17,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/specification@99:140",
+              "text": "3) 비타민 B1 : 표시량(3.4 mg/1,534 mg)의 80~180%",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 99,
+                "end_char": 140
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.083538293838501,
+              "relevance_score": 0.2528370115851746,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/specification@308:349",
+              "text": "8) 비타민 D : 표시량(12.5 ug/1,534 mg)의 80~180%",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 308,
+                "end_char": 349
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.1414414644241333,
+              "relevance_score": 0.24205580470456353,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/specification@141:182",
+              "text": "4) 비타민 B2 : 표시량(3.9 mg/1,534 mg)의 80~180%",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 141,
+                "end_char": 182
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.279768705368042,
+              "relevance_score": 0.21758959761245802,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c15",
+          "product_ref": "p01",
+          "text": "조사 대상 : 지난 3개월동안 센트룸 종합비타민 제품(센트룸 맨 더블업, 센트룸 우먼 더블업, 센트룸 실버 맨, 센트룸 실버 우먼)을 주 3회 이상 섭취한 경험이 있는 30세 이상 65세 이하의 성인 남녀 1000명",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "지난 3개월; 주 3회 이상; 30세 이상 65세 이하; 1000명",
+          "intake_basis": "소비자만족도 조사 대상",
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c16",
+          "product_ref": "p01",
+          "text": "조사 기간 : 2025년 3월 12일 - 4월 28일 (온라인 설문조사)",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "2025년 3월 12일 - 4월 28일",
+          "intake_basis": "소비자만족도 조사",
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 1,
+          "pending_candidate_count": 61,
+          "evidence_count": 1,
+          "evidences": [
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.377551794052124,
+              "relevance_score": 0.08490057970461165,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c17",
+          "product_ref": "p01",
+          "text": "조사 기관 : IQVIA, 경희대학교 동서의학대학원 의학영양학과",
+          "claim_type": "CERTIFICATION",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "CERTIFICATION",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 4,
+          "pending_candidate_count": 58,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.6807994842529297,
+              "relevance_score": 0.15698963301303295,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.9928884506225586,
+              "relevance_score": 0.11995161343284601,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.2480926513671875,
+              "relevance_score": 0.09551411590082601,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c18",
+          "product_ref": "p01",
+          "text": "실버 여성을 위한 비타민A부터 Zinc까지",
+          "claim_type": "COMPOSITION",
+          "ingredients": [
+            "비타민A",
+            "Zinc"
+          ],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "COMPOSITION",
+            "effect": null,
+            "ingredients": [
+              "비타민A",
+              "Zinc"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c19",
+          "product_ref": "p01",
+          "text": "멀티비타민 미네랄",
+          "claim_type": "COMPOSITION",
+          "ingredients": [
+            "비타민",
+            "미네랄"
+          ],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "COMPOSITION",
+            "effect": null,
+            "ingredients": [
+              "비타민",
+              "미네랄"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 3,
+          "pending_candidate_count": 59,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/specification@947:960",
+              "text": "24) 대장균군 : 음성",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 947,
+                "end_char": 960
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.007223129272461,
+              "relevance_score": 0.26752364035219595,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.2709987163543701,
+              "relevance_score": 0.21908633625333465,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.3096084594726562,
+              "relevance_score": 0.2125523703963906,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c20",
+          "product_ref": "p01",
+          "text": "50 정 (75.7g)",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "50 정 (75.7g)",
+          "intake_basis": "제품 포장 내용량",
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 30,
+          "pending_candidate_count": 32,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/specification@754:791",
+              "text": "19) 셀렌 : 표시량(55 ug/1,534 mg)의 80~150%",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 754,
+                "end_char": 791
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.2168025970458984,
+              "relevance_score": 0.09825172517203318,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/intake_method@0:27",
+              "text": "1일 1회, 1회 1정을 물과 함께 섭취하십시오.",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "intake_method",
+                "start_char": 0,
+                "end_char": 27
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "intake_method",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.227623462677002,
+              "relevance_score": 0.09729717361823892,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/specification@642:677",
+              "text": "16) 철 : 표시량(6 mg/1,534 mg)의 80~150%",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 642,
+                "end_char": 677
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.249713897705078,
+              "relevance_score": 0.09537414635220895,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c21",
+          "product_ref": "p02",
+          "text": "실버 남성을 위한 비타민A부터 Zinc까지",
+          "claim_type": "COMPOSITION",
+          "ingredients": [
+            "비타민A",
+            "Zinc"
+          ],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 맨",
+            "claim_type": "COMPOSITION",
+            "effect": null,
+            "ingredients": [
+              "비타민A",
+              "Zinc"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 62,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c22",
+          "product_ref": "p02",
+          "text": "멀티비타민 미네랄",
+          "claim_type": "COMPOSITION",
+          "ingredients": [
+            "비타민",
+            "미네랄"
+          ],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 맨",
+            "claim_type": "COMPOSITION",
+            "effect": null,
+            "ingredients": [
+              "비타민",
+              "미네랄"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 4,
+          "pending_candidate_count": 58,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22959/specification@949:962",
+              "text": "24) 대장균군 : 음성",
+              "material_scope": "product_direct",
+              "product_id": 22959,
+              "source": {
+                "table": "products",
+                "record_id": 22959,
+                "column": "specification",
+                "start_char": 949,
+                "end_char": 962
+              },
+              "target": "센트룸 실버 맨",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.860709011554718,
+              "relevance_score": 0.2971912341099645,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22959/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22959,
+              "source": {
+                "table": "products",
+                "record_id": 22959,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 맨",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.1933671236038208,
+              "relevance_score": 0.23265726934817016,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22959/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22959,
+              "source": {
+                "table": "products",
+                "record_id": 22959,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 맨",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.330035924911499,
+              "relevance_score": 0.20915342287356492,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c23",
+          "product_ref": "p02",
+          "text": "50 정 (73.2g)",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "50 정 (73.2g)",
+          "intake_basis": "제품 포장 내용량",
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 맨",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 38,
+          "pending_candidate_count": 24,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22959/specification@396:436",
+              "text": "10) 비타민 K : 표시량(50 ug/1,483 mg)의 80~180%",
+              "material_scope": "product_direct",
+              "product_id": 22959,
+              "source": {
+                "table": "products",
+                "record_id": 22959,
+                "column": "specification",
+                "start_char": 396,
+                "end_char": 436
+              },
+              "target": "센트룸 실버 맨",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.3462904393672943,
+              "relevance_score": 0.41428226797354073,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22959/specification@871:910",
+              "text": "22) 몰리브덴 : 표시량(50 ug/1,483 mg)의 80~180%",
+              "material_scope": "product_direct",
+              "product_id": 22959,
+              "source": {
+                "table": "products",
+                "record_id": 22959,
+                "column": "specification",
+                "start_char": 871,
+                "end_char": 910
+              },
+              "target": "센트룸 실버 맨",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.3910629153251648,
+              "relevance_score": 0.4034614516854721,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22959/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22959,
+              "source": {
+                "table": "products",
+                "record_id": 22959,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 맨",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.2680952548980713,
+              "relevance_score": 0.2195834873926471,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c24",
+          "product_ref": "p03",
+          "text": "실버 남녀를 위한 비타민A부터 Zinc까지",
+          "claim_type": "COMPOSITION",
+          "ingredients": [
+            "비타민A",
+            "Zinc"
+          ],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 프로",
+            "claim_type": "COMPOSITION",
+            "effect": null,
+            "ingredients": [
+              "비타민A",
+              "Zinc"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "not_started",
+          "ranking_is_final": false,
+          "total_candidate_count": 64,
+          "scored_candidate_count": 0,
+          "pending_candidate_count": 64,
+          "evidence_count": 0,
+          "evidences": [],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c25",
+          "product_ref": "p03",
+          "text": "멀티비타민 미네랄",
+          "claim_type": "COMPOSITION",
+          "ingredients": [
+            "비타민",
+            "미네랄"
+          ],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 프로",
+            "claim_type": "COMPOSITION",
+            "effect": null,
+            "ingredients": [
+              "비타민",
+              "미네랄"
+            ]
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 64,
+          "scored_candidate_count": 2,
+          "pending_candidate_count": 62,
+          "evidence_count": 2,
+          "evidences": [
+            {
+              "source_ref": "products:22961/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.069847583770752,
+              "relevance_score": 0.25543207060540424,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22961/registration_date@0:8",
+              "text": "20210507",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.1900036334991455,
+              "relevance_score": 0.23325828592365475,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c26",
+          "product_ref": "p03",
+          "text": "120 정 (170.76g)",
+          "claim_type": "QUANTITY",
+          "ingredients": [],
+          "effect": null,
+          "quantity": "120 정 (170.76g)",
+          "intake_basis": "제품 포장 내용량",
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 프로",
+            "claim_type": "QUANTITY",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 64,
+          "scored_candidate_count": 22,
+          "pending_candidate_count": 42,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22961/company_name@0:14",
+              "text": "콜마비앤에이치(주)음성공장",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 14
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.1705654859542847,
+              "relevance_score": 0.2367527852391601,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22961/appearance@0:38",
+              "text": "고유의 향미가 있고 이미, 이취가 없는 밝은 회색의 장타원형 제피정제",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "appearance",
+                "start_char": 0,
+                "end_char": 38
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "appearance",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.481411099433899,
+              "relevance_score": 0.18521437566498575,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22961/manufacturing_report_number@0:15",
+              "text": "200600200032054",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "manufacturing_report_number",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "manufacturing_report_number",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.9214916229248047,
+              "relevance_score": 0.12769532330318098,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c27",
+          "product_ref": "p01",
+          "text": "센트룸 실버 우먼, 센트룸 실버 맨 | Made in Taiwan",
+          "claim_type": "ETC",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "ETC",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 3,
+          "pending_candidate_count": 59,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": 0.09915752708911896,
+              "relevance_score": 0.52476909051154,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.5534457564353943,
+              "relevance_score": 0.36506533727993556,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/specification@947:960",
+              "text": "24) 대장균군 : 음성",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 947,
+                "end_char": 960
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.7823822498321533,
+              "relevance_score": 0.3138066839313214,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c28",
+          "product_ref": "p03",
+          "text": "센트룸 실버 프로 | 제조원: 콜마비앤에이치 (주) 음성공장",
+          "claim_type": "ETC",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 프로",
+            "claim_type": "ETC",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 64,
+          "scored_candidate_count": 4,
+          "pending_candidate_count": 60,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22961/company_name@0:14",
+              "text": "콜마비앤에이치(주)음성공장",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 14
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": 2.2447104454040527,
+              "relevance_score": 0.9041932913664075,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22961/registration_date@0:8",
+              "text": "20210507",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": 0.7620915174484253,
+              "relevance_score": 0.6818076525251868,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22961/specification@985:998",
+              "text": "25) 대장균군 : 음성",
+              "material_scope": "product_direct",
+              "product_id": 22961,
+              "source": {
+                "table": "products",
+                "record_id": 22961,
+                "column": "specification",
+                "start_char": 985,
+                "end_char": 998
+              },
+              "target": "센트룸 실버 프로",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": 0.08466514945030212,
+              "relevance_score": 0.5211536527594555,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c29",
+          "product_ref": "p01",
+          "text": "수입원 및 유통전문판매원 : 헤일리온코리아주식회사",
+          "claim_type": "ETC",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "ETC",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 5,
+          "pending_candidate_count": 57,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.883063793182373,
+              "relevance_score": 0.29254328823313847,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.9011257886886597,
+              "relevance_score": 0.2888192024068873,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -1.204646348953247,
+              "relevance_score": 0.2306496883164259,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c30",
+          "product_ref": "p01",
+          "text": "안전한 섭취를 위해 섭취 전 반드시 표기된 제품정보를 확인하세요.",
+          "claim_type": "EFFECT",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "EFFECT",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 4,
+          "pending_candidate_count": 58,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.5011229515075684,
+              "relevance_score": 0.07577949443254557,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/company_name@0:15",
+              "text": "콜마비앤에이치(주)세종3공장",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "company_name",
+                "start_char": 0,
+                "end_char": 15
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "company_name",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -2.6657168865203857,
+              "relevance_score": 0.06502689038547366,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -3.1165988445281982,
+              "relevance_score": 0.04242773786486476,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        },
+        {
+          "claim_id": "c31",
+          "product_ref": "p01",
+          "text": "한국건강기능식품협회에서 광고심의 받은 광고물입니다.",
+          "claim_type": "CERTIFICATION",
+          "ingredients": [],
+          "effect": null,
+          "quantity": null,
+          "intake_basis": null,
+          "identified_ingredient_candidates": [],
+          "product_match_status": "matched",
+          "query_context": {
+            "product_name": "센트룸 실버 우먼",
+            "claim_type": "CERTIFICATION",
+            "effect": null,
+            "ingredients": []
+          },
+          "judgment": {
+            "status": "pending",
+            "verdict": null,
+            "reason": null
+          },
+          "completion_status": "partial",
+          "ranking_is_final": false,
+          "total_candidate_count": 62,
+          "scored_candidate_count": 5,
+          "pending_candidate_count": 57,
+          "evidence_count": 3,
+          "evidences": [
+            {
+              "source_ref": "products:22960/shelf_life@0:11",
+              "text": "제조일로부터 24개월",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "shelf_life",
+                "start_char": 0,
+                "end_char": 11
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "shelf_life",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.2429419755935669,
+              "relevance_score": 0.439561474961538,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 1
+            },
+            {
+              "source_ref": "products:22960/registration_date@0:8",
+              "text": "20250924",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "registration_date",
+                "start_char": 0,
+                "end_char": 8
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "registration_date",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.38340193033218384,
+              "relevance_score": 0.4053066555703365,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 2
+            },
+            {
+              "source_ref": "products:22960/specification@947:960",
+              "text": "24) 대장균군 : 음성",
+              "material_scope": "product_direct",
+              "product_id": 22960,
+              "source": {
+                "table": "products",
+                "record_id": 22960,
+                "column": "specification",
+                "start_char": 947,
+                "end_char": 960
+              },
+              "target": "센트룸 실버 우먼",
+              "evidence_type": "specification",
+              "applicability_note": "제품 기록의 직접 자료. Claim의 참·거짓은 미판정.",
+              "reranker_raw_score": -0.5170286297798157,
+              "relevance_score": 0.373547301510681,
+              "relationship": "product_direct",
+              "score_method": "BGE-reranker-v2-m3 sigmoid(logit); not a truth probability",
+              "rank": 3
+            }
+          ],
+          "retrieval_status": "incomplete_scoring",
+          "retrieval_message": "점수 계산 미완료; 현재 목록은 최종 Top-3가 아님"
+        }
+      ]
+    }
+  ]
+}

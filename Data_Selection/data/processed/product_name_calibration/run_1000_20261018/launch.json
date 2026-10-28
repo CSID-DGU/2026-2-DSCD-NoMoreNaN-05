@@ -1,0 +1,9 @@
+﻿{
+    "pid":  7108,
+    "output":  "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018",
+    "trials":  1000,
+    "progress":  "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018\\progress.json",
+    "report":  "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018\\report.md",
+    "stdout":  "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018\\stdout.log",
+    "stderr":  "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018\\stderr.log"
+}

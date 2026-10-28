@@ -1,0 +1,2 @@
+# Optional dependencies for the read-only product-name calibration experiment.
+RapidFuzz>=3.14,<4

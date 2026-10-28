@@ -1,0 +1,2770 @@
+{
+  "status": "paused_by_user",
+  "paused_at": "2026-10-26T14:36:38.448357+00:00",
+  "input_claim_count": 3400,
+  "input_video_count": 216,
+  "saved_unique_scores": 18273,
+  "total_unique_pairs": 82542,
+  "score_progress_percent": 22.14,
+  "claim_states": {
+    "complete_scored": 178,
+    "partial": 1715,
+    "not_started": 1142,
+    "complete_no_candidates": 365
+  },
+  "fully_processed_claims": 543,
+  "fully_processed_videos": 20,
+  "fully_processed_video_ids": [
+    "db_025_5JoqajKpR_o",
+    "db_026_Rn9Jm1VdZm0",
+    "db_029_eSEvvCSq95I",
+    "db_077_OP3AH0OqWjs",
+    "db_081_fN51LUYpxFE",
+    "db_089_Qn0R5CD2ocY",
+    "db_101_k9HPaTy2jAc",
+    "db_104_2DMM40MV6do",
+    "db_128_0nXNWl3B1Z4",
+    "db_129_ZRtOaodVT-U",
+    "db_131_J5Ofe99LM0U",
+    "db_151_xZrp2A0uYqM",
+    "db_176_6o8pxrOwFtQ",
+    "db_189__mZYh80V4l0",
+    "db_192_jdu8bGXSDt4",
+    "db_208_0drznbKPJgc",
+    "db_210_NKyAOi6Hrg8",
+    "db_215_-afH55ajzSo",
+    "db_217_SHhSMRCCVEM",
+    "db_218_ZBdUgPEQmxQ"
+  ],
+  "complete_scored_claim_top3_links": 534,
+  "latest_saved_pair_contexts": [
+    {
+      "saved_batch_key_order": 0,
+      "video_id": "db_113_OIr_XNBj_a4",
+      "url": "https://www.youtube.com/watch?v=OIr_XNBj_a4",
+      "claim_id": "c14",
+      "source_ref": "products:22960/specification@308:349"
+    }
+  ],
+  "ordering_note": "Scored by input-pair length across videos, not a sequential URL queue. The latest saved pair can belong to multiple video URLs.",
+  "video_stats": [
+    {
+      "video_id": "db_001_AKyDb1Yhaio",
+      "url": "https://www.youtube.com/watch?v=AKyDb1Yhaio",
+      "claim_count": 50,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 768,
+      "states": {
+        "complete_scored": 1,
+        "partial": 24,
+        "not_started": 25
+      }
+    },
+    {
+      "video_id": "db_002_Phrb198ghJI",
+      "url": "https://www.youtube.com/watch?v=Phrb198ghJI",
+      "claim_count": 46,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 701,
+      "states": {
+        "complete_scored": 1,
+        "partial": 22,
+        "not_started": 23
+      }
+    },
+    {
+      "video_id": "db_003_VABlVWjX9t4",
+      "url": "https://www.youtube.com/watch?v=VABlVWjX9t4",
+      "claim_count": 19,
+      "completed_claims": 10,
+      "all_claims_complete": false,
+      "pending_candidate_links": 165,
+      "states": {
+        "not_started": 4,
+        "complete_scored": 1,
+        "partial": 5,
+        "complete_no_candidates": 9
+      }
+    },
+    {
+      "video_id": "db_004_dqks_z0q9Go",
+      "url": "https://www.youtube.com/watch?v=dqks_z0q9Go",
+      "claim_count": 6,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 220,
+      "states": {
+        "not_started": 2,
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_005_Ehq6ZhkzjIk",
+      "url": "https://www.youtube.com/watch?v=Ehq6ZhkzjIk",
+      "claim_count": 7,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 240,
+      "states": {
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_006_oUr4voFFuBo",
+      "url": "https://www.youtube.com/watch?v=oUr4voFFuBo",
+      "claim_count": 24,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 317,
+      "states": {
+        "not_started": 14,
+        "partial": 9,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_007_syrZeF8GkjQ",
+      "url": "https://www.youtube.com/watch?v=syrZeF8GkjQ",
+      "claim_count": 16,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 817,
+      "states": {
+        "not_started": 10,
+        "partial": 6
+      }
+    },
+    {
+      "video_id": "db_008_fS7Uzx-hdDI",
+      "url": "https://www.youtube.com/watch?v=fS7Uzx-hdDI",
+      "claim_count": 41,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 2424,
+      "states": {
+        "not_started": 18,
+        "partial": 23
+      }
+    },
+    {
+      "video_id": "db_009_l4gd8qQFSak",
+      "url": "https://www.youtube.com/watch?v=l4gd8qQFSak",
+      "claim_count": 42,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 2615,
+      "states": {
+        "partial": 16,
+        "not_started": 26
+      }
+    },
+    {
+      "video_id": "db_010_cQZBp9O3Blk",
+      "url": "https://www.youtube.com/watch?v=cQZBp9O3Blk",
+      "claim_count": 33,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1918,
+      "states": {
+        "partial": 26,
+        "not_started": 6,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_011_8OrRhb8sQnw",
+      "url": "https://www.youtube.com/watch?v=8OrRhb8sQnw",
+      "claim_count": 22,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1254,
+      "states": {
+        "partial": 16,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_012___ElznvtLdE",
+      "url": "https://www.youtube.com/watch?v=__ElznvtLdE",
+      "claim_count": 20,
+      "completed_claims": 6,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1022,
+      "states": {
+        "partial": 6,
+        "not_started": 8,
+        "complete_no_candidates": 6
+      }
+    },
+    {
+      "video_id": "db_013_NrsycE3cMV8",
+      "url": "https://www.youtube.com/watch?v=NrsycE3cMV8",
+      "claim_count": 15,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 262,
+      "states": {
+        "not_started": 6,
+        "partial": 8,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_014_E5uL0UwVQsQ",
+      "url": "https://www.youtube.com/watch?v=E5uL0UwVQsQ",
+      "claim_count": 8,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 60,
+      "states": {
+        "partial": 5,
+        "not_started": 1,
+        "complete_no_candidates": 1,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_015_l9l353eNlY8",
+      "url": "https://www.youtube.com/watch?v=l9l353eNlY8",
+      "claim_count": 9,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 88,
+      "states": {
+        "partial": 8,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_016_hgr3QrFdKqk",
+      "url": "https://www.youtube.com/watch?v=hgr3QrFdKqk",
+      "claim_count": 8,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 61,
+      "states": {
+        "complete_scored": 2,
+        "not_started": 2,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_017_ibzN_kNSftI",
+      "url": "https://www.youtube.com/watch?v=ibzN_kNSftI",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 73,
+      "states": {
+        "not_started": 3,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_018_cQrorHG5fFY",
+      "url": "https://www.youtube.com/watch?v=cQrorHG5fFY",
+      "claim_count": 9,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 89,
+      "states": {
+        "not_started": 4,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_019_Z3SBdiibF_o",
+      "url": "https://www.youtube.com/watch?v=Z3SBdiibF_o",
+      "claim_count": 25,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 441,
+      "states": {
+        "partial": 7,
+        "not_started": 18
+      }
+    },
+    {
+      "video_id": "db_020_cBZk8yOvCC0",
+      "url": "https://www.youtube.com/watch?v=cBZk8yOvCC0",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 242,
+      "states": {
+        "not_started": 7,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_021_7cxBqUhRcXs",
+      "url": "https://www.youtube.com/watch?v=7cxBqUhRcXs",
+      "claim_count": 13,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 166,
+      "states": {
+        "partial": 11,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_022_Y6gkveTxNxc",
+      "url": "https://www.youtube.com/watch?v=Y6gkveTxNxc",
+      "claim_count": 15,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 344,
+      "states": {
+        "not_started": 12,
+        "complete_scored": 1,
+        "partial": 2
+      }
+    },
+    {
+      "video_id": "db_023_Cf6dBCMBMmE",
+      "url": "https://www.youtube.com/watch?v=Cf6dBCMBMmE",
+      "claim_count": 10,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 387,
+      "states": {
+        "partial": 8,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_024_5S-gGzTZ_ng",
+      "url": "https://www.youtube.com/watch?v=5S-gGzTZ_ng",
+      "claim_count": 13,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 127,
+      "states": {
+        "not_started": 6,
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_025_5JoqajKpR_o",
+      "url": "https://www.youtube.com/watch?v=5JoqajKpR_o",
+      "claim_count": 6,
+      "completed_claims": 6,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 6
+      }
+    },
+    {
+      "video_id": "db_026_Rn9Jm1VdZm0",
+      "url": "https://www.youtube.com/watch?v=Rn9Jm1VdZm0",
+      "claim_count": 9,
+      "completed_claims": 9,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 9
+      }
+    },
+    {
+      "video_id": "db_027_V5k04vnSlJo",
+      "url": "https://www.youtube.com/watch?v=V5k04vnSlJo",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 237,
+      "states": {
+        "partial": 8,
+        "not_started": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_028_iNXbFlVtaHI",
+      "url": "https://www.youtube.com/watch?v=iNXbFlVtaHI",
+      "claim_count": 6,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 109,
+      "states": {
+        "partial": 2,
+        "not_started": 3,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_029_eSEvvCSq95I",
+      "url": "https://www.youtube.com/watch?v=eSEvvCSq95I",
+      "claim_count": 12,
+      "completed_claims": 12,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 12
+      }
+    },
+    {
+      "video_id": "db_030_q8I4k7ST-PY",
+      "url": "https://www.youtube.com/watch?v=q8I4k7ST-PY",
+      "claim_count": 19,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 324,
+      "states": {
+        "partial": 13,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_031_7Gp4DKcVBkg",
+      "url": "https://www.youtube.com/watch?v=7Gp4DKcVBkg",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 215,
+      "states": {
+        "partial": 5,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_032_JpDiqZCmxt4",
+      "url": "https://www.youtube.com/watch?v=JpDiqZCmxt4",
+      "claim_count": 16,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 318,
+      "states": {
+        "partial": 8,
+        "not_started": 7,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_033_iemqoCEprgg",
+      "url": "https://www.youtube.com/watch?v=iemqoCEprgg",
+      "claim_count": 11,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 192,
+      "states": {
+        "partial": 4,
+        "not_started": 5,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_034_1AxHPTHGxEI",
+      "url": "https://www.youtube.com/watch?v=1AxHPTHGxEI",
+      "claim_count": 18,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 49,
+      "states": {
+        "not_started": 15,
+        "complete_scored": 1,
+        "partial": 2
+      }
+    },
+    {
+      "video_id": "db_035_y_0fmF3xgck",
+      "url": "https://www.youtube.com/watch?v=y_0fmF3xgck",
+      "claim_count": 14,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 463,
+      "states": {
+        "not_started": 7,
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_036_vVXaNzwDQ3E",
+      "url": "https://www.youtube.com/watch?v=vVXaNzwDQ3E",
+      "claim_count": 13,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 437,
+      "states": {
+        "not_started": 6,
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_037_GfXTXY4Cojo",
+      "url": "https://www.youtube.com/watch?v=GfXTXY4Cojo",
+      "claim_count": 17,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 92,
+      "states": {
+        "not_started": 13,
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_038_-56FN2YCC-I",
+      "url": "https://www.youtube.com/watch?v=-56FN2YCC-I",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 174,
+      "states": {
+        "partial": 9,
+        "not_started": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_039_zptASsSd0nY",
+      "url": "https://www.youtube.com/watch?v=zptASsSd0nY",
+      "claim_count": 9,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 39,
+      "states": {
+        "partial": 7,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_040_1dcPKN8GH8Y",
+      "url": "https://www.youtube.com/watch?v=1dcPKN8GH8Y",
+      "claim_count": 29,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 529,
+      "states": {
+        "not_started": 7,
+        "partial": 22
+      }
+    },
+    {
+      "video_id": "db_041_csK3fHk-MRw",
+      "url": "https://www.youtube.com/watch?v=csK3fHk-MRw",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 284,
+      "states": {
+        "not_started": 3,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_042_hs4yOrpqvRI",
+      "url": "https://www.youtube.com/watch?v=hs4yOrpqvRI",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 284,
+      "states": {
+        "not_started": 3,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_043_pqKwSu8og9A",
+      "url": "https://www.youtube.com/watch?v=pqKwSu8og9A",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 271,
+      "states": {
+        "not_started": 3,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_044_mwH9HYTRZrQ",
+      "url": "https://www.youtube.com/watch?v=mwH9HYTRZrQ",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 271,
+      "states": {
+        "not_started": 3,
+        "partial": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_045_kzP_81Cub6Y",
+      "url": "https://www.youtube.com/watch?v=kzP_81Cub6Y",
+      "claim_count": 7,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 45,
+      "states": {
+        "not_started": 1,
+        "partial": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_046_MWx5nDT8pDk",
+      "url": "https://www.youtube.com/watch?v=MWx5nDT8pDk",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 335,
+      "states": {
+        "not_started": 6,
+        "complete_scored": 1,
+        "partial": 1
+      }
+    },
+    {
+      "video_id": "db_047_gnvNr4R4Brc",
+      "url": "https://www.youtube.com/watch?v=gnvNr4R4Brc",
+      "claim_count": 6,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 56,
+      "states": {
+        "partial": 4,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_048_qdPDY6T86PU",
+      "url": "https://www.youtube.com/watch?v=qdPDY6T86PU",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 210,
+      "states": {
+        "partial": 4,
+        "not_started": 3,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_049_P-YTAviQgIM",
+      "url": "https://www.youtube.com/watch?v=P-YTAviQgIM",
+      "claim_count": 21,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 2110,
+      "states": {
+        "partial": 17,
+        "complete_scored": 1,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_050_OuBJfCjsgak",
+      "url": "https://www.youtube.com/watch?v=OuBJfCjsgak",
+      "claim_count": 30,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 336,
+      "states": {
+        "partial": 13,
+        "not_started": 15,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_051_KUwvWs-chM4",
+      "url": "https://www.youtube.com/watch?v=KUwvWs-chM4",
+      "claim_count": 30,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 323,
+      "states": {
+        "partial": 20,
+        "not_started": 9,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_052_h04VTADNgfI",
+      "url": "https://www.youtube.com/watch?v=h04VTADNgfI",
+      "claim_count": 14,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 123,
+      "states": {
+        "partial": 12,
+        "not_started": 1,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_053_t6SkBUwkzZ8",
+      "url": "https://www.youtube.com/watch?v=t6SkBUwkzZ8",
+      "claim_count": 17,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 333,
+      "states": {
+        "not_started": 4,
+        "complete_scored": 1,
+        "partial": 11,
+        "complete_no_candidates": 1
+      }
+    },
+    {
+      "video_id": "db_054_oqIL8C4Y4g8",
+      "url": "https://www.youtube.com/watch?v=oqIL8C4Y4g8",
+      "claim_count": 18,
+      "completed_claims": 5,
+      "all_claims_complete": false,
+      "pending_candidate_links": 253,
+      "states": {
+        "partial": 11,
+        "not_started": 2,
+        "complete_no_candidates": 5
+      }
+    },
+    {
+      "video_id": "db_055_UPPksFnfOcU",
+      "url": "https://www.youtube.com/watch?v=UPPksFnfOcU",
+      "claim_count": 24,
+      "completed_claims": 6,
+      "all_claims_complete": false,
+      "pending_candidate_links": 308,
+      "states": {
+        "partial": 15,
+        "not_started": 3,
+        "complete_scored": 1,
+        "complete_no_candidates": 5
+      }
+    },
+    {
+      "video_id": "db_056_VMB1clucLeE",
+      "url": "https://www.youtube.com/watch?v=VMB1clucLeE",
+      "claim_count": 8,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 150,
+      "states": {
+        "partial": 7,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_057_TpqG2KZ0aRk",
+      "url": "https://www.youtube.com/watch?v=TpqG2KZ0aRk",
+      "claim_count": 15,
+      "completed_claims": 5,
+      "all_claims_complete": false,
+      "pending_candidate_links": 212,
+      "states": {
+        "partial": 7,
+        "not_started": 3,
+        "complete_no_candidates": 5
+      }
+    },
+    {
+      "video_id": "db_058_EZd5mIHLLew",
+      "url": "https://www.youtube.com/watch?v=EZd5mIHLLew",
+      "claim_count": 10,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 144,
+      "states": {
+        "partial": 9,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_059_NaLc-_bwGw8",
+      "url": "https://www.youtube.com/watch?v=NaLc-_bwGw8",
+      "claim_count": 16,
+      "completed_claims": 11,
+      "all_claims_complete": false,
+      "pending_candidate_links": 62,
+      "states": {
+        "complete_no_candidates": 11,
+        "not_started": 2,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_060_wKE98OOcdPU",
+      "url": "https://www.youtube.com/watch?v=wKE98OOcdPU",
+      "claim_count": 21,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 263,
+      "states": {
+        "partial": 16,
+        "not_started": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_061_5ED9Yi0UfBI",
+      "url": "https://www.youtube.com/watch?v=5ED9Yi0UfBI",
+      "claim_count": 8,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 302,
+      "states": {
+        "not_started": 2,
+        "partial": 4,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_062_qmesmHU6NEM",
+      "url": "https://www.youtube.com/watch?v=qmesmHU6NEM",
+      "claim_count": 12,
+      "completed_claims": 4,
+      "all_claims_complete": false,
+      "pending_candidate_links": 412,
+      "states": {
+        "partial": 4,
+        "not_started": 4,
+        "complete_scored": 4
+      }
+    },
+    {
+      "video_id": "db_063_q3xSu0OHNPQ",
+      "url": "https://www.youtube.com/watch?v=q3xSu0OHNPQ",
+      "claim_count": 9,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 302,
+      "states": {
+        "not_started": 2,
+        "partial": 4,
+        "complete_scored": 3
+      }
+    },
+    {
+      "video_id": "db_064_a5vX2dHtxUI",
+      "url": "https://www.youtube.com/watch?v=a5vX2dHtxUI",
+      "claim_count": 10,
+      "completed_claims": 4,
+      "all_claims_complete": false,
+      "pending_candidate_links": 284,
+      "states": {
+        "partial": 4,
+        "not_started": 2,
+        "complete_scored": 4
+      }
+    },
+    {
+      "video_id": "db_065_d1vRPXhgJAY",
+      "url": "https://www.youtube.com/watch?v=d1vRPXhgJAY",
+      "claim_count": 17,
+      "completed_claims": 4,
+      "all_claims_complete": false,
+      "pending_candidate_links": 711,
+      "states": {
+        "partial": 10,
+        "complete_scored": 4,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_066_Qk_qjEMCsY8",
+      "url": "https://www.youtube.com/watch?v=Qk_qjEMCsY8",
+      "claim_count": 11,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 428,
+      "states": {
+        "partial": 4,
+        "not_started": 4,
+        "complete_scored": 3
+      }
+    },
+    {
+      "video_id": "db_067_mAyGdVi1ErI",
+      "url": "https://www.youtube.com/watch?v=mAyGdVi1ErI",
+      "claim_count": 10,
+      "completed_claims": 4,
+      "all_claims_complete": false,
+      "pending_candidate_links": 277,
+      "states": {
+        "partial": 5,
+        "not_started": 1,
+        "complete_scored": 4
+      }
+    },
+    {
+      "video_id": "db_068_y9-P6WLcE78",
+      "url": "https://www.youtube.com/watch?v=y9-P6WLcE78",
+      "claim_count": 19,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 747,
+      "states": {
+        "partial": 9,
+        "not_started": 7,
+        "complete_scored": 3
+      }
+    },
+    {
+      "video_id": "db_069_BYfLFgblezo",
+      "url": "https://www.youtube.com/watch?v=BYfLFgblezo",
+      "claim_count": 11,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 428,
+      "states": {
+        "partial": 4,
+        "not_started": 4,
+        "complete_scored": 3
+      }
+    },
+    {
+      "video_id": "db_070_LxuL9MwWRU4",
+      "url": "https://www.youtube.com/watch?v=LxuL9MwWRU4",
+      "claim_count": 8,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 280,
+      "states": {
+        "not_started": 4,
+        "complete_scored": 3,
+        "partial": 1
+      }
+    },
+    {
+      "video_id": "db_071_Xl9VSIn8qRY",
+      "url": "https://www.youtube.com/watch?v=Xl9VSIn8qRY",
+      "claim_count": 26,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1719,
+      "states": {
+        "not_started": 19,
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_072_IDAK_qBMhYk",
+      "url": "https://www.youtube.com/watch?v=IDAK_qBMhYk",
+      "claim_count": 10,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 616,
+      "states": {
+        "not_started": 4,
+        "partial": 6
+      }
+    },
+    {
+      "video_id": "db_073_4iKwv9LP0sg",
+      "url": "https://www.youtube.com/watch?v=4iKwv9LP0sg",
+      "claim_count": 20,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 55,
+      "states": {
+        "not_started": 17,
+        "complete_scored": 1,
+        "partial": 2
+      }
+    },
+    {
+      "video_id": "db_074_tHG5O5CMHSA",
+      "url": "https://www.youtube.com/watch?v=tHG5O5CMHSA",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 28,
+      "states": {
+        "partial": 2,
+        "not_started": 8,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_075_ThVffF2zpl8",
+      "url": "https://www.youtube.com/watch?v=ThVffF2zpl8",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 28,
+      "states": {
+        "partial": 2,
+        "not_started": 8,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_076_mAtb7Cf69nk",
+      "url": "https://www.youtube.com/watch?v=mAtb7Cf69nk",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 28,
+      "states": {
+        "partial": 2,
+        "not_started": 8,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_077_OP3AH0OqWjs",
+      "url": "https://www.youtube.com/watch?v=OP3AH0OqWjs",
+      "claim_count": 9,
+      "completed_claims": 9,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 9
+      }
+    },
+    {
+      "video_id": "db_078_mhzAWG1-UGw",
+      "url": "https://www.youtube.com/watch?v=mhzAWG1-UGw",
+      "claim_count": 9,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 142,
+      "states": {
+        "partial": 5,
+        "not_started": 2,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_079_WCQtPkMGCYE",
+      "url": "https://www.youtube.com/watch?v=WCQtPkMGCYE",
+      "claim_count": 9,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 140,
+      "states": {
+        "partial": 5,
+        "not_started": 2,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_080_yPMKj9wxiKc",
+      "url": "https://www.youtube.com/watch?v=yPMKj9wxiKc",
+      "claim_count": 15,
+      "completed_claims": 10,
+      "all_claims_complete": false,
+      "pending_candidate_links": 95,
+      "states": {
+        "complete_no_candidates": 9,
+        "partial": 4,
+        "not_started": 1,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_081_fN51LUYpxFE",
+      "url": "https://www.youtube.com/watch?v=fN51LUYpxFE",
+      "claim_count": 5,
+      "completed_claims": 5,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 5
+      }
+    },
+    {
+      "video_id": "db_082_AnT61olLCjY",
+      "url": "https://www.youtube.com/watch?v=AnT61olLCjY",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 411,
+      "states": {
+        "not_started": 6,
+        "partial": 6,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_083_OSzLEscspuU",
+      "url": "https://www.youtube.com/watch?v=OSzLEscspuU",
+      "claim_count": 13,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 359,
+      "states": {
+        "partial": 9,
+        "not_started": 4
+      }
+    },
+    {
+      "video_id": "db_084_cqQLmZc6e-Y",
+      "url": "https://www.youtube.com/watch?v=cqQLmZc6e-Y",
+      "claim_count": 14,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 388,
+      "states": {
+        "partial": 10,
+        "not_started": 4
+      }
+    },
+    {
+      "video_id": "db_085_53dM_1gHF_Y",
+      "url": "https://www.youtube.com/watch?v=53dM_1gHF_Y",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 316,
+      "states": {
+        "partial": 9,
+        "complete_scored": 1,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_086_UvRGjZ0WJTc",
+      "url": "https://www.youtube.com/watch?v=UvRGjZ0WJTc",
+      "claim_count": 18,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 95,
+      "states": {
+        "partial": 15,
+        "not_started": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_087_YPWh0N0eRn8",
+      "url": "https://www.youtube.com/watch?v=YPWh0N0eRn8",
+      "claim_count": 16,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 90,
+      "states": {
+        "partial": 14,
+        "not_started": 1,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_088_ZiHnof9A28Y",
+      "url": "https://www.youtube.com/watch?v=ZiHnof9A28Y",
+      "claim_count": 13,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 225,
+      "states": {
+        "partial": 7,
+        "not_started": 6
+      }
+    },
+    {
+      "video_id": "db_089_Qn0R5CD2ocY",
+      "url": "https://www.youtube.com/watch?v=Qn0R5CD2ocY",
+      "claim_count": 13,
+      "completed_claims": 13,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 13
+      }
+    },
+    {
+      "video_id": "db_090_2D8qJ6NROCs",
+      "url": "https://www.youtube.com/watch?v=2D8qJ6NROCs",
+      "claim_count": 31,
+      "completed_claims": 14,
+      "all_claims_complete": false,
+      "pending_candidate_links": 524,
+      "states": {
+        "complete_no_candidates": 14,
+        "partial": 11,
+        "not_started": 6
+      }
+    },
+    {
+      "video_id": "db_091_RmbfFdrWBdo",
+      "url": "https://www.youtube.com/watch?v=RmbfFdrWBdo",
+      "claim_count": 9,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 256,
+      "states": {
+        "partial": 7,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_092_5PUV8qgHtI4",
+      "url": "https://www.youtube.com/watch?v=5PUV8qgHtI4",
+      "claim_count": 17,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 362,
+      "states": {
+        "not_started": 4,
+        "partial": 13
+      }
+    },
+    {
+      "video_id": "db_093_qHU1meSxfco",
+      "url": "https://www.youtube.com/watch?v=qHU1meSxfco",
+      "claim_count": 10,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 511,
+      "states": {
+        "not_started": 4,
+        "partial": 6
+      }
+    },
+    {
+      "video_id": "db_094_l9KlwI5YX44",
+      "url": "https://www.youtube.com/watch?v=l9KlwI5YX44",
+      "claim_count": 9,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 452,
+      "states": {
+        "not_started": 3,
+        "partial": 6
+      }
+    },
+    {
+      "video_id": "db_095_e2JpCbQWuvo",
+      "url": "https://www.youtube.com/watch?v=e2JpCbQWuvo",
+      "claim_count": 29,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 166,
+      "states": {
+        "partial": 25,
+        "not_started": 4
+      }
+    },
+    {
+      "video_id": "db_096_LGDnFYgymEQ",
+      "url": "https://www.youtube.com/watch?v=LGDnFYgymEQ",
+      "claim_count": 16,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 331,
+      "states": {
+        "not_started": 14,
+        "partial": 2
+      }
+    },
+    {
+      "video_id": "db_097_un653gDaVwY",
+      "url": "https://www.youtube.com/watch?v=un653gDaVwY",
+      "claim_count": 8,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 647,
+      "states": {
+        "partial": 7,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_098_6-u-FnfXyZs",
+      "url": "https://www.youtube.com/watch?v=6-u-FnfXyZs",
+      "claim_count": 9,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 123,
+      "states": {
+        "not_started": 5,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_099_dSjddyyEbrQ",
+      "url": "https://www.youtube.com/watch?v=dSjddyyEbrQ",
+      "claim_count": 5,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 24,
+      "states": {
+        "partial": 1,
+        "not_started": 1,
+        "complete_scored": 3
+      }
+    },
+    {
+      "video_id": "db_100_X6OK887LWyA",
+      "url": "https://www.youtube.com/watch?v=X6OK887LWyA",
+      "claim_count": 19,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 834,
+      "states": {
+        "partial": 11,
+        "not_started": 7,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_101_k9HPaTy2jAc",
+      "url": "https://www.youtube.com/watch?v=k9HPaTy2jAc",
+      "claim_count": 8,
+      "completed_claims": 8,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 8
+      }
+    },
+    {
+      "video_id": "db_102_j2gn9xONdJE",
+      "url": "https://www.youtube.com/watch?v=j2gn9xONdJE",
+      "claim_count": 17,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 478,
+      "states": {
+        "not_started": 7,
+        "partial": 9,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_103_B1QC0IfbbBg",
+      "url": "https://www.youtube.com/watch?v=B1QC0IfbbBg",
+      "claim_count": 20,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 392,
+      "states": {
+        "not_started": 8,
+        "partial": 11,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_104_2DMM40MV6do",
+      "url": "https://www.youtube.com/watch?v=2DMM40MV6do",
+      "claim_count": 17,
+      "completed_claims": 17,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 17
+      }
+    },
+    {
+      "video_id": "db_105_ZvdLzOq3RmI",
+      "url": "https://www.youtube.com/watch?v=ZvdLzOq3RmI",
+      "claim_count": 22,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1170,
+      "states": {
+        "not_started": 4,
+        "partial": 17,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_106_o0Phkzlsh0M",
+      "url": "https://www.youtube.com/watch?v=o0Phkzlsh0M",
+      "claim_count": 17,
+      "completed_claims": 8,
+      "all_claims_complete": false,
+      "pending_candidate_links": 402,
+      "states": {
+        "not_started": 3,
+        "complete_no_candidates": 8,
+        "partial": 6
+      }
+    },
+    {
+      "video_id": "db_107_vGLl-CPSrKY",
+      "url": "https://www.youtube.com/watch?v=vGLl-CPSrKY",
+      "claim_count": 29,
+      "completed_claims": 15,
+      "all_claims_complete": false,
+      "pending_candidate_links": 661,
+      "states": {
+        "not_started": 5,
+        "complete_no_candidates": 15,
+        "partial": 9
+      }
+    },
+    {
+      "video_id": "db_108_KHBsiGaxmc8",
+      "url": "https://www.youtube.com/watch?v=KHBsiGaxmc8",
+      "claim_count": 25,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1303,
+      "states": {
+        "not_started": 4,
+        "partial": 21
+      }
+    },
+    {
+      "video_id": "db_109_ReV-nF8-YjE",
+      "url": "https://www.youtube.com/watch?v=ReV-nF8-YjE",
+      "claim_count": 40,
+      "completed_claims": 13,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1306,
+      "states": {
+        "not_started": 4,
+        "partial": 23,
+        "complete_no_candidates": 13
+      }
+    },
+    {
+      "video_id": "db_110_1iCNGuRKt2w",
+      "url": "https://www.youtube.com/watch?v=1iCNGuRKt2w",
+      "claim_count": 35,
+      "completed_claims": 7,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1331,
+      "states": {
+        "not_started": 11,
+        "complete_no_candidates": 7,
+        "partial": 17
+      }
+    },
+    {
+      "video_id": "db_111_LVYFleyCAk4",
+      "url": "https://www.youtube.com/watch?v=LVYFleyCAk4",
+      "claim_count": 14,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 652,
+      "states": {
+        "not_started": 5,
+        "complete_scored": 1,
+        "partial": 8
+      }
+    },
+    {
+      "video_id": "db_112_o3J1gXJxpa8",
+      "url": "https://www.youtube.com/watch?v=o3J1gXJxpa8",
+      "claim_count": 18,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 859,
+      "states": {
+        "not_started": 8,
+        "partial": 8,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_113_OIr_XNBj_a4",
+      "url": "https://www.youtube.com/watch?v=OIr_XNBj_a4",
+      "claim_count": 31,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1588,
+      "states": {
+        "not_started": 12,
+        "partial": 18,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_114_g7TzMEZKjaU",
+      "url": "https://www.youtube.com/watch?v=g7TzMEZKjaU",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 140,
+      "states": {
+        "not_started": 2,
+        "partial": 10,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_115_qzINw249IOU",
+      "url": "https://www.youtube.com/watch?v=qzINw249IOU",
+      "claim_count": 38,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 2181,
+      "states": {
+        "not_started": 4,
+        "partial": 34
+      }
+    },
+    {
+      "video_id": "db_116_m_w5BCSok00",
+      "url": "https://www.youtube.com/watch?v=m_w5BCSok00",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 410,
+      "states": {
+        "not_started": 9,
+        "partial": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_117_d5L0nVIMMM0",
+      "url": "https://www.youtube.com/watch?v=d5L0nVIMMM0",
+      "claim_count": 17,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 600,
+      "states": {
+        "not_started": 14,
+        "partial": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_118_vUsqYEacSKM",
+      "url": "https://www.youtube.com/watch?v=vUsqYEacSKM",
+      "claim_count": 8,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 258,
+      "states": {
+        "not_started": 5,
+        "partial": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_119_i7nhobUKNeg",
+      "url": "https://www.youtube.com/watch?v=i7nhobUKNeg",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 448,
+      "states": {
+        "not_started": 10,
+        "partial": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_120_QUwiyY9Qh_k",
+      "url": "https://www.youtube.com/watch?v=QUwiyY9Qh_k",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 151,
+      "states": {
+        "partial": 8,
+        "complete_scored": 1,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_121_p3YufTgQRHA",
+      "url": "https://www.youtube.com/watch?v=p3YufTgQRHA",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 705,
+      "states": {
+        "partial": 7,
+        "not_started": 4,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_122_pKOtz25IIbs",
+      "url": "https://www.youtube.com/watch?v=pKOtz25IIbs",
+      "claim_count": 7,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 112,
+      "states": {
+        "not_started": 3,
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_123_seN7xZFP5eE",
+      "url": "https://www.youtube.com/watch?v=seN7xZFP5eE",
+      "claim_count": 12,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 155,
+      "states": {
+        "partial": 3,
+        "not_started": 9
+      }
+    },
+    {
+      "video_id": "db_124_h7te3HAxv-A",
+      "url": "https://www.youtube.com/watch?v=h7te3HAxv-A",
+      "claim_count": 19,
+      "completed_claims": 10,
+      "all_claims_complete": false,
+      "pending_candidate_links": 225,
+      "states": {
+        "not_started": 9,
+        "complete_no_candidates": 10
+      }
+    },
+    {
+      "video_id": "db_125_M4AD7_oBfp4",
+      "url": "https://www.youtube.com/watch?v=M4AD7_oBfp4",
+      "claim_count": 32,
+      "completed_claims": 8,
+      "all_claims_complete": false,
+      "pending_candidate_links": 543,
+      "states": {
+        "partial": 15,
+        "not_started": 9,
+        "complete_scored": 2,
+        "complete_no_candidates": 6
+      }
+    },
+    {
+      "video_id": "db_126_1c3ZmUXrc8A",
+      "url": "https://www.youtube.com/watch?v=1c3ZmUXrc8A",
+      "claim_count": 18,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 495,
+      "states": {
+        "partial": 7,
+        "not_started": 10,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_127_kNWjguHhRs4",
+      "url": "https://www.youtube.com/watch?v=kNWjguHhRs4",
+      "claim_count": 16,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 777,
+      "states": {
+        "not_started": 2,
+        "partial": 13,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_128_0nXNWl3B1Z4",
+      "url": "https://www.youtube.com/watch?v=0nXNWl3B1Z4",
+      "claim_count": 16,
+      "completed_claims": 16,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 16
+      }
+    },
+    {
+      "video_id": "db_129_ZRtOaodVT-U",
+      "url": "https://www.youtube.com/watch?v=ZRtOaodVT-U",
+      "claim_count": 14,
+      "completed_claims": 14,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 14
+      }
+    },
+    {
+      "video_id": "db_130_iBZsQk9ykAQ",
+      "url": "https://www.youtube.com/watch?v=iBZsQk9ykAQ",
+      "claim_count": 8,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 489,
+      "states": {
+        "not_started": 7,
+        "partial": 1
+      }
+    },
+    {
+      "video_id": "db_131_J5Ofe99LM0U",
+      "url": "https://www.youtube.com/watch?v=J5Ofe99LM0U",
+      "claim_count": 9,
+      "completed_claims": 9,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 9
+      }
+    },
+    {
+      "video_id": "db_132__MNYBmy24nk",
+      "url": "https://www.youtube.com/watch?v=_MNYBmy24nk",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 883,
+      "states": {
+        "partial": 9,
+        "complete_scored": 1,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_133_lGVQDIid77Q",
+      "url": "https://www.youtube.com/watch?v=lGVQDIid77Q",
+      "claim_count": 4,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 5,
+      "states": {
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_134_eBXQtWMPUGM",
+      "url": "https://www.youtube.com/watch?v=eBXQtWMPUGM",
+      "claim_count": 4,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 5,
+      "states": {
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_135_0EkaCDWmB04",
+      "url": "https://www.youtube.com/watch?v=0EkaCDWmB04",
+      "claim_count": 9,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 452,
+      "states": {
+        "partial": 3,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_136_40OyEPJBj1E",
+      "url": "https://www.youtube.com/watch?v=40OyEPJBj1E",
+      "claim_count": 14,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 575,
+      "states": {
+        "partial": 8,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_137_e89OkELFbBY",
+      "url": "https://www.youtube.com/watch?v=e89OkELFbBY",
+      "claim_count": 14,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 575,
+      "states": {
+        "partial": 8,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_138_PTmYGvz-n84",
+      "url": "https://www.youtube.com/watch?v=PTmYGvz-n84",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 342,
+      "states": {
+        "partial": 10,
+        "complete_scored": 1,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_139_3ClBJSsUX04",
+      "url": "https://www.youtube.com/watch?v=3ClBJSsUX04",
+      "claim_count": 14,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 421,
+      "states": {
+        "partial": 12,
+        "complete_scored": 1,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_140_TrU6ClZh2Gk",
+      "url": "https://www.youtube.com/watch?v=TrU6ClZh2Gk",
+      "claim_count": 18,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 536,
+      "states": {
+        "partial": 15,
+        "complete_scored": 1,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_141_F1owLR8fI-Y",
+      "url": "https://www.youtube.com/watch?v=F1owLR8fI-Y",
+      "claim_count": 16,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 474,
+      "states": {
+        "partial": 14,
+        "complete_scored": 1,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_142_nUgOnoNbEfU",
+      "url": "https://www.youtube.com/watch?v=nUgOnoNbEfU",
+      "claim_count": 27,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 139,
+      "states": {
+        "partial": 17,
+        "not_started": 9,
+        "complete_no_candidates": 1
+      }
+    },
+    {
+      "video_id": "db_143_iPlIpMrGcp0",
+      "url": "https://www.youtube.com/watch?v=iPlIpMrGcp0",
+      "claim_count": 7,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 306,
+      "states": {
+        "partial": 4,
+        "not_started": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_144_5ykRFN8-k8s",
+      "url": "https://www.youtube.com/watch?v=5ykRFN8-k8s",
+      "claim_count": 7,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 477,
+      "states": {
+        "partial": 4,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_145_7m0KUQskVVA",
+      "url": "https://www.youtube.com/watch?v=7m0KUQskVVA",
+      "claim_count": 19,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 961,
+      "states": {
+        "partial": 11,
+        "not_started": 8
+      }
+    },
+    {
+      "video_id": "db_146_Z8k8OLPv2Zw",
+      "url": "https://www.youtube.com/watch?v=Z8k8OLPv2Zw",
+      "claim_count": 21,
+      "completed_claims": 5,
+      "all_claims_complete": false,
+      "pending_candidate_links": 492,
+      "states": {
+        "partial": 13,
+        "complete_no_candidates": 5,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_147_68LD5c_NAQ8",
+      "url": "https://www.youtube.com/watch?v=68LD5c_NAQ8",
+      "claim_count": 23,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 604,
+      "states": {
+        "partial": 15,
+        "complete_scored": 3,
+        "not_started": 5
+      }
+    },
+    {
+      "video_id": "db_148_14tl3hRHPhY",
+      "url": "https://www.youtube.com/watch?v=14tl3hRHPhY",
+      "claim_count": 23,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 609,
+      "states": {
+        "partial": 15,
+        "complete_scored": 3,
+        "not_started": 5
+      }
+    },
+    {
+      "video_id": "db_149_oFkaj0c3LoE",
+      "url": "https://www.youtube.com/watch?v=oFkaj0c3LoE",
+      "claim_count": 23,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 609,
+      "states": {
+        "partial": 15,
+        "complete_scored": 3,
+        "not_started": 5
+      }
+    },
+    {
+      "video_id": "db_150_2E-n2nFG6fU",
+      "url": "https://www.youtube.com/watch?v=2E-n2nFG6fU",
+      "claim_count": 24,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 641,
+      "states": {
+        "partial": 16,
+        "complete_scored": 3,
+        "not_started": 5
+      }
+    },
+    {
+      "video_id": "db_151_xZrp2A0uYqM",
+      "url": "https://www.youtube.com/watch?v=xZrp2A0uYqM",
+      "claim_count": 12,
+      "completed_claims": 12,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 12
+      }
+    },
+    {
+      "video_id": "db_152_r2yYfz_JtlU",
+      "url": "https://www.youtube.com/watch?v=r2yYfz_JtlU",
+      "claim_count": 17,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 450,
+      "states": {
+        "not_started": 6,
+        "partial": 11
+      }
+    },
+    {
+      "video_id": "db_153_np4kl0sP9d4",
+      "url": "https://www.youtube.com/watch?v=np4kl0sP9d4",
+      "claim_count": 16,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 88,
+      "states": {
+        "not_started": 8,
+        "complete_scored": 3,
+        "partial": 5
+      }
+    },
+    {
+      "video_id": "db_154_O0VmSF9Ks0U",
+      "url": "https://www.youtube.com/watch?v=O0VmSF9Ks0U",
+      "claim_count": 15,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 80,
+      "states": {
+        "not_started": 7,
+        "complete_scored": 3,
+        "partial": 5
+      }
+    },
+    {
+      "video_id": "db_155_OJHR-vtZ2ew",
+      "url": "https://www.youtube.com/watch?v=OJHR-vtZ2ew",
+      "claim_count": 12,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 59,
+      "states": {
+        "not_started": 5,
+        "complete_scored": 3,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_156_DQi8J-8WkZ0",
+      "url": "https://www.youtube.com/watch?v=DQi8J-8WkZ0",
+      "claim_count": 13,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 67,
+      "states": {
+        "not_started": 6,
+        "complete_scored": 3,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_157_-kjoqO9Um6Q",
+      "url": "https://www.youtube.com/watch?v=-kjoqO9Um6Q",
+      "claim_count": 14,
+      "completed_claims": 3,
+      "all_claims_complete": false,
+      "pending_candidate_links": 75,
+      "states": {
+        "not_started": 7,
+        "complete_scored": 3,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_158_5XrgbvRPUx8",
+      "url": "https://www.youtube.com/watch?v=5XrgbvRPUx8",
+      "claim_count": 16,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 411,
+      "states": {
+        "not_started": 6,
+        "partial": 10
+      }
+    },
+    {
+      "video_id": "db_159_BreFh0ffGLw",
+      "url": "https://www.youtube.com/watch?v=BreFh0ffGLw",
+      "claim_count": 26,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 2577,
+      "states": {
+        "not_started": 19,
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_160_qBFBNIBlB3Q",
+      "url": "https://www.youtube.com/watch?v=qBFBNIBlB3Q",
+      "claim_count": 36,
+      "completed_claims": 9,
+      "all_claims_complete": false,
+      "pending_candidate_links": 387,
+      "states": {
+        "not_started": 21,
+        "partial": 6,
+        "complete_no_candidates": 9
+      }
+    },
+    {
+      "video_id": "db_162_4jXlKg_Wko8",
+      "url": "https://www.youtube.com/watch?v=4jXlKg_Wko8",
+      "claim_count": 22,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 495,
+      "states": {
+        "not_started": 12,
+        "partial": 10
+      }
+    },
+    {
+      "video_id": "db_163_mIzLM0ZWBCU",
+      "url": "https://www.youtube.com/watch?v=mIzLM0ZWBCU",
+      "claim_count": 19,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1670,
+      "states": {
+        "not_started": 10,
+        "partial": 9
+      }
+    },
+    {
+      "video_id": "db_164_Gl7-zKA-GwI",
+      "url": "https://www.youtube.com/watch?v=Gl7-zKA-GwI",
+      "claim_count": 24,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1831,
+      "states": {
+        "partial": 13,
+        "not_started": 10,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_165_3L_QXEbwxpA",
+      "url": "https://www.youtube.com/watch?v=3L_QXEbwxpA",
+      "claim_count": 33,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1252,
+      "states": {
+        "not_started": 18,
+        "partial": 15
+      }
+    },
+    {
+      "video_id": "db_166_eoe2GUtz4v8",
+      "url": "https://www.youtube.com/watch?v=eoe2GUtz4v8",
+      "claim_count": 10,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 184,
+      "states": {
+        "partial": 4,
+        "not_started": 5,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_167_pLQ_w6U6lx8",
+      "url": "https://www.youtube.com/watch?v=pLQ_w6U6lx8",
+      "claim_count": 32,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 615,
+      "states": {
+        "partial": 22,
+        "not_started": 9,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_168_a5WbO4EBBHc",
+      "url": "https://www.youtube.com/watch?v=a5WbO4EBBHc",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 192,
+      "states": {
+        "partial": 11,
+        "not_started": 1,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_169_fFoA1gsYAr4",
+      "url": "https://www.youtube.com/watch?v=fFoA1gsYAr4",
+      "claim_count": 15,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 273,
+      "states": {
+        "partial": 11,
+        "not_started": 4
+      }
+    },
+    {
+      "video_id": "db_170_2w9to5aSbYY",
+      "url": "https://www.youtube.com/watch?v=2w9to5aSbYY",
+      "claim_count": 4,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 56,
+      "states": {
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_171_5_h6huHbNfM",
+      "url": "https://www.youtube.com/watch?v=5_h6huHbNfM",
+      "claim_count": 14,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 173,
+      "states": {
+        "partial": 13,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_172_4cxxyiYdnQk",
+      "url": "https://www.youtube.com/watch?v=4cxxyiYdnQk",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 149,
+      "states": {
+        "partial": 11,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_173_go-uppdIkg0",
+      "url": "https://www.youtube.com/watch?v=go-uppdIkg0",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 158,
+      "states": {
+        "partial": 11,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_174_Bmw8jdvxdLw",
+      "url": "https://www.youtube.com/watch?v=Bmw8jdvxdLw",
+      "claim_count": 12,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 158,
+      "states": {
+        "partial": 11,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_175_HMToSnKluxE",
+      "url": "https://www.youtube.com/watch?v=HMToSnKluxE",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 160,
+      "states": {
+        "partial": 12,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_176_6o8pxrOwFtQ",
+      "url": "https://www.youtube.com/watch?v=6o8pxrOwFtQ",
+      "claim_count": 1,
+      "completed_claims": 1,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_177_nxaYvc4IY18",
+      "url": "https://www.youtube.com/watch?v=nxaYvc4IY18",
+      "claim_count": 1,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 26,
+      "states": {
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_178_4S96NKXWpU8",
+      "url": "https://www.youtube.com/watch?v=4S96NKXWpU8",
+      "claim_count": 13,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 544,
+      "states": {
+        "partial": 10,
+        "complete_scored": 1,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_179_mnl8jo33nD4",
+      "url": "https://www.youtube.com/watch?v=mnl8jo33nD4",
+      "claim_count": 17,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 210,
+      "states": {
+        "partial": 10,
+        "not_started": 6,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_180_eliz4irOChY",
+      "url": "https://www.youtube.com/watch?v=eliz4irOChY",
+      "claim_count": 20,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1326,
+      "states": {
+        "partial": 16,
+        "not_started": 4
+      }
+    },
+    {
+      "video_id": "db_181_NIjAo7fh-Kg",
+      "url": "https://www.youtube.com/watch?v=NIjAo7fh-Kg",
+      "claim_count": 24,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1399,
+      "states": {
+        "partial": 16,
+        "not_started": 8
+      }
+    },
+    {
+      "video_id": "db_183_sofweMTrfjw",
+      "url": "https://www.youtube.com/watch?v=sofweMTrfjw",
+      "claim_count": 16,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 499,
+      "states": {
+        "partial": 13,
+        "not_started": 2,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_184_EAeo2q28-Po",
+      "url": "https://www.youtube.com/watch?v=EAeo2q28-Po",
+      "claim_count": 7,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 36,
+      "states": {
+        "not_started": 3,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_185_Pev0dJ78QSU",
+      "url": "https://www.youtube.com/watch?v=Pev0dJ78QSU",
+      "claim_count": 24,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 242,
+      "states": {
+        "not_started": 12,
+        "partial": 12
+      }
+    },
+    {
+      "video_id": "db_186_HrN_Oujgivs",
+      "url": "https://www.youtube.com/watch?v=HrN_Oujgivs",
+      "claim_count": 22,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 329,
+      "states": {
+        "not_started": 2,
+        "partial": 20
+      }
+    },
+    {
+      "video_id": "db_187_xxRw4tRt7-0",
+      "url": "https://www.youtube.com/watch?v=xxRw4tRt7-0",
+      "claim_count": 11,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 64,
+      "states": {
+        "not_started": 9,
+        "partial": 2
+      }
+    },
+    {
+      "video_id": "db_188_OH4NPEmrC5Q",
+      "url": "https://www.youtube.com/watch?v=OH4NPEmrC5Q",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 56,
+      "states": {
+        "not_started": 7,
+        "complete_scored": 1,
+        "partial": 3
+      }
+    },
+    {
+      "video_id": "db_189__mZYh80V4l0",
+      "url": "https://www.youtube.com/watch?v=_mZYh80V4l0",
+      "claim_count": 7,
+      "completed_claims": 7,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 7
+      }
+    },
+    {
+      "video_id": "db_190_3hloKanT9NI",
+      "url": "https://www.youtube.com/watch?v=3hloKanT9NI",
+      "claim_count": 6,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 34,
+      "states": {
+        "not_started": 5,
+        "partial": 1
+      }
+    },
+    {
+      "video_id": "db_191_YbhvQeQ7_BI",
+      "url": "https://www.youtube.com/watch?v=YbhvQeQ7_BI",
+      "claim_count": 17,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 96,
+      "states": {
+        "not_started": 13,
+        "partial": 4
+      }
+    },
+    {
+      "video_id": "db_192_jdu8bGXSDt4",
+      "url": "https://www.youtube.com/watch?v=jdu8bGXSDt4",
+      "claim_count": 6,
+      "completed_claims": 6,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 6
+      }
+    },
+    {
+      "video_id": "db_193_6LRb_cwbwBw",
+      "url": "https://www.youtube.com/watch?v=6LRb_cwbwBw",
+      "claim_count": 11,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 64,
+      "states": {
+        "not_started": 10,
+        "partial": 1
+      }
+    },
+    {
+      "video_id": "db_194_VNwKAMpEeLU",
+      "url": "https://www.youtube.com/watch?v=VNwKAMpEeLU",
+      "claim_count": 10,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 58,
+      "states": {
+        "not_started": 9,
+        "partial": 1
+      }
+    },
+    {
+      "video_id": "db_195_-RaTg6NEMZ0",
+      "url": "https://www.youtube.com/watch?v=-RaTg6NEMZ0",
+      "claim_count": 11,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 303,
+      "states": {
+        "not_started": 4,
+        "partial": 6,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_196_CHOw23s17GA",
+      "url": "https://www.youtube.com/watch?v=CHOw23s17GA",
+      "claim_count": 59,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 321,
+      "states": {
+        "not_started": 34,
+        "partial": 25
+      }
+    },
+    {
+      "video_id": "db_197_X0jCGgzhae0",
+      "url": "https://www.youtube.com/watch?v=X0jCGgzhae0",
+      "claim_count": 10,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 162,
+      "states": {
+        "partial": 8,
+        "complete_scored": 1,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_198_JkqRTHd0Nsg",
+      "url": "https://www.youtube.com/watch?v=JkqRTHd0Nsg",
+      "claim_count": 8,
+      "completed_claims": 7,
+      "all_claims_complete": false,
+      "pending_candidate_links": 3,
+      "states": {
+        "complete_no_candidates": 7,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_199_fgMIEID1N30",
+      "url": "https://www.youtube.com/watch?v=fgMIEID1N30",
+      "claim_count": 21,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 858,
+      "states": {
+        "not_started": 14,
+        "partial": 7
+      }
+    },
+    {
+      "video_id": "db_200_WLfMEmR3ZF4",
+      "url": "https://www.youtube.com/watch?v=WLfMEmR3ZF4",
+      "claim_count": 9,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 129,
+      "states": {
+        "not_started": 3,
+        "partial": 6
+      }
+    },
+    {
+      "video_id": "db_201_YBn7emsawpQ",
+      "url": "https://www.youtube.com/watch?v=YBn7emsawpQ",
+      "claim_count": 21,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 2267,
+      "states": {
+        "not_started": 10,
+        "partial": 10,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_202_oTg1JYJBG6I",
+      "url": "https://www.youtube.com/watch?v=oTg1JYJBG6I",
+      "claim_count": 50,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 759,
+      "states": {
+        "partial": 30,
+        "not_started": 20
+      }
+    },
+    {
+      "video_id": "db_203_hBfs_yl13uQ",
+      "url": "https://www.youtube.com/watch?v=hBfs_yl13uQ",
+      "claim_count": 10,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 372,
+      "states": {
+        "partial": 8,
+        "not_started": 2
+      }
+    },
+    {
+      "video_id": "db_204_73yGR-979W0",
+      "url": "https://www.youtube.com/watch?v=73yGR-979W0",
+      "claim_count": 8,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 260,
+      "states": {
+        "partial": 2,
+        "not_started": 4,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_205_myFgNLXC58I",
+      "url": "https://www.youtube.com/watch?v=myFgNLXC58I",
+      "claim_count": 11,
+      "completed_claims": 2,
+      "all_claims_complete": false,
+      "pending_candidate_links": 365,
+      "states": {
+        "partial": 5,
+        "not_started": 4,
+        "complete_scored": 2
+      }
+    },
+    {
+      "video_id": "db_206_iGsiTT2xZMY",
+      "url": "https://www.youtube.com/watch?v=iGsiTT2xZMY",
+      "claim_count": 25,
+      "completed_claims": 4,
+      "all_claims_complete": false,
+      "pending_candidate_links": 219,
+      "states": {
+        "not_started": 3,
+        "partial": 18,
+        "complete_scored": 1,
+        "complete_no_candidates": 3
+      }
+    },
+    {
+      "video_id": "db_207_2gBANzYTC5U",
+      "url": "https://www.youtube.com/watch?v=2gBANzYTC5U",
+      "claim_count": 25,
+      "completed_claims": 4,
+      "all_claims_complete": false,
+      "pending_candidate_links": 219,
+      "states": {
+        "not_started": 3,
+        "partial": 18,
+        "complete_scored": 1,
+        "complete_no_candidates": 3
+      }
+    },
+    {
+      "video_id": "db_208_0drznbKPJgc",
+      "url": "https://www.youtube.com/watch?v=0drznbKPJgc",
+      "claim_count": 19,
+      "completed_claims": 19,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 19
+      }
+    },
+    {
+      "video_id": "db_209_roKU_LDwQkM",
+      "url": "https://www.youtube.com/watch?v=roKU_LDwQkM",
+      "claim_count": 11,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 262,
+      "states": {
+        "partial": 8,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_210_NKyAOi6Hrg8",
+      "url": "https://www.youtube.com/watch?v=NKyAOi6Hrg8",
+      "claim_count": 16,
+      "completed_claims": 16,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 16
+      }
+    },
+    {
+      "video_id": "db_211_L4KfNfwGB1s",
+      "url": "https://www.youtube.com/watch?v=L4KfNfwGB1s",
+      "claim_count": 27,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1002,
+      "states": {
+        "not_started": 13,
+        "partial": 13,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_212_qbQfBqPEqGQ",
+      "url": "https://www.youtube.com/watch?v=qbQfBqPEqGQ",
+      "claim_count": 16,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 427,
+      "states": {
+        "partial": 14,
+        "not_started": 1,
+        "complete_scored": 1
+      }
+    },
+    {
+      "video_id": "db_213_P8VZYBOsflM",
+      "url": "https://www.youtube.com/watch?v=P8VZYBOsflM",
+      "claim_count": 8,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 168,
+      "states": {
+        "partial": 7,
+        "not_started": 1
+      }
+    },
+    {
+      "video_id": "db_214_bhFZouAiiGc",
+      "url": "https://www.youtube.com/watch?v=bhFZouAiiGc",
+      "claim_count": 6,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 242,
+      "states": {
+        "complete_scored": 1,
+        "partial": 2,
+        "not_started": 3
+      }
+    },
+    {
+      "video_id": "db_215_-afH55ajzSo",
+      "url": "https://www.youtube.com/watch?v=-afH55ajzSo",
+      "claim_count": 11,
+      "completed_claims": 11,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 11
+      }
+    },
+    {
+      "video_id": "db_216_FgCUShwwLPs",
+      "url": "https://www.youtube.com/watch?v=FgCUShwwLPs",
+      "claim_count": 2,
+      "completed_claims": 0,
+      "all_claims_complete": false,
+      "pending_candidate_links": 27,
+      "states": {
+        "partial": 2
+      }
+    },
+    {
+      "video_id": "db_217_SHhSMRCCVEM",
+      "url": "https://www.youtube.com/watch?v=SHhSMRCCVEM",
+      "claim_count": 2,
+      "completed_claims": 2,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 2
+      }
+    },
+    {
+      "video_id": "db_218_ZBdUgPEQmxQ",
+      "url": "https://www.youtube.com/watch?v=ZBdUgPEQmxQ",
+      "claim_count": 21,
+      "completed_claims": 21,
+      "all_claims_complete": true,
+      "pending_candidate_links": 0,
+      "states": {
+        "complete_no_candidates": 21
+      }
+    }
+  ],
+  "fully_processed_videos_claim_count": 213,
+  "latest_video_progress": [
+    {
+      "video_id": "db_113_OIr_XNBj_a4",
+      "url": "https://www.youtube.com/watch?v=OIr_XNBj_a4",
+      "claim_count": 31,
+      "completed_claims": 1,
+      "all_claims_complete": false,
+      "pending_candidate_links": 1588,
+      "states": {
+        "not_started": 12,
+        "partial": 18,
+        "complete_scored": 1
+      }
+    }
+  ]
+}

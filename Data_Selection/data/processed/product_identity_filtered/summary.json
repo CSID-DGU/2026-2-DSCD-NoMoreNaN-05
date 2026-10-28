@@ -1,0 +1,39 @@
+{
+  "claim_count": 3400,
+  "baseline": {
+    "matched": 2427,
+    "unresolved_product_ref": 49,
+    "unmatched": 924
+  },
+  "filtered": {
+    "matched": 2589,
+    "unresolved_product_ref": 49,
+    "unmatched": 762
+  },
+  "claim_transitions": {
+    "matched->matched": 2427,
+    "unmatched->unmatched": 762,
+    "unmatched->matched": 162
+  },
+  "matched_routes": {
+    "exact_name": 2577,
+    "full_name_damerau_levenshtein": 3,
+    "whole_phrase_and_manufacturer": 9
+  },
+  "unmatched_reasons": {
+    "unresolved_product_ref": 49,
+    "manufacturer_missing_for_typo_route": 102,
+    "multiple_candidates": 243,
+    "no_same_manufacturer_product_at_80_or_above": 21,
+    "missing_product_name_and_report_number": 27,
+    "known_identity_conflict": 246,
+    "conflicting_input_identity_observations": 95,
+    "manufacturer_missing": 28
+  },
+  "accuracy": "Not measured: no independently annotated ground truth. Match rate is not accuracy.",
+  "threshold": 80,
+  "metric": "100 * (1 - true Damerau-Levenshtein distance / max full-name length)",
+  "evidence_retrieval_executed": false,
+  "normalization": "Corporate markers and separated factory/branch/business-unit suffixes; no legal-company aliases.",
+  "caveat": "Distinct report numbers remain distinct products; multiple survivors are not auto-selected."
+}

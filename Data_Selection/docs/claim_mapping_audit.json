@@ -1,0 +1,746 @@
+{
+  "created_at": "2026-10-15T13:09:43.043859+00:00",
+  "input_sha256": "0baaa08a7ddf2ca377c0ec91139ec416a29fa79fdb9571f045ce36c10e8d3de8",
+  "input_repairs": [
+    "Wrapped top-level claims member in an object for audit parsing only",
+    "Removed trailing commas outside quoted strings in audit copy only"
+  ],
+  "claim_count": 15,
+  "method": "Literal and whitespace-normalized SQL coverage checks only; no embeddings, LLM or verdicts",
+  "claims": [
+    {
+      "claim_id": "c01",
+      "text": "HACCP",
+      "t_start": 0.0,
+      "t_end": 2.0,
+      "duration": 2.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "인증"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v07",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c02",
+      "text": "1,000 mg x 30T (30g)",
+      "t_start": 0.0,
+      "t_end": 2.0,
+      "duration": 2.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "수치"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v08",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c03",
+      "text": "KAIST 카이스트 박사 특허원료로 공동개발",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration": 4.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "인물 자격",
+        "제품 관계",
+        "인증"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v01",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c04",
+      "text": "신기술 인증받은 효소공법으로 생산한 미량 희귀 진세노사이드 C-kd와 Rh2 함유",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration": 4.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "인증"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v02",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c05",
+      "text": "초유단백분말(CBP) 300 mg",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration": 4.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "수치"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v03",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c06",
+      "text": "뉴질랜드 우유칼슘 12,000 mg",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration": 4.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "수치"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v04",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c07",
+      "text": "네덜란드 산양유분말 600 mg",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration": 4.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "수치"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v05",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c08",
+      "text": "한속단달개비추출분말 (YGF-251)",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration": 4.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v06",
+            "frame_index": 60,
+            "timestamp": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c09",
+      "text": "이 알갱이 하나에 홍삼의 효능을 100배 늘려주는 특허 성분 CK가 들어있는데",
+      "t_start": 3.76,
+      "t_end": 7.36,
+      "duration": 3.6,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": "narrator",
+      "dup_of": null,
+      "types": [
+        "효능",
+        "수치",
+        "인증"
+      ],
+      "source": "음성+화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [
+          {
+            "claim_id": "a01",
+            "segment_ids": [
+              0
+            ]
+          }
+        ],
+        "visual": [
+          {
+            "claim_id": "v09",
+            "frame_index": 300,
+            "timestamp": 5.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c10",
+      "text": "잠잠했던 성장판이 빠르게 활성화되면서",
+      "t_start": 11.04,
+      "t_end": 13.5,
+      "duration": 2.46,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": "narrator",
+      "dup_of": null,
+      "types": [
+        "효능"
+      ],
+      "source": "음성+화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [
+          {
+            "claim_id": "a02",
+            "segment_ids": [
+              1
+            ]
+          }
+        ],
+        "visual": [
+          {
+            "claim_id": "v10",
+            "frame_index": 690,
+            "timestamp": 11.5
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c11",
+      "text": "팔 다리가 숙숙 자라는 게 눈에 보인다고?",
+      "t_start": 13.28,
+      "t_end": 15.5,
+      "duration": 2.22,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": "narrator",
+      "dup_of": null,
+      "types": [
+        "효능"
+      ],
+      "source": "음성+화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [
+          {
+            "claim_id": "a03",
+            "segment_ids": [
+              1
+            ]
+          }
+        ],
+        "visual": [
+          {
+            "claim_id": "v11",
+            "frame_index": 840,
+            "timestamp": 14.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c12",
+      "text": "이게 가수 박지현, 축구 선수 이동국 등 연예인들이 아들한테 직접 먹인다고 소문난 솔루션인데",
+      "t_start": 15.44,
+      "t_end": 20.5,
+      "duration": 5.06,
+      "target": "알파아이",
+      "scope": "OUT_OF_SCOPE",
+      "speaker": "narrator",
+      "dup_of": null,
+      "types": [
+        "제품 관계"
+      ],
+      "source": "음성+화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [
+          {
+            "claim_id": "a04",
+            "segment_ids": [
+              1
+            ]
+          }
+        ],
+        "visual": [
+          {
+            "claim_id": "v12",
+            "frame_index": 990,
+            "timestamp": 16.5
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c13",
+      "text": "잘 놀고 잘 자는 데 도움을 줄 수 있",
+      "t_start": 16.0,
+      "t_end": 16.5,
+      "duration": 0.5,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [
+        "효능"
+      ],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v13",
+            "frame_index": 960,
+            "timestamp": 16.0
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c14",
+      "text": "CBP 우유칼슘",
+      "t_start": 16.5,
+      "t_end": 17.5,
+      "duration": 1.0,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": null,
+      "dup_of": null,
+      "types": [],
+      "source": "화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [],
+        "visual": [
+          {
+            "claim_id": "v14",
+            "frame_index": 990,
+            "timestamp": 16.5
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "c15",
+      "text": "작년만 해도 땅콩마였던 내가 알파아이 하나 챙기고서 180 됐다니까",
+      "t_start": 20.16,
+      "t_end": 24.0,
+      "duration": 3.84,
+      "target": "알파아이",
+      "scope": "IN_SCOPE",
+      "speaker": "narrator",
+      "dup_of": null,
+      "types": [
+        "효능",
+        "수치"
+      ],
+      "source": "음성+화면",
+      "conflict": null,
+      "evidence": {
+        "audio": [
+          {
+            "claim_id": "a05",
+            "segment_ids": [
+              1,
+              2
+            ]
+          }
+        ],
+        "visual": [
+          {
+            "claim_id": "v15",
+            "frame_index": 1320,
+            "timestamp": 22.0
+          }
+        ]
+      }
+    }
+  ],
+  "databases": {
+    "claim_verification": {
+      "products": 46165,
+      "ingredients": 1223,
+      "diseases": 34861,
+      "evidence": 3082,
+      "claims": 0,
+      "claim_evidence_links": 0
+    },
+    "kipris": {
+      "patents": 12572
+    }
+  },
+  "product_matches": {
+    "알파아이": []
+  },
+  "ingredient_name_matches": {
+    "홍삼": [
+      {
+        "ingredient_id": 501,
+        "ingredient_name": "홍삼, 사상자, 산수유 복합추추출물",
+        "recognition_number": "2008-67",
+        "functionality_text": "햇볕 또는 자외선에 의한 피부손상으로부터 피부건강을 유지하는데 도움을 줄 수 있습니다.(기타기능II)"
+      },
+      {
+        "ingredient_id": 502,
+        "ingredient_name": "홍삼오일(KGC11o)",
+        "recognition_number": "2022-33",
+        "functionality_text": "전립선 건강에 도움을 줄 수 있음"
+      },
+      {
+        "ingredient_id": 593,
+        "ingredient_name": "홍삼",
+        "recognition_number": "2024-20",
+        "functionality_text": "혈당 조절에 도움을 줄 수 있음"
+      },
+      {
+        "ingredient_id": 677,
+        "ingredient_name": "홍삼추출효소처리분말",
+        "recognition_number": "2024-33",
+        "functionality_text": "혈압조절에 도움을 줄 수 있음"
+      },
+      {
+        "ingredient_id": 810,
+        "ingredient_name": "홍삼, 사상자, 산수유 복합추출물(기능성원료인정제2008-67호)",
+        "recognition_number": "제2008-67호",
+        "functionality_text": "(국문) 햇볕 또는 자외선에 의한 피부손상으로부터 피부건강을 유지하는데 도움을 줄 수 있습니다 (기타기능II)"
+      },
+      {
+        "ingredient_id": 1068,
+        "ingredient_name": "홍삼오일(KGC11o)(제2022-33호)",
+        "recognition_number": "제2022-33호",
+        "functionality_text": "(국문) 전립선 건강의 유지에 도움을 줄 수 있음\n(영문) May help to maintain healthy prostate"
+      },
+      {
+        "ingredient_id": 1129,
+        "ingredient_name": "홍삼(제2024-20호)",
+        "recognition_number": "제2024-20호",
+        "functionality_text": "(국문) 혈당조절에 도움을 줄 수 있음\n(영문) May help to maintain healthy blood glucose levels"
+      },
+      {
+        "ingredient_id": 1140,
+        "ingredient_name": "홍삼추출효소처리분말(제2024-33호)",
+        "recognition_number": "제2024-33호",
+        "functionality_text": "(국문) 혈압조절에 도움을 줄 수 있음\n(영문) May help to regulate blood pressure"
+      }
+    ],
+    "초유": [],
+    "CBP": [],
+    "YGF": [],
+    "한속단": [
+      {
+        "ingredient_id": 768,
+        "ingredient_name": "블랙라즈베리한속단추출복합분말",
+        "recognition_number": "2026-27",
+        "functionality_text": ""
+      }
+    ],
+    "칼슘": []
+  },
+  "growth_evidence_candidates": [
+    {
+      "evidence_id": 1729,
+      "evidence_text": "어린이키성장에 도움을 줄 수 있음",
+      "ingredient_id": 661,
+      "ingredient_name": "유산균발효굴추출물(FGO)",
+      "recognition_number": "2024-26"
+    },
+    {
+      "evidence_id": 1737,
+      "evidence_text": "어린이 키성장에 도움을 줄 수 있음.",
+      "ingredient_id": 664,
+      "ingredient_name": "유산균발효굴추출물(FGO)",
+      "recognition_number": "2024-27"
+    },
+    {
+      "evidence_id": 2234,
+      "evidence_text": "(국문) 어린이 키성장에 도움을 줄 수 있음\n(영문) May help to children grow taller",
+      "ingredient_id": 938,
+      "ingredient_name": "황기추출물 등 복합물(HT042)(기능성원료인정제2014-40호)",
+      "recognition_number": "제2014-40호"
+    },
+    {
+      "evidence_id": 2813,
+      "evidence_text": "(국문) 어린이 키성장에 도움을 줄 수 있음\n(영문) May help to children grow taller",
+      "ingredient_id": 1134,
+      "ingredient_name": "유산균발효굴추출물(FGO)(제2024-26호)",
+      "recognition_number": "제2024-26호"
+    },
+    {
+      "evidence_id": 2816,
+      "evidence_text": "(국문) 어린이 키성장에 도움을 줄 수 있음\n(영문) May help to children grow taller",
+      "ingredient_id": 1135,
+      "ingredient_name": "유산균발효굴추출물(FGO)(제2024-27호)",
+      "recognition_number": "제2024-27호"
+    },
+    {
+      "evidence_id": 2945,
+      "evidence_text": "(국문) 어린이 키성장에 도움을 줄 수 있음\n(영문) May help to children grow taller",
+      "ingredient_id": 1178,
+      "ingredient_name": "한삼덩굴추출분말(HSy2)(제2025-41호)",
+      "recognition_number": "제2025-41호"
+    }
+  ],
+  "patent_keyword_candidates": {
+    "compound K": {
+      "count": 57,
+      "examples": [
+        {
+          "application_number": "1020050070335",
+          "title": "활성성분의 함량이 뛰어난 흑삼 및 흑삼농축액",
+          "abstract": "본 발명은 활성성분의 함량이 뛰어난 흑삼 및 흑삼농축액에 관한 것이다.  본 발명의 흑삼은, 9회 증숙시키고 10회 건조시켜 제조된 흑삼으로서, 진세노사이드 Rg3가 9.0 ~ 15.0 ㎎/g, Rb1이 1.5 ~ 5.0 ㎎/g, Rb2가 1.0 ~ 4.0 ㎎/g, Rc가 1.0 ~ 4.0 ㎎/g, Rd가 1.0 ~ 6.0 ㎎/g, Re가 0.2 ~ 1.5 ㎎/g, Rf가 0.6 ~ 1.5 ㎎/g, Rg 가 0.2 ~ 0.6 ㎎/g, Rh1이 1.0 ~ 1.2 ㎎/g, Compound K가 0.05 ~ 0.1 ㎎/g인 것으로 구성된다.  본 발명에 의하여, 일반 흑삼에 비해 활성성분의 함량이 월등히 높아진 흑삼과 이를 이용한 흑삼농축액이 제공된다.  인삼, 흑삼, 증숙, 추출, 농축",
+          "applicant": "(주) 흑삼코리아",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_011.xml"
+        },
+        {
+          "application_number": "1020050098702",
+          "title": "비만 억제 또는 치료용 조성물",
+          "abstract": "본 발명은 비만 억제 또는 치료용 조성물에 관한 것으로서, 진세노사이드 (ginsenoside)-Rf 또는 화합물 K (Compound K)를 유효성분으로 포함하는 비만 억제 또는 치료용 조성물을 제공한다. 본 발명의 조성물은 지방세포의 트리아실글리세롤(triacylglycerol; TAG) 함량을 감소시키고 전구지방세포의 지방세포로의 분화 과정을 조절하여 결국 지질량을 감소시키며, 지방세포의 분화 과정 중 에너지 소비를 증진시키는 유전자들의 발현을 증가시키는 작용을 함으로써 궁극적으로 개선된 항-비만 효능을 발휘하게 된다. 더욱이, 본 발명의 조성물은 안정성이 이미 검증된 성분인 진세노사이드-Rf 또는 화합물 K를 유효성분으로 이용하기 때문에 인체에 대한 안정성이 매우 우수하다.  진세노사이드, 비만, 조성물",
+          "applicant": "건국대학교 산학협력단",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_011.xml"
+        },
+        {
+          "application_number": "1020060005237",
+          "title": "진세노사이드 알지쓰리 성분의 함량이 뛰어난 흑삼 및 흑삼농축액",
+          "abstract": "본 발명은 진세노사이드 알지쓰리 성분의 함량이 뛰어난 흑삼 및 흑삼농축액에 관한 것이다.  본 발명의 흑삼은, 9회 증숙시키고 10회 건조시켜 제조된 흑삼으로서, 진세노사이드 Rg3가 5.0 ~ 20.0 ㎎/g, Rb1이 1.0 ~ 5.0 ㎎/g, Rb2가 1.0 ~ 5.0 ㎎/g, Rc가 1.0 ~ 5.0 ㎎/g, Rd가 1.0 ~ 7.0 ㎎/g, Re가 0.1 ~ 1.5 ㎎/g, Rf가 0.5 ~ 1.5 ㎎/g, Rg 가 0.1 ~ 0.7 ㎎/g, Rh1이 1.0 ~ 1.5 ㎎/g, Compound K가 0.05 ~ 0.5 ㎎/g인 것으로 구성된다.  본 발명에 의하여, 일반 흑삼에 비해 진세노사이드 알지쓰리 성분의 함량이 월등히 높아진 흑삼과 이를 이용한 흑삼농축액이 제공된다.  인삼, 흑삼, 증숙, 추출, 농축",
+          "applicant": "(주) 흑삼코리아",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_011.xml"
+        }
+      ],
+      "interpretation": "Keyword candidates only; product use, certification, clinical efficacy and patent registration not established"
+    },
+    "컴파운드": {
+      "count": 109,
+      "examples": [
+        {
+          "application_number": "1020000043170",
+          "title": "효소적 방법에 의한 진세노사이드 컴파운드 케이의 제조방법",
+          "abstract": "본 발명은 효소적 방법에 의한 진세노사이드 컴파운드 K의 제조방법에 관한 것으로, 보다 상세하게는 인삼 성분중에서 함량이 많고 분리하기가 용이한 다이올계 사포닌을 효소적 방법으로 구조전환시켜 인삼 사포닌성분의 장내대사산물인 화합물 K를 대량 제조하는 방법에 관한 것이다. 화합물 K는 진세노사이드 Rb  1  , Rb  2  , Rc, Rd, 이들의 혼합물 또는 이들이 함유된 추출물을 완충용액 중에서 페니실리움속 미생물에서 분리한 효소인 셀룰라제 또는 아스퍼질러스속에서 분리한 효소인 베타-갈락토시다제와 반응시키면 간단하게 화합물 K를 고수율로 얻을 수 있다. 컴파운드 K는 면역증강작용, 종양혈관신생억제작용 및 암세포침윤억제작용이 있는 것으로 알려져 있는 생리활성 물질이다.",
+          "applicant": "주식회사 케이티앤지",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_021.xml"
+        },
+        {
+          "application_number": "1020010074202",
+          "title": "셀룰라제 또는 락타제 조성물 와이-에이오를 이용한진세노사이드 컴파운드 케이의 제조방법",
+          "abstract": "본 발명은 아스퍼질러스 나이저에서 유래한 셀룰라제, 또는 락타제 조성물 Y-AO를 이용한 진세노사이드 컴파운드 케이의 제조방법에 관한 것이다.  본 발명의 진세노사이드 컴파운드 케이의 제조방법은, 인삼에 다량 함유되어 있고 분리하기가 용이한 다이올계 사포닌을 용매에 용해시키고, 아스퍼질러스 나이저에서 분리한 셀룰라제 또는 락타제 조성물 Y-AO와 반응시켜 진세노사이드 컴파운드 케이를 생성하고, 이온교환수지 또는 수포화 부탄올로 용출 후 농축한 다음, 컬럼크로마토그래피로 분리하여 진세노사이드 컴파운드 케이를 제조하는 방법이다.  본 발명에 의해, 인삼 사포닌의 장내 대사산물인 진세노사이드 컴파운드 케이를 단시간에 고수율로 제조하는 방법이 제공된다.  인삼, 진세노사이드, 효소, 사포닌, 셀룰라제, 락타제",
+          "applicant": "주식회사 케이티앤지",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_021.xml"
+        },
+        {
+          "application_number": "1020070050413",
+          "title": "곰팡이와 유산균으로 동시 발효하여 생물전환 사포닌이증가된 삼 발효물",
+          "abstract": "본 발명은 원료삼을 유산균과 곰팡이로 동시에 발효시켜 진세노사이드의 함량이 증가된 삼 발효물의 제조방법; 및 상기 방법에 의해 제조된 삼 발효물을 제공한다.  본 발명에 따른 삼 발효물은 진세노사이드 Rh2 및/또는 컴파운드 K와 같은 진세노사이드의 함량이 증가되어, 우수한 항암, 항염증, 항알레르기 효능을 나타낼 수 있다.",
+          "applicant": "롯데칠성음료주식회사",
+          "registration_status": "등록",
+          "xml_path": "data/raw/kipris/홍삼/page_008.xml"
+        }
+      ],
+      "interpretation": "Keyword candidates only; product use, certification, clinical efficacy and patent registration not established"
+    },
+    "Rh2": {
+      "count": 106,
+      "examples": [
+        {
+          "application_number": "1019910016456",
+          "title": "신물질20(R)-진세노사이드RH2",
+          "abstract": "20(S)-프로파낙사다이올-3-[O-B-D-글루코피라노사이드]는 인삼성분으로부터 분리되는 20(S)-진세노사이드 Rh  2  의20(R)이성체로서 신규물질임. 이물질은 프로토파낙사다이올계 사포닌을 산처리한 다음 생성물을 아세틸화하고 알카리 가수분해하여 제조함.",
+          "applicant": "재단법인 한국인삼연초연구원",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_024.xml"
+        },
+        {
+          "application_number": "1019990045180",
+          "title": "효소(酵素)로 인삼 사포닌 당기(糖基)를 변화시켜서 희소한 인삼사포닌을 제조하는 방법",
+          "abstract": "본 발명은 사포닌(saponin) 글루코사이드(glucoside) 분해효소를 이용하여 인삼 사포닌의 당기(糖基)를 가수분해(hydrolysis)하여 희소한 항암(抗癌) 사포닌을 제조하고자 한다.  일반적인 섬유소 효소(cellulase)와 헤미섬유소 효소(Hemi - cellulase)는 다당체 당기(多糖體 糖基)를 가수분해 할 수 있으나, 사포닌 당기(糖基)를 분해하기는 어렵다. 그 이유는 사포닌은 비당체(非糖體) 아글리콘(aglycone)기(基)를 가지고 있기 때문에 특별한 사포닌 분해효소만이 사포닌 당기(糖基)를 분해 할 수 있다. 본 발명에서 사포닌 분해효소, 예를 들면 사포닌 알파-글루코시다제(알파-glucosidase)로 프로토파낙사다이올계 진세노사이드(protopanaxadiol-type ginsenosides)의 사포닌 당기(糖基)를 분해하여서 고 항암 사포닌인 진세노사이드 Rh2를 얻을 수 있으며 그 수율(收率)은 40-80%이다.  또한 알파-람노시다제(알파-Rhamnosidase)로 진세노사이드 Rg2 당기(糖基)를 분해하여서 진세노사이드 Rh1을 제조(또한 진세노사이드 Re를 가수분해하여서 진세노사이드 Rg1을 제조)할 수 있고 수율(收率)은 40-80%이다. 또한 사포닌 분해효소로 혼합 인삼 사포닌을 반응시켜서, 항암 사포닌인 진세노사이드 Rh2, Rh1의 함량이 높은 혼합 ...(이하생략)",
+          "applicant": "주식회사 녹십자에이치에스|김봉섭",
+          "registration_status": "소멸",
+          "xml_path": "data/raw/kipris/홍삼/page_009.xml"
+        },
+        {
+          "application_number": "1020000072008",
+          "title": "인삼 배당체 Rg3, Rg5 및 Rh2를 유효성분으로 함유하는 암예방용 조성물",
+          "abstract": "본 발명은 진세노사이드계 배당체( 진세노사이드Rg  3  , 진세노사이드 Rg  5  , 진세노사이드Rh  2  에서 선택된 1종이상의 성분) 또는 인삼추출물에 진세노사이드계 배당체( 진세노사이드Rg  3  , 진세노사이드 Rg  5  , 진세노사이드Rh  2  에서 선택된 1종 이상의 성분)를 더 첨가시킨 성분을 유효성분으로 함유하고, 여기에 약제학 또는 식품학적으로 허용되는 보조제를 첨가하고 약제학 또는 식품학적으로 허허용되는 방법으로 약제학 또는 식품학적으로 허용되는 제제형태로 제제화하여 얻어진 조성물을 제공하는 것이며, 본 발명의 조성물은 높은 암발생 위험비를 가지는 개인 또는 집단에서 발생하는 암을 예방할 수 있는 탁월한 암예방효과를 가진다.  진세노사이드계 배당체, 암예방",
+          "applicant": "윤택구|홍원선",
+          "registration_status": "거절",
+          "xml_path": "data/raw/kipris/홍삼/page_011.xml"
+        }
+      ],
+      "interpretation": "Keyword candidates only; product use, certification, clinical efficacy and patent registration not established"
+    },
+    "성장판": {
+      "count": 2,
+      "examples": [
+        {
+          "application_number": "1020090135352",
+          "title": "인삼 열매 추출물을 함유하는 성장촉진용 조성물",
+          "abstract": "본 발명은 인삼 열매 추출물을 함유하는 성장 촉진용 조성물에 관한 것으로, 보다 상세하게는 인삼 열매 추출물을 유효성분으로 함유함으로써 뼈 길이를 성장시키고, 성장판 연골세포의 대사를 촉진하고, 성장인자인 IGF-1(insulin-like growth factor-1) 및 BMP-2(bone morphogenic protein-2)의 발현을 증가시키는 등 부작용 없이 성장 촉진 효과를 부여하는 성장 촉진용 조성물에 관한 것이다.  인삼 열매, 성장 촉진, IGF-1, BMP-2",
+          "applicant": "(주)아모레퍼시픽",
+          "registration_status": "등록",
+          "xml_path": "data/raw/kipris/홍삼/page_017.xml"
+        },
+        {
+          "application_number": "1020240119618",
+          "title": "키 성장 촉진, 성장판 자극, 및 골밀도 개선에 탁월한 효능을 가진 건강 기능 식품 제조 방법",
+          "abstract": "본 발명은 언제 어디서든 간편하게 영양적으로 균형된 식사 대용품이 될 수 있으면서도 키 성장을 촉진시키고 근골격을 강화시켜줄 수 있는 건강기능식품 제조 방법을 개시한다.  이에, 본 발명의 키 성장 촉진, 성장판 자극, 및 골밀도 개선에 탁월한 효능을 가진 건강 기능 식품 제조 방법은 녹용분말약재를 제조하는 단계(S1)와, 홍삼발효분말을 제조하는 단계(S2)와, 약재분말을 제조하는 단계(S3)와, 곡물 혼합재를 제조하는 단계(S4)와, 야채 혼합재를 제조하는 단계(S5)와, 상기 녹용분말약재, 홍삼발효분말, 약재분말, 곡물 혼합재, 및 야채 혼합재를 소정 비율로 혼합수에 넣고 혼합한 다음 환 형태의 영양환을 제조하는 단계(S6)와, 액상의 유산균에 세절된 국수호박을 넣고 교반하여 코팅물을 제조한 다음 상기 코팅물을 상기 영양환의 표면에 코팅시키는 단계(S7)를 포함한다.",
+          "applicant": "양경자",
+          "registration_status": "공개",
+          "xml_path": "data/raw/kipris/홍삼/page_004.xml"
+        }
+      ],
+      "interpretation": "Keyword candidates only; product use, certification, clinical efficacy and patent registration not established"
+    },
+    "카이스트": {
+      "count": 0,
+      "examples": [],
+      "interpretation": "Keyword candidates only; product use, certification, clinical efficacy and patent registration not established"
+    }
+  },
+  "evidence_type_counts": [
+    {
+      "evidence_type": "OFFICIAL_FUNCTIONALITY",
+      "count": 1078
+    },
+    {
+      "evidence_type": "OFFICIAL_INTAKE",
+      "count": 1050
+    },
+    {
+      "evidence_type": "OFFICIAL_PRECAUTION",
+      "count": 954
+    }
+  ],
+  "red_ginseng_evidence": [
+    {
+      "evidence_id": 1557,
+      "ingredient_id": 593,
+      "evidence_type": "OFFICIAL_FUNCTIONALITY",
+      "evidence_text": "혈당 조절에 도움을 줄 수 있음",
+      "source_authority": "MFDS",
+      "ingredient_name": "홍삼",
+      "recognition_number": "2024-20"
+    },
+    {
+      "evidence_id": 1558,
+      "ingredient_id": 593,
+      "evidence_type": "OFFICIAL_INTAKE",
+      "evidence_text": "진세노사이드 Rg1, Rb1 및 Rg3의 합계로서 22~80mg",
+      "source_authority": "MFDS",
+      "ingredient_name": "홍삼",
+      "recognition_number": "2024-20"
+    }
+  ],
+  "calcium_product_context_only": [
+    {
+      "product_id": 50,
+      "product_name": "(구)본포뮬러젤리",
+      "company_name": "(주)서흥헬스케어",
+      "main_functionality": "[칼슘]①뼈와 치아 형성에 필요②신경과 근육 기능 유지에 필요③정상적인 혈액응고에 필요④골다공증발생 위험 감소에 도움을 줌\r\n[마그네슘]①에너지 이용에 필요②신경과 근육 기능 유지에 필요\r\n[아연]①정상적인 면역기능에 필요②정상적인 세포분열에 필요\r\n[구리]①철의 운반과 이용에 필요②유해산소로부터 세포를 보호하는데 필요"
+    },
+    {
+      "product_id": 551,
+      "product_name": "2030 에너지 올인원",
+      "company_name": "광동헬스바이오(주) 2공장",
+      "main_functionality": "[밀크씨슬추출물]\r\n(1)간 건강에 도움을 줄 수 있음\r\n[칼슘] \r\n(1)뼈와 치아 형성에 필요,  (2)신경과 근육 기능 유지에 필요, (3)정상적인 혈액응고에 필요, (4)골다공증 발생 위험 감소에 도움을 줌\r\n[크롬] \r\n(1)체내 탄수화물, 지방, 단백질 대사에 관여\r\n[마그네슘] \r\n(1) 에너지 이용에 필요 (2) 신경과 근육 기능 유지에 필요\r\n[비타민C] \r\n(1) 결합조직 형성과 기능유지에 필요 (2) 철의 흡수에 필요 (3) 항산화 작용을 하여 유해산소로부터 세포를 보호하는데 필요\r\n[비타민E] \r\n(1)항산화 작용을 하여 유해산소로부터 세포를 보호하는데 필요\r\n[철] \r\n(1) 체내 산소운반과 혈액생성에 필요 (2) 에너지 생성에 필요\r\n[나이아신] \r\n(1)체내 에너지 생성에 필요\r\n[몰리브덴] \r\n(1)산화･환원 효소의 활성에 필요\r\n[아연] \r\n(1) 정상적인 면역기능에 필요 ② 정상적인 세포분열에 필요\r\n[요오드] \r\n(1) 갑상선 호르몬의 합성에 필요 ② 에너지 생성에 필요 ③ 신경발달에 필요\r\n[망간] \r\n(1) 뼈 형성에 필요 (2) 에너지 이용에 필요 (3) 유해산소로부터 세포를 보호하는데 필요\r\n[비타민B12] \r\n(1)정상적인 엽산 대사에 필요\r\n[비타민A] \r\n(1) 어두운 곳에서 시각 적응을 위해 필요 (2) 피부와 점막을 형성하고 기능을 유지하는데 필요 (3) 상피세포의 성장과 발달에 필요\r\n[비타민B6] \r\n(1) 단백질 및 아미노산 이용에 필요 (2) 혈액의 호모시스테인 수준을 정상으로 유지하는데 필요\r\n[구리] \r\n(1) 철의 운반과 이용에 필요 (2) 유해산소로부터 세포를 보호하는데 필요\r\n[셀렌] \r\n(1)유해산소로부터 세포를 보호하는데 필요\r\n[판토텐산] \r\n(1)지방, 탄수화물, 단백질 대사와 에너지 생성에 필요\r\n[비타민B1] \r\n(1)탄수화물과 에너지 대사에 필요\r\n[비타민B2] \r\n(1)체내 에너지 생성에 필요\r\n[비타민D] \r\n(1) 칼슘과 인이 흡수되고 이용되는데 필요 (2) 뼈의 형성과 유지에 필요 (3) 골다공증발생 위험 감소에 도움을 줌\r\n[비오틴] \r\n(1)지방, 탄수화물, 단백질 대사와 에너지 생성에 필요\r\n[비타민K] \r\n(1) 정상적인 혈액응고에 필요 (2) 뼈의 구성에 필요\r\n[엽산] \r\n(1) 세포와 혈액생성에 필요 (2) 태아 신경관의 정상 발달에 필요 (3) 혈액의 호모시스테인 수준을 정상으로 유지하는데 필요"
+    },
+    {
+      "product_id": 559,
+      "product_name": "2875탁",
+      "company_name": "(주)메디바이오랩",
+      "main_functionality": "[칼슘] ①뼈와 치아 형성에 필요②신경과 근육 기능 유지에 필요③정상적인 혈액응고에 필요④골다공증발생 위험 감소에 도움을 줌\n[프로폴리스추출물] ①항산화·작용에 도움을 줄 수 있음\n[아연] ①정상적인 면역기능에 필요②정상적인 세포분열에 필요\n[비타민D] ①칼슘과 인이 흡수되고 이용되는데 필요②뼈의 형성과 유지에 필요③골다공증발생 위험 감소에 도움을 줌"
+    }
+  ],
+  "false_positive_example": [
+    {
+      "product_id": 9634,
+      "product_name": "닥터S태초유산균"
+    },
+    {
+      "product_id": 9635,
+      "product_name": "닥터S태초유산균"
+    }
+  ]
+}

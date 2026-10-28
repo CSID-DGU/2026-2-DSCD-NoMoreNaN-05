@@ -1,0 +1,19 @@
+# Configuration only: model download, inference and DB writes are not run.
+provider: local
+model_name: intfloat/multilingual-e5-small
+# Pin a concrete Hugging Face commit before generating persistent vectors.
+model_revision: null
+device: cpu
+dimensions: 384
+normalize_embeddings: true
+query_prefix: "query: "
+passage_prefix: "passage: "
+max_sequence_length: 512
+batch_size: 16
+similarity: cosine
+database_schema: semantic_search
+source_tables:
+  - claim_verification.evidence
+  - kipris.patents
+# Preserve original text; long inputs require a separately reviewed chunking policy.
+persist_embeddings: false

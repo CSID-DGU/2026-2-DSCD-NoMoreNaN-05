@@ -1,0 +1,116 @@
+{
+  "checked_on_kst": "2026-10-24",
+  "policy_version": 3,
+  "product_count": 10,
+  "completed_product_searches": 10,
+  "counts": {
+    "rejected": 186,
+    "needs_review": 52,
+    "confirmed": 5
+  },
+  "resume_exit_code": 0,
+  "resume_http_calls": 0,
+  "products": [
+    {
+      "id": 2031,
+      "product_name": "GNM 건강한 간 밀크씨슬",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "rejected": 20,
+        "needs_review": 5
+      }
+    },
+    {
+      "id": 11221,
+      "product_name": "덴프스 유산균이야기 다이어트",
+      "generic": true,
+      "generic_reasons": [
+        "same_product_key_multiple_companies"
+      ],
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 11605,
+      "product_name": "듀오락 골드",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "needs_review": 7,
+        "rejected": 18
+      }
+    },
+    {
+      "id": 11737,
+      "product_name": "드시모네 1200",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "rejected": 25
+      }
+    },
+    {
+      "id": 12719,
+      "product_name": "락토핏 골드",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "rejected": 15,
+        "needs_review": 8,
+        "confirmed": 2
+      }
+    },
+    {
+      "id": 25586,
+      "product_name": "아이클타임",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "needs_review": 15,
+        "rejected": 9
+      }
+    },
+    {
+      "id": 27245,
+      "product_name": "에버콜라겐 레티놀A",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "rejected": 19,
+        "needs_review": 6
+      }
+    },
+    {
+      "id": 29297,
+      "product_name": "올인원 뉴트리션 멀티비타민 유산균",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "needs_review": 4,
+        "rejected": 18
+      }
+    },
+    {
+      "id": 37538,
+      "product_name": "트루바이타민",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "rejected": 15,
+        "needs_review": 7
+      }
+    },
+    {
+      "id": 39360,
+      "product_name": "프로메가 뉴티지 오메가3",
+      "generic": false,
+      "generic_reasons": [],
+      "counts": {
+        "rejected": 22,
+        "confirmed": 3
+      }
+    }
+  ]
+}

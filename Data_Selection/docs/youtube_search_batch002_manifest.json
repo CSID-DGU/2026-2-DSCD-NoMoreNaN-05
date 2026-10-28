@@ -1,0 +1,601 @@
+{
+  "requested_products": 99,
+  "batch": 2,
+  "selection": "New non-generic unique product keys, named-product groups in round-robin order, excluding prior batch products and completed searches. Ads are not guaranteed.",
+  "products": [
+    {
+      "id": 12766,
+      "product_name": "락토핏 키즈",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11604,
+      "product_name": "듀오락 간케어",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37550,
+      "product_name": "트루바이타민 액티브",
+      "company_name": "(주)비오팜",
+      "generic": false
+    },
+    {
+      "id": 39374,
+      "product_name": "프로메가 알티지 오메가3",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 27244,
+      "product_name": "에버콜라겐 고-백 플러스",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11741,
+      "product_name": "드시모네 365 캡슐",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13097,
+      "product_name": "락피도 티니핑 비타스틱",
+      "company_name": "(주)네이처텍",
+      "generic": false
+    },
+    {
+      "id": 22778,
+      "product_name": "셀티아이 키즈 아연 D(CellTi Kids Zinc D)",
+      "company_name": "주식회사 셀로닉스",
+      "generic": false
+    },
+    {
+      "id": 9075,
+      "product_name": "다이어트 유산균 비에날씬 활력 UP",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 12717,
+      "product_name": "락토핏 50대",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11634,
+      "product_name": "듀오락 베이비",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37553,
+      "product_name": "트루바이타민 올인원",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 39375,
+      "product_name": "프로메가 알티지 오메가3 듀얼",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 27251,
+      "product_name": "에버콜라겐 스킨 앤 헤어",
+      "company_name": "콜마비앤에이치(주)",
+      "generic": false
+    },
+    {
+      "id": 11746,
+      "product_name": "드시모네 밸런스 케어",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13098,
+      "product_name": "락피도 티니핑 철분스틱",
+      "company_name": "(주)네이처텍",
+      "generic": false
+    },
+    {
+      "id": 22773,
+      "product_name": "셀티아이 베이비 비타민 D(CellTi Baby Vitamin D)",
+      "company_name": "주식회사 셀로닉스",
+      "generic": false
+    },
+    {
+      "id": 9067,
+      "product_name": "다이어트 유산균 비에날씬 슬림+ 자몽맛",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 12718,
+      "product_name": "락토핏 간케어",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11673,
+      "product_name": "듀오락 지사랑",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37557,
+      "product_name": "트루바이타민 포커스",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 39380,
+      "product_name": "프로메가 알티지 오메가3 듀얼S",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 27253,
+      "product_name": "에버콜라겐 워터풀 앰플",
+      "company_name": "콜마비앤에이치(주)",
+      "generic": false
+    },
+    {
+      "id": 11753,
+      "product_name": "드시모네 캡슐 플러스",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 13099,
+      "product_name": "락피도 티니핑 칼슘스틱",
+      "company_name": "(주)네이처텍",
+      "generic": false
+    },
+    {
+      "id": 22776,
+      "product_name": "셀티아이 키즈 스텝2 아연 D(CellTi Kids Step2 Zinc D)",
+      "company_name": "주식회사 셀로닉스",
+      "generic": false
+    },
+    {
+      "id": 9068,
+      "product_name": "다이어트 유산균 비에날씬 슬림+ 트로피칼맛",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 12723,
+      "product_name": "락토핏 눈케어",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11675,
+      "product_name": "듀오락 츄어블",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37545,
+      "product_name": "트루바이타민 D·E 맥스",
+      "company_name": "(주)비오팜",
+      "generic": false
+    },
+    {
+      "id": 39391,
+      "product_name": "프로메가 오메가3 키즈 구미젤리",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 27254,
+      "product_name": "에버콜라겐 유브이케어",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11773,
+      "product_name": "드시모네 패밀리 캡슐",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13100,
+      "product_name": "락피도 티니핑 쾌변스틱",
+      "company_name": "(주)네이처텍",
+      "generic": false
+    },
+    {
+      "id": 12725,
+      "product_name": "락토핏 당케어",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11608,
+      "product_name": "듀오락 골드 캡슐",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37547,
+      "product_name": "트루바이타민 Mg 맥스",
+      "company_name": "(주)비오팜",
+      "generic": false
+    },
+    {
+      "id": 39392,
+      "product_name": "프로메가 오메가3 키즈 젤리구미",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 27256,
+      "product_name": "에버콜라겐 인앤업 코어",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11742,
+      "product_name": "드시모네 365 포도향",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 13108,
+      "product_name": "락피도멀티비타민우먼",
+      "company_name": "코스맥스바이오(주)",
+      "generic": false
+    },
+    {
+      "id": 12758,
+      "product_name": "락토핏 식물성",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11609,
+      "product_name": "듀오락 골드 키즈",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37551,
+      "product_name": "트루바이타민 액티브 UP",
+      "company_name": "(주)비오팜",
+      "generic": false
+    },
+    {
+      "id": 39381,
+      "product_name": "프로메가 알티지 오메가3 비타민D",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 27271,
+      "product_name": "에버콜라겐 타임 비오틴",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11744,
+      "product_name": "드시모네 곰돌이 츄어블",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13079,
+      "product_name": "락피도 맘엔맘엔 오메가3",
+      "company_name": "(주)알피바이오",
+      "generic": false
+    },
+    {
+      "id": 12759,
+      "product_name": "락토핏 위케어",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11637,
+      "product_name": "듀오락 비움클린",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37558,
+      "product_name": "트루바이타민C2000",
+      "company_name": "(주)비오팜",
+      "generic": false
+    },
+    {
+      "id": 39384,
+      "product_name": "프로메가 알티지 오메가3 트리플S",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 27275,
+      "product_name": "에버콜라겐 타임 프라임",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11747,
+      "product_name": "드시모네 베이비 스텝1",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 13093,
+      "product_name": "락피도 징크시럽 키즈스틱",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 12762,
+      "product_name": "락토핏 인지력",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11649,
+      "product_name": "듀오락 쓰리 콤보",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37542,
+      "product_name": "트루바이타민 Choice",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 22164,
+      "product_name": "서흥 프로메가 식물성 알티지 오메가3",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 27284,
+      "product_name": "에버콜라겐 트리플비타",
+      "company_name": "(주)네이처텍",
+      "generic": false
+    },
+    {
+      "id": 11748,
+      "product_name": "드시모네 베이비 스텝2",
+      "company_name": "(주)서흥",
+      "generic": false
+    },
+    {
+      "id": 13081,
+      "product_name": "락피도 멀티비타민 액상 키즈",
+      "company_name": "엠에스바이오텍(주)",
+      "generic": false
+    },
+    {
+      "id": 12772,
+      "product_name": "락토핏 화이버",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11658,
+      "product_name": "듀오락 에이티피(ATP)",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37552,
+      "product_name": "트루바이타민 액티브 시즌1",
+      "company_name": "(주)비오팜",
+      "generic": false
+    },
+    {
+      "id": 39397,
+      "product_name": "프로메가 짜먹는 식물성 오메가3 키즈",
+      "company_name": "(주)한국씨엔에스팜",
+      "generic": false
+    },
+    {
+      "id": 27257,
+      "product_name": "에버콜라겐 인앤업 프라임",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11752,
+      "product_name": "드시모네 캡슐 프리미엄",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13083,
+      "product_name": "락피도 비타민 C 츄어블 키즈",
+      "company_name": "콜마비앤에이치(주)",
+      "generic": false
+    },
+    {
+      "id": 12724,
+      "product_name": "락토핏 다이어트",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11664,
+      "product_name": "듀오락 위청장쾌",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37556,
+      "product_name": "트루바이타민 키즈 칼슘젤리",
+      "company_name": "(주)알피바이오",
+      "generic": false
+    },
+    {
+      "id": 39368,
+      "product_name": "프로메가 식물성 알티지 오메가3 키즈 츄어블",
+      "company_name": "(주)서흥헬스케어",
+      "generic": false
+    },
+    {
+      "id": 27258,
+      "product_name": "에버콜라겐 인앤업 플러스",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11766,
+      "product_name": "드시모네 키즈 프리미엄",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13089,
+      "product_name": "락피도 오메가3 츄어블 키즈",
+      "company_name": "(주)알피바이오",
+      "generic": false
+    },
+    {
+      "id": 12732,
+      "product_name": "락토핏 맥스19",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11674,
+      "product_name": "듀오락 채움뷰티",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37543,
+      "product_name": "트루바이타민 Choice UP",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 27270,
+      "product_name": "에버콜라겐 타임 레티놀A",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11774,
+      "product_name": "드시모네 패밀리 플러스",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13090,
+      "product_name": "락피도 이뮨 그린프로폴리스",
+      "company_name": "코스맥스바이오(주)",
+      "generic": false
+    },
+    {
+      "id": 12748,
+      "product_name": "락토핏 솔루션1",
+      "company_name": "(주)서흥헬스케어",
+      "generic": false
+    },
+    {
+      "id": 11684,
+      "product_name": "듀오락 키즈 이뮨",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 37540,
+      "product_name": "트루바이타민 Booster UP",
+      "company_name": "주식회사 네추럴웨이",
+      "generic": false
+    },
+    {
+      "id": 27272,
+      "product_name": "에버콜라겐 타임 비오틴F",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11740,
+      "product_name": "드시모네 365 바나나향",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 13106,
+      "product_name": "락피도 프로폴리스 스프레이",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 12750,
+      "product_name": "락토핏 솔루션2",
+      "company_name": "(주)서흥헬스케어",
+      "generic": false
+    },
+    {
+      "id": 11607,
+      "product_name": "듀오락 골드 베이비",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 27273,
+      "product_name": "에버콜라겐 타임 시그니처",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11751,
+      "product_name": "드시모네 장면역 다이어트",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13080,
+      "product_name": "락피도 맘엔맘엔 오메가3였다",
+      "company_name": "(주)알피바이오",
+      "generic": false
+    },
+    {
+      "id": 12752,
+      "product_name": "락토핏 슈퍼슬림",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    },
+    {
+      "id": 11610,
+      "product_name": "듀오락 골드 플러스",
+      "company_name": "(주)쎌바이오텍",
+      "generic": false
+    },
+    {
+      "id": 27277,
+      "product_name": "에버콜라겐 타임비오틴 셀",
+      "company_name": "주식회사 노바렉스",
+      "generic": false
+    },
+    {
+      "id": 11755,
+      "product_name": "드시모네 키즈 블루베리향",
+      "company_name": "코스맥스엔비티(주)",
+      "generic": false
+    },
+    {
+      "id": 13105,
+      "product_name": "락피도 프로바이오틱스 패밀리",
+      "company_name": "콜마비앤에이치(주)",
+      "generic": false
+    },
+    {
+      "id": 12765,
+      "product_name": "락토핏 코어맥스",
+      "company_name": "종근당건강(주)",
+      "generic": false
+    }
+  ]
+}

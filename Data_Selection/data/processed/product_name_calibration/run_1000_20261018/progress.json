@@ -1,0 +1,11 @@
+{
+  "pid": 3908,
+  "started_at": "2026-10-18T10:58:34.306451+00:00",
+  "total": 1000,
+  "completed": 1000,
+  "output": "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018",
+  "status": "complete",
+  "updated_at": "2026-10-18T10:58:35.451607+00:00",
+  "elapsed_seconds": 1.14,
+  "report": "C:\\Users\\박이정\\Desktop\\DSCD_NNN\\data\\processed\\product_name_calibration\\run_1000_20261018\\report.md"
+}
