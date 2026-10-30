@@ -13,12 +13,15 @@
 
 from typing import Callable
 
+from .clauses.disease_claims import DiseaseClaimCheck
 from .disclaimer import DISCLAIMER, is_disclaimer
 from .finding import OVERCLAIM, SUPPORTED, UNCLEAR, VIOLATION, Finding
+from .nli import get_nli
 
 Check = Callable[[dict, dict], Finding | None]
 
-CHECKS: list[Check] = []  # 조항을 구현할 때 하나씩 추가한다.
+# 조항을 구현할 때 하나씩 추가한다. NLI는 CLAIM_NLI_URL이 있으면 서버, 없으면 None(→ UNCLEAR).
+CHECKS: list[Check] = [*DiseaseClaimCheck(get_nli()).checks()]
 
 OUT_OF_SCOPE = "OUT_OF_SCOPE"
 LABEL_ORDER = (VIOLATION, OVERCLAIM, UNCLEAR, SUPPORTED)

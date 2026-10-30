@@ -75,3 +75,10 @@ def test_disclaimer_skips_checks():
     assert out["claims"][0]["findings"] == []
     assert calls == []
 
+
+def test_disease_checks_plug_into_judge():
+    from claim_verification import judge
+    out = judge.judge_claim(claim("c01", "치매예방 뇌세포 보호"), PRODUCT,
+                            [*judge.DiseaseClaimCheck(None).checks()])
+    assert out["label"] == UNCLEAR
+    assert {f["law_ref"] for f in out["findings"]} == {"영별표1-1-가", "영별표1-1-나"}
