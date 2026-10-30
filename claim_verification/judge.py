@@ -7,10 +7,13 @@
     product는 handoff의 "product" 그대로다: {"match": {...}, "evi_product": {...} | None}.
     제품에 의존하는 조항은 match.status가 confirmed가 아니면 위반을 내지 않는다.
     자기 대상이 아니면 None을 돌려준다(기록 안 함). claim_type으로 거르지 않고 모든 클레임에 돌린다.
+
+면책 문구("본 제품은 ~ 의약품이 아닙니다" 등)는 조항을 돌리지 않고 DISCLAIMER 라벨만 붙인다.
 """
 
 from typing import Callable
 
+from .disclaimer import DISCLAIMER, is_disclaimer
 from .finding import OVERCLAIM, SUPPORTED, UNCLEAR, VIOLATION, Finding
 
 Check = Callable[[dict, dict], Finding | None]
@@ -36,8 +39,12 @@ def label(findings: list[Finding]) -> str:
 
 
 def judge_claim(claim: dict, product: dict, checks: list[Check]) -> dict:
-    findings = [f for check in checks if (f := check(claim, product)) is not None]
     out = {k: claim.get(k) for k in PASS_THROUGH}
+    if is_disclaimer(claim["text"]):
+        out["label"] = DISCLAIMER
+        out["findings"] = []
+        return out
+    findings = [f for check in checks if (f := check(claim, product)) is not None]
     out["label"] = label(findings)
     out["findings"] = [f.to_dict() for f in findings]
     return out

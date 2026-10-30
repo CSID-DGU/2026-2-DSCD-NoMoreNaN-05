@@ -65,3 +65,13 @@ def test_output_passes_claim_fields_only():
     out = result["claims"][0]
     assert out["claim_type"] == "ETC"
     assert "effect" not in out
+
+
+def test_disclaimer_skips_checks():
+    calls = []
+    out = judge_video(video(claim("c01", "본 제품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.")),
+                      checks=[lambda c, p: calls.append(c) or f(VIOLATION)])
+    assert out["claims"][0]["label"] == "DISCLAIMER"
+    assert out["claims"][0]["findings"] == []
+    assert calls == []
+
