@@ -12,6 +12,7 @@ NLI는 확률만 내고, 최종 라벨(인정됨 / 인정 안 됨 / 충돌 / 판
 | `evidence_prep.py` | 식약처 기능성·주의사항 원문을 "기능성 1개 = 문장 1개"로 정리 |
 | `hypothesis.py` | 광고 원문 조각 → 가설 문장 (주어 통일, 문장 끝 정리, 질문 표시, 동의어 바꾸기) |
 | `verify.py` | 전체 연결. 광고 주장 + 제품 ID → 판정용 결과 JSON. 질병·의약품 표현 검사 포함 |
+| `summarize.py` | NLI 결과에서 Claim별 최종 판정만 뽑아 간단한 JSON으로 저장 |
 | `build_premises_db.py` | 정리된 문장을 SQLite DB(`nli_premises.sqlite`)로 만듦 |
 | `run_example.py` | 실제 DB 문장 예시 실행 |
 | `run_tests.py`, `nli_tests.csv` | 1차 실험 (상황별 30쌍) |
@@ -52,31 +53,63 @@ python evidence_prep.py products_selected.csv evidence.csv
 python build_premises_db.py
 ```
 
-**3. 검증 실행**
+**3. 검증 실행** (입력: 제품 식별·Claim 매핑 결과 `mapped_products.json`)
 
 ```bash
-python verify.py              # 2번 제품으로 데모
-python verify.py --save       # 결과를 nli_result 테이블에 저장
-python verify.py --model 모델이름   # 다른 NLI 모델로 실행 (large 비교용)
+python verify.py mapped_products.json --premises-db nli_premises.sqlite --out nli_results.json
 ```
 
-## 입력과 출력
+| 옵션 | 의미 |
+|---|---|
+| `--only-confirmed` | 제품이 확정된 영상만 처리 |
+| `--limit 20` | 앞에서부터 영상 20개만 |
+| `--allow-unresolved` | 제품이 확정(confirmed)되지 않은 후보도 근거로 사용 (실험용) |
+| `--hyp-source text/effect/both` | 가설을 Claim 원문, 효과 문구, 둘 다 중 무엇으로 만들지 (기본 both) |
+| `--no-templates` | 질병·의약품 표현 검사 생략 |
+| `--model 모델이름` | 다른 NLI 모델로 실행 (large 비교용) |
+| `--save` | 결과를 `nli_result` 테이블에 저장 |
 
-입력 (광고 주장)
-```json
-{"claim_id": "c1", "text": "이 제품은 면역력을 높여 줍니다", "target": "고려홍삼정", "target_kind": "product"}
+**4. 최종 판정만 보기**
+
+```bash
+python summarize.py nli_results.json nli_verdicts.json
 ```
 
-출력 (판정 단계로 넘김, 일부)
+판정: 인정됨 / 인정 안 됨 / 충돌 / 판단 보류 / 검증 대상 아님
+
+## 입력 형식 (mapped_products.json, 일부)
+
 ```json
 {
-  "claim_id": "c1",
-  "hypothesis": "고려홍삼정은 면역력을 높여 준다",
-  "is_question": false,
+  "video_id": "db_009_l4gd8qQFSak",
+  "product_ref": "p01",
+  "product": {
+    "match": {"status": "confirmed"},
+    "evi_product": {"product_id": 5216, "product_name": "고려은단 멀티비타민 올인원"},
+    "main_functionality_sources": [{"product_id": 5216, "text": "[비타민A] ①어두운 곳에서…"}]
+  },
+  "claims": [
+    {"claim_id": "c07", "text": "항산화", "claim_type": "EFFECT", "ingredients": [], "effect": "항산화"}
+  ]
+}
+```
+
+- `claim_type`이 **EFFECT**인 Claim만 NLI로 비교 (나머지는 Mechanism A 담당)
+- `ingredients`가 비어 있으면 제품에 대한 주장, 있으면 그 원료의 문장만 골라 비교
+- `match.status`가 `confirmed`가 아니면 제품 근거를 쓰지 않고 판단 보류 (`--allow-unresolved`로 실험 가능)
+
+## 출력 형식 (nli_results.json, Claim 하나)
+
+```json
+{
+  "claim_id": "c07",
+  "subject": "고려은단 멀티비타민 올인원",
   "basis": "PRODUCT",
-  "max_entail_function": 0.99,
-  "best_function_text": "고려홍삼정은 면역력 증진에 도움을 줄 수 있다",
-  "max_contra_precaution": 0.01
+  "max_entail_function": 0.97,
+  "best_function_text": "고려은단 멀티비타민 올인원은 항산화 작용을 하여 유해산소로부터 세포를 보호하는데 필요하다",
+  "max_contra_precaution": 0.01,
+  "is_question": false,
+  "templates": {"1호 나 (질병 치료)": {"status": "NOT_HOLD"}}
 }
 ```
 

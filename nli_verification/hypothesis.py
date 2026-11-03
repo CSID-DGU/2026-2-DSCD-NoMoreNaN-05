@@ -23,7 +23,7 @@ ENDINGS = [
     (r"(잡아|높여|낮춰|지켜|도와|채워|풀어|만들어|바꿔|살려|빼|올려|내려)\s*(주고|줘서|주는데|줍니다|줘요|주는|버립니다|버려요|버리고)$",
      lambda m: f"{m.group(1)} 준다" if "버" not in m.group(2) else f"{m.group(1)} 버린다"),
     (r"(됩니다|돼요|되고|되어|돼서|되는데|되며)$", lambda m: "된다"),
-    (r"(합니다|해요|하고|하며|해서|하여|하는데|해)$", lambda m: "한다"),
+    (r"(합니다|해요|하고|하며|해서|하여|하는데|해)$", lambda m: "하다"),   # "중요합니다"→"중요하다"
     (r"(있습니다|있어요|있고|있어서|있는데|있음)$", lambda m: "있다"),
     (r"(없습니다|없어요|없고|없어서|없는데|없음)$", lambda m: "없다"),
     (r"(입니다|이에요|예요|이고|이며)$", lambda m: "이다"),
@@ -72,6 +72,13 @@ def make_hypothesis(span, target, fix_ending=True):
 
     subject_added = False
     t = re.escape(target)
+    tight = lambda x: re.sub(r"\s+", "", x).lower()
+    lead = re.match(r"^(.{1,40}?)\s*(은|는|이|가)\s", s)       # "비타민 C는 ~"처럼 띄어쓰기만 다른 주어
+    if lead and tight(lead.group(1)) == tight(target):
+        s = f"{target}{topic_particle(target)} " + s[lead.end():]
+        return _finish(s, is_question, fix_ending, False)
+    if tight(target) and tight(target) in tight(s) and not tight(s).startswith(tight(target)):
+        return _finish(s, is_question, fix_ending, False)      # "…MSM으로 무릎을…" 처럼 문장 중간에 이미 있음
     m = DEMONSTRATIVE.match(s)
     if m and re.search(r"(은|는|이|가|도|만)\s+$", m.group(0)):  # "이 제품은 ~" → "target은 ~"
         s = DEMONSTRATIVE.sub(f"{target}{topic_particle(target)} ", s, count=1)
@@ -83,6 +90,10 @@ def make_hypothesis(span, target, fix_ending=True):
         s = f"{target}{topic_particle(target)} {s}"
         subject_added = True
 
+    return _finish(s, is_question, fix_ending, subject_added)
+
+
+def _finish(s, is_question, fix_ending, subject_added):
     s, changed = normalize_claim_ending(s) if fix_ending else (s, False)
     return {"hypothesis": s, "is_question": is_question,
             "ending_changed": changed, "subject_added": subject_added}

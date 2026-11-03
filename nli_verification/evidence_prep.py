@@ -77,6 +77,7 @@ def split_blocks(text):
     t = normalize_text(text)
     t = re.sub(r"\[([^\]\n]{1,60})\]", lambda m: f"\n§H§{m.group(1)}§\n", t)
     t = re.sub(r"(필요|있음|줌|있습니다)\s+([^\s:：\n]{2,20})\s*[:：]", r"\1\n\2 :", t)
+    t = re.sub(r"(?m)^\s*([^\n_§\[\]]{1,30}?)\s+_\s+", lambda m: f"§H§{m.group(1)}§\n", t)   # "아연 _ ①…" 형식
     t = re.sub(r"(?m)^\s*(?:[-*•○]\s*)?((?:[\(（]?\d+[\)）.]\s*)?[^:：\n§]{1,30}?)\s*[:：]\s*",
                lambda m: f"§H§{m.group(1)}§\n", t)
     blocks, label, buf = [], None, []
@@ -286,9 +287,9 @@ def topic_particle(word):
     ch = w[-1]
     if "가" <= ch <= "힣":
         return "은" if (ord(ch) - 0xAC00) % 28 else "는"
-    if ch.isdigit():
+    if ch in DIGIT_BATCHIM:                    # 0~9 (아래첨자 ₁ 같은 특수 숫자는 제외)
         return "은" if DIGIT_BATCHIM[ch] else "는"
-    if ch.isalpha():
+    if ch.isascii() and ch.isalpha():
         return "은" if ch in LATIN_BATCHIM else "는"
     return "은(는)"
 
