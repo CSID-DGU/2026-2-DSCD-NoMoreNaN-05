@@ -119,7 +119,7 @@ def main():
                     z.writestr(relative.as_posix(),cleaned)
                     manifests.append(dict(path=relative.as_posix(),bytes=len(cleaned),sha256=hashlib.sha256(cleaned).hexdigest()))
                     # Large/runtime/data files live in the restorable archive.
-                    if relative.parts[0] not in {'data','state','exports','Data_List_Claim_Verification','text_test_data'}:
+                    if relative.parts[0] not in {'data','state','exports','Data_List_Claim_Verification','text_test_data','TRUEAD_DB_보강자료'}:
                         target=destination/relative
                         target.parent.mkdir(parents=True,exist_ok=True)
                         target.write_bytes(cleaned)

@@ -26,3 +26,17 @@ class RelaxedMappingTests(unittest.TestCase):
         self.assertEqual(len(found),1)
         self.assertEqual(route,'full_name_distance_80_candidates')
         self.assertGreaterEqual(score,80)
+
+    def test_exact_80_point_boundary_is_included(self):
+        found,route,score = self.run_search([product(name='rTG오메가3 플러스')],dict(product_name='rTG오메가3 밸런스'))
+        self.assertEqual(len(found),1)
+        self.assertEqual(score,80)
+
+    def test_brand_recombination_exact_search_is_opt_in(self):
+        rows=[product(name='락피도 맘엔맘엔 오메가3')]
+        db=catalog(rows)
+        query=dict(product_name='맘엔맘엔 오메가3',brand_name='락피도')
+        found,route,score=search(db,query,{'status':'unmatched'},[name_key(rows[0]['product_name'])],brand_recombine=True)
+        self.assertEqual(len(found),1)
+        self.assertEqual(route,'brand_added_exact_name')
+        self.assertEqual(score,100)

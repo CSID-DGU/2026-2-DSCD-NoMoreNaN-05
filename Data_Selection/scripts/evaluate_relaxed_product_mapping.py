@@ -23,13 +23,19 @@ def strip_brand(name, brand):
     return re.sub(r'\s+'+re.escape(brand)+r'$', '', text, flags=re.I).strip()
 
 
-def search(catalog, product, previous, name_choices):
+def search(catalog, product, previous, name_choices, threshold=80, brand_recombine=False, report_fallback_only=False):
+    if not 0 < threshold <= 100:
+        raise ValueError('Threshold must be above 0 and at most 100')
     raw = product.get('product_name') or ''
     variants = [('exact_name', name_key(raw))]
     stripped = name_key(strip_brand(raw, product.get('brand_name')))
     if stripped and stripped != variants[0][1]:
         variants.append(('brand_removed_exact_name', stripped))
-    report = name_key(product.get('manufacturing_report_number'))
+    brand=product.get('brand_name') or ''
+    if brand_recombine and raw and brand and name_key(brand) not in name_key(raw):
+        variants.append(('brand_added_exact_name',name_key(brand+' '+raw)))
+    input_report = name_key(product.get('manufacturing_report_number'))
+    report = '' if report_fallback_only else input_report
     for route,key in variants:
         if not key or key in GENERIC_PRODUCT_NAMES:
             continue
@@ -45,7 +51,11 @@ def search(catalog, product, previous, name_choices):
     for route,key in variants:
         if not key or key in GENERIC_PRODUCT_NAMES:
             continue
-        for _,score,index in process.extract(key,name_choices,scorer=DamerauLevenshtein.normalized_similarity,score_cutoff=.8,limit=None):
+        # The library's cutoff can lose exact boundary matches (2 edits / 10
+        # characters at 0.8). Evaluate uncut scores and filter explicitly.
+        for _,score,index in process.extract(key,name_choices,scorer=DamerauLevenshtein.normalized_similarity,score_cutoff=0,limit=None):
+            if score*100 < threshold:
+                continue
             row = catalog.products[index]
             if report and name_key(row['manufacturing_report_number']) != report:
                 continue
@@ -53,7 +63,9 @@ def search(catalog, product, previous, name_choices):
             if old is None or score > old[1]:
                 found[row['product_id']] = (row,score)
     ordered = sorted(found.values(),key=lambda r:(-r[1],r[0]['product_id']))
-    return [r[0] for r in ordered], 'full_name_distance_80_candidates', (ordered[0][1]*100 if ordered else None)
+    if not ordered and report_fallback_only and input_report:
+        return list(catalog.reports.get(input_report,[])), 'exact_report_number_fallback', None
+    return [r[0] for r in ordered], f'full_name_distance_{threshold:g}_candidates', (ordered[0][1]*100 if ordered else None)
 
 
 def main():
