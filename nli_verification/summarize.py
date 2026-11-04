@@ -2,26 +2,29 @@
 NLI 결과(verify.py 출력)에 최종 라벨을 붙이고, 발표용 요약을 만든다.
 
 실행:  python summarize.py nli_results.json nli_verdicts.json
+       python summarize.py nli_results.json nli_verdicts.json --require-effect   # effect가 비어 있는 Claim 제외
 결과:  nli_verdicts.json (Claim별 최종 라벨)  +  nli_verdicts_report.md (발표용 표)
 
-최종 라벨 (팀 v4 체계)
-  VIOLATION     위반             질병·의약품 금지 표현(템플릿 3개 모두 일치) / 주의사항과 반대되는 말 (C ≥ 0.9)
-  OVERCLAIM     과장 주의        인정 기능성과 같은 말이 없고(E ≤ 0.1) + 과장 표현이 있음
-  UNCLEAR       확인 필요        인정 기능성과 같은 말이 없음 / 확률이 애매함 / 질문 문장 / 비교할 근거 없음
-  SUPPORTED     인정 기능성과 일치  식약처 인정 기능성과 같은 말 (E ≥ 0.9)
-  OUT_OF_SCOPE  검증 대상 아님    건강 효과를 말하지 않는 문장 / 면책 문구
+최종 라벨 (팀 공통 정의)
+  VIOLATION     위반        질병·의약품 금지 표현(템플릿 3개 모두 일치) / 같은 대상을 말하는 주의사항과 반대되는 말 (C ≥ 0.9)
+  OVERCLAIM     과장 주의   인정 기능성과 같은 말이 없고(E ≤ 0.1) + 과장 표현이 있음
+  UNCLEAR       판단 보류   인정 기능성과 같은 말이 없음 / 확률이 애매함 / 질문 문장 / 비교할 근거 없음
+  SUPPORTED     부합        식약처 인정 기능성과 같은 말 (E ≥ 0.9)
+  OUT_OF_SCOPE  해당 없음   건강 효과를 말하지 않는 문장
+  DISCLAIMER    면책 문구   "인체적용시험결과가 모든 사람에게 동일하게 적용되는 것은 아님" 등
 
 한 Claim에 여러 결과가 나오면 VIOLATION > OVERCLAIM > UNCLEAR > SUPPORTED > OUT_OF_SCOPE 순으로 대표 라벨을 정한다.
 기준값 0.9 / 0.1은 임시값.
 """
 import json
+import re
 import sys
 from collections import Counter
 
 TAU_HIGH, TAU_LOW = 0.9, 0.1
-ORDER = ["VIOLATION", "OVERCLAIM", "UNCLEAR", "SUPPORTED", "OUT_OF_SCOPE"]
-LABEL_KO = {"VIOLATION": "위반", "OVERCLAIM": "과장 주의", "UNCLEAR": "확인 필요",
-            "SUPPORTED": "인정 기능성과 일치", "OUT_OF_SCOPE": "검증 대상 아님"}
+ORDER = ["VIOLATION", "OVERCLAIM", "UNCLEAR", "SUPPORTED", "OUT_OF_SCOPE", "DISCLAIMER"]
+LABEL_KO = {"VIOLATION": "위반", "OVERCLAIM": "과장 주의", "UNCLEAR": "판단 보류",
+            "SUPPORTED": "부합", "OUT_OF_SCOPE": "해당 없음", "DISCLAIMER": "면책 문구"}
 CODE_KO = {
     "DISEASE_CLAIM": "질병 예방·치료 효과를 말함 (법 제8조 1호)",
     "DRUG_CLAIM": "의약품처럼 오인하게 함 (법 제8조 2호)",
@@ -37,7 +40,7 @@ CODE_KO = {
     "TARGET_UNRESOLVED": "광고가 무엇에 대해 말하는지 알 수 없음",
     "FUNCTION": "식약처 인정 기능성과 같은 내용",
     "NOT_HEALTH_CLAIM": "건강 효과를 말하는 문장이 아님",
-    "DISCLAIMER": "광고 속 면책 문구 (주장이 아님)",
+    "DISCLAIMER": "광고 속 면책·고지 문구 (주장이 아님)",
 }
 
 
@@ -50,10 +53,37 @@ def _recompute_flags(c):
     text = c.get("text") or ""
     dis = bool(verify.DISCLAIMER.search(text))
     h = c.get("health_claim_E")
+    e = c.get("max_entail_function")
     return {**c, "is_disclaimer": dis,
             "is_health_claim": (not dis) and (bool(verify.EFFECT_WORDS.search(text))
-                                              or (h is not None and h >= verify.SCOPE_TAU)),
+                                              or (h is not None and h >= verify.SCOPE_TAU)
+                                              or (e is not None and e >= TAU_HIGH)),   # 인정 기능성과 같은 말이면 효능 주장
             "exaggeration_terms": sorted({m.group(0) for m in verify.EXAGGERATION.finditer(text)})}
+
+
+# 주의사항 충돌은 광고와 주의사항이 같은 대상·상황을 말할 때만 인정 (관련 없는 주의사항과의 C는 NLI 오판이 많음)
+GROUPS = {
+    "임산부": r"임산부|임신|수유", "어린이": r"영\s*·?\s*유아|유아|어린이|소아|아이", "노약자": r"노약자|고령|노인|어르신",
+    "약": r"의약품|약을|약과|약\s|약$|치료제|복용", "당뇨": r"당뇨|혈당", "혈압": r"혈압", "혈액응고": r"항응고|와파린|혈액\s*응고|출혈",
+    "알레르기": r"알레르기|알러지", "수술": r"수술", "월경": r"월경|생리", "갑상선": r"갑상선", "간": r"간\s*질환|간\s*기능",
+    "신장": r"신장|콩팥", "심장": r"심장|심혈관", "과량": r"과량|과다|많이\s*(먹|드)|여러\s*(알|개)|두\s*배", "음주": r"음주|술",
+}
+
+
+def _groups(text):
+    return {g for g, pat in GROUPS.items() if re.search(pat, text or "")}
+
+
+def _precaution_conflict(c):
+    """C ≥ 0.9인 주의사항 중, 광고와 같은 대상·상황을 말하는 것이 있으면 그 문장을 돌려줌"""
+    cand = [x for x in (c.get("checks") or []) if x.get("evidence_type") == "PRECAUTION" and x.get("C", 0) >= TAU_HIGH]
+    if not cand and (c.get("max_contra_precaution") or 0) >= TAU_HIGH:      # checks가 없을 때 (판정 파일만 있을 때)
+        cand = [{"premise": c.get("best_precaution_text"), "C": c.get("max_contra_precaution")}]
+    g = _groups(c.get("text"))
+    for x in sorted(cand, key=lambda x: -x["C"]):
+        if g & _groups(x.get("premise")):
+            return x.get("premise")
+    return None
 
 
 def findings_of(c):
@@ -63,19 +93,24 @@ def findings_of(c):
     e, cc = c.get("max_entail_function"), c.get("max_contra_precaution")
     has_ev = c.get("basis") != "NONE"
     if c.get("is_disclaimer"):
-        return [("OUT_OF_SCOPE", "DISCLAIMER", None)]
+        return [("DISCLAIMER", "DISCLAIMER", None)]      # 팀 기준: 면책 문구는 별도 라벨
 
     # 질병·의약품 금지 표현 (법 제8조 1·2호)
+    supported = has_ev and e is not None and e >= TAU_HIGH
     for name, t in (c.get("templates") or {}).items():
+        if supported and name.startswith("1호 가"):
+            continue    # v4 예외: 인정 기능성과 같은 뜻이면(예: "면역력") 질병 예방 표현으로 보지 않음
         code = "DISEASE_CLAIM" if name.startswith("1호") else "DRUG_CLAIM"
         if t.get("status") == "HOLDS":
             out.append(("VIOLATION", code, name))
         elif t.get("status") == "UNCLEAR":
             out.append(("UNCLEAR", "DISEASE_DRUG_UNCERTAIN", name))
 
-    # 주의사항 충돌 (건강 효과 확인보다 먼저: 안전 문제)
-    if has_ev and cc is not None and cc >= TAU_HIGH:
-        out.append(("VIOLATION", "PRECAUTION_CONFLICT", c.get("best_precaution_text")))
+    # 주의사항 충돌 (건강 효과 확인보다 먼저: 안전 문제). 같은 대상·상황을 말하는 주의사항만
+    if has_ev:
+        prec = _precaution_conflict(c)
+        if prec:
+            out.append(("VIOLATION", "PRECAUTION_CONFLICT", prec))
 
     # 기능성 비교 (건강 효과를 말하는 문장만)
     if c.get("is_question"):
@@ -105,10 +140,12 @@ def final_label(c):
     return label, main[1], main[2], fs
 
 
-def summarize(results):
+def summarize(results, require_effect=False):
     rows = []
     for v in results:
         for c in v.get("nli_claims", []):
+            if require_effect and not c.get("effect"):
+                continue        # effect(효과 문구)가 비어 있는 Claim 제외 (팀 집계 기준 1,287건에 맞출 때)
             label, code, ev, fs = final_label(c)
             rows.append({
                 "video_id": v.get("video_id"), "product_ref": v.get("product_ref"),
@@ -157,11 +194,13 @@ def to_markdown(out, n_examples=5):
 
 
 if __name__ == "__main__":
-    src = sys.argv[1] if len(sys.argv) > 1 else "nli_results.json"
-    dst = sys.argv[2] if len(sys.argv) > 2 else src.replace(".json", "_verdicts.json")
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    require_effect = "--require-effect" in sys.argv
+    src = args[0] if args else "nli_results.json"
+    dst = args[1] if len(args) > 1 else src.replace(".json", "_verdicts.json")
     with open(src, "rb") as f:
         results = json.loads(f.read().decode("utf-8-sig"))
-    out = summarize(results)
+    out = summarize(results, require_effect)
     with open(dst, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
     md = dst.replace(".json", "_report.md")
