@@ -7,7 +7,9 @@ NLI 결과(verify.py 출력)에 최종 라벨을 붙이고, 발표용 요약을 
 
 최종 라벨 (팀 공통 정의)
   VIOLATION     위반        질병·의약품 금지 표현(템플릿 3개 모두 일치) / 같은 대상을 말하는 주의사항과 반대되는 말 (C ≥ 0.9)
-  OVERCLAIM     과장 주의   인정 기능성과 같은 말이 없고(E ≤ 0.1) + 과장 표현이 있음
+  OVERCLAIM     과장 주의   식약처 → 광고는 같은 말이 아니지만(E < 0.9), 광고 → 식약처는 같은 말(E ≥ 0.9)
+                            = 인정 기능성과 같은 효능을 더 많이 말함 (run_overclaim.py로 반대 방향 계산 후)
+                            과장 표현("확실히" 등)은 라벨에 쓰지 않고 '과장_표현' 칸에 참고로만 표시
   UNCLEAR       판단 보류   인정 기능성과 같은 말이 없음 / 확률이 애매함 / 질문 문장 / 비교할 근거 없음
   SUPPORTED     부합        식약처 인정 기능성과 같은 말 (E ≥ 0.9)
   OUT_OF_SCOPE  해당 없음   건강 효과를 말하지 않는 문장
@@ -29,7 +31,12 @@ CODE_KO = {
     "DISEASE_CLAIM": "질병 예방·치료 효과를 말함 (법 제8조 1호)",
     "DRUG_CLAIM": "의약품처럼 오인하게 함 (법 제8조 2호)",
     "PRECAUTION_CONFLICT": "식약처 주의사항과 반대되는 내용",
-    "EXAGGERATION_TERM": "인정 기능성보다 효과를 크게 표현 (과장 표현 포함)",
+    "MULTI_EFFECT": "여러 효능을 한 문장에 담음 (효능별로 나눠서 확인 필요)",
+    "ALL_PARTS_SUPPORTED": "여러 효능을 나눠 비교한 결과 모두 인정 기능성과 같은 내용",
+    "PART_STRONGER_THAN_RECOGNIZED": "나눈 효능 중 일부가 인정 범위보다 크게 말함",
+    "PART_NO_MATCHING_EVIDENCE": "나눈 효능 중 일부가 인정 기능성에 없음",
+    "PART_LOW_CONFIDENCE": "나눈 효능 중 일부의 판단이 애매함",
+    "STRONGER_THAN_RECOGNIZED": "인정 기능성과 같은 효능을 인정 범위보다 크게 말함 (광고 → 식약처 방향 E ≥ 0.9)",
     "NO_MATCHING_EVIDENCE": "식약처 인정 기능성 중 같은 내용이 없음",
     "LOW_CONFIDENCE": "모델 판단이 애매함",
     "QUESTION": "질문 문장이라 주장으로 보기 어려움",
@@ -70,6 +77,9 @@ GROUPS = {
 }
 
 
+MULTI_EFFECT = re.compile(r"[·&＆]|\s및\s|\s과\s|\s와\s|동시에|더블\s*케어")
+
+
 def _groups(text):
     return {g for g, pat in GROUPS.items() if re.search(pat, text or "")}
 
@@ -84,6 +94,18 @@ def _precaution_conflict(c):
         if g & _groups(x.get("premise")):
             return x.get("premise")
     return None
+
+
+def _part_label(pt):
+    """나눈 부분 하나의 판정: (라벨, 코드, 근거)"""
+    e, r = pt.get("max_E"), pt.get("reverse_E") or 0
+    if e is not None and e >= TAU_HIGH:
+        return ("SUPPORTED", "FUNCTION", pt.get("best_text"))
+    if r >= TAU_HIGH:
+        return ("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", pt.get("reverse_best_text"))
+    if e is not None and e <= TAU_LOW:
+        return ("UNCLEAR", "NO_MATCHING_EVIDENCE", None)
+    return ("UNCLEAR", "LOW_CONFIDENCE", pt.get("best_text"))
 
 
 def findings_of(c):
@@ -120,11 +142,23 @@ def findings_of(c):
             out.append(("UNCLEAR", c.get("basis_reason") or "TARGET_UNRESOLVED", None))
         elif e is not None and e >= TAU_HIGH:
             out.append(("SUPPORTED", "FUNCTION", c.get("best_function_text")))
-        elif e is not None and e <= TAU_LOW:
-            if c.get("exaggeration_terms"):
-                out.append(("OVERCLAIM", "EXAGGERATION_TERM", c.get("best_function_text")))
+        elif c.get("parts"):
+            # 여러 효능을 한 문장에 담은 클레임: 효능별로 나눠 판정한 뒤 합침
+            plabs = [_part_label(pt) for pt in c["parts"]]
+            worst = min(plabs, key=lambda x: ORDER.index(x[0]))
+            if all(x[0] == "SUPPORTED" for x in plabs):
+                out.append(("SUPPORTED", "ALL_PARTS_SUPPORTED", " / ".join(x[2] or "" for x in plabs)))
             else:
-                out.append(("UNCLEAR", "NO_MATCHING_EVIDENCE", None))
+                out.append((worst[0], "PART_" + worst[1], worst[2]))
+        elif (c.get("reverse_max_E") or 0) >= TAU_HIGH and MULTI_EFFECT.search(c.get("text") or ""):
+            # 효능 여러 개를 한 문장에 담으면 반대 방향은 성립하지만 과장이 아닐 수 있음 (예: "혈행·혈중 중성지질 개선")
+            out.append(("UNCLEAR", "MULTI_EFFECT", c.get("reverse_best_text")))
+        elif (c.get("reverse_max_E") or 0) >= TAU_HIGH:
+            # 과장: 식약처 문장만으로는 광고를 말할 수 없지만(정방향 E < 0.9),
+            #       광고가 맞다면 식약처 문장도 맞음(반대 방향 E ≥ 0.9) → 같은 효능을 더 많이 말함
+            out.append(("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", c.get("reverse_best_text")))
+        elif e is not None and e <= TAU_LOW:
+            out.append(("UNCLEAR", "NO_MATCHING_EVIDENCE", None))
         else:
             out.append(("UNCLEAR", "LOW_CONFIDENCE", c.get("best_function_text")))
 
@@ -161,6 +195,9 @@ def summarize(results, require_effect=False):
                 "비교_근거": c.get("basis"),
                 "모든_검사_결과": [{"라벨": a, "코드": b} for a, b, _ in fs],
                 "중복": c.get("duplicate_of"),
+                "부분별_결과": [{"부분": pt.get("text"), "라벨": _part_label(pt)[0],
+                                 "식약처→광고_E": pt.get("max_E"), "광고→식약처_E": pt.get("reverse_E"),
+                                 "근거": _part_label(pt)[2]} for pt in (c.get("parts") or [])] or None,
             })
     uniq = [r for r in rows if not r["중복"]]
     summary = {
