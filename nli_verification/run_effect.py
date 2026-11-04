@@ -4,6 +4,7 @@ EFFECT Claim 입력 파일(B_EFFECT_180건_입력.json)을 NLI로 검증하고 �
 실행:
     python run_effect.py B_EFFECT_180건_입력.json
     python run_effect.py B_EFFECT_180건_입력.json --model 모델이름      # 다른 NLI 모델
+    python run_effect.py claims_with_db.json                           # 영상 단위 파일도 가능 (DB 있는 제품의 EFFECT만)
 결과:
     effect_nli_results.json        Claim별 NLI 상세 결과 (모든 문장 쌍의 E·N·C 포함)
     effect_verdicts.json           Claim별 최종 라벨
@@ -23,6 +24,40 @@ from collections import OrderedDict
 
 from verify import Verifier
 import summarize
+
+
+def from_claims_with_db(videos):
+    """claims_with_db.json(영상 → 제품·Claim) 형식에서 DB가 있는 제품의 EFFECT Claim만 골라 변환"""
+    out, n = [], 0
+    for v in videos:
+        for p in v.get("products", []):
+            db = p.get("DB")
+            if not isinstance(db, dict):
+                continue
+            claims = [c for c in v.get("claims", [])
+                      if c.get("product_ref") == p.get("product_ref") and c.get("claim_type") == "EFFECT"]
+            if not claims:
+                continue
+            ev = db.get("EFFECT") or {}
+            pid = p.get("preferred_product_id") or p.get("manufacturing_report_number")
+            name = (p.get("match") or {}).get("matched_name") or p.get("product_name")
+            out.append({
+                "video_id": v.get("video_id"), "product_ref": p.get("product_ref"), "url": v.get("url"),
+                "product": {
+                    "match": {"status": "confirmed"},
+                    "evi_product": {"product_id": pid, "product_name": name},
+                    "main_functionality_sources": [{"product_id": pid, "text": ev.get("MAIN_FNCTN")}],
+                    "intake_precautions_sources": [{"product_id": pid, "text": ev.get("INTAKE_HINT1")}],
+                    "ingredient_sources": [
+                        {"name": x.get("RAWMTRL_NM"), "functionality": x.get("PRIMARY_FNCLTY"),
+                         "precaution": x.get("IFTKN_ATNT_MATR_CN")}
+                        for x in (ev.get("RAWMTRL_STD_INFO") or []) if x.get("RAWMTRL_NM")],
+                },
+                "claims": [{"claim_id": c["claim_id"], "claim_type": "EFFECT", "text": c.get("text"),
+                            "effect": c.get("effect"), "ingredients": c.get("ingredients") or []} for c in claims],
+            })
+            n += len(claims)
+    return out, n
 
 
 def to_videos(rows):
@@ -60,12 +95,19 @@ if __name__ == "__main__":
     ap.add_argument("--model", default=None)
     ap.add_argument("--hyp-source", choices=["text", "effect", "both"], default="both")
     ap.add_argument("--prefix", default="effect")
+    ap.add_argument("--limit", type=int, default=None, help="앞에서부터 영상·제품 N개만 (시간 확인용)")
     args = ap.parse_args()
 
     with open(args.input, "rb") as f:
         rows = json.loads(f.read().decode("utf-8-sig"))
-    videos = to_videos(rows)
-    print(f"Claim {len(rows)}개 / 영상·제품 {len(videos)}개")
+    if rows and "products" in rows[0]:            # claims_with_db.json 형식 (영상 단위)
+        videos, n_claims = from_claims_with_db(rows)
+    else:                                         # B_EFFECT_입력.json 형식 (Claim 단위)
+        videos, n_claims = to_videos(rows), len(rows)
+    if args.limit:
+        videos = videos[: args.limit]
+        n_claims = sum(len(x["claims"]) for x in videos)
+    print(f"EFFECT Claim {n_claims}개 / 영상·제품 {len(videos)}개")
 
     v = Verifier(None, None, model_name=args.model)
     t0 = time.time()

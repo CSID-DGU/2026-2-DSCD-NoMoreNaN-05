@@ -55,7 +55,12 @@ class NLIScorer:
         """
         unique = list(dict.fromkeys(pairs))
         cache = {}
+        show = len(unique) >= 2000                      # 쌍이 많으면 진행 상황 출력
+        if show:
+            print(f"NLI 계산: 문장 쌍 {len(unique):,}개 (중복 제외)")
         for start in range(0, len(unique), self.batch_size):
+            if show and (start // self.batch_size) % 50 == 0:
+                print(f"  진행 {start:,}/{len(unique):,} ({start / len(unique):.0%})", flush=True)
             batch = unique[start:start + self.batch_size]
             enc = self.tokenizer(
                 [p for p, _ in batch],

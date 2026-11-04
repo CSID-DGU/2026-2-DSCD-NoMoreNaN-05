@@ -78,6 +78,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("input", help="claims_with_db_501_no_etc.json")
     ap.add_argument("--model", default=MODEL_NAME)
+    ap.add_argument("--prefix", default="bytype", help="결과 파일 이름 앞부분")
     args = ap.parse_args()
 
     with open(args.input, "rb") as f:
@@ -92,7 +93,7 @@ if __name__ == "__main__":
             if not isinstance(db, dict):
                 skipped["제품 DB 없음"] += 1
                 continue
-            name = p.get("product_name") or "이 제품"
+            name = (p.get("match") or {}).get("matched_name") or p.get("product_name") or "이 제품"
             prem = premises_for(c["claim_type"], db, name)
             if not prem:
                 skipped[f"{c['claim_type']}: 비교할 공식 자료 없음"] += 1
@@ -123,7 +124,7 @@ if __name__ == "__main__":
             "최대_C": round(bc["C"], 4) if bc else None, "최대_C_전제": bc["premise"] if bc else None,
             "NLI_결과": judge(be["E"] if be else None, bc["C"] if bc else None) if pairs else "비교 안 함",
         })
-    with open("bytype_nli_results.json", "w", encoding="utf-8") as f:
+    with open(f"{args.prefix}_nli_results.json", "w", encoding="utf-8") as f:
         json.dump(rows, f, ensure_ascii=False, indent=2)
 
     by = defaultdict(list)
@@ -139,7 +140,7 @@ if __name__ == "__main__":
         md += ["", f"## {t} 예시", "", "| 광고 문장 | NLI 결과 | 최대 E | 가장 잘 맞은 식약처 문장 |", "|---|---|---|---|"]
         for r in sorted(rs, key=lambda r: -(r["최대_E"] or 0))[:3] + sorted(rs, key=lambda r: (r["최대_E"] or 0))[:2]:
             md.append(f"| {r['광고_문장']} | {r['NLI_결과']} | {r['최대_E']} | {(r['최대_E_전제'] or '').replace('|', '/')} |")
-    with open("bytype_report.md", "w", encoding="utf-8") as f:
+    with open(f"{args.prefix}_report.md", "w", encoding="utf-8") as f:
         f.write("\n".join(md) + "\n")
     print("제외:", dict(skipped))
-    print("저장: bytype_nli_results.json, bytype_report.md")
+    print(f"저장: {args.prefix}_nli_results.json, {args.prefix}_report.md")
