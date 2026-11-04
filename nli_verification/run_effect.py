@@ -5,6 +5,7 @@ EFFECT Claim 입력 파일(B_EFFECT_180건_입력.json)을 NLI로 검증하고 �
     python run_effect.py B_EFFECT_180건_입력.json
     python run_effect.py B_EFFECT_180건_입력.json --model 모델이름      # 다른 NLI 모델
     python run_effect.py claims_with_db.json                           # 영상 단위 파일도 가능 (DB 있는 제품의 EFFECT만)
+    python run_effect.py claims.json --db claims_with_db.json --prefix effect_new   # DB 없는 새 Claim 파일 + 예전 파일의 제품 DB
 결과:
     effect_nli_results.json        Claim별 NLI 상세 결과 (모든 문장 쌍의 E·N·C 포함)
     effect_verdicts.json           Claim별 최종 라벨
@@ -20,8 +21,9 @@ EFFECT Claim 입력 파일(B_EFFECT_180건_입력.json)을 NLI로 검증하고 �
 import argparse
 import json
 import time
-from collections import OrderedDict
+from collections import Counter, OrderedDict
 
+from join_db import attach_db, claim_types, load
 from verify import Verifier
 import summarize
 
@@ -35,7 +37,7 @@ def from_claims_with_db(videos):
             if not isinstance(db, dict):
                 continue
             claims = [c for c in v.get("claims", [])
-                      if c.get("product_ref") == p.get("product_ref") and c.get("claim_type") == "EFFECT"]
+                      if c.get("product_ref") == p.get("product_ref") and "EFFECT" in claim_types(c)]
             if not claims:
                 continue
             ev = db.get("EFFECT") or {}
@@ -96,10 +98,13 @@ if __name__ == "__main__":
     ap.add_argument("--hyp-source", choices=["text", "effect", "both"], default="both")
     ap.add_argument("--prefix", default="effect")
     ap.add_argument("--limit", type=int, default=None, help="앞에서부터 영상·제품 N개만 (시간 확인용)")
+    ap.add_argument("--db", default=None, help="입력에 DB가 없을 때 제품 DB를 가져올 claims_with_db.json")
     args = ap.parse_args()
 
-    with open(args.input, "rb") as f:
-        rows = json.loads(f.read().decode("utf-8-sig"))
+    rows = load(args.input)
+    if args.db:
+        attach_db(rows, load(args.db))
+        print("제품 DB 연결:", dict(Counter(p["db_join"]["method"] for v in rows for p in v.get("products", []))))
     if rows and "products" in rows[0]:            # claims_with_db.json 형식 (영상 단위)
         videos, n_claims = from_claims_with_db(rows)
     else:                                         # B_EFFECT_입력.json 형식 (Claim 단위)

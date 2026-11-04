@@ -6,6 +6,8 @@
       → EFFECT는 NLI(Mechanism B), 숫자·성분·인증은 규칙·DB 비교(Mechanism A)가 맞는지 근거 만들기
 
 실행:  python run_bytype.py claims_with_db_501_no_etc.json
+       python run_bytype.py claims.json --db claims_with_db.json --prefix bytype_new   # DB 없는 새 Claim 파일
+       (claim_type이 목록이면 유형마다 따로 비교 → 한 Claim이 여러 행이 될 수 있음)
 결과:  bytype_nli_results.json (Claim별), bytype_report.md (유형별 요약 표)
 
 유형별 전제(식약처 문장) 만드는 법
@@ -23,6 +25,7 @@ from collections import Counter, defaultdict
 
 from evidence_prep import make_premise, parse_functionality, parse_precautions, topic_particle
 from hypothesis import make_hypothesis
+from join_db import attach_db, claim_types, load
 from nli import NLIScorer, MODEL_NAME
 
 TAU = 0.9
@@ -79,10 +82,13 @@ if __name__ == "__main__":
     ap.add_argument("input", help="claims_with_db_501_no_etc.json")
     ap.add_argument("--model", default=MODEL_NAME)
     ap.add_argument("--prefix", default="bytype", help="결과 파일 이름 앞부분")
+    ap.add_argument("--db", default=None, help="입력에 DB가 없을 때 제품 DB를 가져올 claims_with_db.json")
     args = ap.parse_args()
 
-    with open(args.input, "rb") as f:
-        videos = json.loads(f.read().decode("utf-8-sig"))
+    videos = load(args.input)
+    if args.db:
+        attach_db(videos, load(args.db))
+        print("제품 DB 연결:", dict(Counter(p["db_join"]["method"] for v in videos for p in v.get("products", []))))
 
     jobs, plans, skipped = [], [], Counter()
     for v in videos:
@@ -94,15 +100,16 @@ if __name__ == "__main__":
                 skipped["제품 DB 없음"] += 1
                 continue
             name = (p.get("match") or {}).get("matched_name") or p.get("product_name") or "이 제품"
-            prem = premises_for(c["claim_type"], db, name)
-            if not prem:
-                skipped[f"{c['claim_type']}: 비교할 공식 자료 없음"] += 1
-                plans.append((v, p, c, name, [], None))
-                continue
-            hyp = make_hypothesis(c.get("text") or "", name)["hypothesis"]
-            pairs = [dict(kind=k, premise=pr, hypothesis=hyp) for k, pr in prem]
-            plans.append((v, p, c, name, pairs, hyp))
-            jobs.extend(pairs)
+            for t in claim_types(c):
+                prem = premises_for(t, db, name)
+                if not prem:
+                    skipped[f"{t}: 비교할 공식 자료 없음"] += 1
+                    plans.append((v, p, c, t, name, [], None))
+                    continue
+                hyp = make_hypothesis(c.get("text") or "", name)["hypothesis"]
+                pairs = [dict(kind=k, premise=pr, hypothesis=hyp) for k, pr in prem]
+                plans.append((v, p, c, t, name, pairs, hyp))
+                jobs.extend(pairs)
 
     print(f"대상 Claim {len(plans)}개 / 문장 쌍 {len(jobs)}개")
     scorer = NLIScorer(model_name=args.model)
@@ -113,12 +120,12 @@ if __name__ == "__main__":
     print(f"NLI 완료: {time.time() - t0:.1f}초")
 
     rows = []
-    for v, p, c, name, pairs, hyp in plans:
+    for v, p, c, t, name, pairs, hyp in plans:
         be = max(pairs, key=lambda x: x["E"]) if pairs else None
         bc = max(pairs, key=lambda x: x["C"]) if pairs else None
         rows.append({
             "video_id": v.get("video_id"), "product_ref": p.get("product_ref"), "제품명": name,
-            "claim_id": c.get("claim_id"), "claim_type": c.get("claim_type"), "광고_문장": c.get("text"),
+            "claim_id": c.get("claim_id"), "claim_type": t, "광고_문장": c.get("text"),
             "가설": hyp, "비교한_문장_수": len(pairs),
             "최대_E": round(be["E"], 4) if be else None, "최대_E_전제": be["premise"] if be else None,
             "최대_C": round(bc["C"], 4) if bc else None, "최대_C_전제": bc["premise"] if bc else None,
