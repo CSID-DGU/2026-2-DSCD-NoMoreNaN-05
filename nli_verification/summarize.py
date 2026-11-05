@@ -34,6 +34,8 @@ CODE_KO = {
     "PRECAUTION_CONFLICT": "식약처 주의사항과 반대되는 내용",
     "MULTI_EFFECT": "여러 효능을 한 문장에 담음 (효능별로 나눠서 확인 필요)",
     "SAME_TOPIC": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+    "IMPLIES_RECOGNIZED": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
+    "EXAGGERATION_NO_EVIDENCE": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
     "PART_SAME_TOPIC": "나눈 효능 중 일부가 인정 기능성과 같은 주제지만 같은 말인지 확인 필요",
     "ALL_PARTS_SUPPORTED": "여러 효능을 나눠 비교한 결과 모두 인정 기능성과 같은 내용",
     "PART_STRONGER_THAN_RECOGNIZED": "나눈 효능 중 일부가 인정 범위보다 크게 말함",
@@ -81,9 +83,12 @@ GROUPS = {
 
 
 # 광고가 인정 문구보다 '더 많이' 말한다는 신호: 수치·기간, 정도·확실성, 측정 결과, 체험 결과
-EXTRA_CLAIM = re.compile(r"(\d+\s*(%|배|mg|g|kg|일|주|개월|달|시간|분|명)|확실|크게|완전|탁월|최고|싹|빠르게|즉시|근본|획기|"
+EXTRA_CLAIM = re.compile(r"(\d+\s*(%|배|mg|g|kg|일|주|개월|달|시간|분|명)|(한|두|세|네|다섯|열)\s*배|일주일|하루\s*만에|한\s*번만|"
+                         r"깨끗이|확실|크게|완전|탁월|최고|싹|빠르게|즉시|근본|획기|"
                          r"놀라|극대|최대|강력|통증|두께|골밀도|골강도|지표|수치|(증가|감소|개선)\s*확인|인체\s*적용\s*시험|"
                          r"임상|줄어들|사라지|없어지|지우|바꾸|바뀝|탄탄)")
+DRUG_WORDS = re.compile(r"(약|치료제|주사|의약품)\s*(을|를)?\s*(대신|대체)|대신\s*(먹|드시)|끊어도")
+DISEASE_WORDS = re.compile(r"치료(한다|합니다|해\s*준|해준|해요|됩니다|효과)|완치|항암|낫게|병을\s*고")
 MULTI_EFFECT = re.compile(r"[·&＆]|\s및\s|\s과\s|\s와\s|동시에|더블\s*케어")
 
 
@@ -101,6 +106,14 @@ def _precaution_conflict(c):
         if g & _groups(x.get("premise")):
             return x.get("premise")
     return None
+
+
+def c_flags_exag(c):
+    try:
+        import verify
+        return bool(verify.EXAGGERATION.search(c.get("text") or ""))
+    except ImportError:
+        return False
 
 
 def _split_ok(text):
@@ -127,7 +140,7 @@ def _part_label(pt):
     if r >= TAU_HIGH:
         if EXTRA_CLAIM.search(pt.get("text") or ""):
             return ("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", pt.get("reverse_best_text"))
-        return ("UNCLEAR", "SAME_TOPIC", pt.get("reverse_best_text"))
+        return ("SUPPORTED", "IMPLIES_RECOGNIZED", pt.get("reverse_best_text"))
     if e is not None and e <= TAU_LOW:
         return ("UNCLEAR", "NO_MATCHING_EVIDENCE", None)
     return ("UNCLEAR", "LOW_CONFIDENCE", pt.get("best_text"))
@@ -154,6 +167,14 @@ def findings_of(c):
             out.append(("VIOLATION", code, name))
         elif t.get("status") == "UNCLEAR":
             out.append(("UNCLEAR", "DISEASE_DRUG_UNCERTAIN", name))
+
+    # 질병·의약품 표현을 직접 말하는 단어 ("고혈압약을 대신할 수 있다", "관절염을 치료한다")
+    text_ = c.get("text") or ""
+    if not c.get("is_question"):
+        if DRUG_WORDS.search(text_):
+            out.append(("VIOLATION", "DRUG_CLAIM", DRUG_WORDS.search(text_).group(0)))
+        elif DISEASE_WORDS.search(text_) and not supported:
+            out.append(("VIOLATION", "DISEASE_CLAIM", DISEASE_WORDS.search(text_).group(0)))
 
     # 주의사항 충돌 (건강 효과 확인보다 먼저: 안전 문제). 같은 대상·상황을 말하는 주의사항만
     if has_ev:
@@ -187,9 +208,12 @@ def findings_of(c):
             if EXTRA_CLAIM.search(c.get("text") or ""):
                 out.append(("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", c.get("reverse_best_text")))
             else:
-                out.append(("UNCLEAR", "SAME_TOPIC", c.get("reverse_best_text")))
+                out.append(("SUPPORTED", "IMPLIES_RECOGNIZED", c.get("reverse_best_text")))
         elif e is not None and e <= TAU_LOW:
-            out.append(("UNCLEAR", "NO_MATCHING_EVIDENCE", None))
+            if EXTRA_CLAIM.search(c.get("text") or "") or c_flags_exag(c):
+                out.append(("OVERCLAIM", "EXAGGERATION_NO_EVIDENCE", None))
+            else:
+                out.append(("UNCLEAR", "NO_MATCHING_EVIDENCE", None))
         else:
             out.append(("UNCLEAR", "LOW_CONFIDENCE", c.get("best_function_text")))
 

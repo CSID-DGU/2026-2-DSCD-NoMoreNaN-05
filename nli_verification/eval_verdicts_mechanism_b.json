@@ -21,9 +21,9 @@
       "claim_type": "EFFECT",
       "text": "3가지 기능성 집중 케어",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "BNS혈당엔바나바는 정상적인 면역기능에 필요하다",
       "scores": {
         "E": 0.0031,
@@ -33,8 +33,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -703,9 +703,9 @@
       "claim_type": "EFFECT",
       "text": "식후혈당 억제 정상적인 면역기능 에너지 대사까지 챙기는 3중 기능성에도 이 가격",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "BNS혈당엔바나바는 정상적인 면역기능에 필요하다",
       "scores": {
         "E": 0.0031,
@@ -715,8 +715,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -920,9 +920,9 @@
       "claim_type": "EFFECT",
       "text": "가족의 장 건강 지킴이 G4000 프로바이오틱스",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "G4000 프로바이오틱스는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0008,
@@ -932,8 +932,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -1077,9 +1077,9 @@
       "claim_type": "EFFECT",
       "text": "하루 한 알로 활력있는 생활과 간건강까지",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "간에게주는밀크씨슬선물은 간 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0083,
@@ -1089,8 +1089,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -1108,9 +1108,9 @@
       "claim_type": "EFFECT",
       "text": "간에게주는밀크씨슬선물 제품은 한 번만 먹어도 간에 쌓인 노폐물을 깨끗이 제거한다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "OVERCLAIM",
+      "reason_code": "STRONGER_THAN_RECOGNIZED",
+      "reason": "인정 기능성과 같은 효능을 인정 범위보다 크게 말함 (광고 → 식약처 방향 E ≥ 0.9)",
       "evidence_text": "간에게주는밀크씨슬선물은 간 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0009,
@@ -1120,8 +1120,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "OVERCLAIM",
+          "reason_code": "STRONGER_THAN_RECOGNIZED"
         }
       ],
       "flags": {
@@ -1451,9 +1451,9 @@
       "claim_type": "EFFECT",
       "text": "체지방감소와 식후 혈당상승까지",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "감비책 다이어트는 식후 혈당상승 억제에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0012,
@@ -1463,8 +1463,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -1544,9 +1544,9 @@
       "claim_type": "EFFECT",
       "text": "감비책 다이어트 제품은 2주 만에 체지방 5kg을 확실히 줄인다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -1556,8 +1556,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -1578,9 +1578,9 @@
       "claim_type": "EFFECT",
       "text": "감비책 다이어트 제품은 식사량을 줄이지 않아도 일주일 만에 뱃살만 골라 30% 없애 준다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -1590,8 +1590,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -1640,9 +1640,9 @@
       "claim_type": "EFFECT",
       "text": "한국인의 영양에 맞춰 기초 건강, 항산화, 에너지, 정상적인 면역 기능까지",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "고려은단 멀티비타민 올인원은 정상적인 면역기능에 필요하다",
       "scores": {
         "E": 0.0022,
@@ -1652,8 +1652,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -1702,9 +1702,9 @@
       "claim_type": "EFFECT",
       "text": "고려은단 멀티비타민 올인원 제품은 일주일 만에 피부 수분량을 두 배로 높이는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -1714,8 +1714,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -1764,9 +1764,9 @@
       "claim_type": "EFFECT",
       "text": "건강정보: 본 정보는 제품과 관련 없는 내용입니다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0005,
@@ -1776,8 +1776,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -1795,9 +1795,9 @@
       "claim_type": "EFFECT",
       "text": "혈압건강 + 항산화 2중 기능성원료",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "고려은단 코엔자임Q10은 항산화에 도움을 줄 수 있다",
       "scores": {
         "E": 0.3534,
@@ -1807,8 +1807,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -1826,10 +1826,10 @@
       "claim_type": "EFFECT",
       "text": "고려은단 코엔자임Q10 제품은 고혈압약을 대신할 수 있다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "DISEASE_DRUG_UNCERTAIN",
-      "reason": "질병·의약품 표현일 가능성 (표현 문장 3개 중 2개 일치)",
-      "evidence_text": "질병 치료",
+      "label": "VIOLATION",
+      "reason_code": "DRUG_CLAIM",
+      "reason": "의약품을 대신하거나 약효를 높인다고 말함 (의약품 표현 문장 3개 모두 일치)",
+      "evidence_text": "약을 대신",
       "scores": {
         "E": 0.0014,
         "C": 0.0004,
@@ -1844,6 +1844,10 @@
         {
           "label": "UNCLEAR",
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
+        },
+        {
+          "label": "VIOLATION",
+          "reason_code": "DRUG_CLAIM"
         },
         {
           "label": "UNCLEAR",
@@ -1865,9 +1869,9 @@
       "claim_type": "EFFECT",
       "text": "고려은단 코엔자임Q10 제품은 일주일 만에 혈압 변동 폭을 90% 줄이는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -1877,8 +1881,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -1896,9 +1900,9 @@
       "claim_type": "EFFECT",
       "text": "고려은단비타민C1000 제품은 일주일 만에 철 흡수율을 세 배로 높이는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0009,
@@ -1908,8 +1912,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -2051,9 +2055,9 @@
       "claim_type": "EFFECT",
       "text": "관절 연골 건강에 도움을 줄 수 있는 기능성 원료에 자생만의 비책을 더하다",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절선생은 관절 및 연골건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0012,
@@ -2063,8 +2067,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2098,8 +2102,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2148,9 +2156,9 @@
       "claim_type": "EFFECT",
       "text": "계단 내려가기 개선 확인 [WOMAC]",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0005,
@@ -2160,8 +2168,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -2319,8 +2327,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2338,9 +2350,9 @@
       "claim_type": "EFFECT",
       "text": "관절이 나를 움직이게 한다",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절엔 아나파랙틴 정제는 관절 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0058,
@@ -2350,8 +2362,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2493,9 +2505,9 @@
       "claim_type": "EFFECT",
       "text": "지속 가능한 관절",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절엔 아나파랙틴 정제는 관절 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0013,
@@ -2505,8 +2517,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2555,9 +2567,9 @@
       "claim_type": "EFFECT",
       "text": "활기찬 건강의 기본 관절입니다",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절연골엔 구절초는 관절 및 연골 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0006,
@@ -2567,8 +2579,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2679,9 +2691,9 @@
       "claim_type": "EFFECT",
       "text": "하나뿐인 소중한 관절을 위해~",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절연골엔 구절초는 관절 및 연골 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0008,
@@ -2691,8 +2703,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2761,8 +2773,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2780,9 +2796,9 @@
       "claim_type": "EFFECT",
       "text": "보스웰리아 추출물에 한함",
       "mechanism": "B",
-      "label": "OUT_OF_SCOPE",
-      "reason_code": "NOT_HEALTH_CLAIM",
-      "reason": "건강 효과를 말하는 문장이 아님",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.6473,
@@ -2792,8 +2808,8 @@
       },
       "all_findings": [
         {
-          "label": "OUT_OF_SCOPE",
-          "reason_code": "NOT_HEALTH_CLAIM"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -2811,9 +2827,9 @@
       "claim_type": "EFFECT",
       "text": "자연으로부터 받은 건강, 프롬바이오",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절연골엔보스웰리아는 관절 및 연골건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0006,
@@ -2823,8 +2839,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -2997,9 +3013,9 @@
       "claim_type": "EFFECT",
       "text": "튼튼하다 관절도",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절팔팔은 관절건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0351,
@@ -3009,8 +3025,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -3028,9 +3044,9 @@
       "claim_type": "EFFECT",
       "text": "팔팔하다 무릎도",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "관절팔팔은 관절건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0017,
@@ -3040,8 +3056,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -3106,8 +3122,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -3139,6 +3159,10 @@
         {
           "label": "UNCLEAR",
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
+        },
+        {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
         },
         {
           "label": "VIOLATION",
@@ -3195,9 +3219,9 @@
       "claim_type": "EFFECT",
       "text": "2,400μg 요오드 갑상선 호르몬의 합성 에너지생성",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "요오드는 에너지 생성에 필요하다",
       "scores": {
         "E": 0.0062,
@@ -3207,8 +3231,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -3732,8 +3756,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -3751,9 +3779,9 @@
       "claim_type": "EFFECT",
       "text": "나우그린 간 건강 프리미엄 밀크씨슬 제품은 한 번만 먹어도 간에 쌓인 노폐물을 깨끗이 제거한다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "OVERCLAIM",
+      "reason_code": "STRONGER_THAN_RECOGNIZED",
+      "reason": "인정 기능성과 같은 효능을 인정 범위보다 크게 말함 (광고 → 식약처 방향 E ≥ 0.9)",
       "evidence_text": "나우그린 간 건강 프리미엄 밀크씨슬은 간 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0015,
@@ -3763,8 +3791,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "OVERCLAIM",
+          "reason_code": "STRONGER_THAN_RECOGNIZED"
         }
       ],
       "flags": {
@@ -3982,9 +4010,9 @@
       "claim_type": "EFFECT",
       "text": "데이팩 올인원 제품은 단 하루 만에 눈의 피로를 90%까지 확실히 줄인다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -3994,8 +4022,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -4015,9 +4043,9 @@
       "claim_type": "EFFECT",
       "text": "하지만 유산균이 보장되어야 할 곳은 장속.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "유산균은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0023,
@@ -4027,8 +4055,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4046,9 +4074,9 @@
       "claim_type": "EFFECT",
       "text": "듀오락의 기술로 최대 221배 강력한 장 속 생존력",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.002,
@@ -4058,8 +4086,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -4341,9 +4369,9 @@
       "claim_type": "EFFECT",
       "text": "※ 본 인체적용 시험의 경우, 제품에 대한 시험결과가 아닙니다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0009,
@@ -4353,8 +4381,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -4423,8 +4451,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4442,10 +4474,10 @@
       "claim_type": "EFFECT",
       "text": "유익한 유산균 증식, 유해균 억제, 배변활동 원활, 장 면역을 조절하여 장 건강에 도움을 줄 수 있음",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "PART_SAME_TOPIC",
-      "reason": "나눈 효능 중 일부가 인정 기능성과 같은 주제지만 같은 말인지 확인 필요",
-      "evidence_text": "드시모네 4500은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
+      "label": "SUPPORTED",
+      "reason_code": "ALL_PARTS_SUPPORTED",
+      "reason": "여러 효능을 나눠 비교한 결과 모두 인정 기능성과 같은 내용",
+      "evidence_text": "드시모네 4500은 유익한 유산균 증식에 도움을 줄 수 있다 / 드시모네 4500은 유해균 억제에 도움을 줄 수 있다 / 드시모네 4500은 배변활동 원활에 도움을 줄 수 있다 / 드시모네 4500은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.4629,
         "C": 0.0002,
@@ -4454,8 +4486,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "PART_SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "ALL_PARTS_SUPPORTED"
         }
       ],
       "flags": {
@@ -4489,8 +4521,8 @@
         },
         {
           "text": "장 면역을 조절하여 장 건강에 도움을 줄 수 있음",
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC",
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED",
           "E": 0.001,
           "reverse_E": 0.9874,
           "evidence_text": "드시모네 4500은 장면역을 조절하여 장 건강에 도움을 줄 수 있다"
@@ -4601,9 +4633,9 @@
       "claim_type": "EFFECT",
       "text": "고함량* 보장균수 1,000억으로 우리 아이 장 면역 조절까지!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "드시모네 키즈 프리미엄은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0008,
@@ -4613,8 +4645,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4632,9 +4664,9 @@
       "claim_type": "EFFECT",
       "text": "한국 식약처 기능성 개별인정 번호 : 제2009-28호 [장 면역을 조절하여 장 건강에 도움을 줄 수 있음]",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "드시모네 키즈 프리미엄은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0019,
@@ -4644,8 +4676,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4727,9 +4759,9 @@
       "claim_type": "EFFECT",
       "text": "예민한 장을 가진 당신을 위한 락토핏 솔루션 2.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0008,
@@ -4739,8 +4771,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4758,9 +4790,9 @@
       "claim_type": "EFFECT",
       "text": "예민한 장에 FIT",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0011,
@@ -4770,8 +4802,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4789,9 +4821,9 @@
       "claim_type": "EFFECT",
       "text": "예민한 배변활동 개선을 위한 올바른 습관",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "OVERCLAIM",
+      "reason_code": "STRONGER_THAN_RECOGNIZED",
+      "reason": "인정 기능성과 같은 효능을 인정 범위보다 크게 말함 (광고 → 식약처 방향 E ≥ 0.9)",
       "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.001,
@@ -4801,8 +4833,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "OVERCLAIM",
+          "reason_code": "STRONGER_THAN_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4820,9 +4852,9 @@
       "claim_type": "EFFECT",
       "text": "둔감한 장, 예민한 장 유산균 선택의 시대",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0015,
@@ -4832,8 +4864,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4851,9 +4883,9 @@
       "claim_type": "EFFECT",
       "text": "내 몸에 FIT 락토핏",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0011,
@@ -4863,8 +4895,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -4882,9 +4914,9 @@
       "claim_type": "EFFECT",
       "text": "둔감한 장 운동 강화를 위한 올바른 케어",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0041,
@@ -4894,8 +4926,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -5132,9 +5164,9 @@
       "claim_type": "EFFECT",
       "text": "내 몸에 핏",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 코어맥스는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0083,
@@ -5144,8 +5176,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -5276,8 +5308,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -5388,9 +5424,9 @@
       "claim_type": "EFFECT",
       "text": "루테인지아잔틴 164 제품은 단 하루 만에 눈의 피로를 90%까지 확실히 줄인다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -5400,8 +5436,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -5545,9 +5581,9 @@
       "claim_type": "EFFECT",
       "text": "마이니 딥슬립 이뮨 제품은 먹은 날부터 깊은 수면 시간이 두 배로 늘어나는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -5557,8 +5593,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -5888,10 +5924,10 @@
       "claim_type": "EFFECT",
       "text": "제가 메노락토 프로바이오틱스를 선택한 이유는 갱년기 여성 건강과 장 건강을 한 번에 케어하는 오직 이런 기술은 메노락토 뿐인데요",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "PART_SAME_TOPIC",
-      "reason": "나눈 효능 중 일부가 인정 기능성과 같은 주제지만 같은 말인지 확인 필요",
-      "evidence_text": "메노락토 프로바이오틱스는 갱년기 여성 건강에 도움을 줄 수 있다",
+      "label": "SUPPORTED",
+      "reason_code": "ALL_PARTS_SUPPORTED",
+      "reason": "여러 효능을 나눠 비교한 결과 모두 인정 기능성과 같은 내용",
+      "evidence_text": "메노락토 프로바이오틱스는 갱년기 여성 건강에 도움을 줄 수 있다 / 메노락토 프로바이오틱스는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0081,
         "C": 0.0005,
@@ -5900,8 +5936,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "PART_SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "ALL_PARTS_SUPPORTED"
         }
       ],
       "flags": {
@@ -5911,16 +5947,16 @@
       "parts": [
         {
           "text": "제가 메노락토 프로바이오틱스를 선택한 이유는 갱년기 여성 건강",
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC",
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED",
           "E": 0.0064,
           "reverse_E": 0.9978,
           "evidence_text": "메노락토 프로바이오틱스는 갱년기 여성 건강에 도움을 줄 수 있다"
         },
         {
           "text": "장 건강을 한 번에 케어하는 오직 이런 기술은 메노락토 뿐인데요",
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC",
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED",
           "E": 0.002,
           "reverse_E": 0.9984,
           "evidence_text": "메노락토 프로바이오틱스는 장 건강에 도움을 줄 수 있다"
@@ -5998,9 +6034,9 @@
       "claim_type": "EFFECT",
       "text": "국내 최초, 국내 유일 갱년기 유산균 1위 YT1",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "유산균 YT1은 갱년기 여성 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0009,
@@ -6010,8 +6046,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6281,9 +6317,9 @@
       "claim_type": "EFFECT",
       "text": "적절한 식이조절과 운동을 병행하여 섭취하는 것을 권합니다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -6293,8 +6329,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -6343,9 +6379,9 @@
       "claim_type": "EFFECT",
       "text": "다이어트. 빨간 불에 멈춰 있다면, 이젠 그린 라이트.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "메타그린부스터샷7일은 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0021,
@@ -6355,8 +6391,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6405,9 +6441,9 @@
       "claim_type": "EFFECT",
       "text": "CUT 체지방 2중 컷팅",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "메타그린부스터샷7일은 체지방의 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0007,
@@ -6417,8 +6453,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6467,9 +6503,9 @@
       "claim_type": "EFFECT",
       "text": "그린라이트 루틴으로 체지방은 CUT 에너지는 UP",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "메타그린부스터샷7일은 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0047,
@@ -6479,8 +6515,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6498,9 +6534,9 @@
       "claim_type": "EFFECT",
       "text": "다이어트 부스터 샷",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "메타그린부스터샷7일은 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0008,
@@ -6510,8 +6546,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6529,9 +6565,9 @@
       "claim_type": "EFFECT",
       "text": "정체기 뚫는 다이어트 부스터 메타그린 부스터샷 7일",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0031,
@@ -6541,8 +6577,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -6560,9 +6596,9 @@
       "claim_type": "EFFECT",
       "text": "적절한 운동, 식이조절과 함께 섭취하세요.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0007,
@@ -6572,8 +6608,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -6656,9 +6692,9 @@
       "claim_type": "EFFECT",
       "text": "3중 기능성 인정 원료는 오로지 알로에겔뿐 면역 피부건강 장건강",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "알로에겔은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0119,
@@ -6668,8 +6704,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6718,9 +6754,9 @@
       "claim_type": "EFFECT",
       "text": "면역력 장 피부",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "면역엔 알로에뮨은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0078,
@@ -6730,8 +6766,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6749,9 +6785,9 @@
       "claim_type": "EFFECT",
       "text": "면역력 증진 장건강 피부건강",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "면역엔 알로에뮨은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.1414,
@@ -6761,8 +6797,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6796,8 +6832,8 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -6877,9 +6913,9 @@
       "claim_type": "EFFECT",
       "text": "성장기 어린이한테 꼭 필요한 칼슘이랑 칼슘 흡수 도와주는 비타민 D까지.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "면역탄탄 칼슘&아연&비타민D 젤리스틱은 칼슘과 인이 흡수되고 이용되는데 필요하다",
       "scores": {
         "E": 0.8529,
@@ -6889,8 +6925,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -7355,10 +7391,10 @@
       "claim_type": "EFFECT",
       "text": "변할지도 제품은 고지혈증 치료제를 대신할 수 있다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "DISEASE_DRUG_UNCERTAIN",
-      "reason": "질병·의약품 표현일 가능성 (표현 문장 3개 중 2개 일치)",
-      "evidence_text": "질병 치료",
+      "label": "VIOLATION",
+      "reason_code": "DRUG_CLAIM",
+      "reason": "의약품을 대신하거나 약효를 높인다고 말함 (의약품 표현 문장 3개 모두 일치)",
+      "evidence_text": "치료제를 대신",
       "scores": {
         "E": 0.0011,
         "C": 0.0004,
@@ -7371,8 +7407,12 @@
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DRUG_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -7390,9 +7430,9 @@
       "claim_type": "EFFECT",
       "text": "대조군 대비 기능성 원료 400mg 섭취 14일 후 WOMAC 통증 개선",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0005,
@@ -7402,8 +7442,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -7561,8 +7601,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -7785,9 +7829,9 @@
       "claim_type": "EFFECT",
       "text": "체지방 감소와 장건강을 한번에",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "비에날 퀸은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0622,
@@ -7797,8 +7841,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -7816,9 +7860,9 @@
       "claim_type": "EFFECT",
       "text": "※적절한 운동, 식이조절과 함께 섭취하세요",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -7828,8 +7872,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -7847,9 +7891,9 @@
       "claim_type": "EFFECT",
       "text": "비에날 퀸 제품은 2주 만에 체지방 5kg을 확실히 줄인다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0012,
@@ -7859,8 +7903,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -8007,9 +8051,9 @@
       "claim_type": "EFFECT",
       "text": "프락토올리고당 섭취 4일만에 비피더스 유산균, 약 15배 증가확인",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -8019,8 +8063,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -8097,9 +8141,9 @@
       "claim_type": "EFFECT",
       "text": "인체시험은 개인의 신체적 특성에 따라 결과가 달라질 수 있음",
       "mechanism": "B",
-      "label": "OUT_OF_SCOPE",
-      "reason_code": "NOT_HEALTH_CLAIM",
-      "reason": "건강 효과를 말하는 문장이 아님",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -8109,8 +8153,8 @@
       },
       "all_findings": [
         {
-          "label": "OUT_OF_SCOPE",
-          "reason_code": "NOT_HEALTH_CLAIM"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -8190,9 +8234,9 @@
       "claim_type": "EFFECT",
       "text": "선택하라 프리바이오틱스 장건강 솔루션 플러스 제품은 하루 만에 장내 유해균을 99% 깨끗이 제거한다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -8202,8 +8246,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -8338,6 +8382,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -8435,6 +8483,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -8474,8 +8526,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -8580,9 +8636,9 @@
       "claim_type": "EFFECT",
       "text": "셀로맥스 비타민D 5000IU 제품은 한 달 만에 골밀도를 30% 높이는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -8592,8 +8648,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -8613,9 +8669,9 @@
       "claim_type": "EFFECT",
       "text": "셀로맥스 비타민D 5000IU 제품은 일주일 만에 뼈의 강도를 두 배로 높여 준다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -8625,8 +8681,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -8675,9 +8731,9 @@
       "claim_type": "EFFECT",
       "text": "이중 기능성 세계 특허 유산균",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "유산균은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0067,
@@ -8687,8 +8743,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -8799,9 +8855,9 @@
       "claim_type": "EFFECT",
       "text": "콜레스테롤 기능성 유산균 나쁜 콜레스테롤 DOWN",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "유산균은 혈중 콜레스테롤 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0017,
@@ -8811,8 +8867,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -8830,9 +8886,9 @@
       "claim_type": "EFFECT",
       "text": "좋은 콜레스테롤",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "수퍼바이오틱스 콜레스테롤은 혈중 콜레스테롤 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.3023,
@@ -8842,8 +8898,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -8861,9 +8917,9 @@
       "claim_type": "EFFECT",
       "text": "나쁜 콜레스테롤 SAY NO",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "수퍼바이오틱스 콜레스테롤은 혈중 콜레스테롤 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0016,
@@ -8873,8 +8929,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -9140,9 +9196,9 @@
       "claim_type": "EFFECT",
       "text": "아이시안 루테인 지아잔틴 플러스 케어 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -9152,8 +9208,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -9171,9 +9227,9 @@
       "claim_type": "EFFECT",
       "text": "아이시안 루테인 지아잔틴 플러스 케어 제품은 단 하루 만에 눈의 피로를 90%까지 확실히 줄인다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0005,
@@ -9183,8 +9239,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -9220,6 +9276,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -9239,9 +9299,9 @@
       "claim_type": "EFFECT",
       "text": "성장판 닫히기 전에 아이커로 더 크게 키워주세요.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0022,
@@ -9251,8 +9311,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -9301,9 +9361,9 @@
       "claim_type": "EFFECT",
       "text": "우리아이 성장기 올바른 키성장을 위한 선택",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "아이커는 어린이 키성장에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0066,
@@ -9313,8 +9373,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -9868,9 +9928,9 @@
       "claim_type": "EFFECT",
       "text": "아이클리어 루테인지아잔틴 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0005,
@@ -9880,8 +9940,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -10427,9 +10487,9 @@
       "claim_type": "EFFECT",
       "text": "아이클리어 올인원 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -10439,8 +10499,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -10520,9 +10580,9 @@
       "claim_type": "EFFECT",
       "text": "면역력을 튼튼하게 아이클타임",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "아이클타임은 면역력 증진에 도움을 줄 수 있다",
       "scores": {
         "E": 0.5427,
@@ -10532,8 +10592,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -10817,9 +10877,9 @@
       "text": "우리아이 키성장 UP&PLUS",
       "mechanism": "B",
       "label": "UNCLEAR",
-      "reason_code": "PART_SAME_TOPIC",
-      "reason": "나눈 효능 중 일부가 인정 기능성과 같은 주제지만 같은 말인지 확인 필요",
-      "evidence_text": "아이클타임은 어린이 키성장에 도움을 줄 수 있다",
+      "reason_code": "PART_NO_MATCHING_EVIDENCE",
+      "reason": "나눈 효능 중 일부가 인정 기능성에 없음",
+      "evidence_text": null,
       "scores": {
         "E": 0.099,
         "C": 0.0003,
@@ -10829,7 +10889,7 @@
       "all_findings": [
         {
           "label": "UNCLEAR",
-          "reason_code": "PART_SAME_TOPIC"
+          "reason_code": "PART_NO_MATCHING_EVIDENCE"
         }
       ],
       "flags": {
@@ -10839,8 +10899,8 @@
       "parts": [
         {
           "text": "우리아이 키성장 UP",
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC",
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED",
           "E": 0.0168,
           "reverse_E": 0.9983,
           "evidence_text": "아이클타임은 어린이 키성장에 도움을 줄 수 있다"
@@ -10864,10 +10924,10 @@
       "claim_type": "EFFECT",
       "text": "아이클타임 제품은 성장호르몬 주사 대신 먹을 수 있다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "DISEASE_DRUG_UNCERTAIN",
-      "reason": "질병·의약품 표현일 가능성 (표현 문장 3개 중 2개 일치)",
-      "evidence_text": "의약품 대체",
+      "label": "VIOLATION",
+      "reason_code": "DRUG_CLAIM",
+      "reason": "의약품을 대신하거나 약효를 높인다고 말함 (의약품 표현 문장 3개 모두 일치)",
+      "evidence_text": "주사 대신",
       "scores": {
         "E": 0.0008,
         "C": 0.0004,
@@ -10878,6 +10938,10 @@
         {
           "label": "UNCLEAR",
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
+        },
+        {
+          "label": "VIOLATION",
+          "reason_code": "DRUG_CLAIM"
         },
         {
           "label": "UNCLEAR",
@@ -11085,9 +11149,9 @@
       "claim_type": "EFFECT",
       "text": "본 내용은 제품과 관련 없는 건강정보입니다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0003,
@@ -11097,8 +11161,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -11395,9 +11459,9 @@
       "claim_type": "EFFECT",
       "text": "방광이 건강해야 배뇨기능 개선이 가능합니다",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "안심뇨는 방광의 배뇨기능 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0017,
@@ -11407,8 +11471,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -11477,8 +11541,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -11797,8 +11865,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12050,9 +12122,9 @@
       "claim_type": "EFFECT",
       "text": "오직 면역을 위해 헤모힘",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0909,
@@ -12062,8 +12134,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12211,9 +12283,9 @@
       "claim_type": "EFFECT",
       "text": "1997년 여름 조혈과 면역증진을 위한 새로운 식물 소재 복합조성물 만들기 위한 연구과제 국책 프로젝트로 선정",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0044,
@@ -12223,8 +12295,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12304,9 +12376,9 @@
       "claim_type": "EFFECT",
       "text": "2023년 10월 면역기능 개선과 피로개선에 도움 2종 기능성 인증 취득",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.003,
@@ -12316,8 +12388,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12366,9 +12438,9 @@
       "claim_type": "EFFECT",
       "text": "면역 노화 개선",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0003,
@@ -12378,8 +12450,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12397,10 +12469,10 @@
       "claim_type": "EFFECT",
       "text": "항암 부작용 완화",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
-      "evidence_text": null,
+      "label": "VIOLATION",
+      "reason_code": "DISEASE_CLAIM",
+      "reason": "질병 예방·치료 효과를 말함 (질병 표현 문장 3개 모두 일치)",
+      "evidence_text": "항암",
       "scores": {
         "E": 0.0006,
         "C": 0.0004,
@@ -12408,6 +12480,10 @@
         "health_claim_E": 0.992
       },
       "all_findings": [
+        {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
         {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
@@ -12459,9 +12535,9 @@
       "claim_type": "EFFECT",
       "text": "지친 면역을 깨우는 힘!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0909,
@@ -12471,8 +12547,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12664,9 +12740,9 @@
       "claim_type": "EFFECT",
       "text": "민감하고 예민한 장을 위해",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "야쿠르트 프로바이오틱스는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0009,
@@ -12676,8 +12752,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -12742,8 +12818,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -13476,9 +13556,9 @@
       "claim_type": "EFFECT",
       "text": "질과 장은 물론 스트레스로 인한 긴장 완화까지 멀티 케어",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "엘레나 테아닌은 스트레스로 인한 긴장완화에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0223,
@@ -13488,8 +13568,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -13589,8 +13669,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -13639,9 +13723,9 @@
       "claim_type": "EFFECT",
       "text": "눈 속의 눈 시력의 90%를 담당하는 ‘황반’",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0009,
@@ -13651,8 +13735,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -13856,9 +13940,9 @@
       "claim_type": "EFFECT",
       "text": "기능성 원료 루테인(마리골드 꽃 추출물) 인체적용시험 결과 황반색소 밀도 증가 눈의 시각 명료 눈 건강 관련지표 개선 확인!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.002,
@@ -13868,8 +13952,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -14207,6 +14291,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -14226,9 +14314,9 @@
       "claim_type": "EFFECT",
       "text": "연세 루테인 플러스 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -14238,8 +14326,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -14350,9 +14438,9 @@
       "claim_type": "EFFECT",
       "text": "꾸준히 먹으면 관절 유연성이 좋아진다고 하니 부모님께도 추천하고 싶음.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "옵티머스트는 관절 및 연골건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.8042,
@@ -14362,8 +14450,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -14494,8 +14582,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -14586,6 +14678,10 @@
         "health_claim_E": 0.9984
       },
       "all_findings": [
+        {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
         {
           "label": "VIOLATION",
           "reason_code": "DISEASE_CLAIM"
@@ -14703,9 +14799,9 @@
       "claim_type": "EFFECT",
       "text": "갱년기에 힘이 되는 루바브 뿌리 힘으로",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "루바브 뿌리는 갱년기 여성 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.008,
@@ -14715,8 +14811,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -14734,9 +14830,9 @@
       "claim_type": "EFFECT",
       "text": "기능성 원료인 루바브 뿌리 추출물의 인체적용 시험결과 갱년기 정도 평가지수 [MRS] 11가지 항목 개선",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0009,
@@ -14746,8 +14842,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -14955,9 +15051,9 @@
       "claim_type": "EFFECT",
       "text": "갱년기 여성의 건강한 삶의 균형",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "위슬로 루바브 레드밸런스는 갱년기 여성 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0093,
@@ -14967,8 +15063,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15017,10 +15113,10 @@
       "claim_type": "EFFECT",
       "text": "위슬로 루바브 레드밸런스 제품은 갱년기 호르몬 치료제를 대신할 수 있다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "DISEASE_DRUG_UNCERTAIN",
-      "reason": "질병·의약품 표현일 가능성 (표현 문장 3개 중 2개 일치)",
-      "evidence_text": "의약품 대체",
+      "label": "VIOLATION",
+      "reason_code": "DRUG_CLAIM",
+      "reason": "의약품을 대신하거나 약효를 높인다고 말함 (의약품 표현 문장 3개 모두 일치)",
+      "evidence_text": "치료제를 대신",
       "scores": {
         "E": 0.0013,
         "C": 0.0005,
@@ -15033,8 +15129,12 @@
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DRUG_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15116,9 +15216,9 @@
       "claim_type": "EFFECT",
       "text": "슈퍼겔 맥스 한 병에 면역 다당체 300mg",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.065,
@@ -15128,8 +15228,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -15287,8 +15387,8 @@
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15322,8 +15422,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15434,9 +15538,9 @@
       "claim_type": "EFFECT",
       "text": "혈당 정상적인 면역기능 에너지 하루 단 1알로 3중 케어",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "일양 혈당건강 면역건강은 정상적인 면역기능에 필요하다",
       "scores": {
         "E": 0.0129,
@@ -15446,8 +15550,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15527,9 +15631,9 @@
       "claim_type": "EFFECT",
       "text": "혈당수치 30% 감소 확인",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0286,
@@ -15539,8 +15643,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -15558,9 +15662,9 @@
       "claim_type": "EFFECT",
       "text": "혈당수치 20% 감소 확인",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0286,
@@ -15570,8 +15674,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -15589,9 +15693,9 @@
       "claim_type": "EFFECT",
       "text": "혈당치 유의적 감소 확인!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -15601,8 +15705,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -15684,9 +15788,9 @@
       "claim_type": "EFFECT",
       "text": "체지방 감소와 스트레스로 인한 긴장완화에 도움을 줄 수 있음.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "짜증날땐 먹어도 돼는 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0008,
@@ -15696,8 +15800,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15811,9 +15915,9 @@
       "claim_type": "EFFECT",
       "text": "MSM 관절 통증 개선 관절 불편감 기능 개선",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -15823,8 +15927,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -15842,9 +15946,9 @@
       "claim_type": "EFFECT",
       "text": "오미자추출물 대퇴사두근력 개선 악력 개선",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "오미자추출물은 근력 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.001,
@@ -15854,8 +15958,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -15935,9 +16039,9 @@
       "claim_type": "EFFECT",
       "text": "천관보 프리미엄 제품은 하루 만에 무릎 움직임 범위를 50% 넓혀 주는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -15947,8 +16051,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -16063,9 +16167,9 @@
       "claim_type": "EFFECT",
       "text": "아연 정상적인 면역기능에 필요 정상적인 세포분열에 필요",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "아연은 정상적인 면역기능에 필요하다",
       "scores": {
         "E": 0.0164,
@@ -16075,8 +16179,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -16919,9 +17023,9 @@
       "claim_type": "EFFECT",
       "text": "피로한 눈, 지친 눈, 활력없는 눈",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "토비콤 아이 포커스는 눈의 피로도 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0033,
@@ -16931,8 +17035,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -17154,6 +17258,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -17184,6 +17292,10 @@
         "health_claim_E": 0.8762
       },
       "all_findings": [
+        {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
         {
           "label": "VIOLATION",
           "reason_code": "DISEASE_CLAIM"
@@ -17476,9 +17588,9 @@
       "claim_type": "EFFECT",
       "text": "하루한포 액상 칼마 디데이 칼슘 마그네슘 제품은 일주일 만에 뼈의 강도를 두 배로 높여 준다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0006,
@@ -17488,8 +17600,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -17740,8 +17852,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -18009,6 +18125,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -18121,9 +18241,9 @@
       "claim_type": "EFFECT",
       "text": "화애락 이너제틱 제품은 하루 만에 장내 유해균을 99% 깨끗이 제거한다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0007,
@@ -18133,8 +18253,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -18185,9 +18305,9 @@
       "claim_type": "EFFECT",
       "text": "갱년기개선",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "홍삼은 갱년기 여성의 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.6348,
@@ -18197,8 +18317,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -18700,9 +18820,9 @@
       "claim_type": "EFFECT",
       "text": "안 좋은 생활 습관 그만. 프로메가로 혈행 건강 챙기세요.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "프로메가 식물성 알티지 오메가3 듀얼은 혈행 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.3053,
@@ -18712,8 +18832,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -18731,9 +18851,9 @@
       "claim_type": "EFFECT",
       "text": "혈행어사 출두요!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "프로메가 식물성 알티지 오메가3 듀얼은 혈행 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0021,
@@ -18743,8 +18863,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -18919,8 +19039,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19000,9 +19124,9 @@
       "claim_type": "EFFECT",
       "text": "그러니까 유산균 평생 먹어야죠.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "유산균은 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0019,
@@ -19012,8 +19136,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19031,9 +19155,9 @@
       "claim_type": "EFFECT",
       "text": "내 몸에 핏 락토핏",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "락토핏 골드는 장 건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0098,
@@ -19043,8 +19167,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19188,9 +19312,9 @@
       "claim_type": "EFFECT",
       "text": "장건강엔 락토핏",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "생유산균골드는 장건강에 도움을 줄 수 있다",
       "scores": {
         "E": 0.2718,
@@ -19200,8 +19324,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19270,8 +19394,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19413,9 +19541,9 @@
       "claim_type": "EFFECT",
       "text": "장 건강",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "프로메가 알티지 오메가3 듀얼은 혈행 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0101,
@@ -19425,8 +19553,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19491,8 +19619,8 @@
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -19901,8 +20029,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -20054,8 +20186,12 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -20135,9 +20271,9 @@
       "claim_type": "EFFECT",
       "text": "올인원 종합비타민 이뮨샷 제품은 3일 만에 면역세포 활성도를 세 배로 높이는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0007,
@@ -20147,8 +20283,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -20168,9 +20304,9 @@
       "claim_type": "EFFECT",
       "text": "장 건강, 뼈 건강, 정상적인 면역기능을 한 번에!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "듀오락 얌얌 플러스는 정상적인 면역기능에 필요하다",
       "scores": {
         "E": 0.0022,
@@ -20180,8 +20316,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -20323,9 +20459,9 @@
       "claim_type": "EFFECT",
       "text": "튼튼한 골격 형성이 필요한 어린이",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "듀오락 얌얌 플러스는 뼈의 형성과 유지에 필요하다",
       "scores": {
         "E": 0.0049,
@@ -20335,8 +20471,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -20385,9 +20521,9 @@
       "claim_type": "EFFECT",
       "text": "소중한 우리아이 장 건강 듀오락 얌얌 플러스로 챙기세요!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "듀오락 얌얌 플러스는 배변활동 원활에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0156,
@@ -20397,8 +20533,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -20842,6 +20978,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -20861,9 +21001,9 @@
       "claim_type": "EFFECT",
       "text": "안국 눈에 좋은 루테인 플러스 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "OVERCLAIM",
+      "reason_code": "EXAGGERATION_NO_EVIDENCE",
+      "reason": "인정 근거가 없는 효과·기간·크기를 과장 표현으로 말함",
       "evidence_text": null,
       "scores": {
         "E": 0.0005,
@@ -20873,8 +21013,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "OVERCLAIM",
+          "reason_code": "EXAGGERATION_NO_EVIDENCE"
         }
       ],
       "flags": {
@@ -20934,6 +21074,10 @@
         "health_claim_E": 0.9961
       },
       "all_findings": [
+        {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
         {
           "label": "VIOLATION",
           "reason_code": "DISEASE_CLAIM"
@@ -21051,9 +21195,9 @@
       "claim_type": "EFFECT",
       "text": "체지방 감소와 장건강을 한번에!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "다이어트 유산균 비에날씬은 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0067,
@@ -21063,8 +21207,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -21144,9 +21288,9 @@
       "claim_type": "EFFECT",
       "text": "※적절한 운동, 식이조절과 함께 섭취하세요",
       "mechanism": "B",
-      "label": "OUT_OF_SCOPE",
-      "reason_code": "NOT_HEALTH_CLAIM",
-      "reason": "건강 효과를 말하는 문장이 아님",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0008,
@@ -21156,8 +21300,8 @@
       },
       "all_findings": [
         {
-          "label": "OUT_OF_SCOPE",
-          "reason_code": "NOT_HEALTH_CLAIM"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -21175,10 +21319,10 @@
       "claim_type": "EFFECT",
       "text": "다이어트 유산균 비에날씬 제품은 비만 치료제를 대신할 수 있다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "DISEASE_DRUG_UNCERTAIN",
-      "reason": "질병·의약품 표현일 가능성 (표현 문장 3개 중 2개 일치)",
-      "evidence_text": "의약품 대체",
+      "label": "VIOLATION",
+      "reason_code": "DRUG_CLAIM",
+      "reason": "의약품을 대신하거나 약효를 높인다고 말함 (의약품 표현 문장 3개 모두 일치)",
+      "evidence_text": "치료제를 대신",
       "scores": {
         "E": 0.001,
         "C": 0.0004,
@@ -21191,8 +21335,12 @@
           "reason_code": "DISEASE_DRUG_UNCERTAIN"
         },
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "VIOLATION",
+          "reason_code": "DRUG_CLAIM"
+        },
+        {
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -21365,9 +21513,9 @@
       "claim_type": "EFFECT",
       "text": "국내 최초 체지방 감소 유산균",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "다이어트 유산균 비에날씬 프로틴은 체지방감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.001,
@@ -21377,8 +21525,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -21396,9 +21544,9 @@
       "claim_type": "EFFECT",
       "text": "적절한 운동, 식이조절과 함께 섭취하세요",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0009,
@@ -21408,8 +21556,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -21664,6 +21812,10 @@
           "reason_code": "DISEASE_CLAIM"
         },
         {
+          "label": "VIOLATION",
+          "reason_code": "DISEASE_CLAIM"
+        },
+        {
           "label": "UNCLEAR",
           "reason_code": "NO_MATCHING_EVIDENCE"
         }
@@ -21683,9 +21835,9 @@
       "claim_type": "EFFECT",
       "text": "흡수력 좋은 발효홍삼에 면역력, 기억력, 뼈 형성까지 한 번에",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "발효홍삼은 면역력 증진에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0037,
@@ -21695,8 +21847,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -21842,9 +21994,9 @@
       "claim_type": "EFFECT",
       "text": "체지방 감소 + 혈행개선 원료 첨가!",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 혈행 개선에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0532,
@@ -21854,8 +22006,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -21873,9 +22025,9 @@
       "claim_type": "EFFECT",
       "text": "체지방 감소를 도와줄 수 있는 건강기능식품",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.002,
@@ -21885,8 +22037,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -21935,9 +22087,9 @@
       "claim_type": "EFFECT",
       "text": "콜레우스포스콜리 성분이 체지방 DOWN",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "SAME_TOPIC",
-      "reason": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+      "label": "SUPPORTED",
+      "reason_code": "IMPLIES_RECOGNIZED",
+      "reason": "광고가 인정 기능성을 포함하고 더 말하는 내용이 없음 (광고 → 식약처 성립)",
       "evidence_text": "콜레우스포스콜리는 체지방 감소에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0064,
@@ -21947,8 +22099,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED"
         }
       ],
       "flags": {
@@ -22028,10 +22180,10 @@
       "claim_type": "EFFECT",
       "text": "체지방 감소 기억력 개선·혈행 개선 배변활동 원활에 도움을 줄 수 있음",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "PART_SAME_TOPIC",
-      "reason": "나눈 효능 중 일부가 인정 기능성과 같은 주제지만 같은 말인지 확인 필요",
-      "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 기억력 개선에 도움을 줄 수 있다",
+      "label": "SUPPORTED",
+      "reason_code": "ALL_PARTS_SUPPORTED",
+      "reason": "여러 효능을 나눠 비교한 결과 모두 인정 기능성과 같은 내용",
+      "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 기억력 개선에 도움을 줄 수 있다 / 콜레올로지 티 하비탈출(Hobby Escape)은 장내 유익균 증식 및 배변활동 원활에 도움을 줄 수 있다",
       "scores": {
         "E": 0.0257,
         "C": 0.0004,
@@ -22040,8 +22192,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "PART_SAME_TOPIC"
+          "label": "SUPPORTED",
+          "reason_code": "ALL_PARTS_SUPPORTED"
         }
       ],
       "flags": {
@@ -22051,8 +22203,8 @@
       "parts": [
         {
           "text": "체지방 감소 기억력 개선에 도움을 줄 수 있음",
-          "label": "UNCLEAR",
-          "reason_code": "SAME_TOPIC",
+          "label": "SUPPORTED",
+          "reason_code": "IMPLIES_RECOGNIZED",
           "E": 0.0032,
           "reverse_E": 0.9986,
           "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 기억력 개선에 도움을 줄 수 있다"
@@ -22076,9 +22228,9 @@
       "claim_type": "EFFECT",
       "text": "* 적절한 운동과 식이조절을 함께 병행하면 더욱 효과적입니다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.0011,
@@ -22088,8 +22240,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
@@ -22138,9 +22290,9 @@
       "claim_type": "EFFECT",
       "text": "* 적절한 운동과 식이조절을 함께 병행하면 더욱 좋습니다.",
       "mechanism": "B",
-      "label": "UNCLEAR",
-      "reason_code": "NO_MATCHING_EVIDENCE",
-      "reason": "식약처 인정 기능성 중 같은 내용이 없음",
+      "label": "DISCLAIMER",
+      "reason_code": "DISCLAIMER",
+      "reason": "광고 속 면책·고지 문구 (주장이 아님)",
       "evidence_text": null,
       "scores": {
         "E": 0.001,
@@ -22150,8 +22302,8 @@
       },
       "all_findings": [
         {
-          "label": "UNCLEAR",
-          "reason_code": "NO_MATCHING_EVIDENCE"
+          "label": "DISCLAIMER",
+          "reason_code": "DISCLAIMER"
         }
       ],
       "flags": {
