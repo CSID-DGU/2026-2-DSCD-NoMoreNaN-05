@@ -68,6 +68,7 @@ def feats(c):
         "drug_mean": max([sum(v) / len(v) for k, v in tE.items() if k.startswith("의약품")] or [0]),
         "prec_conf": summarize._precaution_conflict(c) is not None,
         "drugw": bool(summarize.DRUG_WORDS.search(text)),
+        "trial": bool(summarize.TRIAL_RESULT.search(text)),
         "disw": bool(summarize.DISEASE_WORDS.search(text)),
         "parts_min_E": min([p.get("max_E") or 0 for p in parts] or [-1]),
         "parts_max_R": max([p.get("reverse_E") or 0 for p in parts] or [-1]),
@@ -98,6 +99,8 @@ def rule_predict(x, p):
         return "SUPPORTED"
     if x["parts_min_E"] >= p["hi"]:
         return "SUPPORTED"
+    if x["trial"]:
+        return "UNCLEAR"
     sig = x["extra"] or x["exag"] or (p["num_sig"] and x["num"])
     if (x["R"] >= p["rev"] or x["parts_max_R"] >= p["rev"]) and (sig or not p["need_sig"]):
         return "OVERCLAIM"
@@ -133,7 +136,7 @@ def tune_rules(X, y):
 
 
 # ── 방법 2: 분류기 ─────────────────────────────────────────
-NUM_KEYS = ["E", "C", "R", "H", "has_ev", "q", "disc", "health", "extra", "exag", "num", "multi", "drugw", "disw",
+NUM_KEYS = ["E", "C", "R", "H", "has_ev", "q", "disc", "health", "extra", "exag", "num", "multi", "drugw", "disw", "trial",
             "dis_min", "dis_mean", "drug_min", "drug_mean", "prec_conf", "parts_min_E", "parts_max_R", "len"]
 
 
