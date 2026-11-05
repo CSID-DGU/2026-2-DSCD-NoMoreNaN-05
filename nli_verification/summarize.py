@@ -6,8 +6,9 @@ NLI 결과(verify.py 출력)에 최종 라벨을 붙이고, 발표용 요약을 
 결과:  nli_verdicts.json (Claim별 최종 라벨)  +  nli_verdicts_report.md (발표용 표)
 
 최종 라벨 (팀 공통 정의)
-  VIOLATION     위반        질병·의약품 금지 표현(템플릿 3개 모두 일치) / 같은 대상을 말하는 주의사항과 반대되는 말 (C ≥ 0.9)
+  VIOLATION     위반        질병·의약품 표현(같은 뜻 문장 3개 모두 일치) / 같은 대상을 말하는 주의사항과 반대되는 말 (C ≥ 0.9)
   OVERCLAIM     과장 주의   식약처 → 광고는 같은 말이 아니지만(E < 0.9), 광고 → 식약처는 같은 말(E ≥ 0.9)
+                            + 인정 문구보다 더 말하는 신호(수치·기간, 확실성, 측정 결과 등)가 있음
                             = 인정 기능성과 같은 효능을 더 많이 말함 (run_overclaim.py로 반대 방향 계산 후)
                             과장 표현("확실히" 등)은 라벨에 쓰지 않고 '과장_표현' 칸에 참고로만 표시
   UNCLEAR       판단 보류   인정 기능성과 같은 말이 없음 / 확률이 애매함 / 질문 문장 / 비교할 근거 없음
@@ -28,10 +29,12 @@ ORDER = ["VIOLATION", "OVERCLAIM", "UNCLEAR", "SUPPORTED", "OUT_OF_SCOPE", "DISC
 LABEL_KO = {"VIOLATION": "위반", "OVERCLAIM": "과장 주의", "UNCLEAR": "판단 보류",
             "SUPPORTED": "부합", "OUT_OF_SCOPE": "해당 없음", "DISCLAIMER": "면책 문구"}
 CODE_KO = {
-    "DISEASE_CLAIM": "질병 예방·치료 효과를 말함 (법 제8조 1호)",
-    "DRUG_CLAIM": "의약품처럼 오인하게 함 (법 제8조 2호)",
+    "DISEASE_CLAIM": "질병 예방·치료 효과를 말함 (질병 표현 문장 3개 모두 일치)",
+    "DRUG_CLAIM": "의약품을 대신하거나 약효를 높인다고 말함 (의약품 표현 문장 3개 모두 일치)",
     "PRECAUTION_CONFLICT": "식약처 주의사항과 반대되는 내용",
     "MULTI_EFFECT": "여러 효능을 한 문장에 담음 (효능별로 나눠서 확인 필요)",
+    "SAME_TOPIC": "인정 기능성과 같은 주제지만 같은 말인지 확인 필요 (광고 → 식약처만 성립)",
+    "PART_SAME_TOPIC": "나눈 효능 중 일부가 인정 기능성과 같은 주제지만 같은 말인지 확인 필요",
     "ALL_PARTS_SUPPORTED": "여러 효능을 나눠 비교한 결과 모두 인정 기능성과 같은 내용",
     "PART_STRONGER_THAN_RECOGNIZED": "나눈 효능 중 일부가 인정 범위보다 크게 말함",
     "PART_NO_MATCHING_EVIDENCE": "나눈 효능 중 일부가 인정 기능성에 없음",
@@ -40,7 +43,7 @@ CODE_KO = {
     "NO_MATCHING_EVIDENCE": "식약처 인정 기능성 중 같은 내용이 없음",
     "LOW_CONFIDENCE": "모델 판단이 애매함",
     "QUESTION": "질문 문장이라 주장으로 보기 어려움",
-    "DISEASE_DRUG_UNCERTAIN": "질병·의약품 표현일 가능성 (금지 문장 3개 중 2개 일치)",
+    "DISEASE_DRUG_UNCERTAIN": "질병·의약품 표현일 가능성 (표현 문장 3개 중 2개 일치)",
     "PRODUCT_UNRESOLVED": "광고 제품을 식약처 DB에서 확정하지 못함",
     "NO_PRODUCT_TEXT": "제품의 기능성 문장이 없음",
     "INGREDIENT_NOT_IN_PRODUCT": "광고가 말하는 원료가 제품 기능성에 없거나 애매함",
@@ -77,6 +80,10 @@ GROUPS = {
 }
 
 
+# 광고가 인정 문구보다 '더 많이' 말한다는 신호: 수치·기간, 정도·확실성, 측정 결과, 체험 결과
+EXTRA_CLAIM = re.compile(r"(\d+\s*(%|배|mg|g|kg|일|주|개월|달|시간|분|명)|확실|크게|완전|탁월|최고|싹|빠르게|즉시|근본|획기|"
+                         r"놀라|극대|최대|강력|통증|두께|골밀도|골강도|지표|수치|(증가|감소|개선)\s*확인|인체\s*적용\s*시험|"
+                         r"임상|줄어들|사라지|없어지|지우|바꾸|바뀝|탄탄)")
 MULTI_EFFECT = re.compile(r"[·&＆]|\s및\s|\s과\s|\s와\s|동시에|더블\s*케어")
 
 
@@ -96,13 +103,31 @@ def _precaution_conflict(c):
     return None
 
 
+def _split_ok(text):
+    """효능별 나누기를 믿을 수 있는 경우: '·', '&', '/', '○○건강과' 로 이어졌거나, 식약처식 나열("…에 도움을 줄 수 있음")
+    쉼표만으로 이어진 일반 문장("하루 종일 스마트폰, 컴퓨터, TV에…")은 나눈 결과를 쓰지 않음"""
+    t = text or ""
+    return bool(re.search(r"[·&＆/]|건강\s*(과|와)", t) or re.search(r"도움을\s*줄\s*수|에\s*필요", t))
+
+
+TMPL_NAMES = {"1호 가 (질병 예방)": "질병 예방", "1호 나 (질병 치료)": "질병 치료",
+              "2호 다 (의약품 대체)": "의약품 대체", "2호 라 (약효 증대)": "의약품 효능 증대"}
+
+
+def _tmpl_name(name):
+    """예전 결과 파일의 템플릿 이름(조항 표기)도 새 이름으로 읽음"""
+    return TMPL_NAMES.get(name, name)
+
+
 def _part_label(pt):
     """나눈 부분 하나의 판정: (라벨, 코드, 근거)"""
     e, r = pt.get("max_E"), pt.get("reverse_E") or 0
     if e is not None and e >= TAU_HIGH:
         return ("SUPPORTED", "FUNCTION", pt.get("best_text"))
     if r >= TAU_HIGH:
-        return ("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", pt.get("reverse_best_text"))
+        if EXTRA_CLAIM.search(pt.get("text") or ""):
+            return ("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", pt.get("reverse_best_text"))
+        return ("UNCLEAR", "SAME_TOPIC", pt.get("reverse_best_text"))
     if e is not None and e <= TAU_LOW:
         return ("UNCLEAR", "NO_MATCHING_EVIDENCE", None)
     return ("UNCLEAR", "LOW_CONFIDENCE", pt.get("best_text"))
@@ -117,12 +142,14 @@ def findings_of(c):
     if c.get("is_disclaimer"):
         return [("DISCLAIMER", "DISCLAIMER", None)]      # 팀 기준: 면책 문구는 별도 라벨
 
-    # 질병·의약품 금지 표현 (법 제8조 1·2호)
+    # 질병·의약품 표현 (같은 뜻 문장 3개로 확인)
     supported = has_ev and e is not None and e >= TAU_HIGH
     for name, t in (c.get("templates") or {}).items():
-        if supported and name.startswith("1호 가"):
-            continue    # v4 예외: 인정 기능성과 같은 뜻이면(예: "면역력") 질병 예방 표현으로 보지 않음
-        code = "DISEASE_CLAIM" if name.startswith("1호") else "DRUG_CLAIM"
+        kind = _tmpl_name(name)
+        if supported and kind == "질병 예방":
+            continue    # 인정 기능성과 같은 뜻이면(예: "면역력") 질병 예방 표현으로 보지 않음
+        code = "DISEASE_CLAIM" if kind.startswith("질병") else "DRUG_CLAIM"
+        name = kind
         if t.get("status") == "HOLDS":
             out.append(("VIOLATION", code, name))
         elif t.get("status") == "UNCLEAR":
@@ -142,7 +169,7 @@ def findings_of(c):
             out.append(("UNCLEAR", c.get("basis_reason") or "TARGET_UNRESOLVED", None))
         elif e is not None and e >= TAU_HIGH:
             out.append(("SUPPORTED", "FUNCTION", c.get("best_function_text")))
-        elif c.get("parts"):
+        elif c.get("parts") and _split_ok(c.get("text")):
             # 여러 효능을 한 문장에 담은 클레임: 효능별로 나눠 판정한 뒤 합침
             plabs = [_part_label(pt) for pt in c["parts"]]
             worst = min(plabs, key=lambda x: ORDER.index(x[0]))
@@ -154,9 +181,13 @@ def findings_of(c):
             # 효능 여러 개를 한 문장에 담으면 반대 방향은 성립하지만 과장이 아닐 수 있음 (예: "혈행·혈중 중성지질 개선")
             out.append(("UNCLEAR", "MULTI_EFFECT", c.get("reverse_best_text")))
         elif (c.get("reverse_max_E") or 0) >= TAU_HIGH:
-            # 과장: 식약처 문장만으로는 광고를 말할 수 없지만(정방향 E < 0.9),
-            #       광고가 맞다면 식약처 문장도 맞음(반대 방향 E ≥ 0.9) → 같은 효능을 더 많이 말함
-            out.append(("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", c.get("reverse_best_text")))
+            # 반대 방향(광고 → 식약처)만 성립: 광고가 인정 기능성과 같은 주제를 말함
+            #   + 인정 문구보다 더 말하는 신호(수치·기간·확실성·측정 결과 등)가 있으면 → OVERCLAIM
+            #   + 신호가 없으면 같은 말을 다르게 표현했거나(모델이 정방향을 놓침) 막연한 표현 → UNCLEAR
+            if EXTRA_CLAIM.search(c.get("text") or ""):
+                out.append(("OVERCLAIM", "STRONGER_THAN_RECOGNIZED", c.get("reverse_best_text")))
+            else:
+                out.append(("UNCLEAR", "SAME_TOPIC", c.get("reverse_best_text")))
         elif e is not None and e <= TAU_LOW:
             out.append(("UNCLEAR", "NO_MATCHING_EVIDENCE", None))
         else:
@@ -197,7 +228,8 @@ def summarize(results, require_effect=False):
                 "중복": c.get("duplicate_of"),
                 "부분별_결과": [{"부분": pt.get("text"), "라벨": _part_label(pt)[0],
                                  "식약처→광고_E": pt.get("max_E"), "광고→식약처_E": pt.get("reverse_E"),
-                                 "근거": _part_label(pt)[2]} for pt in (c.get("parts") or [])] or None,
+                                 "근거": _part_label(pt)[2]} for pt in (c.get("parts") or [])]
+                                if c.get("parts") and _split_ok(c.get("text")) else None,
             })
     uniq = [r for r in rows if not r["중복"]]
     summary = {
@@ -206,6 +238,31 @@ def summarize(results, require_effect=False):
         "사유 코드": {k: n for k, n in Counter(r["사유_코드"] for r in uniq).most_common()},
     }
     return {"요약": summary, "claims": rows}
+
+
+def export_records(results):
+    """통합·평가용 영문 형식 (클레임 1개 = 레코드 1개)"""
+    recs = []
+    for v in results:
+        for c in v.get("nli_claims", []):
+            label, code, ev, fs = final_label(c)
+            f = _recompute_flags(c)
+            parts = None
+            if c.get("parts") and _split_ok(c.get("text")):
+                parts = [{"text": p.get("text"), "label": _part_label(p)[0], "reason_code": _part_label(p)[1],
+                          "E": p.get("max_E"), "reverse_E": p.get("reverse_E"), "evidence_text": _part_label(p)[2]}
+                         for p in c["parts"]]
+            recs.append({
+                "video_id": v.get("video_id"), "product_ref": v.get("product_ref"), "claim_id": c.get("claim_id"),
+                "claim_type": c.get("claim_types") or c.get("claim_type"), "text": c.get("text"), "mechanism": "B",
+                "label": label, "reason_code": code, "reason": CODE_KO.get(code, code), "evidence_text": ev,
+                "scores": {"E": c.get("max_entail_function"), "C": c.get("max_contra_precaution"),
+                           "reverse_E": c.get("reverse_max_E"), "health_claim_E": c.get("health_claim_E")},
+                "all_findings": [{"label": a, "reason_code": b} for a, b, _ in fs],
+                "flags": {"is_question": bool(c.get("is_question")), "exaggeration_terms": f.get("exaggeration_terms") or []},
+                "parts": parts, "duplicate_of": c.get("duplicate_of"), "product_name": v.get("product_name"),
+            })
+    return recs
 
 
 def to_markdown(out, n_examples=5):
@@ -243,5 +300,10 @@ if __name__ == "__main__":
     md = dst.replace(".json", "_report.md")
     with open(md, "w", encoding="utf-8") as f:
         f.write(to_markdown(out))
+    eng = dst.replace(".json", "_mechanism_b.json")
+    with open(eng, "w", encoding="utf-8") as f:
+        json.dump({"mechanism": "B", "target_claim_type": "EFFECT", "label_order": ORDER,
+                   "thresholds": {"tau_high": TAU_HIGH, "tau_low": TAU_LOW},
+                   "results": export_records(results)}, f, ensure_ascii=False, indent=2)
     print("최종 라벨:", out["요약"]["최종 라벨"])
-    print("저장:", dst, "/", md)
+    print("저장:", dst, "/", md, "/", eng)

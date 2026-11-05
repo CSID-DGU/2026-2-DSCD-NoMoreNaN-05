@@ -73,6 +73,10 @@ def make_hypothesis(span, target, fix_ending=True):
     subject_added = False
     t = re.escape(target)
     tight = lambda x: re.sub(r"\s+", "", x).lower()
+    prod = re.match(r"^(.{1,40}?)\s*제품\s*(은|는|이|가)\s", s)  # "고려은단 코엔자임Q10 제품은 ~"
+    if prod:
+        s = f"{target}{topic_particle(target)} " + s[prod.end():]
+        return _finish(s, is_question, fix_ending, False)
     lead = re.match(r"^(.{1,40}?)\s*(은|는|이|가)\s", s)       # "비타민 C는 ~"처럼 띄어쓰기만 다른 주어
     if lead and tight(lead.group(1)) == tight(target):
         s = f"{target}{topic_particle(target)} " + s[lead.end():]
