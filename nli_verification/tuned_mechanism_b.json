@@ -1,13 +1,13 @@
 {
   "mechanism": "B",
-  "method": "분류기 (NLI 확률 + 문장 특징 → 정답 라벨, 로지스틱 회귀)",
+  "method": "기준값·규칙 탐색: hi=0.5, rev=0.95, need_sig=True, num_sig=False, sig_only=True, tmpl=0.5, tmpl_mean=0.7, st_sup=True",
   "results": [
     {
       "video_id": "db_001_AKyDb1Yhaio",
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "3가지 기능성 집중 케어",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -16,7 +16,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "더 이상 혈당 때문에 힘들어하지 마십시오",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -115,7 +115,7 @@
       "product_ref": "p01",
       "claim_id": "c38",
       "text": "인체적용시험결과 혈당치 감소",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -196,7 +196,7 @@
       "product_ref": "p01",
       "claim_id": "c57",
       "text": "우리 부부 둘 다 혈당이 걱정이었는데 둘이 매일 같이 먹으니까 부담이 없어서 너무 좋아요",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -214,7 +214,7 @@
       "product_ref": "p01",
       "claim_id": "c59",
       "text": "아버님 높은 혈당",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -304,7 +304,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "간영양제 30정 1개",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -331,7 +331,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "가르시니아캄보지아 추출물 탄수화물 타겟",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -403,7 +403,7 @@
       "product_ref": "p01",
       "claim_id": "c16",
       "text": "흡수를 고려한 액상형 다이어트",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -421,7 +421,7 @@
       "product_ref": "p01",
       "claim_id": "c20",
       "text": "체지방감소와 식후 혈당상승까지",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -430,7 +430,7 @@
       "product_ref": "p01",
       "claim_id": "c21",
       "text": "현대인의 라이프스타일 맞춤 건강 케어",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -439,7 +439,7 @@
       "product_ref": "p01",
       "claim_id": "c24",
       "text": "탄수화물과의 불편한 동행, 당 섭취가 높은 식습관 이젠 GOOD-BYE",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -466,7 +466,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "한국인의 영양에 딱 맞춘",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -475,7 +475,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "한국인의 영양에 맞춰 기초 건강, 항산화, 에너지, 정상적인 면역 기능까지",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -520,7 +520,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "혈압건강 + 항산화 2중 기능성원료",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -556,7 +556,7 @@
       "product_ref": "p01",
       "claim_id": "c18",
       "text": "고려은단비타민C1000 제품은 한 번만 먹어도 철분 이용 효율이 두 배로 높아진다.",
-      "label": "OVERCLAIM",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -583,7 +583,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "관절하면 자생, 자생하면 관절",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -592,7 +592,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "관절 연골 건강에 도움을 줄 수 있는 기능성 원료에 자생만의 비책을 더하다",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -610,7 +610,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "[VAS] 무릎관절의 통증 개선 확인",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -619,7 +619,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "계단 내려가기 개선 확인 [WOMAC]",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -637,7 +637,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "관절에 맞췄으니까",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -655,7 +655,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "FOR YOUR HEALTHY JOINTS",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -673,7 +673,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "관절이 나를 움직이게 한다",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -718,7 +718,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "지속 가능한 관절",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -736,7 +736,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "활기찬 건강의 기본 관절입니다",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -808,7 +808,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "자연으로부터 받은 건강, 프롬바이오",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -817,7 +817,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "기능성 원료인 보스웰리아추출물 인체적용시험결과 관절의 통증, 붓기, 활동장애 개선이 확인되었습니다.",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -835,7 +835,7 @@
       "product_ref": "p01",
       "claim_id": "c15",
       "text": "관절연골엔 보스웰리아를 드신다는 것, 일상을 즐거움으로 채운다는 것",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -853,7 +853,7 @@
       "product_ref": "p01",
       "claim_id": "c17",
       "text": "항산화 면역기능",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -925,7 +925,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "1.2mg 비타민B₁ 탄수화물과 에너지 대사에 필요",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -943,7 +943,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "0.5mg 비타민D 뼈 형성에 필요 골다공증 발생위험 감소에 도움",
-      "label": "VIOLATION",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -952,7 +952,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "100μg 셀렌 유해산소로부터 세포를 보호하는데 필요",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1006,7 +1006,7 @@
       "product_ref": "p01",
       "claim_id": "c20",
       "text": "활력있는 하루를 원하시는 분",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1033,7 +1033,7 @@
       "product_ref": "p01",
       "claim_id": "c23",
       "text": "갑상선건강을 위한 당신의 선택 그린요오드",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1042,7 +1042,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "나우그린 간 건강 프리미엄 밀크씨슬 108g, 120정, 1개",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1096,7 +1096,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "건강한 오늘, 데이팩",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1105,7 +1105,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "하루 한 포, 건강한 오늘",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1114,7 +1114,7 @@
       "product_ref": "p01",
       "claim_id": "c17",
       "text": "건강을 쉽게 전하세요",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1132,7 +1132,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "하지만 유산균이 보장되어야 할 곳은 장속.",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1141,7 +1141,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "듀오락의 기술로 최대 221배 강력한 장 속 생존력",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1150,7 +1150,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "기능성 원료인 프로바이오틱스의 인체시험 결과 국내외 특허* 듀얼코팅 유산균 섭취군의 경우, 비코팅 유산균 섭취군에 비해 장내 생존율이 최대 221배 (L. rhamnosus CBT-LR5) 높은 것으로 확인",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1159,7 +1159,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "B. bifidum CBT-BF3 108배 증가",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1168,7 +1168,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "B. lactis CBT-BL3 137배 증가",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1177,7 +1177,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "B. longum CBT-BG7 98배 증가",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1186,7 +1186,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "L. acidophilus CBT-LA1 92배 증가",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1195,7 +1195,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "L. rhamnosus CBT-LR5 221배 증가",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1204,7 +1204,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "S. thermophilus CBT-ST3 105배 증가",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1258,7 +1258,7 @@
       "product_ref": "p01",
       "claim_id": "c18",
       "text": "국내 최초 장 면역 개별인정",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1267,7 +1267,7 @@
       "product_ref": "p01",
       "claim_id": "c20",
       "text": "원료의 차이가 장건강의 차이",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1285,7 +1285,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "고함량* 보장균수 1,000억으로 우리 아이 장 면역 조절까지!",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1303,7 +1303,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "원료의 차이가 장 건강의 차이",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1339,7 +1339,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "예민한 배변활동 개선을 위한 올바른 습관",
-      "label": "SUPPORTED",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1348,7 +1348,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "둔감한 장, 예민한 장 유산균 선택의 시대",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1357,7 +1357,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "내 몸에 FIT 락토핏",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1366,7 +1366,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "둔감한 장 운동 강화를 위한 올바른 케어",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1393,7 +1393,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "생존 좋습니다",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1402,7 +1402,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "정착 좋습니다",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1411,7 +1411,7 @@
       "product_ref": "p01",
       "claim_id": "c15",
       "text": "생착 좋습니다",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1420,7 +1420,7 @@
       "product_ref": "p01",
       "claim_id": "c16",
       "text": "남녀노소 구분없이 다다 생착하는",
-      "label": "OVERCLAIM",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1429,7 +1429,7 @@
       "product_ref": "p01",
       "claim_id": "c17",
       "text": "몸에 좋고 맛도 좋은 락토핏 코어맥스",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1438,7 +1438,7 @@
       "product_ref": "p01",
       "claim_id": "c18",
       "text": "내 몸에 핏",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1447,7 +1447,7 @@
       "product_ref": "p01",
       "claim_id": "c22",
       "text": "생존률 정착률 다다다다 좋습니다",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1456,7 +1456,7 @@
       "product_ref": "p01",
       "claim_id": "c23",
       "text": "섭취부터 생존 섭취부터 정착 섭취부터 생착",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1483,7 +1483,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "더이상 찌푸리지 마세요",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1501,7 +1501,7 @@
       "product_ref": "p01",
       "claim_id": "c16",
       "text": "Antioxidation | Energy",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1519,7 +1519,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "에너지가 필요한 지금",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1573,7 +1573,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "저도 꾸준한 운동과 더불어서 근력 개선에 도움을 줄 수 있는 머슬파워로 근력 관리를 꾸준히 하고 있습니다",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1582,7 +1582,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "머슬 파워는 국내 최초 근력 개선에 도움을 줄 수 있는 기능성을 인정받은 원료로 만들었습니다.",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1591,7 +1591,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "호동이의 근력 관리 비법 머슬파워로 근력 관리 시작하세요!",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1600,7 +1600,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "강호동의 건강관리 비결 머슬파워로 여러분들도 오래오래 건강하세요~",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1609,7 +1609,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "국내 최초 식약처 인정 근력개선 개별인정형 오미자추출물",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1618,7 +1618,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "에너지대사 개선! 체내 에너지 생성에 필요한 비타민B₂",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1645,7 +1645,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "박미선 갱년기 유산균 메노락토 프로바이오틱스",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1654,7 +1654,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "제가 메노락토 프로바이오틱스를 선택한 이유는 갱년기 여성 건강과 장 건강을 한 번에 케어하는 오직 이런 기술은 메노락토 뿐인데요",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1663,7 +1663,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "갱년기 유산균 YT1 누구도 생각 못 했을 겁니다",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1672,7 +1672,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "YT1으로 갱년기의 공식을 바꾸세요",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1681,7 +1681,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "국내 최초, 국내 유일 갱년기 유산균 1위 YT1",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1690,7 +1690,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "여성들의 건강한 갱년기를 응원합니다",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1717,7 +1717,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "빠지는 즐거움",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1735,7 +1735,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "먹고 나면 메타그린 슬림 업",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1771,7 +1771,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "메타그린 슬림업 제품은 수유부도 먹을 수 있다.",
-      "label": "VIOLATION",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1780,7 +1780,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "다이어트. 빨간 불에 멈춰 있다면, 이젠 그린 라이트.",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1789,7 +1789,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "SHOT 다이어트 부스터 앰플",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -1807,7 +1807,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "BOOST 지친 에너지 충전",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1825,7 +1825,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "다이어트 부스터 샷",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1834,7 +1834,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "정체기 뚫는 다이어트 부스터 메타그린 부스터샷 7일",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -1870,7 +1870,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "3중 기능성 인정 원료는 오로지 알로에겔뿐 면역 피부건강 장건강",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -1942,7 +1942,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "하루 한 포면 싹 다 클리어지.",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -1978,7 +1978,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "비타민 D 골다공증 발생 위험 감소에 도움을 줌",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2068,7 +2068,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "대조군 대비 기능성 원료 400mg 섭취 14일 후 WOMAC 통증 개선",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -2104,7 +2104,7 @@
       "product_ref": "p01",
       "claim_id": "c21",
       "text": "새로운 건강 라이프",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2131,7 +2131,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "혈당상승 억제 | 체내 대사 관여",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2149,7 +2149,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "국내 최초 다이어트 유산균 BNR17",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -2221,7 +2221,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "유익균의 먹이 프리바이오틱스",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2230,7 +2230,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "프락토올리고당 섭취 4일만에 비피더스 유산균, 약 15배 증가확인",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -2239,7 +2239,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "결과 : 혐기성 균 영향 없음/ 비피더스유산균 증가/ 유익균 수 증가",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2302,7 +2302,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "건강, 이제 맛있게 챙기자",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2401,7 +2401,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "이중 기능성 세계 특허 유산균",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -2419,7 +2419,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "콜레스테롤 걱정에 SAY NO",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -2446,7 +2446,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "좋은 콜레스테롤",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -2455,7 +2455,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "나쁜 콜레스테롤 SAY NO",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -2464,7 +2464,7 @@
       "product_ref": "p01",
       "claim_id": "c15",
       "text": "나의 건강 자신감",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2500,7 +2500,7 @@
       "product_ref": "p01",
       "claim_id": "c17",
       "text": "매일매일 건강한 습관",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2518,7 +2518,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "11종 기능성",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -2563,7 +2563,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "성장판 닫히기 전에 아이커로 더 크게 키워주세요.",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -2590,7 +2590,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "국내 최초 어린이 키성장 기능성 인정 원료사용",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -2599,7 +2599,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "키성장과 영양밸런스를 동시에",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2626,7 +2626,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "눈노화 눈영양제",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2635,7 +2635,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "루테인으로 눈 노화를 늦추다",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2644,7 +2644,7 @@
       "product_ref": "p01",
       "claim_id": "c16",
       "text": "눈노화 기본케어, 집중케어 지아잔틴 난중에는 늦습니다.",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2716,7 +2716,7 @@
       "product_ref": "p01",
       "claim_id": "c29",
       "text": "눈 노화 기본케어 루테인",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2725,7 +2725,7 @@
       "product_ref": "p01",
       "claim_id": "c30",
       "text": "눈 노화 집중케어 루테인지아잔틴",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2761,7 +2761,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "눈 건강 핵심성분을 한번에! 더블케어",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2788,7 +2788,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "눈 건강을 위한 새로운 선택",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2806,7 +2806,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "눈 노화 루테인지아잔틴*",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2824,7 +2824,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "*눈 노화, 눈 건조 이중 기능성을 인정받은 루테인지아잔틴복합추출물 (2018-4호) 사용",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2860,7 +2860,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "한 캡슐로 아이클리어!",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -2941,7 +2941,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "큰 사람이 되고 싶은 우리 아이 엄마의 마음으로 키워주세요.",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -2959,7 +2959,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "인체에 유용한 기능성을 가진 원료를 사용하여 제조·가공한 건강기능식품입니다",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3004,7 +3004,7 @@
       "product_ref": "p01",
       "claim_id": "c21",
       "text": "아이클타임 제품은 수유부도 먹을 수 있다.",
-      "label": "VIOLATION",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3094,7 +3094,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "식약처에서 배뇨건강 기능성 인정",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3139,7 +3139,7 @@
       "product_ref": "p01",
       "claim_id": "c27",
       "text": "100세까지 활기찬 일상을 위해",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3265,7 +3265,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "모두를 위한 건강한 습관",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3292,7 +3292,7 @@
       "product_ref": "p01",
       "claim_id": "c17",
       "text": "하루 두 캡슐로 혈행 건강과 눈 건강 개선을 시작해 보세요.",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3310,7 +3310,7 @@
       "product_ref": "p01",
       "claim_id": "c19",
       "text": "DHA 눈 건강 개선",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3337,7 +3337,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "환자의 면역력을 탁월하게 높여주는 새로운 생약 복합제가 국내 연구진에 의해 개발됐습니다.",
-      "label": "VIOLATION",
+      "label": "SUPPORTED",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3355,7 +3355,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "국내 1호 면역기능 개별인정형 건강기능식품 ‘헤모힘’",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3373,7 +3373,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "1997년 여름 조혈과 면역증진을 위한 새로운 식물 소재 복합조성물 만들기 위한 연구과제 국책 프로젝트로 선정",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3400,7 +3400,7 @@
       "product_ref": "p01",
       "claim_id": "c28",
       "text": "2023년 10월 면역기능 개선과 피로개선에 도움 2종 기능성 인증 취득",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3418,7 +3418,7 @@
       "product_ref": "p01",
       "claim_id": "c32",
       "text": "면역 노화 개선",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3499,7 +3499,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "민감하고 예민한 장을 위해",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3508,7 +3508,7 @@
       "product_ref": "p01",
       "claim_id": "c15",
       "text": "편안한 하루를 선물하세요",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3535,7 +3535,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "과학에서 찾은 피부해답",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3553,7 +3553,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "셀렌 일명 방패미네랄",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3580,7 +3580,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "기능은 더 풍부",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3616,7 +3616,7 @@
       "product_ref": "p01",
       "claim_id": "c22",
       "text": "내 피부를 위해 오직, 뉴트리에서 찾은",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3643,7 +3643,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "진짜 내 피부를 채우다",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3688,7 +3688,7 @@
       "product_ref": "p01",
       "claim_id": "c16",
       "text": "과학이 찾은 피부해답",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3706,7 +3706,7 @@
       "product_ref": "p01",
       "claim_id": "c19",
       "text": "SKIN BALANCE PLUS",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3715,7 +3715,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "여자의 건강은 두 번 만들어 진다 몸에서 한 번 마음에서 한 번",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3742,7 +3742,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "프리미엄 질유산균",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3751,7 +3751,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "Stress Relief Care",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3778,7 +3778,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "눈 속의 눈 시력의 90%를 담당하는 ‘황반’",
-      "label": "OUT_OF_SCOPE",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -3796,7 +3796,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "더 문제는 몸 안에선 생성이 안 돼 꼭 따로 섭취를 해줘야 한대요",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3805,7 +3805,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "백세까지 건강한 눈을 위해! 하루 한 알로 OK",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3814,7 +3814,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "하루 한 알로 관리하세요!",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3823,7 +3823,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "하루하루 노화되는 눈 늦기 전에!",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3832,7 +3832,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "눈 건강 핵심성분 루테인 (마리골드꽃추출물)",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3841,7 +3841,7 @@
       "product_ref": "p01",
       "claim_id": "c15",
       "text": "기능성 원료 루테인(마리골드 꽃 추출물) 인체적용시험 결과 황반색소 밀도 증가 눈의 시각 명료 눈 건강 관련지표 개선 확인!",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -3877,7 +3877,7 @@
       "product_ref": "p01",
       "claim_id": "c31",
       "text": "하루 한 알로 일석삼조",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -3886,7 +3886,7 @@
       "product_ref": "p01",
       "claim_id": "c32",
       "text": "눈 건강은 한번 잃으면 되돌리기 힘들어",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3904,7 +3904,7 @@
       "product_ref": "p01",
       "claim_id": "c35",
       "text": "눈의 노화가 신경 쓰이는 분",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3913,7 +3913,7 @@
       "product_ref": "p01",
       "claim_id": "c37",
       "text": "나이 들어도 건강한 눈을 위해",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3922,7 +3922,7 @@
       "product_ref": "p01",
       "claim_id": "c52",
       "text": "눈 건강에 적신호",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -3949,7 +3949,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "[공식판매처] 필리서치 옵티머스트 OPTI MSM 99.9% 관절연골 건강기능식품 90정",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -3976,7 +3976,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "꾸준히 먹으면 관절 유연성이 좋아진다고 하니 부모님께도 추천하고 싶음.",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4003,7 +4003,7 @@
       "product_ref": "p01",
       "claim_id": "c14",
       "text": "JOINT SUPPORT",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4048,7 +4048,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "갱년기 고민 빨갛게 지우자",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4057,7 +4057,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "루바브로 빨갛게 지우자",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4066,7 +4066,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "당신의 갱년기가 잘 지나갈 수 있도록 루바브가 빨간 주문을 겁니다.",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4084,7 +4084,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "기능성 원료인 루바브 뿌리 추출물의 인체적용 시험결과 갱년기 정도 평가지수 [MRS] 11가지 항목 개선",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4111,7 +4111,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "갱년기 고민 지우는 빨간 캡슐",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4129,7 +4129,7 @@
       "product_ref": "p01",
       "claim_id": "c20",
       "text": "건강의 밸런스를 지키다",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4165,7 +4165,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "슈퍼겔 맥스 한 병에 면역 다당체 300mg",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4201,7 +4201,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "이제 복잡한 건강 루틴으로부터 자유로워질 시간이에요.",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4210,7 +4210,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "복잡한 건강 루틴으로부터 남자를 지켜줄게",
-      "label": "OUT_OF_SCOPE",
+      "label": "VIOLATION",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4255,7 +4255,7 @@
       "product_ref": "p01",
       "claim_id": "c20",
       "text": "혈당 정상적인 면역기능 에너지 하루 단 1알로 3중 케어",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4264,7 +4264,7 @@
       "product_ref": "p01",
       "claim_id": "c24",
       "text": "혈당 건강 위한 과학적인 배합",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4282,7 +4282,7 @@
       "product_ref": "p01",
       "claim_id": "c37",
       "text": "혈당수치 30% 감소 확인",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4291,7 +4291,7 @@
       "product_ref": "p01",
       "claim_id": "c38",
       "text": "혈당수치 20% 감소 확인",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4300,7 +4300,7 @@
       "product_ref": "p01",
       "claim_id": "c39",
       "text": "혈당치 유의적 감소 확인!",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4336,7 +4336,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "굶지 말고 먹으면서 빼자.",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4363,7 +4363,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "MSM 관절 통증 개선 관절 불편감 기능 개선",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4372,7 +4372,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "오미자추출물 대퇴사두근력 개선 악력 개선",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4381,7 +4381,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "에너지 생성 및 대사 비타민B2",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4408,7 +4408,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "우리아이 건강친구",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4417,7 +4417,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "매일 매일 건강하게",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4426,7 +4426,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "하루 한포 건강습관",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4471,7 +4471,7 @@
       "product_ref": "p01",
       "claim_id": "c13",
       "text": "총총으로 우리 아이의 건강을 챙겨주세요!",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4498,7 +4498,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "근육건강 단백질",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4507,7 +4507,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "유당없이 속 편한 100% 식물성",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4534,7 +4534,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "원인은 무너진 스킨코어",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4561,7 +4561,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "흔들림 없는 스킨코어를 위한 세노비스 콜라겐 히알루론산 앰플샷",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4570,7 +4570,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "자기 무게의 1000배의 수분을 끌어당기는 히알루론산",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4588,7 +4588,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "새로워진 과학적 포뮬라가 피부 속 코어를 탄탄하게 세우고 촉촉하게 채우다.",
-      "label": "UNCLEAR",
+      "label": "OVERCLAIM",
       "label_before": "OVERCLAIM",
       "mechanism": "B"
     },
@@ -4624,7 +4624,7 @@
       "product_ref": "p01",
       "claim_id": "c19",
       "text": "식약처 인정 이중 피부 기능성",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4705,7 +4705,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "눈에 좋은 비타민 A 아스타잔틴",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4723,7 +4723,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "에너지가 달라.",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -4750,7 +4750,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "건강한 활력을 위해",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4804,7 +4804,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "우리 가족 하루 한 포면 충분해요.",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4975,7 +4975,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "생기 있는 하루를 위한 바디에너징",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -4984,7 +4984,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "홍삼의 생기가 젤리에 쏙",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -4993,7 +4993,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "여자들의 바디에너징",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5011,7 +5011,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "식약처 인정 6가지 기능성",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -5083,7 +5083,7 @@
       "product_ref": "p01",
       "claim_id": "c09",
       "text": "화애락 터닝미 케어",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5173,7 +5173,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "혈행어사 출두요!",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5236,7 +5236,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "모든 문제는 장에서 비롯된다 - 히포크라테스 (B.C. 460년경~B.C. 370년경)",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5254,7 +5254,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "내 몸에 핏 락토핏",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5290,7 +5290,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "나에게 꼭 맞는 프로바이오틱스 락토핏",
-      "label": "SUPPORTED",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -5362,7 +5362,7 @@
       "product_ref": "p01",
       "claim_id": "c05",
       "text": "장 건강",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5380,7 +5380,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "면역 건강",
-      "label": "UNCLEAR",
+      "label": "VIOLATION",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5389,7 +5389,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "눈 건강까지 다",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5398,7 +5398,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "건강 다다다",
-      "label": "OUT_OF_SCOPE",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5443,7 +5443,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "내 관절을 활기차게",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5461,7 +5461,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "관절이 원하면 이루어진다",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5542,7 +5542,7 @@
       "product_ref": "p01",
       "claim_id": "c12",
       "text": "여러분들도 뉴트리원, 그리고 저 이병헌과 함께 웰니스 라이프를 시작해보시길 바랍니다",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5578,7 +5578,7 @@
       "product_ref": "p01",
       "claim_id": "c11",
       "text": "이런 어린이에게 추천해요! 황금색 변을 보고 싶은 어린이",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -5677,7 +5677,7 @@
       "product_ref": "p01",
       "claim_id": "c10",
       "text": "디어퀸 콜라겐 스틱 제품은 단 3일 만에 얼굴 잔주름을 절반으로 확실히 줄인다.",
-      "label": "OVERCLAIM",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -5704,7 +5704,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "자연으로부터 받은 건강, 프롬바이오",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5713,7 +5713,7 @@
       "product_ref": "p01",
       "claim_id": "c04",
       "text": "안심하세요. 안국 루테인이 지켜주니까",
-      "label": "UNCLEAR",
+      "label": "OUT_OF_SCOPE",
       "label_before": "OUT_OF_SCOPE",
       "mechanism": "B"
     },
@@ -5740,7 +5740,7 @@
       "product_ref": "p01",
       "claim_id": "c07",
       "text": "눈 건강이 걱정된다면 안국 눈에 좋은 루테인 플러스",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5767,7 +5767,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "피부에 남는 선물",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5785,7 +5785,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "국내 최초 다이어트 유산균 BNR17",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5794,7 +5794,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "국내 최초 식약처 인정 체지방 감소 유산균, BNR17",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5803,7 +5803,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "BNR17® 다이어트 유산균 비에날씬",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5857,7 +5857,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "다이어트만 알던 삶에서 비에날씬이 있는 삶으로",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5866,7 +5866,7 @@
       "product_ref": "p01",
       "claim_id": "c02",
       "text": "지속 가능한 다이어트 문화 이미, 일상",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5875,7 +5875,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "BNR17® 다이어트 유산균 비에날씬",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5902,7 +5902,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "국내 최초 체지방 감소 유산균",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -5947,7 +5947,7 @@
       "product_ref": "p01",
       "claim_id": "c03",
       "text": "힘내고 싶은 모든 순간 정관장 에브리타임",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5965,7 +5965,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "장 건강도 피부면역도",
-      "label": "SUPPORTED",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -5992,7 +5992,7 @@
       "product_ref": "p01",
       "claim_id": "c06",
       "text": "흡수력 좋은 발효홍삼에 면역력, 기억력, 뼈 형성까지 한 번에",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -6028,7 +6028,7 @@
       "product_ref": "p01",
       "claim_id": "c01",
       "text": "서현의 빨간맛 다이어트!",
-      "label": "OUT_OF_SCOPE",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
@@ -6064,7 +6064,7 @@
       "product_ref": "p01",
       "claim_id": "c08",
       "text": "콜레우스포스콜리 성분이 체지방 DOWN",
-      "label": "UNCLEAR",
+      "label": "SUPPORTED",
       "label_before": "SUPPORTED",
       "mechanism": "B"
     },
@@ -6109,7 +6109,7 @@
       "product_ref": "p01",
       "claim_id": "c18",
       "text": "* 동일한 기능성을 가진 건강기능식품을 과량 섭취하거나 하루에 여러가지의 다이어트 건강기능식품을 섭취하는 것은 주의해야 합니다.",
-      "label": "DISCLAIMER",
+      "label": "UNCLEAR",
       "label_before": "UNCLEAR",
       "mechanism": "B"
     },
