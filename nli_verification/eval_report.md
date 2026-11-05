@@ -7,114 +7,114 @@
 ## 1. 전체 (EFFECT 포함 클레임)
 
 - 클레임 수: **681**
-- 정확도 (Accuracy): **65.6%**
-- Macro F1: **0.716**
+- 정확도 (Accuracy): **69.8%**
+- Macro F1: **0.768**
 
 | 정답 라벨 | 개수 | 정밀도 | 재현율 | F1 |
 |---|---|---|---|---|
-| VIOLATION | 47 | 100.0% | 91.5% | 0.956 |
-| OVERCLAIM | 66 | 69.7% | 93.9% | 0.800 |
-| UNCLEAR | 174 | 44.5% | 42.0% | 0.432 |
-| SUPPORTED | 281 | 73.2% | 76.9% | 0.750 |
-| OUT_OF_SCOPE | 88 | 43.9% | 33.0% | 0.377 |
-| DISCLAIMER | 25 | 100.0% | 96.0% | 0.980 |
+| VIOLATION | 47 | 100.0% | 95.7% | 0.978 |
+| OVERCLAIM | 66 | 92.9% | 98.5% | 0.956 |
+| UNCLEAR | 174 | 51.6% | 54.6% | 0.531 |
+| SUPPORTED | 281 | 72.2% | 76.9% | 0.745 |
+| OUT_OF_SCOPE | 88 | 50.0% | 33.0% | 0.397 |
+| DISCLAIMER | 25 | 100.0% | 100.0% | 1.000 |
 
 **혼동 행렬** (행 = 정답, 열 = 예측)
 
 | 정답 \ 예측 | VIOLATION | OVERCLAIM | UNCLEAR | SUPPORTED | OUT_OF_SCOPE | DISCLAIMER |
 |---|---|---|---|---|---|---|
-| VIOLATION | 43 | 1 | 1 | 0 | 2 | 0 |
-| OVERCLAIM | 0 | 62 | 1 | 0 | 3 | 0 |
-| UNCLEAR | 0 | 24 | 73 | 56 | 21 | 0 |
+| VIOLATION | 45 | 0 | 1 | 1 | 0 | 0 |
+| OVERCLAIM | 0 | 65 | 0 | 0 | 1 | 0 |
+| UNCLEAR | 0 | 3 | 95 | 59 | 17 | 0 |
 | SUPPORTED | 0 | 1 | 53 | 216 | 11 | 0 |
 | OUT_OF_SCOPE | 0 | 1 | 35 | 23 | 29 | 0 |
-| DISCLAIMER | 0 | 0 | 1 | 0 | 0 | 24 |
+| DISCLAIMER | 0 | 0 | 0 | 0 | 0 | 25 |
 
 ## 2. EFFECT만 있는 클레임
 
 - 클레임 수: **523**
-- 정확도 (Accuracy): **72.3%**
-- Macro F1: **0.750**
+- 정확도 (Accuracy): **74.6%**
+- Macro F1: **0.781**
 
 | 정답 라벨 | 개수 | 정밀도 | 재현율 | F1 |
 |---|---|---|---|---|
-| VIOLATION | 45 | 100.0% | 95.6% | 0.977 |
-| OVERCLAIM | 66 | 86.1% | 93.9% | 0.899 |
-| UNCLEAR | 97 | 42.0% | 48.5% | 0.450 |
-| SUPPORTED | 218 | 78.9% | 82.1% | 0.804 |
-| OUT_OF_SCOPE | 72 | 51.1% | 31.9% | 0.393 |
-| DISCLAIMER | 25 | 100.0% | 96.0% | 0.980 |
+| VIOLATION | 45 | 100.0% | 100.0% | 1.000 |
+| OVERCLAIM | 66 | 98.5% | 98.5% | 0.985 |
+| UNCLEAR | 97 | 45.7% | 54.6% | 0.498 |
+| SUPPORTED | 218 | 77.8% | 82.1% | 0.799 |
+| OUT_OF_SCOPE | 72 | 56.1% | 31.9% | 0.407 |
+| DISCLAIMER | 25 | 100.0% | 100.0% | 1.000 |
 
 **혼동 행렬** (행 = 정답, 열 = 예측)
 
 | 정답 \ 예측 | VIOLATION | OVERCLAIM | UNCLEAR | SUPPORTED | OUT_OF_SCOPE | DISCLAIMER |
 |---|---|---|---|---|---|---|
-| VIOLATION | 43 | 0 | 0 | 0 | 2 | 0 |
-| OVERCLAIM | 0 | 62 | 1 | 0 | 3 | 0 |
-| UNCLEAR | 0 | 9 | 47 | 28 | 13 | 0 |
+| VIOLATION | 45 | 0 | 0 | 0 | 0 | 0 |
+| OVERCLAIM | 0 | 65 | 0 | 0 | 1 | 0 |
+| UNCLEAR | 0 | 0 | 53 | 31 | 13 | 0 |
 | SUPPORTED | 0 | 1 | 34 | 179 | 4 | 0 |
 | OUT_OF_SCOPE | 0 | 0 | 29 | 20 | 23 | 0 |
-| DISCLAIMER | 0 | 0 | 1 | 0 | 0 | 24 |
+| DISCLAIMER | 0 | 0 | 0 | 0 | 0 | 25 |
 
 ## 3. 여러 유형이 함께 있는 클레임 (예: EFFECT + QUANTITY)
 
 - 클레임 수: **158**
-- 정확도 (Accuracy): **43.7%**
-- Macro F1: **0.323**
+- 정확도 (Accuracy): **53.8%**
+- Macro F1: **0.376**
 
 | 정답 라벨 | 개수 | 정밀도 | 재현율 | F1 |
 |---|---|---|---|---|
 | VIOLATION | 2 | 0.0% | 0.0% | 0.000 |
-| UNCLEAR | 77 | 50.0% | 33.8% | 0.403 |
-| SUPPORTED | 63 | 54.4% | 58.7% | 0.565 |
-| OUT_OF_SCOPE | 16 | 28.6% | 37.5% | 0.324 |
+| UNCLEAR | 77 | 61.8% | 54.5% | 0.579 |
+| SUPPORTED | 63 | 53.6% | 58.7% | 0.561 |
+| OUT_OF_SCOPE | 16 | 35.3% | 37.5% | 0.364 |
 
 **혼동 행렬** (행 = 정답, 열 = 예측)
 
 | 정답 \ 예측 | OVERCLAIM | UNCLEAR | SUPPORTED | OUT_OF_SCOPE |
 |---|---|---|---|---|
-| VIOLATION | 1 | 1 | 0 | 0 |
-| UNCLEAR | 15 | 26 | 28 | 8 |
+| VIOLATION | 0 | 1 | 1 | 0 |
+| UNCLEAR | 3 | 42 | 28 | 4 |
 | SUPPORTED | 0 | 19 | 37 | 7 |
 | OUT_OF_SCOPE | 1 | 6 | 3 | 6 |
 
 ## 4. 합성 클레임 제외 ("○○ 제품은 ~" 형식을 합성으로 추정해 제외)
 
 - 클레임 수: **571**
-- 정확도 (Accuracy): **59.9%**
-- Macro F1: **0.508**
+- 정확도 (Accuracy): **63.9%**
+- Macro F1: **0.529**
 
 | 정답 라벨 | 개수 | 정밀도 | 재현율 | F1 |
 |---|---|---|---|---|
 | VIOLATION | 3 | 100.0% | 33.3% | 0.500 |
 | OVERCLAIM | 1 | 0.0% | 0.0% | 0.000 |
-| UNCLEAR | 174 | 44.8% | 42.0% | 0.433 |
-| SUPPORTED | 281 | 73.2% | 76.9% | 0.750 |
-| OUT_OF_SCOPE | 88 | 46.8% | 33.0% | 0.387 |
-| DISCLAIMER | 24 | 100.0% | 95.8% | 0.979 |
+| UNCLEAR | 174 | 51.6% | 54.6% | 0.531 |
+| SUPPORTED | 281 | 72.2% | 76.9% | 0.745 |
+| OUT_OF_SCOPE | 88 | 50.0% | 33.0% | 0.397 |
+| DISCLAIMER | 24 | 100.0% | 100.0% | 1.000 |
 
 **혼동 행렬** (행 = 정답, 열 = 예측)
 
 | 정답 \ 예측 | VIOLATION | OVERCLAIM | UNCLEAR | SUPPORTED | OUT_OF_SCOPE | DISCLAIMER |
 |---|---|---|---|---|---|---|
-| VIOLATION | 1 | 1 | 1 | 0 | 0 | 0 |
+| VIOLATION | 1 | 0 | 1 | 1 | 0 | 0 |
 | OVERCLAIM | 0 | 0 | 0 | 0 | 1 | 0 |
-| UNCLEAR | 0 | 24 | 73 | 56 | 21 | 0 |
+| UNCLEAR | 0 | 3 | 95 | 59 | 17 | 0 |
 | SUPPORTED | 0 | 1 | 53 | 216 | 11 | 0 |
 | OUT_OF_SCOPE | 0 | 1 | 35 | 23 | 29 | 0 |
-| DISCLAIMER | 0 | 0 | 1 | 0 | 0 | 23 |
+| DISCLAIMER | 0 | 0 | 0 | 0 | 0 | 24 |
 
 ## 5. 자주 틀린 경우
 
 | 정답 | 예측 | 개수 |
 |---|---|---|
-| UNCLEAR | SUPPORTED | 56 |
+| UNCLEAR | SUPPORTED | 59 |
 | SUPPORTED | UNCLEAR | 53 |
 | OUT_OF_SCOPE | UNCLEAR | 35 |
-| UNCLEAR | OVERCLAIM | 24 |
 | OUT_OF_SCOPE | SUPPORTED | 23 |
-| UNCLEAR | OUT_OF_SCOPE | 21 |
+| UNCLEAR | OUT_OF_SCOPE | 17 |
 | SUPPORTED | OUT_OF_SCOPE | 11 |
-| OVERCLAIM | OUT_OF_SCOPE | 3 |
-| VIOLATION | OUT_OF_SCOPE | 2 |
-| VIOLATION | OVERCLAIM | 1 |
+| UNCLEAR | OVERCLAIM | 3 |
+| VIOLATION | SUPPORTED | 1 |
+| SUPPORTED | OVERCLAIM | 1 |
+| OVERCLAIM | OUT_OF_SCOPE | 1 |
