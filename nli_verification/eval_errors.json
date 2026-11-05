@@ -1,0 +1,5572 @@
+[
+  {
+    "video_id": "db_001_AKyDb1Yhaio",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "더 이상 혈당 때문에 힘들어하지 마십시오",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "BNS혈당엔바나바는 식후 혈당상승 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9971,
+      "C": 0.0003,
+      "reverse_E": null,
+      "health_claim_E": 0.9751
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_001_AKyDb1Yhaio",
+    "claim_id": "c38",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "인체적용시험결과 혈당치 감소",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "BNS혈당엔바나바는 식후 혈당상승 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9606,
+      "C": 0.0003,
+      "reverse_E": null,
+      "health_claim_E": 0.9976
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_001_AKyDb1Yhaio",
+    "claim_id": "c57",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "우리 부부 둘 다 혈당이 걱정이었는데 둘이 매일 같이 먹으니까 부담이 없어서 너무 좋아요",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "BNS혈당엔바나바는 식후 혈당상승 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9971,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.9885
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_001_AKyDb1Yhaio",
+    "claim_id": "c58",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "식후혈당 억제 정상적인 면역기능 에너지 대사까지 챙기는 3중 기능성에도 이 가격",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "BNS혈당엔바나바는 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.0031,
+      "C": 0.0006,
+      "reverse_E": 0.9971,
+      "health_claim_E": 0.9981
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_001_AKyDb1Yhaio",
+    "claim_id": "c59",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아버님 높은 혈당",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "BNS혈당엔바나바는 식후 혈당상승 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9971,
+      "C": 0.0003,
+      "reverse_E": null,
+      "health_claim_E": 0.0006
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_003_VABlVWjX9t4",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "가족의 장 건강 지킴이 G4000 프로바이오틱스",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "G4000 프로바이오틱스는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.9978,
+      "health_claim_E": 0.997
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_005_Ehq6ZhkzjIk",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "간영양제 30정 1개",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "간에게주는밀크씨슬선물은 간 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9943,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.003
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_005_Ehq6ZhkzjIk",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "하루 한 알로 활력있는 생활과 간건강까지",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "간에게주는밀크씨슬선물은 간 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0083,
+      "C": 0.0005,
+      "reverse_E": 0.9985,
+      "health_claim_E": 0.9982
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_005_Ehq6ZhkzjIk",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "간에게주는밀크씨슬선물 제품은 한 번만 먹어도 간에 쌓인 노폐물을 깨끗이 제거한다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "간에게주는밀크씨슬선물은 간 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0006,
+      "reverse_E": 0.9974,
+      "health_claim_E": 0.2506
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_006_oUr4voFFuBo",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "EFFECT"
+    ],
+    "text": "가르시니아캄보지아 추출물 탄수화물 타겟",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_006_oUr4voFFuBo",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "ETC"
+    ],
+    "text": "흡수를 고려한 액상형 다이어트",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0006,
+      "reverse_E": 0.001,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_006_oUr4voFFuBo",
+    "claim_id": "c21",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "현대인의 라이프스타일 맞춤 건강 케어",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "감비책 다이어트는 식후 혈당상승 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9935,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_006_oUr4voFFuBo",
+    "claim_id": "c24",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "탄수화물과의 불편한 동행, 당 섭취가 높은 식습관 이젠 GOOD-BYE",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0014
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_006_oUr4voFFuBo",
+    "claim_id": "c25",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "감비책 다이어트 제품은 2주 만에 체지방 5kg을 확실히 줄인다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.0012,
+      "health_claim_E": 0.2103
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_006_oUr4voFFuBo",
+    "claim_id": "c26",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "감비책 다이어트 제품은 식사량을 줄이지 않아도 일주일 만에 뱃살만 골라 30% 없애 준다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0036,
+      "health_claim_E": 0.0117
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_009_l4gd8qQFSak",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "한국인의 영양에 딱 맞춘",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_009_l4gd8qQFSak",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "고려은단 멀티비타민 올인원 제품은 일주일 만에 피부 수분량을 두 배로 높이는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.0008,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_013_NrsycE3cMV8",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강정보: 본 정보는 제품과 관련 없는 내용입니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.9846,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.2906
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_013_NrsycE3cMV8",
+    "claim_id": "c15",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "고려은단 코엔자임Q10 제품은 고혈압약을 대신할 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "질병 치료",
+    "scores": {
+      "E": 0.0014,
+      "C": 0.0004,
+      "reverse_E": 0.0013,
+      "health_claim_E": 0.9547
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_013_NrsycE3cMV8",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "고려은단 코엔자임Q10 제품은 일주일 만에 혈압 변동 폭을 90% 줄이는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0036,
+      "health_claim_E": 0.9982
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_014_E5uL0UwVQsQ",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "고려은단비타민C1000 제품은 일주일 만에 철 흡수율을 세 배로 높이는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": 0.0591,
+      "health_claim_E": 0.0012
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_014_E5uL0UwVQsQ",
+    "claim_id": "c18",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "고려은단비타민C1000 제품은 한 번만 먹어도 철분 이용 효율이 두 배로 높아진다.",
+    "gold": "OVERCLAIM",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0014,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0033
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_021_7cxBqUhRcXs",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절하면 자생, 자생하면 관절",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0088,
+      "C": 0.0087,
+      "reverse_E": 0.003,
+      "health_claim_E": 0.0025
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_022_Y6gkveTxNxc",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "[VAS] 무릎관절의 통증 개선 확인",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "관절엔 소연골 뮤코다당단백 콘드로이친 골드는 관절 및 연골건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.997,
+      "health_claim_E": 0.8703
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_022_Y6gkveTxNxc",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절에 맞췄으니까",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0054,
+      "C": 0.0005,
+      "reverse_E": 0.0069,
+      "health_claim_E": 0.0011
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_022_Y6gkveTxNxc",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "FOR YOUR HEALTHY JOINTS",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.002,
+      "C": 0.0016,
+      "reverse_E": 0.4429,
+      "health_claim_E": 0.2001
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_023_Cf6dBCMBMmE",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절이 나를 움직이게 한다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "관절엔 아나파랙틴 정제는 관절 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0058,
+      "C": 0.0009,
+      "reverse_E": 0.9934,
+      "health_claim_E": 0.0024
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_027_V5k04vnSlJo",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "활기찬 건강의 기본 관절입니다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "관절연골엔 구절초는 관절 및 연골 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.9752,
+      "health_claim_E": 0.998
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_027_V5k04vnSlJo",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절과 연골 건강을 동시에",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "MULTI_EFFECT",
+    "evidence_text": "관절연골엔 구절초는 관절 및 연골 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.3331,
+      "C": 0.0005,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_027_V5k04vnSlJo",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "하나뿐인 소중한 관절을 위해~",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "관절연골엔 구절초는 관절 및 연골 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.993,
+      "health_claim_E": 0.9967
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_035_y_0fmF3xgck",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "보스웰리아 추출물에 한함",
+    "gold": "DISCLAIMER",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.6473,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0011
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_035_y_0fmF3xgck",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "자연으로부터 받은 건강, 프롬바이오",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "관절연골엔보스웰리아는 관절 및 연골건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0007,
+      "reverse_E": 0.989,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_035_y_0fmF3xgck",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "기능성 원료인 보스웰리아추출물 인체적용시험결과 관절의 통증, 붓기, 활동장애 개선이 확인되었습니다.",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "보스웰리아추출물은 관절 및 연골건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.001,
+      "C": 0.0004,
+      "reverse_E": 0.9074,
+      "health_claim_E": 0.997
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_035_y_0fmF3xgck",
+    "claim_id": "c15",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절연골엔 보스웰리아를 드신다는 것, 일상을 즐거움으로 채운다는 것",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0007,
+      "reverse_E": 0.0112,
+      "health_claim_E": 0.0012
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_035_y_0fmF3xgck",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "항산화 면역기능",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0327,
+      "C": 0.0004,
+      "reverse_E": 0.7242,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_039_zptASsSd0nY",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "튼튼하다 관절도",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "관절팔팔은 관절건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0351,
+      "C": 0.0012,
+      "reverse_E": 0.9973,
+      "health_claim_E": 0.9961
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_039_zptASsSd0nY",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "팔팔하다 무릎도",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "관절팔팔은 관절건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0017,
+      "C": 0.0008,
+      "reverse_E": 0.9916,
+      "health_claim_E": 0.1891
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_040_1dcPKN8GH8Y",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "QUANTITY",
+      "EFFECT"
+    ],
+    "text": "2,400μg 요오드 갑상선 호르몬의 합성 에너지생성",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "요오드는 에너지 생성에 필요하다",
+    "scores": {
+      "E": 0.0062,
+      "C": 0.0004,
+      "reverse_E": 0.9972,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_040_1dcPKN8GH8Y",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "QUANTITY",
+      "EFFECT"
+    ],
+    "text": "1.2mg 비타민B₁ 탄수화물과 에너지 대사에 필요",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "INGREDIENT_NOT_IN_PRODUCT",
+    "evidence_text": null,
+    "scores": {
+      "E": null,
+      "C": null,
+      "reverse_E": null,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_040_1dcPKN8GH8Y",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "QUANTITY",
+      "EFFECT"
+    ],
+    "text": "0.5mg 비타민D 뼈 형성에 필요 골다공증 발생위험 감소에 도움",
+    "gold": "VIOLATION",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "비타민D는 골다공증발생 위험 감소에 도움을 준다",
+    "scores": {
+      "E": 0.0015,
+      "C": 0.0004,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.808
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_040_1dcPKN8GH8Y",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "QUANTITY",
+      "EFFECT"
+    ],
+    "text": "100μg 셀렌 유해산소로부터 세포를 보호하는데 필요",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "INGREDIENT_NOT_IN_PRODUCT",
+    "evidence_text": null,
+    "scores": {
+      "E": null,
+      "C": null,
+      "reverse_E": null,
+      "health_claim_E": 0.997
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_040_1dcPKN8GH8Y",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "활력있는 하루를 원하시는 분",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "그린요오드는 혈액의 호모시스테인 수준을 정상으로 유지하는데 필요하다",
+    "scores": {
+      "E": 0.6751,
+      "C": 0.0005,
+      "reverse_E": 0.0013,
+      "health_claim_E": 0.001
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_040_1dcPKN8GH8Y",
+    "claim_id": "c23",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "갑상선건강을 위한 당신의 선택 그린요오드",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0037,
+      "C": 0.0005,
+      "reverse_E": 0.8257,
+      "health_claim_E": 0.9877
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_041_csK3fHk-MRw",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "나우그린 간 건강 프리미엄 밀크씨슬 108g, 120정, 1개",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "나우그린 간 건강 프리미엄 밀크씨슬은 지방, 탄수화물, 단백질 대사와 에너지 생성에 필요하다",
+    "scores": {
+      "E": 0.9978,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.2594
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_041_csK3fHk-MRw",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "나우그린 간 건강 프리미엄 밀크씨슬 제품은 한 번만 먹어도 간에 쌓인 노폐물을 깨끗이 제거한다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "나우그린 간 건강 프리미엄 밀크씨슬은 간 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0015,
+      "C": 0.0004,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.9979
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_049_P-YTAviQgIM",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강한 오늘, 데이팩",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "데이팩 올인원은 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.4218,
+      "C": 0.9321,
+      "reverse_E": 0.2034,
+      "health_claim_E": 0.9959
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_049_P-YTAviQgIM",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "하루 한 포, 건강한 오늘",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "데이팩 올인원은 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.4218,
+      "C": 0.9321,
+      "reverse_E": 0.0189,
+      "health_claim_E": 0.985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_049_P-YTAviQgIM",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강을 쉽게 전하세요",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "데이팩 올인원은 혈행 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9838,
+      "C": 0.0013,
+      "reverse_E": null,
+      "health_claim_E": 0.9968
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_049_P-YTAviQgIM",
+    "claim_id": "c27",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "데이팩 올인원 제품은 단 하루 만에 눈의 피로를 90%까지 확실히 줄인다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0008,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.003
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY",
+      "CERTIFICATION"
+    ],
+    "text": "기능성 원료인 프로바이오틱스의 인체시험 결과 국내외 특허* 듀얼코팅 유산균 섭취군의 경우, 비코팅 유산균 섭취군에 비해 장내 생존율이 최대 221배 (L. rhamnosus CBT-LR5) 높은 것으로 확인",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0015,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0148
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "B. bifidum CBT-BF3 108배 증가",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "B. bifidum CBT-BF3은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": 0.9976,
+      "health_claim_E": 0.001
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "B. lactis CBT-BL3 137배 증가",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "B. lactis CBT-BL3은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": 0.9973,
+      "health_claim_E": 0.001
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "B. longum CBT-BG7 98배 증가",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "B. longum CBT-BG7은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.001,
+      "C": 0.0004,
+      "reverse_E": 0.9968,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "L. acidophilus CBT-LA1 92배 증가",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "L. acidophilus CBT-LA1은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.9969,
+      "health_claim_E": 0.0014
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "L. rhamnosus CBT-LR5 221배 증가",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "L. rhamnosus CBT-LR5는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.9966,
+      "health_claim_E": 0.0018
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "S. thermophilus CBT-ST3 105배 증가",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "S. thermophilus CBT-ST3은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": 0.998,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_050_OuBJfCjsgak",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "※ 본 인체적용 시험의 경우, 제품에 대한 시험결과가 아닙니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": 0.0013,
+      "health_claim_E": 0.482
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_055_UPPksFnfOcU",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "유익한 유산균 증식, 유해균 억제, 배변활동 원활, 장 면역을 조절하여 장 건강에 도움을 줄 수 있음",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_SAME_TOPIC",
+    "evidence_text": "드시모네 4500은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.4629,
+      "C": 0.0002,
+      "reverse_E": 0.9987,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_055_UPPksFnfOcU",
+    "claim_id": "c18",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "EFFECT"
+    ],
+    "text": "국내 최초 장 면역 개별인정",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "드시모네 4500은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9642,
+      "C": 0.0007,
+      "reverse_E": null,
+      "health_claim_E": 0.0035
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_055_UPPksFnfOcU",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "원료의 차이가 장건강의 차이",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "드시모네 4500은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.996,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.989
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_057_TpqG2KZ0aRk",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "EFFECT"
+    ],
+    "text": "한국 식약처 기능성 개별인정 번호 : 제2009-28호 [장 면역을 조절하여 장 건강에 도움을 줄 수 있음]",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "드시모네 키즈 프리미엄은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0019,
+      "C": 0.0003,
+      "reverse_E": 0.9707,
+      "health_claim_E": 0.9975
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_057_TpqG2KZ0aRk",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "원료의 차이가 장 건강의 차이",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "드시모네 키즈 프리미엄은 장면역을 조절하여 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9941,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0096
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_059_NaLc-_bwGw8",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "예민한 장을 가진 당신을 위한 락토핏 솔루션 2.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.9982,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_059_NaLc-_bwGw8",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "예민한 장에 FIT",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0004,
+      "reverse_E": 0.9982,
+      "health_claim_E": 0.0012
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_059_NaLc-_bwGw8",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "예민한 배변활동 개선을 위한 올바른 습관",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.001,
+      "C": 0.0004,
+      "reverse_E": 0.9982,
+      "health_claim_E": 0.9659
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_059_NaLc-_bwGw8",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "둔감한 장, 예민한 장 유산균 선택의 시대",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0015,
+      "C": 0.0014,
+      "reverse_E": 0.9706,
+      "health_claim_E": 0.0011
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_059_NaLc-_bwGw8",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "내 몸에 FIT 락토핏",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 솔루션2는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0011,
+      "C": 0.001,
+      "reverse_E": 0.9544,
+      "health_claim_E": 0.9949
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "생존 좋습니다",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "락토핏 코어맥스는 유산균 증식 및 유해균 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9051,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0057
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "정착 좋습니다",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "락토핏 코어맥스는 유산균 증식 및 유해균 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9734,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0017
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c15",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "생착 좋습니다",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.3967,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0069
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "남녀노소 구분없이 다다 생착하는",
+    "gold": "OVERCLAIM",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0007,
+      "reverse_E": null,
+      "health_claim_E": 0.003
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "ETC"
+    ],
+    "text": "몸에 좋고 맛도 좋은 락토핏 코어맥스",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "락토핏 코어맥스는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9977,
+      "C": 0.0003,
+      "reverse_E": null,
+      "health_claim_E": 0.998
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c18",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "내 몸에 핏",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 코어맥스는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0083,
+      "C": 0.0005,
+      "reverse_E": 0.9942,
+      "health_claim_E": 0.9894
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c22",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "생존률 정착률 다다다다 좋습니다",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0058,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_060_wKE98OOcdPU",
+    "claim_id": "c23",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "섭취부터 생존 섭취부터 정착 섭취부터 생착",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0031,
+      "C": 0.028,
+      "reverse_E": null,
+      "health_claim_E": 0.0016
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_065_d1vRPXhgJAY",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "더이상 찌푸리지 마세요",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "루테인지아잔틴 164는 노화로 인해 감소될 수 있는 황반색소 밀도를 유지하여 눈 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9983,
+      "C": 0.0008,
+      "reverse_E": null,
+      "health_claim_E": 0.0014
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_065_d1vRPXhgJAY",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "Antioxidation | Energy",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "루테인지아잔틴 164는 유해산소로부터 세포를 보호하는데 필요하다",
+    "scores": {
+      "E": 0.2464,
+      "C": 0.0006,
+      "reverse_E": 0.0081,
+      "health_claim_E": 0.1908
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_065_d1vRPXhgJAY",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "루테인지아잔틴 164 제품은 단 하루 만에 눈의 피로를 90%까지 확실히 줄인다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.005,
+      "reverse_E": 0.0006,
+      "health_claim_E": 0.32
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_080_yPMKj9wxiKc",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "에너지가 필요한 지금",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "마이니 부스터 비타민은 에너지 이용에 필요하다",
+    "scores": {
+      "E": 0.9815,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0025
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_080_yPMKj9wxiKc",
+    "claim_id": "c14",
+    "product_ref": "p02",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "마이니 딥슬립 이뮨 제품은 먹은 날부터 깊은 수면 시간이 두 배로 늘어나는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.1285,
+      "health_claim_E": 0.0499
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_082_AnT61olLCjY",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "PERSON_CREDENTIAL"
+    ],
+    "text": "저도 꾸준한 운동과 더불어서 근력 개선에 도움을 줄 수 있는 머슬파워로 근력 관리를 꾸준히 하고 있습니다",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "머슬파워는 근력 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9978,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9872
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_082_AnT61olLCjY",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "머슬 파워는 국내 최초 근력 개선에 도움을 줄 수 있는 기능성을 인정받은 원료로 만들었습니다.",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "머슬파워는 근력 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9983,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9831
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_082_AnT61olLCjY",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "PERSON_CREDENTIAL"
+    ],
+    "text": "호동이의 근력 관리 비법 머슬파워로 근력 관리 시작하세요!",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "머슬파워는 근력 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9976,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0012
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_082_AnT61olLCjY",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "PERSON_CREDENTIAL"
+    ],
+    "text": "강호동의 건강관리 비결 머슬파워로 여러분들도 오래오래 건강하세요~",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.9794
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_082_AnT61olLCjY",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "CERTIFICATION",
+      "EFFECT"
+    ],
+    "text": "국내 최초 식약처 인정 근력개선 개별인정형 오미자추출물",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "오미자추출물은 근력 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9981,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0021
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_082_AnT61olLCjY",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "EFFECT"
+    ],
+    "text": "에너지대사 개선! 체내 에너지 생성에 필요한 비타민B₂",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "INGREDIENT_NOT_IN_PRODUCT",
+    "evidence_text": null,
+    "scores": {
+      "E": null,
+      "C": null,
+      "reverse_E": null,
+      "health_claim_E": 0.0175
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_088_ZiHnof9A28Y",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "PERSON_CREDENTIAL",
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "박미선 갱년기 유산균 메노락토 프로바이오틱스",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "유산균은 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9947,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.0549
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_088_ZiHnof9A28Y",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "EFFECT"
+    ],
+    "text": "갱년기 유산균 YT1 누구도 생각 못 했을 겁니다",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "유산균 YT1은 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9965,
+      "C": 0.0009,
+      "reverse_E": null,
+      "health_claim_E": 0.0108
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_088_ZiHnof9A28Y",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "YT1으로 갱년기의 공식을 바꾸세요",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "YT1은 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9802,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0011
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_088_ZiHnof9A28Y",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "여성들의 건강한 갱년기를 응원합니다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "메노락토 프로바이오틱스는 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9975,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_091_RmbfFdrWBdo",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "빠지는 즐거움",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0015,
+      "reverse_E": null,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_091_RmbfFdrWBdo",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "먹고 나면 메타그린 슬림 업",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_091_RmbfFdrWBdo",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "적절한 식이조절과 운동을 병행하여 섭취하는 것을 권합니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0005,
+      "reverse_E": 0.1048,
+      "health_claim_E": 0.9846
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_091_RmbfFdrWBdo",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "메타그린 슬림업 제품은 수유부도 먹을 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.8562,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_093_qHU1meSxfco",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "다이어트. 빨간 불에 멈춰 있다면, 이젠 그린 라이트.",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "메타그린부스터샷7일은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0021,
+      "C": 0.0012,
+      "reverse_E": 0.9422,
+      "health_claim_E": 0.9076
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_093_qHU1meSxfco",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "SHOT 다이어트 부스터 앰플",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0066,
+      "health_claim_E": 0.0234
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_093_qHU1meSxfco",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "BOOST 지친 에너지 충전",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0044
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_093_qHU1meSxfco",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "그린라이트 루틴으로 체지방은 CUT 에너지는 UP",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "메타그린부스터샷7일은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0047,
+      "C": 0.0005,
+      "reverse_E": 0.9985,
+      "health_claim_E": 0.9905
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_093_qHU1meSxfco",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "다이어트 부스터 샷",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "메타그린부스터샷7일은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.9378,
+      "health_claim_E": 0.9166
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_093_qHU1meSxfco",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "적절한 운동, 식이조절과 함께 섭취하세요.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0008,
+      "reverse_E": 0.0014,
+      "health_claim_E": 0.9273
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_095_e2JpCbQWuvo",
+    "claim_id": "c21",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "면역력 장 피부",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "면역엔 알로에뮨은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0078,
+      "C": 0.0005,
+      "reverse_E": 0.998,
+      "health_claim_E": 0.9975
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_095_e2JpCbQWuvo",
+    "claim_id": "c22",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "면역력 증진 장건강 피부건강",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "면역엔 알로에뮨은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.1414,
+      "C": 0.0004,
+      "reverse_E": 0.9987,
+      "health_claim_E": 0.9986
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_096_LGDnFYgymEQ",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "성장기 어린이한테 꼭 필요한 칼슘이랑 칼슘 흡수 도와주는 비타민 D까지.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "면역탄탄 칼슘&아연&비타민D 젤리스틱은 칼슘과 인이 흡수되고 이용되는데 필요하다",
+    "scores": {
+      "E": 0.8529,
+      "C": 0.0003,
+      "reverse_E": 0.9715,
+      "health_claim_E": 0.9802
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_096_LGDnFYgymEQ",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "하루 한 포면 싹 다 클리어지.",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0017,
+      "reverse_E": null,
+      "health_claim_E": 0.0032
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_096_LGDnFYgymEQ",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "비타민 D 골다공증 발생 위험 감소에 도움을 줌",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0004,
+      "reverse_E": 0.0035,
+      "health_claim_E": 0.9959
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_096_LGDnFYgymEQ",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아연 정상적인 세포분열",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "아연은 정상적인 세포분열에 필요하다",
+    "scores": {
+      "E": 0.8665,
+      "C": 0.8323,
+      "reverse_E": 0.2087,
+      "health_claim_E": 0.0021
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_096_LGDnFYgymEQ",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "면역탄탄 칼슘&아연&비타민D 젤리스틱 제품은 일주일 만에 뼈의 강도를 두 배로 높여 준다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.0701,
+      "health_claim_E": 0.9933
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_099_dSjddyyEbrQ",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "변할지도 제품은 고지혈증 치료제를 대신할 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "질병 치료",
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0004,
+      "reverse_E": 0.9658,
+      "health_claim_E": 0.2972
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_100_X6OK887LWyA",
+    "claim_id": "c21",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "새로운 건강 라이프",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0003,
+      "reverse_E": 0.001,
+      "health_claim_E": 0.9599
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_101_k9HPaTy2jAc",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "혈당상승 억제 | 체내 대사 관여",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0277,
+      "C": 0.0004,
+      "reverse_E": 0.0014,
+      "health_claim_E": 0.9831
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_102_j2gn9xONdJE",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION",
+      "ETC"
+    ],
+    "text": "국내 최초 다이어트 유산균 BNR17",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "BNR17은 체지방 감소에 도움을 줄 수 있음, 유산균 증식 및 유해균 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9973,
+      "C": 0.0007,
+      "reverse_E": null,
+      "health_claim_E": 0.0137
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_102_j2gn9xONdJE",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "체지방 감소와 장건강을 한번에",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "비에날 퀸은 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0622,
+      "C": 0.0004,
+      "reverse_E": 0.9985,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_102_j2gn9xONdJE",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "※적절한 운동, 식이조절과 함께 섭취하세요",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0006,
+      "reverse_E": 0.0011,
+      "health_claim_E": 0.9662
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_102_j2gn9xONdJE",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "비에날 퀸 제품은 2주 만에 체지방 5kg을 확실히 줄인다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0012,
+      "C": 0.0004,
+      "reverse_E": 0.0099,
+      "health_claim_E": 0.9931
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_104_2DMM40MV6do",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "유익균의 먹이 프리바이오틱스",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0027,
+      "C": 0.0004,
+      "reverse_E": 0.0216,
+      "health_claim_E": 0.3545
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_104_2DMM40MV6do",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "인체시험은 개인의 신체적 특성에 따라 결과가 달라질 수 있음",
+    "gold": "DISCLAIMER",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0025
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_104_2DMM40MV6do",
+    "claim_id": "c19",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "선택하라 프리바이오틱스 장건강 솔루션 플러스 제품은 하루 만에 장내 유해균을 99% 깨끗이 제거한다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.4772,
+      "health_claim_E": 0.9978
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_114_g7TzMEZKjaU",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강, 이제 맛있게 챙기자",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.9965
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_123_seN7xZFP5eE",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "셀로맥스 비타민D 5000IU 제품은 한 달 만에 골밀도를 30% 높이는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.1341,
+      "health_claim_E": 0.9746
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_123_seN7xZFP5eE",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "셀로맥스 비타민D 5000IU 제품은 일주일 만에 뼈의 강도를 두 배로 높여 준다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.0101,
+      "health_claim_E": 0.9466
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_126_1c3ZmUXrc8A",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "콜레스테롤 걱정에 SAY NO",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "수퍼바이오틱스 콜레스테롤은 배변활동 원활에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9309,
+      "C": 0.0009,
+      "reverse_E": null,
+      "health_claim_E": 0.0005
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_126_1c3ZmUXrc8A",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "콜레스테롤 기능성 유산균 나쁜 콜레스테롤 DOWN",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "유산균은 혈중 콜레스테롤 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0017,
+      "C": 0.0011,
+      "reverse_E": 0.9981,
+      "health_claim_E": 0.125
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_126_1c3ZmUXrc8A",
+    "claim_id": "c15",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "나의 건강 자신감",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0012,
+      "C": 0.0008,
+      "reverse_E": 0.0933,
+      "health_claim_E": 0.9937
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_127_kNWjguHhRs4",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "매일매일 건강한 습관",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0112,
+      "C": 0.0008,
+      "reverse_E": 0.0015,
+      "health_claim_E": 0.9923
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_135_0EkaCDWmB04",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "11종 기능성",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0003,
+      "reverse_E": null,
+      "health_claim_E": 0.0061
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_135_0EkaCDWmB04",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아이시안 루테인 지아잔틴 플러스 케어 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_135_0EkaCDWmB04",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아이시안 루테인 지아잔틴 플러스 케어 제품은 단 하루 만에 눈의 피로를 90%까지 확실히 줄인다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0009,
+      "reverse_E": 0.001,
+      "health_claim_E": 0.9941
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_138_PTmYGvz-n84",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "우리아이 성장기 올바른 키성장을 위한 선택",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "아이커는 어린이 키성장에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0066,
+      "C": 0.0004,
+      "reverse_E": 0.9979,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_138_PTmYGvz-n84",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "국내 최초 어린이 키성장 기능성 인정 원료사용",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "아이커는 어린이 키성장에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9841,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_138_PTmYGvz-n84",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "키성장과 영양밸런스를 동시에",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0014,
+      "C": 0.0005,
+      "reverse_E": 0.0031,
+      "health_claim_E": 0.0029
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_142_nUgOnoNbEfU",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈노화 눈영양제",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0004,
+      "C": 0.0012,
+      "reverse_E": 0.0006,
+      "health_claim_E": 0.0066
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_142_nUgOnoNbEfU",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "루테인으로 눈 노화를 늦추다",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0006,
+      "reverse_E": 0.0012,
+      "health_claim_E": 0.1802
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_142_nUgOnoNbEfU",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈노화 기본케어, 집중케어 지아잔틴 난중에는 늦습니다.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0004,
+      "C": 0.0047,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.0566
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_142_nUgOnoNbEfU",
+    "claim_id": "c29",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 노화 기본케어 루테인",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.4336
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_142_nUgOnoNbEfU",
+    "claim_id": "c30",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 노화 집중케어 루테인지아잔틴",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0005,
+      "reverse_E": 0.0013,
+      "health_claim_E": 0.9936
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_142_nUgOnoNbEfU",
+    "claim_id": "c33",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아이클리어 루테인지아잔틴 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0006,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.001
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_144_5ykRFN8-k8s",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 피로 & 눈 노화",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_LOW_CONFIDENCE",
+    "evidence_text": "아이클리어 루테인지아잔틴 아스타잔틴은 눈의 피로도 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0005,
+      "reverse_E": 0.9769,
+      "health_claim_E": 0.065
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_144_5ykRFN8-k8s",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 건강 핵심성분을 한번에! 더블케어",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0006,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.998
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 건강을 위한 새로운 선택",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.001,
+      "C": 0.0004,
+      "reverse_E": 0.0008,
+      "health_claim_E": 0.9966
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "눈 노화 루테인지아잔틴*",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0093,
+      "C": 0.0006,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.0006
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "*눈 노화, 눈 건조 개선에 도움을 줄 수 있음",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_LOW_CONFIDENCE",
+    "evidence_text": "아이클리어 올인원은 노화로 인해 감소될 수 있는 황반색소밀도를 유지하여 눈 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0005,
+      "reverse_E": 0.9914,
+      "health_claim_E": 0.9971
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION",
+      "CERTIFICATION"
+    ],
+    "text": "*눈 노화, 눈 건조 이중 기능성을 인정받은 루테인지아잔틴복합추출물 (2018-4호) 사용",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.7181,
+      "health_claim_E": 0.0029
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "한 캡슐로 아이클리어!",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.001,
+      "C": 0.0003,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "3중 토탈케어 눈 노화 & 눈 건조 & 눈 피로",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0018,
+      "C": 0.0006,
+      "reverse_E": 0.9968,
+      "health_claim_E": 0.9982
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_145_7m0KUQskVVA",
+    "claim_id": "c23",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아이클리어 올인원 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0007,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_146_Z8k8OLPv2Zw",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "면역력을 튼튼하게 아이클타임",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "아이클타임은 면역력 증진에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.5427,
+      "C": 0.0005,
+      "reverse_E": 0.9979,
+      "health_claim_E": 0.9979
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_146_Z8k8OLPv2Zw",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "큰 사람이 되고 싶은 우리 아이 엄마의 마음으로 키워주세요.",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0012,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_146_Z8k8OLPv2Zw",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "인체에 유용한 기능성을 가진 원료를 사용하여 제조·가공한 건강기능식품입니다",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0025,
+      "C": 0.0003,
+      "reverse_E": 0.0016,
+      "health_claim_E": 0.9976
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_146_Z8k8OLPv2Zw",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "우리아이 키성장 UP&PLUS",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_SAME_TOPIC",
+    "evidence_text": "아이클타임은 어린이 키성장에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.099,
+      "C": 0.0003,
+      "reverse_E": 0.9982,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_146_Z8k8OLPv2Zw",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아이클타임 제품은 성장호르몬 주사 대신 먹을 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "의약품 대체",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.0021,
+      "health_claim_E": 0.0124
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_146_Z8k8OLPv2Zw",
+    "claim_id": "c21",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "아이클타임 제품은 수유부도 먹을 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0906,
+      "reverse_E": null,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_160_qBFBNIBlB3Q",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "본 내용은 제품과 관련 없는 건강정보입니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0003,
+      "C": 0.0032,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.7232
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_160_qBFBNIBlB3Q",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "EFFECT"
+    ],
+    "text": "식약처에서 배뇨건강 기능성 인정",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0003,
+      "reverse_E": 0.0008,
+      "health_claim_E": 0.9971
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_160_qBFBNIBlB3Q",
+    "claim_id": "c27",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "100세까지 활기찬 일상을 위해",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0005,
+      "reverse_E": 0.0006,
+      "health_claim_E": 0.9603
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_160_qBFBNIBlB3Q",
+    "claim_id": "c28",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "방광이 건강해야 배뇨기능 개선이 가능합니다",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "안심뇨는 방광의 배뇨기능 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0017,
+      "C": 0.0004,
+      "reverse_E": 0.9978,
+      "health_claim_E": 0.9953
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_163_mIzLM0ZWBCU",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "1. 혈중 중성지질 및 혈행 개선에 도움을 줄 수 있음",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "MULTI_EFFECT",
+    "evidence_text": "애터미 비건 조류 알티지 오메가3은 혈중 중성지질 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.6649,
+      "C": 0.0004,
+      "reverse_E": 0.9987,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_164_Gl7-zKA-GwI",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "모두를 위한 건강한 습관",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0005,
+      "reverse_E": 0.002,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_164_Gl7-zKA-GwI",
+    "claim_id": "c17",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "하루 두 캡슐로 혈행 건강과 눈 건강 개선을 시작해 보세요.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0093,
+      "C": 0.0004,
+      "reverse_E": 0.0035,
+      "health_claim_E": 0.998
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_164_Gl7-zKA-GwI",
+    "claim_id": "c19",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "DHA 눈 건강 개선",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "DHA는 건조한 눈을 개선하여 눈 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9973,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9608
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_167_pLQ_w6U6lx8",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "오직 면역을 위해 헤모힘",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0909,
+      "C": 0.9965,
+      "reverse_E": 0.9679,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_167_pLQ_w6U6lx8",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "PERSON_CREDENTIAL"
+    ],
+    "text": "환자의 면역력을 탁월하게 높여주는 새로운 생약 복합제가 국내 연구진에 의해 개발됐습니다.",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "의약품 효능 증대",
+    "scores": {
+      "E": 0.997,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_167_pLQ_w6U6lx8",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "QUANTITY",
+      "EFFECT"
+    ],
+    "text": "국내 1호 면역기능 개별인정형 건강기능식품 ‘헤모힘’",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9913,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.997
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_167_pLQ_w6U6lx8",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "EFFECT"
+    ],
+    "text": "1997년 여름 조혈과 면역증진을 위한 새로운 식물 소재 복합조성물 만들기 위한 연구과제 국책 프로젝트로 선정",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0044,
+      "C": 0.0008,
+      "reverse_E": 0.9985,
+      "health_claim_E": 0.7933
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_167_pLQ_w6U6lx8",
+    "claim_id": "c33",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "항암 부작용 완화",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.0012,
+      "health_claim_E": 0.992
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_167_pLQ_w6U6lx8",
+    "claim_id": "c36",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "지친 면역을 깨우는 힘!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "애터미헤모힘은 면역기능 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0909,
+      "C": 0.0122,
+      "reverse_E": 0.9984,
+      "health_claim_E": 0.998
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_179_mnl8jo33nD4",
+    "claim_id": "c15",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "편안한 하루를 선물하세요",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.001,
+      "reverse_E": 0.002,
+      "health_claim_E": 0.0216
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_181_NIjAo7fh-Kg",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "과학에서 찾은 피부해답",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "에버콜라겐 인앤업 플러스는 피부 보습에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9983,
+      "C": 0.0011,
+      "reverse_E": null,
+      "health_claim_E": 0.0071
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_181_NIjAo7fh-Kg",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "EFFECT"
+    ],
+    "text": "셀렌 일명 방패미네랄",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": null,
+      "C": null,
+      "reverse_E": null,
+      "health_claim_E": 0.0014
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_181_NIjAo7fh-Kg",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "기능은 더 풍부",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0111,
+      "C": 0.001,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_181_NIjAo7fh-Kg",
+    "claim_id": "c22",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "내 피부를 위해 오직, 뉴트리에서 찾은",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0043,
+      "reverse_E": 0.001,
+      "health_claim_E": 0.0045
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_183_sofweMTrfjw",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "진짜 내 피부를 채우다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "에버콜라겐 타임은 피부 보습에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9979,
+      "C": 0.0009,
+      "reverse_E": null,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_183_sofweMTrfjw",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "과학이 찾은 피부해답",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "에버콜라겐 타임은 피부 보습에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9979,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0121
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_183_sofweMTrfjw",
+    "claim_id": "c19",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "SKIN BALANCE PLUS",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.1693,
+      "C": 0.0008,
+      "reverse_E": null,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_195_-RaTg6NEMZ0",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "여자의 건강은 두 번 만들어 진다 몸에서 한 번 마음에서 한 번",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0006,
+      "reverse_E": 0.0011,
+      "health_claim_E": 0.9957
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_195_-RaTg6NEMZ0",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "질과 장은 물론 스트레스로 인한 긴장 완화까지 멀티 케어",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "엘레나 테아닌은 스트레스로 인한 긴장완화에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0223,
+      "C": 0.0005,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.993
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_195_-RaTg6NEMZ0",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "프리미엄 질유산균",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": null,
+      "C": null,
+      "reverse_E": null,
+      "health_claim_E": 0.045
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_195_-RaTg6NEMZ0",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "Stress Relief Care",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0028,
+      "C": 0.0004,
+      "reverse_E": 0.2186,
+      "health_claim_E": 0.7968
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "눈 속의 눈 시력의 90%를 담당하는 ‘황반’",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0008,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "더 문제는 몸 안에선 생성이 안 돼 꼭 따로 섭취를 해줘야 한대요",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0007,
+      "reverse_E": null,
+      "health_claim_E": 0.002
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "백세까지 건강한 눈을 위해! 하루 한 알로 OK",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0006,
+      "reverse_E": 0.0021,
+      "health_claim_E": 0.9981
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "하루 한 알로 관리하세요!",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0033
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "하루하루 노화되는 눈 늦기 전에!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0004,
+      "C": 0.0012,
+      "reverse_E": 0.0013,
+      "health_claim_E": 0.8235
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "눈 건강 핵심성분 루테인 (마리골드꽃추출물)",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0005,
+      "reverse_E": 0.0006,
+      "health_claim_E": 0.9981
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c31",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "하루 한 알로 일석삼조",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c32",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 건강은 한번 잃으면 되돌리기 힘들어",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0006,
+      "reverse_E": 0.0008,
+      "health_claim_E": 0.9929
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c35",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈의 노화가 신경 쓰이는 분",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0006,
+      "reverse_E": 0.0008,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c37",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "나이 들어도 건강한 눈을 위해",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0764,
+      "C": 0.0004,
+      "reverse_E": 0.0016,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c52",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 건강에 적신호",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0005,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.0004
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_196_CHOw23s17GA",
+    "claim_id": "c55",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "연세 루테인 플러스 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0006,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_197_X0jCGgzhae0",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "EFFECT",
+      "QUANTITY",
+      "COMPOSITION"
+    ],
+    "text": "[공식판매처] 필리서치 옵티머스트 OPTI MSM 99.9% 관절연골 건강기능식품 90정",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "MSM은 관절 및 연골건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9936,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.9929
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_197_X0jCGgzhae0",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "JOINT SUPPORT",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "갱년기 고민 빨갛게 지우자",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "위슬로 루바브 레드밸런스는 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0507,
+      "C": 0.0006,
+      "reverse_E": 0.9977,
+      "health_claim_E": 0.0019
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "루바브로 빨갛게 지우자",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0004,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "당신의 갱년기가 잘 지나갈 수 있도록 루바브가 빨간 주문을 겁니다.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0154,
+      "health_claim_E": 0.9874
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "갱년기에 힘이 되는 루바브 뿌리 힘으로",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "루바브 뿌리는 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.008,
+      "C": 0.0005,
+      "reverse_E": 0.9777,
+      "health_claim_E": 0.0863
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "갱년기 고민 지우는 빨간 캡슐",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "위슬로 루바브 레드밸런스는 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0507,
+      "C": 0.0005,
+      "reverse_E": 0.9977,
+      "health_claim_E": 0.9205
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "갱년기 여성의 건강한 삶의 균형",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "위슬로 루바브 레드밸런스는 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0093,
+      "C": 0.001,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강의 밸런스를 지키다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "위슬로 루바브 레드밸런스는 갱년기 여성 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.2103,
+      "C": 0.0007,
+      "reverse_E": 0.0006,
+      "health_claim_E": 0.9986
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_199_fgMIEID1N30",
+    "claim_id": "c25",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "위슬로 루바브 레드밸런스 제품은 갱년기 호르몬 치료제를 대신할 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "의약품 대체",
+    "scores": {
+      "E": 0.0013,
+      "C": 0.0005,
+      "reverse_E": 0.9918,
+      "health_claim_E": 0.9493
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_201_YBn7emsawpQ",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "이제 복잡한 건강 루틴으로부터 자유로워질 시간이에요.",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0012,
+      "C": 0.0004,
+      "reverse_E": 0.0045,
+      "health_claim_E": 0.3033
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_201_YBn7emsawpQ",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "복잡한 건강 루틴으로부터 남자를 지켜줄게",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "질병 예방",
+    "scores": {
+      "E": 0.0013,
+      "C": 0.0004,
+      "reverse_E": 0.9726,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_202_oTg1JYJBG6I",
+    "claim_id": "c24",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "혈당 건강 위한 과학적인 배합",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "일양 혈당건강 면역건강은 식후 혈당상승 억제에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9926,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9981
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_202_oTg1JYJBG6I",
+    "claim_id": "c28",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "정상적인 면역기능 및 세포분열에 필요!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "MULTI_EFFECT",
+    "evidence_text": "아연은 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.008,
+      "C": 0.0003,
+      "reverse_E": 0.9985,
+      "health_claim_E": 0.9912
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_203_hBfs_yl13uQ",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "체지방 감소와 스트레스로 인한 긴장완화에 도움을 줄 수 있음.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "짜증날땐 먹어도 돼는 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0005,
+      "reverse_E": 0.9987,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_203_hBfs_yl13uQ",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "굶지 말고 먹으면서 빼자.",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "짜증날땐 먹어도 돼는 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9977,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.0035
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_204_73yGR-979W0",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절연골 및 근력 건강에 좋은",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "MULTI_EFFECT",
+    "evidence_text": "천관보 프리미엄은 관절 및 연골건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0028,
+      "C": 0.0003,
+      "reverse_E": 0.9985,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_204_73yGR-979W0",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "에너지 생성 및 대사 비타민B2",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "비타민B2는 체내 에너지 생성에 필요하다",
+    "scores": {
+      "E": 0.1316,
+      "C": 0.0003,
+      "reverse_E": 0.8002,
+      "health_claim_E": 0.036
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_204_73yGR-979W0",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "천관보 프리미엄 제품은 하루 만에 무릎 움직임 범위를 50% 넓혀 주는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0004,
+      "reverse_E": 0.1904,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_208_0drznbKPJgc",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "우리아이 건강친구",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0012,
+      "C": 0.0006,
+      "reverse_E": 0.0034,
+      "health_claim_E": 0.9971
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_208_0drznbKPJgc",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "매일 매일 건강하게",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "총총은 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.9719,
+      "C": 0.0017,
+      "reverse_E": null,
+      "health_claim_E": 0.9949
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_208_0drznbKPJgc",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "QUANTITY",
+      "EFFECT"
+    ],
+    "text": "하루 한포 건강습관",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "질병 예방",
+    "scores": {
+      "E": 0.0211,
+      "C": 0.0006,
+      "reverse_E": 0.0021,
+      "health_claim_E": 0.9957
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_208_0drznbKPJgc",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "COMPOSITION",
+      "EFFECT"
+    ],
+    "text": "아연 정상적인 면역기능에 필요 정상적인 세포분열에 필요",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "아연은 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.0164,
+      "C": 0.0022,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.1875
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_208_0drznbKPJgc",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "총총으로 우리 아이의 건강을 챙겨주세요!",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.002,
+      "C": 0.0006,
+      "reverse_E": 0.0034,
+      "health_claim_E": 0.9963
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_210_NKyAOi6Hrg8",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "근육건강 단백질",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0006,
+      "reverse_E": 0.0019,
+      "health_claim_E": 0.9664
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_210_NKyAOi6Hrg8",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION",
+      "QUANTITY"
+    ],
+    "text": "유당없이 속 편한 100% 식물성",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0013,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0015
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_211_L4KfNfwGB1s",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "원인은 무너진 스킨코어",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0004,
+      "C": 0.0012,
+      "reverse_E": null,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_211_L4KfNfwGB1s",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "흔들림 없는 스킨코어를 위한 세노비스 콜라겐 히알루론산 앰플샷",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0049,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.0007
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_211_L4KfNfwGB1s",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "자기 무게의 1000배의 수분을 끌어당기는 히알루론산",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0018,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_211_L4KfNfwGB1s",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "새로워진 과학적 포뮬라가 피부 속 코어를 탄탄하게 세우고 촉촉하게 채우다.",
+    "gold": "UNCLEAR",
+    "pred": "OVERCLAIM",
+    "reason_code": "STRONGER_THAN_RECOGNIZED",
+    "evidence_text": "콜라겐 히알루론산 앰플샷은 피부 보습에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0014,
+      "C": 0.0004,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.0017
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_211_L4KfNfwGB1s",
+    "claim_id": "c19",
+    "product_ref": "p01",
+    "claim_type": [
+      "CERTIFICATION",
+      "EFFECT"
+    ],
+    "text": "식약처 인정 이중 피부 기능성",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0014,
+      "C": 0.0004,
+      "reverse_E": 0.0015,
+      "health_claim_E": 0.01
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_212_qbQfBqPEqGQ",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "피로한 눈, 지친 눈, 활력없는 눈",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "토비콤 아이 포커스는 눈의 피로도 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0033,
+      "C": 0.0005,
+      "reverse_E": 0.9812,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_212_qbQfBqPEqGQ",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "눈에 좋은 비타민 A 아스타잔틴",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0064,
+      "C": 0.0007,
+      "reverse_E": 0.0006,
+      "health_claim_E": 0.9979
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_213_P8VZYBOsflM",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "에너지가 달라.",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "트루바이타민은 지방, 탄수화물, 단백질 대사와 에너지 생성에 필요하다",
+    "scores": {
+      "E": 0.9913,
+      "C": 0.001,
+      "reverse_E": null,
+      "health_claim_E": 0.0006
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_228_80wkuzl_Slk",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강한 활력을 위해",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0133,
+      "C": 0.0007,
+      "reverse_E": 0.0034,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_231_Gc0b5hpZldE",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY"
+    ],
+    "text": "우리 가족 하루 한 포면 충분해요.",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.002
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_231_Gc0b5hpZldE",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "하루한포 액상 칼마 디데이 칼슘 마그네슘 제품은 일주일 만에 뼈의 강도를 두 배로 높여 준다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": 0.0232,
+      "health_claim_E": 0.3146
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_240_1je805Mt6e8",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "생기 있는 하루를 위한 바디에너징",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0016,
+      "C": 0.0004,
+      "reverse_E": 0.0013,
+      "health_claim_E": 0.986
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_240_1je805Mt6e8",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "홍삼의 생기가 젤리에 쏙",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.3754,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.002
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_240_1je805Mt6e8",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "여자들의 바디에너징",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": 0.0009,
+      "health_claim_E": 0.9958
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_240_1je805Mt6e8",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "화애락 이너제틱 제품은 하루 만에 장내 유해균을 99% 깨끗이 제거한다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": 0.8332,
+      "health_claim_E": 0.9444
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_241_h39aPD9onHk",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "QUANTITY",
+      "CERTIFICATION"
+    ],
+    "text": "식약처 인정 6가지 기능성",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0024,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.068
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_241_h39aPD9onHk",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "갱년기개선",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "홍삼은 갱년기 여성의 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.6348,
+      "C": 0.0004,
+      "reverse_E": 0.988,
+      "health_claim_E": 0.9972
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_241_h39aPD9onHk",
+    "claim_id": "c09",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "화애락 터닝미 케어",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0124,
+      "C": 0.0003,
+      "reverse_E": 0.0022,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_248_OzOYRNQo40Q",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "안 좋은 생활 습관 그만. 프로메가로 혈행 건강 챙기세요.",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "프로메가 식물성 알티지 오메가3 듀얼은 혈행 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.3053,
+      "C": 0.0003,
+      "reverse_E": 0.9982,
+      "health_claim_E": 0.9969
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_248_OzOYRNQo40Q",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "혈행어사 출두요!",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "프로메가 식물성 알티지 오메가3 듀얼은 혈행 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0021,
+      "C": 0.0004,
+      "reverse_E": 0.9983,
+      "health_claim_E": 0.9358
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_269_krmlXPXA0Hs",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "모든 문제는 장에서 비롯된다 - 히포크라테스 (B.C. 460년경~B.C. 370년경)",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0009,
+      "reverse_E": 0.0011,
+      "health_claim_E": 0.001
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_269_krmlXPXA0Hs",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "내 몸에 핏 락토핏",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "락토핏 골드는 장 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0098,
+      "C": 0.0007,
+      "reverse_E": 0.9952,
+      "health_claim_E": 0.9876
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_286_MLpfJQOIv0Y",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "나에게 꼭 맞는 프로바이오틱스 락토핏",
+    "gold": "SUPPORTED",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.011,
+      "reverse_E": null,
+      "health_claim_E": 0.0014
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_286_MLpfJQOIv0Y",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "장건강엔 락토핏",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "생유산균골드는 장건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.2718,
+      "C": null,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.9986
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_302_cWlIJW4kIg4",
+    "claim_id": "c08",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 건강까지 다",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "프로메가 알티지 오메가3 듀얼은 건조한 눈을 개선하여 눈 건강에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.1448,
+      "C": 0.0007,
+      "reverse_E": 0.0012,
+      "health_claim_E": 0.998
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_302_cWlIJW4kIg4",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "건강 다다다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "프로메가 알티지 오메가3 듀얼은 혈행 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9706,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9942
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_321_UYK0Glxte04",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "내 관절을 활기차게",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0006,
+      "reverse_E": 0.0384,
+      "health_claim_E": 0.9975
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_321_UYK0Glxte04",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "관절이 원하면 이루어진다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0019,
+      "C": 0.0008,
+      "reverse_E": 0.001,
+      "health_claim_E": 0.0009
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_340_HU-3Hj26KpA",
+    "claim_id": "c12",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "PERSON_CREDENTIAL"
+    ],
+    "text": "여러분들도 뉴트리원, 그리고 저 이병헌과 함께 웰니스 라이프를 시작해보시길 바랍니다",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0006,
+      "reverse_E": 0.0015,
+      "health_claim_E": 0.9463
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_340_HU-3Hj26KpA",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "올인원 종합비타민 이뮨샷 제품은 3일 만에 면역세포 활성도를 세 배로 높이는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": 0.0011,
+      "health_claim_E": 0.9969
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_352_CcFF2Di8tmo",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "장 건강, 뼈 건강, 정상적인 면역기능을 한 번에!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "듀오락 얌얌 플러스는 정상적인 면역기능에 필요하다",
+    "scores": {
+      "E": 0.0022,
+      "C": 0.0004,
+      "reverse_E": 0.9584,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_352_CcFF2Di8tmo",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "이런 어린이에게 추천해요! 황금색 변을 보고 싶은 어린이",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0012
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_352_CcFF2Di8tmo",
+    "claim_id": "c14",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "튼튼한 골격 형성이 필요한 어린이",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "듀오락 얌얌 플러스는 뼈의 형성과 유지에 필요하다",
+    "scores": {
+      "E": 0.0049,
+      "C": 0.0004,
+      "reverse_E": 0.9982,
+      "health_claim_E": 0.9946
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_352_CcFF2Di8tmo",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "소중한 우리아이 장 건강 듀오락 얌얌 플러스로 챙기세요!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "듀오락 얌얌 플러스는 배변활동 원활에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0156,
+      "C": 0.0004,
+      "reverse_E": 0.9828,
+      "health_claim_E": 0.9821
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_369_QqSgAP8YFbY",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "찾았다 내 피부를 위한 콜라겐",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "LOW_CONFIDENCE",
+    "evidence_text": "콜라겐은 피부 보습에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.6193,
+      "C": 0.0004,
+      "reverse_E": 0.0024,
+      "health_claim_E": 0.0019
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_369_QqSgAP8YFbY",
+    "claim_id": "c10",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "디어퀸 콜라겐 스틱 제품은 단 3일 만에 얼굴 잔주름을 절반으로 확실히 줄인다.",
+    "gold": "OVERCLAIM",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.001
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_372_03XarAyVtII",
+    "claim_id": "c06",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "자연으로부터 받은 건강, 프롬바이오",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0005,
+      "reverse_E": 0.0008,
+      "health_claim_E": 0.9981
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_405_9o2PblzU7zA",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "안심하세요. 안국 루테인이 지켜주니까",
+    "gold": "UNCLEAR",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.001,
+      "C": 0.0009,
+      "reverse_E": null,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_405_9o2PblzU7zA",
+    "claim_id": "c07",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "눈 건강이 걱정된다면 안국 눈에 좋은 루테인 플러스",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0047,
+      "C": 0.0004,
+      "reverse_E": 0.0007,
+      "health_claim_E": 0.0276
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_405_9o2PblzU7zA",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "안국 눈에 좋은 루테인 플러스 제품은 일주일 만에 시력을 0.3 높여 주는 효과가 확실하다.",
+    "gold": "OVERCLAIM",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0005,
+      "reverse_E": 0.0005,
+      "health_claim_E": 0.0008
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_409_NX_s-sRNr2E",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "피부에 남는 선물",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0004,
+      "reverse_E": 0.0015,
+      "health_claim_E": 0.0011
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_433_UKR3tvDLDTI",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "국내 최초 다이어트 유산균 BNR17",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "다이어트 유산균 비에날씬은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9966,
+      "C": 0.0005,
+      "reverse_E": null,
+      "health_claim_E": 0.0045
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_433_UKR3tvDLDTI",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "국내 최초 식약처 인정 체지방 감소 유산균, BNR17",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "BNR17은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.9949,
+      "C": 0.0004,
+      "reverse_E": null,
+      "health_claim_E": 0.9465
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_433_UKR3tvDLDTI",
+    "claim_id": "c05",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "체지방 감소와 장건강을 한번에!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "다이어트 유산균 비에날씬은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0067,
+      "C": 0.0004,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.9986
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_433_UKR3tvDLDTI",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "※적절한 운동, 식이조절과 함께 섭취하세요",
+    "gold": "DISCLAIMER",
+    "pred": "OUT_OF_SCOPE",
+    "reason_code": "NOT_HEALTH_CLAIM",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0008,
+      "C": 0.0006,
+      "reverse_E": null,
+      "health_claim_E": 0.017
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_433_UKR3tvDLDTI",
+    "claim_id": "c18",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "다이어트 유산균 비에날씬 제품은 비만 치료제를 대신할 수 있다.",
+    "gold": "VIOLATION",
+    "pred": "UNCLEAR",
+    "reason_code": "DISEASE_DRUG_UNCERTAIN",
+    "evidence_text": "의약품 대체",
+    "scores": {
+      "E": 0.001,
+      "C": 0.0004,
+      "reverse_E": 0.9895,
+      "health_claim_E": 0.9724
+    },
+    "synthetic_guess": true
+  },
+  {
+    "video_id": "db_442_XM-Hh0iD20g",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "다이어트만 알던 삶에서 비에날씬이 있는 삶으로",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0014,
+      "C": 0.0006,
+      "reverse_E": 0.0018,
+      "health_claim_E": 0.0014
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_442_XM-Hh0iD20g",
+    "claim_id": "c02",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "지속 가능한 다이어트 문화 이미, 일상",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0007,
+      "C": 0.0031,
+      "reverse_E": 0.0068,
+      "health_claim_E": 0.0062
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_442_XM-Hh0iD20g",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "BNR17® 다이어트 유산균 비에날씬",
+    "gold": "UNCLEAR",
+    "pred": "SUPPORTED",
+    "reason_code": "FUNCTION",
+    "evidence_text": "다이어트 유산균 비에날씬 프로틴은 효소, 호르몬, 항체의 구성에 필요하다",
+    "scores": {
+      "E": 0.9986,
+      "C": 0.013,
+      "reverse_E": null,
+      "health_claim_E": 0.1246
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_442_XM-Hh0iD20g",
+    "claim_id": "c13",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "적절한 운동, 식이조절과 함께 섭취하세요",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0009,
+      "C": 0.0005,
+      "reverse_E": 0.0243,
+      "health_claim_E": 0.3001
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_464_Lum90Oum2y8",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "힘내고 싶은 모든 순간 정관장 에브리타임",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0797,
+      "C": 0.0013,
+      "reverse_E": 0.0039,
+      "health_claim_E": 0.0013
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_501_VlYQV13qc4E",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "장 건강도 피부면역도",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0022,
+      "C": 0.0004,
+      "reverse_E": 0.0067,
+      "health_claim_E": 0.9983
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c01",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "PERSON_CREDENTIAL"
+    ],
+    "text": "서현의 빨간맛 다이어트!",
+    "gold": "OUT_OF_SCOPE",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0005,
+      "C": 0.0006,
+      "reverse_E": 0.071,
+      "health_claim_E": 0.1219
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c03",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "COMPOSITION"
+    ],
+    "text": "체지방 감소 + 혈행개선 원료 첨가!",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 혈행 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0532,
+      "C": 0.0005,
+      "reverse_E": 0.9986,
+      "health_claim_E": 0.9986
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c04",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT",
+      "CERTIFICATION"
+    ],
+    "text": "체지방 감소를 도와줄 수 있는 건강기능식품",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "SAME_TOPIC",
+    "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 체지방 감소에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.002,
+      "C": 0.0005,
+      "reverse_E": 0.9987,
+      "health_claim_E": 0.9987
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c11",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "체지방 감소 기억력 개선·혈행 개선 배변활동 원활에 도움을 줄 수 있음",
+    "gold": "SUPPORTED",
+    "pred": "UNCLEAR",
+    "reason_code": "PART_SAME_TOPIC",
+    "evidence_text": "콜레올로지 티 하비탈출(Hobby Escape)은 기억력 개선에 도움을 줄 수 있다",
+    "scores": {
+      "E": 0.0257,
+      "C": 0.0004,
+      "reverse_E": 0.9987,
+      "health_claim_E": 0.9987
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c16",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "* 적절한 운동과 식이조절을 함께 병행하면 더욱 효과적입니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0011,
+      "C": 0.0004,
+      "reverse_E": 0.6337,
+      "health_claim_E": 0.9984
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c18",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "* 동일한 기능성을 가진 건강기능식품을 과량 섭취하거나 하루에 여러가지의 다이어트 건강기능식품을 섭취하는 것은 주의해야 합니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.0006,
+      "C": 0.0004,
+      "reverse_E": 0.0012,
+      "health_claim_E": 0.4942
+    },
+    "synthetic_guess": false
+  },
+  {
+    "video_id": "db_504_-Mkbm1V_NQc",
+    "claim_id": "c20",
+    "product_ref": "p01",
+    "claim_type": [
+      "EFFECT"
+    ],
+    "text": "* 적절한 운동과 식이조절을 함께 병행하면 더욱 좋습니다.",
+    "gold": "DISCLAIMER",
+    "pred": "UNCLEAR",
+    "reason_code": "NO_MATCHING_EVIDENCE",
+    "evidence_text": null,
+    "scores": {
+      "E": 0.001,
+      "C": 0.0004,
+      "reverse_E": 0.3192,
+      "health_claim_E": 0.9985
+    },
+    "synthetic_guess": false
+  }
+]
