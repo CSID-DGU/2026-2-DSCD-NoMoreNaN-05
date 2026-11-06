@@ -143,3 +143,15 @@ def test_output_keeps_only_product_summary():
     result = judge_video(_video([]))
     assert result["products"] == [{"product_ref": "p01", "product_name": "제품",
                                    "manufacturing_report_number": "123", "match_status": "confirmed"}]
+
+
+@pytest.mark.parametrize("status", ["not_found", "unresolved"])
+def test_disclaimer_and_etc_are_judged_without_confirmed_product(status):
+    text = "본 제품은 질병의 예방 및 치료를 위한 의약품이 아닙니다"
+    claims = [_claim("c01", text=text), _claim("c02", ref=None, text=text), _claim("c03", claim_type=["ETC"]),
+              _claim("c04", ref=None, claim_type=["ETC"]), _claim("c05", claim_type="QUANTITY")]
+    result = judge_video(_video(claims, status=status), {"QUANTITY": _found(SUPPORTED)})
+    assert [(c["claim_id"], c["label"]) for c in result["claims"]] == [
+        ("c01", "DISCLAIMER"), ("c02", "DISCLAIMER"), ("c03", OUT_OF_SCOPE), ("c04", OUT_OF_SCOPE)]
+    assert [s["claim_id"] for s in result["skipped"]] == ["c05"]
+    assert result["for_b"] == []
