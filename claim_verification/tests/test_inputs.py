@@ -1,68 +1,82 @@
+import copy
+import json
 from pathlib import Path
 
 import pytest
 
-from claim_verification.inputs import HandoffError, load_handoff, validate_video
+from claim_verification.inputs import InputError, validate_video, validate_videos
 
-# NEM 견본을 1차 형식으로 옮긴 것. 로컬에만 있다.
-SAMPLE = Path(__file__).resolve().parents[2] / "data/fixtures/handoff_v1_ad_001.json"
-
-EVI = {"product_id": 6411, "product_name": "관절연골엔 난각막NEM",
-       "main_functionality": "관절 및 연골 건강에 도움을 줄 수 있음"}
+# 평가 입력. 로컬에만 있다.
+EVAL_INPUT = Path(__file__).resolve().parents[2] / "data/eval/claims_with_db_1554/claims_with_db_test.json"
 
 
-def video(status="confirmed", evi=EVI, **claim_overrides):
-    claim = {"claim_id": "c01", "text": "건강기능식품"}
+def video(status="confirmed", db=None, **claim_overrides):
+    claim = {"claim_id": "c01", "product_ref": "p01", "text": "건강기능식품", "claim_type": ["CERTIFICATION"]}
     claim.update(claim_overrides)
-    return {"video_id": "v1", "db_version": "2026-09-20T09:51:18Z",
-            "product": {"match": {"status": status, "method": None, "note": None},
-                        "evi_product": evi},
-            "claims": [claim]}
+    product = {"product_ref": "p01", "product_name": "제품", "match": {"status": status},
+               "DB": {"CERTIFICATION": {}} if db is None else db}
+    return {"video_id": "v1", "url": None, "db_version": "x", "products": [product], "claims": [claim]}
 
 
 def test_valid_video_passes():
     validate_video(video())
-
-
-@pytest.mark.parametrize("status", ["confirmed", "unresolved"])
-def test_found_product_needs_main_functionality(status):
-    with pytest.raises(HandoffError, match=r"evi_product: 필드 없음 \['main_functionality'\]"):
-        validate_video(video(status=status, evi={"product_id": 6411}))
-
-
-def test_found_product_needs_evi_product():
-    with pytest.raises(HandoffError, match="unresolved인데 evi_product가 없음"):
-        validate_video(video(status="unresolved", evi=None))
-
-
-def test_not_found_has_no_evi_product():
-    validate_video(video(status="not_found", evi=None))
-    with pytest.raises(HandoffError, match="not_found인데 evi_product가 있음"):
-        validate_video(video(status="not_found"))
+    validate_video(video(claim_type="EFFECT"))
+    validate_video(video(product_ref=None))
 
 
 def test_unknown_match_status():
-    with pytest.raises(HandoffError, match="알 수 없는 status 'unresolved_manufacturer_conflict'"):
-        validate_video(video(status="unresolved_manufacturer_conflict"))
+    with pytest.raises(InputError, match="알 수 없는 status 'matched'"):
+        validate_video(video(status="matched"))
+
+
+def test_confirmed_needs_db():
+    with pytest.raises(InputError, match="v1/p01: confirmed인데 DB가 없음"):
+        validate_video(video(db=False))
+
+
+@pytest.mark.parametrize("status", ["unresolved", "not_found"])
+def test_unconfirmed_may_have_no_db(status):
+    data = video(status=status)
+    data["products"][0]["DB"] = None
+    validate_video(data)
 
 
 def test_missing_claim_field_names_location():
     data = video()
-    del data["claims"][0]["text"]
-    with pytest.raises(HandoffError, match="v1/c01"):
+    del data["claims"][0]["claim_type"]
+    with pytest.raises(InputError, match=r"v1/c01: 필드 없음 \['claim_type'\]"):
         validate_video(data)
 
 
-def test_db_version_not_required():
+@pytest.mark.parametrize("claim_type", [None, 3, ["EFFECT", 1]])
+def test_claim_type_must_be_text(claim_type):
+    with pytest.raises(InputError, match="claim_type"):
+        validate_video(video(claim_type=claim_type))
+
+
+def test_claim_ref_must_be_in_video():
+    with pytest.raises(InputError, match="영상에 없는 product_ref 'p09'"):
+        validate_video(video(product_ref="p09"))
+
+
+def test_duplicates_are_rejected():
     data = video()
-    del data["db_version"]
-    validate_video(data)
+    data["claims"].append(dict(data["claims"][0]))
+    with pytest.raises(InputError, match="claim_id 중복"):
+        validate_video(data)
+    data = video()
+    data["products"].append(dict(data["products"][0]))
+    with pytest.raises(InputError, match="product_ref 중복"):
+        validate_video(data)
+    with pytest.raises(InputError, match="video_id 중복"):
+        validate_videos([video(), copy.deepcopy(video())])
 
 
-@pytest.mark.skipif(not SAMPLE.exists(), reason="로컬 fixture 없음")
-def test_sample_matches_format():
-    v = load_handoff(SAMPLE)
-    assert v["video_id"] == "ad_001"
-    assert v["product"]["match"]["status"] == "unresolved"
-    assert "골다공증" in v["product"]["evi_product"]["main_functionality"]
-    assert len(v["claims"]) == 23
+def test_videos_must_be_list():
+    with pytest.raises(InputError, match="영상 목록"):
+        validate_videos(video())
+
+
+@pytest.mark.skipif(not EVAL_INPUT.exists(), reason="로컬 평가 입력 없음")
+def test_eval_input_matches_format():
+    validate_videos(json.loads(EVAL_INPUT.read_text(encoding="utf-8")))
