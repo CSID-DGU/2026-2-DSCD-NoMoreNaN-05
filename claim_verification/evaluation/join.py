@@ -30,7 +30,7 @@ def gold_index(videos: list[dict]) -> dict[tuple, dict]:
 
 
 def join(results: list[dict], gold_videos: list[dict]) -> list[dict]:
-    """최종 결과 순서대로 [{video_id, product_ref, claim_id, claim_type, text, gold, pred, decided_by, A, B}]."""
+    """최종 결과 순서대로 [{video_id, product_ref, claim_id, claim_type, text, gold, pred, decided_by, A, B, skipped_reason}]."""
     gold = gold_index(gold_videos)
     rows, seen = [], set()
     for r in results:
@@ -42,7 +42,8 @@ def join(results: list[dict], gold_videos: list[dict]) -> list[dict]:
             raise JoinError(f"정답에 없는 클레임: {k}")
         rows.append({"video_id": r["video_id"], "product_ref": r.get("product_ref"), "claim_id": r["claim_id"],
                      "claim_type": r.get("claim_type"), "text": r.get("text"), "gold": gold[k][GOLD],
-                     "pred": r["final_label"], "decided_by": r.get("decided_by", []), "A": r.get("A"), "B": r.get("B")})
+                     "pred": r["final_label"], "decided_by": r.get("decided_by", []), "A": r.get("A"), "B": r.get("B"),
+                     "skipped_reason": r.get("skipped_reason")})
     missing = sorted(set(gold) - seen, key=str)
     if missing:
         raise JoinError(f"최종 결과에 없는 클레임 {len(missing)}건: {missing[:5]}")

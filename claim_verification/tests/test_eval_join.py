@@ -36,3 +36,8 @@ def test_duplicates_and_missing_label_are_errors():
     del gold[0]["claims"][0]["gold_label"]
     with pytest.raises(JoinError, match="정답 라벨 없음"):
         join([_result("c01", "SUPPORTED")], gold)
+
+
+def test_join_keeps_skipped_reason():
+    result = {**_result("c01", "UNCLEAR"), "A": None, "B": None, "skipped_reason": "PRODUCT_NOT_FOUND"}
+    assert join([result], _gold(("c01", "UNCLEAR")))[0]["skipped_reason"] == "PRODUCT_NOT_FOUND"
