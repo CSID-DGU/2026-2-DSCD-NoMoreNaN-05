@@ -1,6 +1,6 @@
 """QUANTITY 판정. 세부 분류 → 같은 기준의 근거와 대조.
 
-    SALES·STUDY          가격·순위·판매, 시험 조건은 제품 근거로 검증하지 않는다(OUT_OF_SCOPE).
+    SALES·STUDY          가격·순위·판매 조건(환불·배송 등), 시험 조건, 특허·수상 등 회사 활동은 제품 근거로 검증하지 않는다(OUT_OF_SCOPE).
     PACKAGE              포장 규격은 제품 사실이지만 근거가 없다(UNCLEAR).
     RANGE                "10~20mg/일"은 제품 함량이 아니라 기준 범위다(UNCLEAR).
     PERCENT              "철 3 mg(25 %)"은 별표 5로 검산, "판토텐산 544%"는 표시량으로 확인한다.
@@ -56,9 +56,12 @@ HERITAGE_NOT_MANUFACTURER = "HERITAGE_NOT_MANUFACTURER"
 COUNT_NOT_VERIFIED = "COUNT_NOT_VERIFIED"
 FOOTNOTE = "FOOTNOTE"
 QUANTITY_UNCLASSIFIED = "QUANTITY_UNCLASSIFIED"
+NOT_PRODUCT_CLAIM = "NOT_PRODUCT_CLAIM"
 
 _SALES = re.compile(r"\d\s*(?:만\s*)?원|할인|특가|쿠폰|적립|가격|인하|증정|무료|\d\s*위\b|\d\s*등\b|no\.?\s*1\b|top\s*\d|순위|"
-                    r"리뷰|후기|평점|별점|구매|구입|판매|누적|출고|재구매|수량|소진|매출", re.IGNORECASE)
+                    r"리뷰|후기|평점|별점|구매|구입|판매|누적|출고|재구매|수량|소진|매출|환불|반품|교환|배송\s*(?:기간|비|료)|택배비|수출", re.IGNORECASE)
+# 수량이 아니라 회사 활동을 말하는 문장. 특허·수상은 정답 기준표에서 OUT_OF_SCOPE다.
+_NOT_PRODUCT = re.compile(r"특허|수상|어워드|award|선정|mou|협약|후원", re.IGNORECASE)
 _STUDY = re.compile(r"시험|임상|섭취군|대조군|섭취\s*그룹|이중맹검|대상자|인원\s*:|\d\s*명\b|투여|/\s*day|mg\s*/\s*kg|p\s*<|논문|연구\s*결과|"
                     r"(?:증가|감소|개선|향상)\s*(?:확인|효과)|\d\s*배\s*증가", re.IGNORECASE)
 _STUDY_BASIS = re.compile(r"시험|섭취군|대조군|연구")
@@ -66,7 +69,8 @@ _PACKAGE = re.compile(r"\d\s*(?:정|캡슐|포|병|알|개|ml|mg|g)?\s*[xX×*]\s
                       r"^\s*총\s*\d", re.IGNORECASE)
 _PACKAGE_BASIS = re.compile(r"포장|내용량|총량")
 _DAILY_LABEL = re.compile(r"(?:1\s*일|하루)\s*섭취\s*(?:권장)?량(?:은)?\s*[:：]?\s*\d")
-_FOOTNOTE = re.compile(r"수치는.*비율")
+# "*2018년 3월 기준" 같은 각주와 "%영양성분 기준치: …비율" 설명. 비율 값이 뒤에 붙으면 각주가 아니다.
+_FOOTNOTE = re.compile(r"수치는.*비율|기준치.*비율\W*$|^\W*\*.*기준\s*$")
 # 제품 함량과 같아도 "식약처 고시 최소 기준", "최고함량" 자체가 맞다는 뜻은 아니다.
 _REFERENCE = re.compile(r"고시|최소\s*기준|최대\s*함량|최고\s*함량|기능성\s*인정")
 _COMPARISON = re.compile(r"\d\s*배|함량\s*대비|제품\s*대비")
@@ -113,7 +117,9 @@ def check_quantity(claim: dict, product: dict) -> list[Check]:
     basis = normalize_text(claim.get("intake_basis"))
     db = product["DB"]["QUANTITY"]
     if _SALES.search(text):
-        return [Check(OUT_OF_SCOPE, SALES_OR_RANK, "가격·판매·순위 주장은 제품 근거로 검증하지 않음")]
+        return [Check(OUT_OF_SCOPE, SALES_OR_RANK, "가격·판매 조건·순위 주장은 제품 근거로 검증하지 않음")]
+    if _NOT_PRODUCT.search(text):
+        return [Check(OUT_OF_SCOPE, NOT_PRODUCT_CLAIM, "특허·수상·협약 등 회사 활동은 제품 근거로 검증하지 않음")]
     if _STUDY.search(text) or _STUDY_BASIS.search(basis):
         return [Check(OUT_OF_SCOPE, STUDY_CONDITION, "시험 조건·결과는 제품 근거로 검증하지 않음")]
     if _SHELF.search(text):

@@ -165,3 +165,24 @@ def test_mixture_hides_non_nutrient_but_not_vitamin():
     prod = product(INDIV_RAWMTRL_NM="유산균혼합분말")
     assert codes(run("콜라겐", ["콜라겐"], prod)) == [(UNCLEAR, "CONSTITUENT_POSSIBLE")]
     assert codes(run("아연", ["아연"], prod)) == [(VIOLATION, "INGREDIENT_ABSENT")]
+
+
+@pytest.mark.parametrize("text,ingredients,code", [
+    ("스위스산 비타민D 원료", ["비타민D"], "RAW_SOURCE"),
+    ("루바브뿌리추출물(독일산)", ["루바브뿌리추출물"], "RAW_SOURCE"),
+    ("6년근 홍삼", ["홍삼"], "RAW_SOURCE"),
+    ("장용성 rTG 알티지 오메가3", ["오메가3"], "BRAND_OR_MODIFIER"),
+])
+def test_found_ingredient_with_origin_or_modifier_is_unclear(text, ingredients, code):
+    checks = _origin_check(text, ingredients)
+    assert (UNCLEAR, code) in [(c.status, c.code) for c in checks]
+
+
+@pytest.mark.parametrize("text", ["엽산 함유", "판토텐산 함유", "비타민D 일명 햇살비타민"])
+def test_acid_names_and_nicknames_are_not_origin(text):
+    assert all(c.code not in ("RAW_SOURCE", "BRAND_OR_MODIFIER") for c in _origin_check(text, []))
+
+
+def _origin_check(text, ingredients):
+    raw = "비타민 D, 루바브뿌리추출물, 홍삼, 오메가3, 엽산, 판토텐산"
+    return run(text, ingredients or ["비타민D"], product(RAWMTRL_NM=raw))

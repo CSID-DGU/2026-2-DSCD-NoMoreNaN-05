@@ -7,7 +7,7 @@
     식약처 기능성 인정     MAIN_FNCTN에 있으면 SUPPORTED, 없으면 VIOLATION
     기능성 원료 X          RAWMTRL_STD_INFO에 있으면 SUPPORTED, 없으면 VIOLATION
     국내 최초·유일         식약처 제품 정보로 증명할 수 없어 UNCLEAR
-    특허·해외 인증·출처·심의번호·판매 실적   OUT_OF_SCOPE
+    특허·해외 인증·수상·출처·논문·심의번호·판매 실적·통신판매업 신고   OUT_OF_SCOPE
 
 RAWMTRL_CLASS_INFO의 개별인정 분류는 인정번호와 어긋나는 제품이 많아 SUPPORTED의 근거로 쓰지 않는다.
 다만 분류가 있으면 번호가 없어도 틀렸다고 단정하지 않는다("관절팔팔"은 번호 없이 개별인정으로 분류된다).
@@ -46,12 +46,20 @@ _HFF_LABEL = re.compile(
     r"건강기능\s*식품\s*(?:전품목\s*)?(?:광고)?\s*(?:입니다)?\W*"
     r"(?:광고심의필.*|MAT-KR.*|식품의약품안전처\W*)?", re.IGNORECASE | re.DOTALL)
 _SOURCE = re.compile(r"출처|journal|et al|randomized|double blind|study|인체\s*적용\s*시험|시험\s*(?:조건|기관|방법|결과)|이중맹검|"
-                     r"보고서|실태\s*조사|소비자\s*조사|생산\s*실적|판매\s*실적|심의|mat-kr|-pm-kr|논문|vol\.?\s*\d", re.IGNORECASE)
-# 날짜 각주. "국내최초 ... *2022년 8월 기준"은 최초 주장이 본문이라 여기에 넣지 않는다.
-_DATE_NOTE = re.compile(r"\d{4}\s*년.*기준\s*$")
-_SALES = re.compile(r"\d\s*위\b|\d\s*등\b|구매율|구매량|구매액|판매량|판매처|점유|database", re.IGNORECASE)
+                     r"보고서|실태\s*조사|소비자\s*조사|생산\s*실적|판매\s*실적|심의|mat-kr|-pm-kr|논문|vol\.?\s*\d|"
+                     r"대조군|불검출|검사\s*(?:통과|완료)|통신\s*판매업|국책|연구\s*과제|공동\s*연구|중에서\s*$", re.IGNORECASE)
+# 날짜·범위 각주. "국내최초 ... *2022년 8월 기준"은 최초 주장이 본문이라 여기에 넣지 않는다.
+# "*식약처 고시 기준"은 고시 기준 주장이라 각주로 보지 않는다.
+_DATE_NOTE = re.compile(r"\d{4}\s*[년.].*기준\s*$")
+# "**기존 제품 라인업 기준" 같은 별표 각주. 인정번호 등 다른 인증 내용이 없을 때만 각주로 본다.
+_STAR_NOTE = re.compile(r"^\W*\*.*기준\s*$")
+_NOTICE = re.compile(r"고시")
+_SALES = re.compile(r"\d\s*위\b|\d\s*등\b|구매율|구매량|구매액|판매량|판매처|점유|database|랭킹|매출|상품평|후기|리뷰", re.IGNORECASE)
 _OTHER = re.compile(r"특허|patent|haccp|해썹|fda|\bndi\b|\biso\b|ifos|gras|\bnsf\b|\busp\b|vegan|비건|브이라벨|v-label|non\s*-?gmo|유기농|"
-                    r"할랄|orivo|iffo|goed|ccm|신기술|institute|어워드|수상|일류상품|국제\s*인증", re.IGNORECASE)
+                    r"할랄|orivo|iffo|goed|ccm|신기술|institute|어워드|award|수상|선정|일류상품|국제\s*인증|fsc|quali-?d", re.IGNORECASE)
+# 식약처가 아닌 곳의 인증 획득. "기능성 인증 취득"은 식약처 인정을 말하므로 넣지 않는다.
+_PRIVATE_CERT = re.compile(r"인증\s*(?:획득|취득)")
+_DOMESTIC = re.compile(r"식약|식품의약품안전|기능성|건강기능")
 _GMP = re.compile(r"(?<![A-Za-z])gmp(?![A-Za-z])|우수건강기능식품제조기준", re.IGNORECASE)
 _NUMBER = re.compile(r"(?<!\d)(\d{4})\s*-\s*(\d{1,3})\s*호")
 # "인정번호 제2006-17"처럼 호가 빠져도 "제"나 "인정번호"가 앞에 있으면 번호다.
@@ -90,7 +98,7 @@ def check_certification(claim: dict, product: dict) -> list[Check]:
         return [Check(OUT_OF_SCOPE, SOURCE_OR_REVIEW, "출처·시험·심의 안내는 제품 근거로 검증하지 않음")]
     if _SALES.search(text):
         return [Check(OUT_OF_SCOPE, SALES_OR_RANK, "순위·판매 주장은 제품 근거로 검증하지 않음")]
-    if _OTHER.search(text):
+    if _OTHER.search(text) or (_PRIVATE_CERT.search(text) and not _DOMESTIC.search(text)):
         return [Check(OUT_OF_SCOPE, OTHER_CERTIFICATION, "특허·해외 인증 등은 식약처 제품 정보로 검증할 수 없음")]
     if _GMP.search(text):
         return [_gmp(text, db)]
@@ -109,6 +117,8 @@ def check_certification(claim: dict, product: dict) -> list[Check]:
         checks.extend(_first_claim_parts(claim, text, db, checks))
     if not checks and _HFF_SENTENCE.search(text):
         return [_hff(text, db)]
+    if not checks and _STAR_NOTE.search(text) and not _NOTICE.search(text):
+        return [Check(OUT_OF_SCOPE, SOURCE_OR_REVIEW, "출처·시험·심의 안내는 제품 근거로 검증하지 않음")]
     return checks or [Check(UNCLEAR, CERTIFICATION_UNCLASSIFIED, "식약처 제품 정보에서 대조할 항목을 정할 수 없는 인증 주장", claim_value=text)]
 
 

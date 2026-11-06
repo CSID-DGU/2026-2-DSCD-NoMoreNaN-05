@@ -259,3 +259,20 @@ def test_large_count_is_shown_in_full():
     checks = run("프로바이오틱스 20억 CFU", ("프로바이오틱스",), prod=prod)
     assert codes(checks) == [(UNCLEAR, "BASIS_MISMATCH")]
     assert checks[0].claim_value == "2,000,000,000 CFU"
+
+
+@pytest.mark.parametrize("text,code", [
+    ("2달분 드시고 반품 환불 가능", "SALES_OR_RANK"),
+    ("배송기간: 7일 이내", "SALES_OR_RANK"),
+    ("전세계 23개 지역 수출", "SALES_OR_RANK"),
+    ("특허받은 4중 코팅 기술 적용", "NOT_PRODUCT_CLAIM"),
+    ("2021~ 인천 유나이티드 FC와 MOU체결", "NOT_PRODUCT_CLAIM"),
+    ("*2018년 3월 기준", "FOOTNOTE"),
+    ("%영양성분 기준치 : 1일 영양성분 기준치에 대한 비율", "FOOTNOTE"),
+])
+def test_non_product_quantity_text_is_out_of_scope(text, code):
+    assert codes(run(text)) == [(OUT_OF_SCOPE, code)]
+
+
+def test_delivery_metaphor_is_not_sales_condition():
+    assert codes(run("이 분은 지금 1,000억을 배송하고 있습니다"))[0][1] != "SALES_OR_RANK"
