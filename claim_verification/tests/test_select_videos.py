@@ -1,6 +1,6 @@
 import pytest
 
-from claim_verification.scripts.select_videos import select, usable_claims
+from claim_verification.scripts.select_videos import missing_refs, select, usable_claims
 
 
 def _video(video_id, usable=0, other=0):
@@ -40,6 +40,16 @@ def test_select_by_ref_removes_most_missing_refs_first():
     empty = _video("c")
     assert [v["video_id"] for v in select([many, etc_only, empty], 2, by_ref=True)[1]] == ["a"]
     assert [v["video_id"] for v in select([many, etc_only, empty], 2)[1]] == ["c"]
+
+
+def test_list_claim_type_counts_when_any_type_is_objective():
+    video = _video("v")
+    video["claims"] = [{"claim_id": "c1", "product_ref": "p01", "claim_type": ["ETC", "QUANTITY"]},
+                       {"claim_id": "c2", "product_ref": "p01", "claim_type": ["PERSON_CREDENTIAL", "ETC"]},
+                       {"claim_id": "c3", "product_ref": None, "claim_type": ["ETC"]},
+                       {"claim_id": "c4", "product_ref": None, "claim_type": ["PERSON_CREDENTIAL"]}]
+    assert usable_claims(video) == 1
+    assert missing_refs(video) == 1
 
 
 def test_select_rejects_too_many():

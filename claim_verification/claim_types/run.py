@@ -3,7 +3,9 @@
     python -m claim_verification.claim_types.run input out_dir
 
 input은 영상 목록 json 파일이나 영상별 json이 있는 폴더다. out_dir에 results.json과 summary.json을 쓴다.
-summary의 for_b는 confirmed 제품의 EFFECT 중 면책 문구를 뺀 건수로, 메커니즘 B가 판정할 대상이다.
+summary의 for_b는 confirmed 제품의 클레임 중 EFFECT가 붙고 면책 문구가 아닌 건수로, 메커니즘 B가 판정할 대상이다.
+labels는 타입 조합별("COMPOSITION+QUANTITY")로 센다.
+입력에 정답(gold_label)이 있으면 판정 전에 지운다. 정답 파일을 실행 입력으로 잘못 넣어도 예측에 섞이지 않게 한다.
 """
 
 import json
@@ -11,7 +13,9 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from .judge import EFFECT, judge_video
+from .judge import judge_video
+
+GOLD = "gold_label"
 
 
 def load_videos(path: str | Path) -> list[dict]:
@@ -21,13 +25,23 @@ def load_videos(path: str | Path) -> list[dict]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def strip_gold(videos: list[dict]) -> int:
+    """클레임의 gold_label을 지우고 지운 건수를 돌려준다."""
+    removed = 0
+    for video in videos:
+        for claim in video["claims"]:
+            if claim.pop(GOLD, None) is not None:
+                removed += 1
+    return removed
+
+
 def summarize(videos: list[dict], results: list[dict]) -> dict:
     labels, codes = defaultdict(Counter), defaultdict(Counter)
     skipped, violations = Counter(), []
     for result in results:
         skipped.update(s["reason"] for s in result["skipped"])
         for claim in result["claims"]:
-            labels[claim["claim_type"]][claim["label"]] += 1
+            labels["+".join(claim["claim_type"])][claim["label"]] += 1
             codes[claim["label"]].update(claim["reason_codes"])
             if claim["label"] == "VIOLATION":
                 violations.append({"video_id": result["video_id"], "claim_id": claim["claim_id"], "text": claim["text"],
@@ -36,7 +50,7 @@ def summarize(videos: list[dict], results: list[dict]) -> dict:
         "videos": len(results),
         "claims": sum(len(v["claims"]) for v in videos),
         "judged": sum(len(r["claims"]) for r in results),
-        "for_b": _count_for_b(videos, results),
+        "for_b": sum(len(r["for_b"]) for r in results),
         "skipped": dict(skipped),
         "labels": {t: dict(c) for t, c in sorted(labels.items())},
         "reason_codes": {label: dict(c.most_common()) for label, c in sorted(codes.items())},
@@ -44,21 +58,14 @@ def summarize(videos: list[dict], results: list[dict]) -> dict:
     }
 
 
-def _count_for_b(videos: list[dict], results: list[dict]) -> int:
-    count = 0
-    for video, result in zip(videos, results):
-        confirmed = {p["product_ref"] for p in result["products"] if p["match_status"] == "confirmed"}
-        in_a = {c["claim_id"] for c in result["claims"]}
-        count += sum(1 for c in video["claims"] if c.get("claim_type") == EFFECT
-                     and c.get("product_ref") in confirmed and c["claim_id"] not in in_a)
-    return count
-
-
 def main(argv: list[str]) -> int:
     if len(argv) != 2:
         print(__doc__, file=sys.stderr)
         return 2
     videos = load_videos(argv[0])
+    removed = strip_gold(videos)
+    if removed:
+        print(f"경고: 입력에 {GOLD} {removed}건이 있어 지우고 판정함", file=sys.stderr)
     results = [judge_video(v) for v in videos]
     summary = summarize(videos, results)
     out = Path(argv[1])

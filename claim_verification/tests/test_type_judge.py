@@ -50,21 +50,75 @@ def test_disclaimer_comes_before_checker():
 
 
 def test_effect_is_left_to_mechanism_b():
-    assert judge_video(_video([_claim()]))["claims"] == []
+    result = judge_video(_video([_claim()]))
+    assert result["claims"] == []
+    assert result["for_b"] == ["c01"]
 
 
 def test_effect_disclaimer_stays_in_a():
     text = "본 제품은 질병의 예방 및 치료를 위한 의약품이 아닙니다"
-    out = judge_video(_video([_claim(text=text)]))["claims"][0]
-    assert out["label"] == "DISCLAIMER"
-    assert "next" not in out
+    result = judge_video(_video([_claim(text=text)]))
+    assert result["claims"][0]["label"] == "DISCLAIMER"
+    assert result["claims"][0]["for_b"] is False
+    assert result["for_b"] == []
 
 
-@pytest.mark.parametrize("claim_type", ["PERSON_CREDENTIAL", "ETC"])
-def test_unverifiable_types_are_out_of_scope(claim_type):
+@pytest.mark.parametrize("claim_type,code", [("PERSON_CREDENTIAL", "NOT_VERIFIABLE_TYPE"), ("ETC", "NOT_A_CLAIM"),
+                                             (["ETC"], "NOT_A_CLAIM"), (["ETC", "PERSON_CREDENTIAL"], "NOT_VERIFIABLE_TYPE")])
+def test_unverifiable_types_are_out_of_scope(claim_type, code):
     out = judge_video(_video([_claim(claim_type=claim_type)]))["claims"][0]
     assert out["label"] == OUT_OF_SCOPE
-    assert out["reason_codes"] == ["NOT_VERIFIABLE_TYPE"]
+    assert out["reason_codes"] == [code]
+
+
+def test_string_and_list_claim_type_are_same():
+    checkers = {"QUANTITY": _found(SUPPORTED)}
+    a = judge_claim(_claim(claim_type="QUANTITY"), {}, checkers)
+    b = judge_claim(_claim(claim_type=["QUANTITY"]), {}, checkers)
+    assert a == b
+    assert a["claim_type"] == ["QUANTITY"]
+
+
+def test_multiple_a_types_merge_to_worst_label():
+    checkers = {"QUANTITY": _found(SUPPORTED, "Q_OK"), "COMPOSITION": _found(UNCLEAR, "C_UNK")}
+    out = judge_claim(_claim(claim_type=["COMPOSITION", "QUANTITY"]), {}, checkers)
+    assert out["label"] == UNCLEAR
+    assert out["reason_codes"] == ["C_UNK"]
+    assert [(c["claim_type"], c["code"]) for c in out["checks"]] == [("COMPOSITION", "C_UNK"), ("QUANTITY", "Q_OK")]
+
+
+def test_etc_is_dropped_from_mixed_types():
+    checkers = {"QUANTITY": _found(SUPPORTED, "Q_OK")}
+    out = judge_claim(_claim(claim_type=["QUANTITY", "ETC"]), {}, checkers)
+    assert out["label"] == SUPPORTED
+    assert out["claim_type"] == ["QUANTITY", "ETC"]
+    assert [c["claim_type"] for c in out["checks"]] == ["QUANTITY"]
+
+
+def test_person_credential_does_not_override_verified_type():
+    checkers = {"PERSON_CREDENTIAL": _found(OUT_OF_SCOPE), "CERTIFICATION": _found(SUPPORTED, "OK")}
+    assert judge_claim(_claim(claim_type=["PERSON_CREDENTIAL", "CERTIFICATION"]), {}, checkers)["label"] == SUPPORTED
+
+
+def test_effect_with_a_type_is_judged_in_a_and_sent_to_b():
+    checkers = {"QUANTITY": _found(SUPPORTED)}
+    result = judge_video(_video([_claim(claim_type=["EFFECT", "QUANTITY"])]), checkers)
+    assert result["for_b"] == ["c01"]
+    out = result["claims"][0]
+    assert out["for_b"] is True
+    assert [c["claim_type"] for c in out["checks"]] == ["QUANTITY"]
+
+
+def test_effect_with_etc_goes_only_to_b():
+    result = judge_video(_video([_claim(claim_type=["EFFECT", "ETC"])]))
+    assert result["claims"] == []
+    assert result["for_b"] == ["c01"]
+
+
+def test_empty_claim_type_is_unclear():
+    out = judge_claim(_claim(claim_type=[]), {}, {})
+    assert out["label"] == UNCLEAR
+    assert out["reason_codes"] == ["NO_CLAIM_TYPE"]
 
 
 def test_type_without_checker_is_unclear_with_reason():

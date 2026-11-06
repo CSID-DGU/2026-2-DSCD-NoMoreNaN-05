@@ -4,7 +4,8 @@
 
 뺄 영상의 순서: 판정할 수 있는 클레임 수 → 전체 클레임 수 → 제품 수 → video_id가 작은 것부터.
 ref를 주면 product_ref가 없는 비ETC 클레임이 많은 영상을 먼저 뺀다.
-판정할 수 있는 클레임은 이름이 있는 제품을 가리키는 QUANTITY·COMPOSITION·CERTIFICATION·EFFECT다.
+판정할 수 있는 클레임은 이름이 있는 제품을 가리키고 QUANTITY·COMPOSITION·CERTIFICATION·EFFECT 중 하나라도 붙은 클레임이다.
+claim_type은 문자열이나 배열 모두 받는다. ETC는 타입에서 뺀다.
 match.status는 보지 않는다. 제품 매칭 기준이 바뀌어도 같은 영상을 고르게 하기 위해서다.
 """
 
@@ -12,16 +13,18 @@ import json
 import sys
 from pathlib import Path
 
+from ..claim_types.tags import claim_types
+
 OBJECTIVE_TYPES = {"QUANTITY", "COMPOSITION", "CERTIFICATION", "EFFECT"}
 
 
 def usable_claims(video: dict) -> int:
     named = {p["product_ref"] for p in video["products"] if p.get("product_name")}
-    return sum(1 for c in video["claims"] if c.get("product_ref") in named and c.get("claim_type") in OBJECTIVE_TYPES)
+    return sum(1 for c in video["claims"] if c.get("product_ref") in named and OBJECTIVE_TYPES & set(claim_types(c)))
 
 
 def missing_refs(video: dict) -> int:
-    return sum(1 for c in video["claims"] if c.get("product_ref") is None and c.get("claim_type") != "ETC")
+    return sum(1 for c in video["claims"] if c.get("product_ref") is None and claim_types(c))
 
 
 def _order(video: dict) -> tuple:

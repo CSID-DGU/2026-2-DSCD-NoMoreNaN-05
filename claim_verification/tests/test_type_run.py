@@ -26,7 +26,23 @@ def test_summary_counts():
     assert summary["for_b"] == 1
     assert summary["skipped"] == {"PRODUCT_NOT_FOUND": 1}
     assert summary["labels"] == {"EFFECT": {"DISCLAIMER": 1}, "ETC": {"OUT_OF_SCOPE": 1}}
-    assert summary["reason_codes"]["OUT_OF_SCOPE"] == {"NOT_VERIFIABLE_TYPE": 1}
+    assert summary["reason_codes"]["OUT_OF_SCOPE"] == {"NOT_A_CLAIM": 1}
+
+
+def test_multi_type_labels_are_keyed_by_combination():
+    video = _video()
+    video["claims"] = [{"claim_id": "c01", "product_ref": "p01", "text": "모델 추천", "claim_type": ["PERSON_CREDENTIAL", "ETC"]}]
+    assert summarize([video], [judge_video(video)])["labels"] == {"PERSON_CREDENTIAL+ETC": {"OUT_OF_SCOPE": 1}}
+
+
+def test_gold_label_is_removed_before_judging(tmp_path, capsys):
+    video = _video()
+    video["claims"][0]["gold_label"] = "SUPPORTED"
+    source = tmp_path / "in.json"
+    source.write_text(json.dumps([video], ensure_ascii=False), encoding="utf-8")
+    assert main([str(source), str(tmp_path / "out")]) == 0
+    assert "gold_label 1건" in capsys.readouterr().err
+    assert "gold_label" not in (tmp_path / "out" / "results.json").read_text(encoding="utf-8")
 
 
 def test_main_writes_results_and_summary(tmp_path):
