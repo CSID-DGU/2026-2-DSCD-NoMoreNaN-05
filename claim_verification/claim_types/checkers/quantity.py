@@ -128,7 +128,7 @@ def check_quantity(claim: dict, product: dict) -> list[Check]:
         return [Check(UNCLEAR, COMPARISON_NOT_VERIFIED, "비교 대상의 근거가 없어 확인할 수 없음", claim_value=text)]
     if not _DAILY_LABEL.search(text) and not _CFU_WORD.search(text) and (
             _PACKAGE.search(text) or _PACKAGE_BASIS.search(basis)):
-        return [Check(UNCLEAR, PACKAGE_NOT_IN_EVIDENCE, "포장 규격은 data.csv에 근거가 없어 확인할 수 없음")]
+        return [Check(UNCLEAR, PACKAGE_NOT_IN_EVIDENCE, "포장 규격은 식약처 제품 정보에 없어 확인할 수 없음")]
     if _RANGE.search(text):
         return [Check(UNCLEAR, REFERENCE_RANGE, "범위 표기는 제품 함량이 아니라 기준 범위라 비교할 수 없음")]
     items = parse_spec(db["BASE_STANDARD"])
