@@ -31,6 +31,17 @@ def test_select_ignores_match_status():
     assert select([video, other], 1)[1] == [video]
 
 
+def test_select_by_ref_removes_most_missing_refs_first():
+    many = _video("a", usable=5)
+    many["claims"] += [{"claim_id": "n1", "product_ref": None, "claim_type": "EFFECT"},
+                       {"claim_id": "n2", "product_ref": None, "claim_type": "QUANTITY"}]
+    etc_only = _video("b", usable=5)
+    etc_only["claims"].append({"claim_id": "n3", "product_ref": None, "claim_type": "ETC"})
+    empty = _video("c")
+    assert [v["video_id"] for v in select([many, etc_only, empty], 2, by_ref=True)[1]] == ["a"]
+    assert [v["video_id"] for v in select([many, etc_only, empty], 2)[1]] == ["c"]
+
+
 def test_select_rejects_too_many():
     with pytest.raises(ValueError):
         select([_video("a")], 2)
