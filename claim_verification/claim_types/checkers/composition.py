@@ -2,6 +2,7 @@
 
     제품 원재료에 있음(정확, 이명, 원료명의 일부)   SUPPORTED
     알레르기 표시, 상위 범주, 상표·수식 표현        UNCLEAR (제품 사실이지만 근거로 확인 못 함)
+    원료는 있지만 원산지·연근·수식 표현이 붙음      원료는 SUPPORTED, 그 표현은 UNCLEAR(문장은 UNCLEAR)
     사전에 있는 구체적인 원료인데 제품에 없음       VIOLATION
     그 외                                           UNCLEAR
 
@@ -53,6 +54,12 @@ COMMON_NAMES = {"오메가3": "epa및dha함유유지", "유산균": "프로바�
                 "astaxanthin": "아스타잔틴", "돼지감자": "뚱딴지", "피쉬콜라겐": "생선콜라겐", "굴": "굴추출물"}
 _MIN_PART = 2
 _SOURCE_WORD = re.compile(r"수확|재배|유래")
+# 원료가 있어도 확인할 수 없는 원료 출처·수식 표현. "엽산"·"판토텐산"과 섞이지 않게 원산지는 나라 이름만 본다.
+_COUNTRY = (r"국|한국|미국|독일|스위스|영국|프랑스|일본|호주|뉴질랜드|캐나다|노르웨이|칠레|페루|이탈리아|스페인|덴마크|"
+            r"중국|인도|베트남|태국|브라질|아일랜드|핀란드|스웨덴|네덜란드|벨기에|그리스")
+_ORIGIN = re.compile(rf"(?<![가-힣])(?:{_COUNTRY})\s*산(?![가-힣])|\d+\s*년근|수확|재배|유래|청정|원산지|산지")
+# "비타민D 일명 햇살비타민" 같은 별칭은 사실 주장이 아니라 넣지 않는다.
+_MODIFIER = re.compile(r"동일\s*구조|장용성|\brtg\b|알티지|고순도|순도\s*\d", re.IGNORECASE)
 _MIXTURE = re.compile(r"혼합분말|혼합물|복합물")
 _MACRONUTRIENTS = {"탄수화물", "당류", "식이섬유", "단백질", "지방", "포화지방", "콜레스테롤", "나트륨"}
 
@@ -66,7 +73,8 @@ def make_check_composition(lexicon: Lexicon):
         terms = _product_terms(db)
         aliases = _product_aliases(db, lexicon)
         text = normalize_text(claim["text"])
-        return [_check_one(name, text, db, terms, aliases, lexicon) for name in _restore_vitamins(ingredients)]
+        checks = [_check_one(name, text, db, terms, aliases, lexicon) for name in _restore_vitamins(ingredients)]
+        return checks + _unverified_words(text, checks)
     return check
 
 
@@ -199,3 +207,19 @@ def _is_more_specific(keys: set[str], terms: dict[str, tuple[str, str]]) -> bool
     """광고 이름이 제품 원료명에 말을 덧붙인 경우("6년근 홍삼", "rTG 오메가3")."""
     known = {k for k in terms if len(k) >= _MIN_PART} | {k for k, v in COMMON_NAMES.items() if v in terms}
     return any(term != key and term in key for key in keys for term in known)
+
+
+def _unverified_words(text: str, checks: list[Check]) -> list[Check]:
+    """원료가 확인돼도 원산지·연근·수식 표현까지 확인한 것은 아니다. 문장 전체를 SUPPORTED로 두지 않는다."""
+    if not any(c.status == SUPPORTED for c in checks):
+        return []
+    out = []
+    origin = _ORIGIN.search(text)
+    if origin:
+        out.append(Check(UNCLEAR, RAW_SOURCE, "원산지·연근·원료 출처는 식약처 제품 정보로 확인할 수 없음", target=origin[0],
+                         claim_value=origin[0]))
+    modifier = _MODIFIER.search(text)
+    if modifier:
+        out.append(Check(UNCLEAR, BRAND_OR_MODIFIER, "상표·수식 표현은 원재료 필드로 확인할 수 없음", target=modifier[0],
+                         claim_value=modifier[0]))
+    return out
