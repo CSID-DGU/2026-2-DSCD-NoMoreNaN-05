@@ -15,9 +15,9 @@
 import re
 
 from ...finding import SUPPORTED, UNCLEAR, VIOLATION
-from ..handoff.match import normalize_company
 from ..parsing.intake import Intake, parse_intake
 from ..parsing.lexicon import ingredient_key
+from ..parsing.names import normalize_company
 from ..parsing.nutrients import canonical, daily_value
 from ..parsing.spec import SpecItem, daily_amount, parse_spec
 from ..parsing.units import (NUM_START, NUMBER, UNIT, Amount, comparable, make_basis, make_unit, normalize_text,

@@ -7,25 +7,15 @@
 제조사가 없으면 제품명이 하나뿐이어도 confirmed로 보지 않는다. 같은 이름의 다른 제품일 수 있다.
 """
 
-import re
-import unicodedata
 from collections import defaultdict
 
 from ...inputs import CONFIRMED, NOT_FOUND, UNRESOLVED
+from ..parsing.names import normalize_company, normalize_name
+
+__all__ = ["BY_NAME_AND_COMPANY", "BY_REPORT_NUMBER", "ProductIndex", "normalize_company", "normalize_name"]
 
 BY_REPORT_NUMBER = "report_number"
 BY_NAME_AND_COMPANY = "name_and_company"
-
-_COMPANY_FORM = re.compile(r"주식회사|유한회사|\(주\)|\(유\)|㈜")
-_NOT_WORD = re.compile(r"[^0-9a-z가-힣]")
-
-
-def normalize_name(text: str | None) -> str:
-    return _NOT_WORD.sub("", unicodedata.normalize("NFKC", text or "").lower())
-
-
-def normalize_company(text: str | None) -> str:
-    return normalize_name(_COMPANY_FORM.sub("", unicodedata.normalize("NFKC", text or "")))
 
 
 def _same_company(a: str, b: str) -> bool:

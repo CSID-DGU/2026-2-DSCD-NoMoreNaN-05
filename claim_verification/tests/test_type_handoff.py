@@ -1,6 +1,6 @@
 from claim_verification.claim_types.handoff.build import build_product, build_video
 from claim_verification.claim_types.handoff.fields import DB_FIELDS, product_db
-from claim_verification.claim_types.handoff.match import ProductIndex, normalize_company
+from claim_verification.claim_types.handoff.match import ProductIndex
 
 
 def _row(name="제품 A", company="(주)서흥", number="1", **kw):
@@ -12,10 +12,6 @@ def _row(name="제품 A", company="(주)서흥", number="1", **kw):
 def _product(name="제품A", company="서흥", number=None):
     return {"product_ref": "p01", "product_name": name, "manufacturer_name": company,
             "manufacturing_report_number": number}
-
-
-def test_company_form_is_ignored():
-    assert normalize_company("주식회사 서흥") == normalize_company("㈜서흥") == "서흥"
 
 
 def test_report_number_wins_over_name():

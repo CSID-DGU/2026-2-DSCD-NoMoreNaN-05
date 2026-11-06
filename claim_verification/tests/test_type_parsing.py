@@ -5,6 +5,7 @@ import pytest
 
 from claim_verification.claim_types.parsing.intake import parse_intake
 from claim_verification.claim_types.parsing.lexicon import Lexicon, ingredient_key, split_ingredients, strip_note
+from claim_verification.claim_types.parsing.names import normalize_company, normalize_name
 from claim_verification.claim_types.parsing.nutrients import DAILY_VALUES, canonical, daily_value
 from claim_verification.claim_types.parsing.spec import daily_amount, parse_spec
 from claim_verification.claim_types.parsing.units import Amount, comparable, parse_amounts, same_amount
@@ -256,3 +257,11 @@ def test_alias_is_not_representative():
 def test_lexicon_drops_digit_and_single_letter_terms():
     lex = Lexicon(build_terms([_row(dictionary=[_dict_entry("펙틴", nick="1, 6, 가")])]))
     assert lex.terms == {"펙틴": ["펙틴"]}
+
+
+def test_company_form_is_ignored():
+    assert normalize_company("주식회사 서흥") == normalize_company("㈜서흥") == "서흥"
+
+
+def test_name_drops_symbols_and_case():
+    assert normalize_name("BNS 혈당엔-바나바!") == "bns혈당엔바나바"
