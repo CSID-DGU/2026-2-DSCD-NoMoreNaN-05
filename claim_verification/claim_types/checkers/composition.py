@@ -128,7 +128,7 @@ def _check_one(name: str, text: str, db: dict, terms: dict[str, tuple[str, str]]
         if hidden:
             return Check(UNCLEAR, CONSTITUENT_POSSIBLE, "원재료 필드에 없지만 다른 원료의 구성성분일 수 있어 없다고 단정할 수 없음",
                          target=plain, claim_value=plain, evidence=fields)
-        return Check(VIOLATION, INGREDIENT_ABSENT, "사전에 있는 구체적인 원료인데 제품 원재료에 없음", target=plain, claim_value=plain,
+        return Check(VIOLATION, INGREDIENT_ABSENT, "광고한 원료가 제품 원재료 목록에 없음", target=plain, claim_value=plain,
                      evidence=fields)
     return Check(UNCLEAR, INGREDIENT_UNMATCHED, "원재료 필드와 원료 사전에서 찾지 못해 포함 여부를 판단할 수 없음", target=plain,
                  claim_value=plain)

@@ -252,3 +252,10 @@ def test_grouped_percent_keeps_unknown_name_unclear():
 def test_heritage_matching_license_year_is_still_unclear():
     prod = product(BSSH_PRMS_DT="19500101")
     assert codes(run("서흥 76년 전통", prod=prod))[0] == (UNCLEAR, "HERITAGE_NOT_CONFIRMED")
+
+
+def test_large_count_is_shown_in_full():
+    prod = product(spec="2) 프로바이오틱스 수 : 표시량(100억 CFU/2g) 이상")
+    checks = run("프로바이오틱스 20억 CFU", ("프로바이오틱스",), prod=prod)
+    assert codes(checks) == [(UNCLEAR, "BASIS_MISMATCH")]
+    assert checks[0].claim_value == "2,000,000,000 CFU"

@@ -16,7 +16,7 @@ RAWMTRL_CLASS_INFO의 개별인정 분류는 인정번호와 어긋나는 제품
 import re
 
 from ...finding import SUPPORTED, UNCLEAR, VIOLATION
-from ..parsing.lexicon import ingredient_key
+from ..parsing.lexicon import ingredient_key, split_ingredients
 from ..parsing.units import normalize_text
 from ..result import OUT_OF_SCOPE, Check
 
@@ -34,6 +34,8 @@ RECOGNITION_ABSENT = "RECOGNITION_ABSENT"
 FUNCTION_NOT_ON_RECORD = "FUNCTION_NOT_ON_RECORD"
 FUNCTIONAL_INGREDIENT_ABSENT = "FUNCTIONAL_INGREDIENT_ABSENT"
 FIRST_CLAIM_UNPROVABLE = "FIRST_CLAIM_UNPROVABLE"
+INGREDIENT_ON_RECORD = "INGREDIENT_ON_RECORD"
+INGREDIENT_NOT_CONFIRMED = "INGREDIENT_NOT_CONFIRMED"
 FUNCTION_ON_RECORD = "FUNCTION_ON_RECORD"
 FUNCTION_NOT_CONFIRMED = "FUNCTION_NOT_CONFIRMED"
 FUNCTIONAL_INGREDIENT_ON_RECORD = "FUNCTIONAL_INGREDIENT_ON_RECORD"
@@ -56,6 +58,10 @@ _NUMBER = re.compile(r"(?<!\d)(\d{4})\s*-\s*(\d{1,3})\s*호")
 _NUMBER_NO_HO = re.compile(r"(?:제|인정번호)\s*(\d{4})\s*-\s*(\d{1,3})(?!\d)")
 _RCOGN_NO = re.compile(r"(\d{4})\s*-\s*(\d{1,3})")
 _FIRST = re.compile(r"최초|유일|독점|개별\s*인정형?\s*\d+\s*호")
+# "국내 최초 체지방 감소 유산균"의 체지방 감소
+_FIRST_FUNCTION = re.compile(r".*(?:최초|유일)\W*(?P<fn>[가-힣]+(?:\s[가-힣]+)*?)\s*(?:기능성\s*)?(?:유산균|프로바이오틱스|건강기능식품)", re.S)
+_MICROBE_WORD = re.compile(r"유산균|프로바이오틱스")
+_MICROBE_FIELD = re.compile(r"유산균|프로바이오틱스|lactobacillus|lactiplantibacillus|bifidobacterium|streptococcus", re.I)
 _INDIVIDUAL = re.compile(r"개별\s*인정")
 _APPROVED = re.compile(r"(?:식약처|식품의약품안전처|기능성).*인정|인정.*기능성")
 # 앞에 숫자가 붙은 말("2중 기능성")은 기능 이름이 아니다.
@@ -90,7 +96,7 @@ def check_certification(claim: dict, product: dict) -> list[Check]:
         return [_gmp(text, db)]
     checks = _recognition_number(text, db)
     if _FIRST.search(text):
-        checks.append(Check(UNCLEAR, FIRST_CLAIM_UNPROVABLE, "최초·유일 주장은 인허가 시점 자료만으로 증명할 수 없음", claim_value=text,
+        checks.append(Check(UNCLEAR, FIRST_CLAIM_UNPROVABLE, "'국내 최초·유일' 여부는 식약처 제품 정보로 확인할 수 없음", claim_value=text,
                             evidence=[{"field": "PRMS_DT", "value": db["PRMS_DT"]}]))
     if not _numbers(text):
         if _INDIVIDUAL.search(text):
@@ -99,9 +105,39 @@ def check_certification(claim: dict, product: dict) -> list[Check]:
             checks.append(_function_approved(text, db))
         elif _FUNCTIONAL_INGREDIENT.search(text):
             checks.append(_functional_ingredient(claim, text, db))
+    if _FIRST.search(text):
+        checks.extend(_first_claim_parts(claim, text, db, checks))
     if not checks and _HFF_SENTENCE.search(text):
         return [_hff(text, db)]
     return checks or [Check(UNCLEAR, CERTIFICATION_UNCLASSIFIED, "data.csv에서 대조할 필드를 정할 수 없는 인증 주장", claim_value=text)]
+
+
+def _first_claim_parts(claim: dict, text: str, db: dict, checks: list[Check]) -> list[Check]:
+    """최초 여부는 몰라도 원료와 기능은 확인한다. "유산균은 들어 있으나 국내 최초인지는 알 수 없음"이 되게 한다."""
+    parts = []
+    entries = [e[k] or "" for e in db["RAWMTRL_STD_INFO"] for k in ("RAWMTRL_NM", "SKLL_IX_IRDNT_RAWMTRL") if k in e]
+    names = [*split_ingredients(db["RAWMTRL_NM"]), *split_ingredients(db["INDIV_RAWMTRL_NM"]), *entries]
+    evidence = [{"field": "RAWMTRL_NM", "value": db["RAWMTRL_NM"]}]
+
+    def ingredient(name: str, found: bool) -> Check:
+        if found:
+            return Check(SUPPORTED, INGREDIENT_ON_RECORD, "제품 원재료에서 확인", target=name, claim_value=name, evidence=evidence)
+        return Check(UNCLEAR, INGREDIENT_NOT_CONFIRMED, "제품 원재료에서 확인되지 않음", target=name, claim_value=name, evidence=evidence)
+
+    listed = claim.get("ingredients") or []
+    parts.extend(ingredient(name, any(_same_name(name, n) for n in names)) for name in listed)
+    microbe = _MICROBE_WORD.search(text)
+    if microbe and not listed:
+        parts.append(ingredient(microbe[0], bool(_MICROBE_FIELD.search(" ".join(names)))))
+    if len(checks) == 1:
+        m = _FIRST_FUNCTION.match(text)
+        word = _compact(m["fn"]) if m else ""
+        if len(word) >= _MIN_NAME:
+            found = word in _compact(db["MAIN_FNCTN"])
+            parts.append(Check(SUPPORTED if found else UNCLEAR, FUNCTION_ON_RECORD if found else FUNCTION_NOT_CONFIRMED,
+                               "제품에 신고된 기능성에서 확인" if found else "제품에 신고된 기능성에서 확인되지 않음",
+                               target=m["fn"], claim_value=m["fn"], evidence=[{"field": "MAIN_FNCTN", "value": db["MAIN_FNCTN"]}]))
+    return parts
 
 
 def _hff(text: str, db: dict) -> Check:

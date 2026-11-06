@@ -120,7 +120,8 @@ def test_unclassified():
 
 def test_first_claim_with_date_note_is_not_out_of_scope():
     checks = run("국내최초 국내유일* 콜레스테롤 기능성 유산균 *2022년 8월 기준")
-    assert codes(checks) == [(UNCLEAR, "FIRST_CLAIM_UNPROVABLE")]
+    assert codes(checks)[0] == (UNCLEAR, "FIRST_CLAIM_UNPROVABLE")
+    assert {c.status for c in checks} == {UNCLEAR}
 
 
 def test_first_individual_number_is_unclear():
@@ -150,7 +151,7 @@ def test_hff_sentence_with_description(text):
 
 
 def test_described_first_claim_is_not_just_hff_label():
-    assert codes(run("국내 최초 관절 건강기능식품입니다")) == [(UNCLEAR, "FIRST_CLAIM_UNPROVABLE")]
+    assert codes(run("국내 최초 관절 건강기능식품입니다")) == [(UNCLEAR, "FIRST_CLAIM_UNPROVABLE"), (UNCLEAR, "FUNCTION_NOT_CONFIRMED")]
 
 
 def test_direct_recognition_subject_is_unclear():
@@ -168,3 +169,28 @@ def test_intake_reference_is_not_function_claim():
 
 def test_hff_word_is_not_function_name():
     assert codes(run("건강기능식품 기능성 인정")) == [(SUPPORTED, "FUNCTION_ON_RECORD")]
+
+
+MICROBE = dict(RAWMTRL_NM="회화나무열매추출물, Lactobacillus gasseri", INDIV_RAWMTRL_NM="Lactobacillus gasseri BNR17",
+               MAIN_FNCTN="체지방 감소에 도움을 줄 수 있음", RAWMTRL_STD_INFO=[])
+
+
+def test_first_claim_confirms_ingredient_and_function_but_stays_unclear():
+    checks = run("국내 최초 체지방 감소 유산균", (), product(**MICROBE))
+    assert codes(checks) == [(UNCLEAR, "FIRST_CLAIM_UNPROVABLE"), (SUPPORTED, "INGREDIENT_ON_RECORD"), (SUPPORTED, "FUNCTION_ON_RECORD")]
+    assert [c.target for c in checks[1:]] == ["유산균", "체지방 감소"]
+
+
+def test_first_claim_with_function_word_and_footnote():
+    prod = product(RAWMTRL_NM="유산균복합물(제2022-15호)", INDIV_RAWMTRL_NM="", MAIN_FNCTN="혈중 콜레스테롤 개선", RAWMTRL_STD_INFO=[])
+    assert [c.target for c in run("국내최초 국내유일* 콜레스테롤 기능성 유산균 *2022년 8월 기준", (), prod)[1:]] == ["유산균", "콜레스테롤"]
+
+
+def test_first_claim_does_not_confirm_missing_parts():
+    prod = product(**dict(MICROBE, RAWMTRL_NM="비타민 C", INDIV_RAWMTRL_NM="비타민 C"))
+    assert codes(run("국내 최초 체지방 감소 유산균", (), prod))[1] == (UNCLEAR, "INGREDIENT_NOT_CONFIRMED")
+
+
+def test_first_claim_checks_listed_ingredients():
+    checks = run("국내최초 식약처 기능성 인정 오미자추출물 쉬잔드린 함유", ("오미자추출물", "쉬잔드린"))
+    assert {(c.target, c.code) for c in checks if c.target} == {("오미자추출물", "INGREDIENT_ON_RECORD"), ("쉬잔드린", "INGREDIENT_NOT_CONFIRMED")}

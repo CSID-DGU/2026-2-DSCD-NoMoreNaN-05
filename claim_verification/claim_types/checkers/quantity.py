@@ -367,7 +367,8 @@ def _check_amount(claim: dict, text: str, items: list[SpecItem], intake: Intake 
 
 
 def _show(amount: Amount) -> str:
-    return f"{amount.value:g} {amount.unit}" + (f" {amount.basis}" if amount.basis else "")
+    value = f"{amount.value:,.0f}" if amount.value >= 1e6 else f"{amount.value:g}"
+    return f"{value} {amount.unit}" + (f" {amount.basis}" if amount.basis else "")
 
 
 def _compare_amount(target: str, amount: Amount, value: str, item: SpecItem, intake: Intake | None) -> Check:
@@ -386,7 +387,7 @@ def _compare_amount(target: str, amount: Amount, value: str, item: SpecItem, int
                          evidence=evidence)
     # 균수 규격은 "표시량 이상"인 최솟값이고, 분모 1 g·100 g은 농도라 1회분 표시량이 아니다.
     if amount.unit == "CFU" or item.per.value in CONCENTRATION_PER or intake is None:
-        return Check(UNCLEAR, BASIS_MISMATCH, "표시량과 다르지만 광고 수치의 기준을 정할 수 없음", target=target,
+        return Check(UNCLEAR, BASIS_MISMATCH, "표시량과 다르지만 광고 수치가 어떤 기준량인지 알 수 없어 맞는지 판단할 수 없음", target=target,
                      claim_value=value, evidence=evidence)
     evidence.append({"field": "SRV_USE", "value": _srv_summary(intake)})
     if any(same_amount(amount, Amount(item.amount.value * f, item.amount.unit)) for f in _serving_factors(intake)):
