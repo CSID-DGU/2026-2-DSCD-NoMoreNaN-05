@@ -2,6 +2,7 @@
 
 confirmed 제품의 클레임만 판정하고, 나머지는 사유와 함께 skipped로 내보낸다.
 면책 문구는 타입과 상관없이 먼저 거른다. 클레임 담당이 면책 문구를 EFFECT로 분류하는 경우가 많아서다.
+면책 문구와 ETC만 붙은 클레임은 제품 정보가 필요 없으므로 제품이 없거나 미확정이어도 판정한다.
 
 한 클레임에 타입이 여러 개면 A 타입(QUANTITY·COMPOSITION·CERTIFICATION·PERSON_CREDENTIAL)마다 판정하고
 결과를 모아 라벨 하나를 낸다(LABEL_ORDER에서 가장 앞선 것). ETC는 판정 대상 타입에서 뺀다.
@@ -96,11 +97,19 @@ def _in_a(claim: dict) -> bool:
     return not _for_b(claim) or any(t != EFFECT for t in claim_types(claim))
 
 
+def _needs_product(claim: dict) -> bool:
+    """면책 문구와 판정 대상 타입이 없는 클레임(ETC만, 타입 없음)은 제품 정보 없이 라벨이 정해진다."""
+    return bool(claim_types(claim)) and not is_disclaimer(claim["text"])
+
+
 def judge_video(video: dict, checkers: dict[str, Checker] | None = None) -> dict:
     checkers = CHECKERS if checkers is None else checkers
     products = {p["product_ref"]: p for p in video["products"]}
     claims, skipped, for_b = [], [], []
     for claim in video["claims"]:
+        if not _needs_product(claim):
+            claims.append({**judge_claim(claim, None, checkers), "for_b": False})
+            continue
         product = products.get(claim.get("product_ref"))
         if product is None:
             skipped.append({"claim_id": claim["claim_id"], "reason": NO_PRODUCT_REF})
