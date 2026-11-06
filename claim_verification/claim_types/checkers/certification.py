@@ -1,4 +1,4 @@
-"""CERTIFICATION 판정. data.csv로 확인할 수 있는 주장만 대조한다.
+"""CERTIFICATION 판정. 입력 DB(식약처 제품 정보)로 확인할 수 있는 주장만 대조한다.
 
     건강기능식품 표시      STTEMNT_NO가 있으면 SUPPORTED
     GMP                    INDUTY_CD_NM이 제조업이면 SUPPORTED (2020.12부터 제조업 의무라 간접 확인이다)
@@ -6,7 +6,7 @@
     개별인정               인정번호가 있으면 SUPPORTED, 번호도 개별인정 분류도 없으면 VIOLATION, 분류만 있으면 UNCLEAR
     식약처 기능성 인정     MAIN_FNCTN에 있으면 SUPPORTED, 없으면 VIOLATION
     기능성 원료 X          RAWMTRL_STD_INFO에 있으면 SUPPORTED, 없으면 VIOLATION
-    국내 최초·유일         data.csv로 증명할 수 없어 UNCLEAR
+    국내 최초·유일         식약처 제품 정보로 증명할 수 없어 UNCLEAR
     특허·해외 인증·출처·심의번호·판매 실적   OUT_OF_SCOPE
 
 RAWMTRL_CLASS_INFO의 개별인정 분류는 인정번호와 어긋나는 제품이 많아 SUPPORTED의 근거로 쓰지 않는다.
@@ -91,7 +91,7 @@ def check_certification(claim: dict, product: dict) -> list[Check]:
     if _SALES.search(text):
         return [Check(OUT_OF_SCOPE, SALES_OR_RANK, "순위·판매 주장은 제품 근거로 검증하지 않음")]
     if _OTHER.search(text):
-        return [Check(OUT_OF_SCOPE, OTHER_CERTIFICATION, "특허·해외 인증 등은 data.csv로 검증할 수 없음")]
+        return [Check(OUT_OF_SCOPE, OTHER_CERTIFICATION, "특허·해외 인증 등은 식약처 제품 정보로 검증할 수 없음")]
     if _GMP.search(text):
         return [_gmp(text, db)]
     checks = _recognition_number(text, db)
@@ -109,7 +109,7 @@ def check_certification(claim: dict, product: dict) -> list[Check]:
         checks.extend(_first_claim_parts(claim, text, db, checks))
     if not checks and _HFF_SENTENCE.search(text):
         return [_hff(text, db)]
-    return checks or [Check(UNCLEAR, CERTIFICATION_UNCLASSIFIED, "data.csv에서 대조할 필드를 정할 수 없는 인증 주장", claim_value=text)]
+    return checks or [Check(UNCLEAR, CERTIFICATION_UNCLASSIFIED, "식약처 제품 정보에서 대조할 항목을 정할 수 없는 인증 주장", claim_value=text)]
 
 
 def _first_claim_parts(claim: dict, text: str, db: dict, checks: list[Check]) -> list[Check]:
