@@ -9,7 +9,7 @@ out_dir에 쓰는 파일
 
 구분
     overall            전체 클레임의 최종 라벨
-    by_source          최종 라벨을 만든 결과가 A만 / B만 / A·B 둘 다 있는 클레임
+    by_source          최종 라벨을 만든 결과가 A만 / B만 / A·B 둘 다 있는 클레임 / 둘 다 없는 클레임(제품 미확정 skipped)
     by_claim_type      claim_type 조합별("COMPOSITION+QUANTITY")
     a_only_label       A 결과가 있는 클레임에서 A 라벨만 정답과 비교
     b_only_label       B 결과가 있는 클레임에서 B 라벨만 정답과 비교(B 담당 평가와 같은 기준)
@@ -25,13 +25,15 @@ from ..final.merge import LABELS
 from .join import join
 from .metrics import evaluate
 
-A_ONLY, B_ONLY, BOTH = "A만", "B만", "A·B"
+A_ONLY, B_ONLY, BOTH, NONE = "A만", "B만", "A·B", "결과 없음"
 
 
 def _source(row: dict) -> str:
     if row["A"] and row["B"]:
         return BOTH
-    return A_ONLY if row["A"] else B_ONLY
+    if row["A"] or row["B"]:
+        return A_ONLY if row["A"] else B_ONLY
+    return NONE
 
 
 def _type_key(row: dict) -> str:

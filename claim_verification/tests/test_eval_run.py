@@ -43,3 +43,8 @@ def test_main_writes_reports(tmp_path):
 
 def test_wrong_arguments():
     assert main([]) == 2
+
+
+def test_skipped_claim_has_its_own_source_group():
+    rows = [_row("c01", "UNCLEAR", "UNCLEAR"), _row("c02", "SUPPORTED", "SUPPORTED", b="SUPPORTED")]
+    assert {k: m["n"] for k, m in report(rows)["by_source"].items()} == {"결과 없음": 1, "B만": 1}
