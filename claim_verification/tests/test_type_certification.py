@@ -53,9 +53,25 @@ def test_hff_label(text):
     ("원료 안전성 미국 FDA NDI 등재", "OTHER_CERTIFICATION"),
     ("이탈리아 브이라벨이 인증한 비건 인증까지", "OTHER_CERTIFICATION"),
     ("해양수산부 신기술 인증 제 해양수산 신기술 -2024-0023호", "OTHER_CERTIFICATION"),
+    ("통신판매업신고번호 : 2021-서울영등포-0512", "SOURCE_OR_REVIEW"),
+    ("금속성 이물 검사 통과", "SOURCE_OR_REVIEW"),
+    ("tvN <꽃보다할배 리턴즈> 중에서", "SOURCE_OR_REVIEW"),
+    ("**기존 아이클리어 제품 라인업 기준", "SOURCE_OR_REVIEW"),
+    ("• 21년 식약처 건강기능식품산업 주요 통계, 매출액 기준", "SALES_OR_RANK"),
+    ("WINNER NUTRA INGREDIENTS USA AWARDS 2018", "OTHER_CERTIFICATION"),
+    ("마야서트 인증 획득", "OTHER_CERTIFICATION"),
 ])
 def test_out_of_scope(text, code):
     assert codes(run(text)) == [(OUT_OF_SCOPE, code)]
+
+
+@pytest.mark.parametrize("text", ["*식약처 고시 기준", "2023년 10월 면역기능 개선과 피로개선에 도움 2종 기능성 인증 취득"])
+def test_notice_and_domestic_certification_are_not_out_of_scope(text):
+    assert OUT_OF_SCOPE not in {c.status for c in run(text)}
+
+
+def test_star_note_with_recognition_number_is_checked():
+    assert codes(run("*이중 기능성을 인정받은 루테인지아잔틴복합추출물 (제2018-4호) 기준"))[0][0] != OUT_OF_SCOPE
 
 
 @pytest.mark.parametrize("text", ["GMP", "우수건강기능식품제조기준 GMP", "식약처 GMP인증 시설에서 생산"])
