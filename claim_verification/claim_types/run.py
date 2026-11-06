@@ -13,16 +13,21 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from ..inputs import validate_videos
 from .judge import judge_video
 
 GOLD = "gold_label"
 
 
 def load_videos(path: str | Path) -> list[dict]:
+    """영상 목록 json이나 영상별 json 폴더를 읽고 형식을 확인한다(inputs.py)."""
     path = Path(path)
     if path.is_dir():
-        return [json.loads(f.read_text(encoding="utf-8")) for f in sorted(path.glob("*.json"))]
-    return json.loads(path.read_text(encoding="utf-8"))
+        videos = [json.loads(f.read_text(encoding="utf-8")) for f in sorted(path.glob("*.json"))]
+    else:
+        videos = json.loads(path.read_text(encoding="utf-8"))
+    validate_videos(videos)
+    return videos
 
 
 def strip_gold(videos: list[dict]) -> int:

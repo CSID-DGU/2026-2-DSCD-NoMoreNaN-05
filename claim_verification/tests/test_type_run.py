@@ -1,6 +1,9 @@
 import json
 
+import pytest
+
 from claim_verification.claim_types.judge import judge_video
+from claim_verification.inputs import InputError
 from claim_verification.claim_types.run import load_videos, main, summarize
 
 
@@ -56,6 +59,15 @@ def test_main_writes_results_and_summary(tmp_path):
 def test_load_videos_from_folder(tmp_path):
     (tmp_path / "v1.json").write_text(json.dumps(_video(), ensure_ascii=False), encoding="utf-8")
     assert [v["video_id"] for v in load_videos(tmp_path)] == ["v1"]
+
+
+def test_load_videos_checks_format(tmp_path):
+    video = _video()
+    video["products"][0]["match"]["status"] = "matched"
+    source = tmp_path / "in.json"
+    source.write_text(json.dumps([video], ensure_ascii=False), encoding="utf-8")
+    with pytest.raises(InputError, match="알 수 없는 status"):
+        load_videos(source)
 
 
 def test_wrong_arguments():
