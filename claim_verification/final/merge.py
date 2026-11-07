@@ -12,6 +12,9 @@
     입력에 없는 클레임의 B 결과 / B 결과 키 중복 / 알 수 없는 B 라벨
 
 A가 제품 미확정으로 건너뛴 클레임(skipped)은 근거가 없으므로 UNCLEAR로 두고 사유를 남긴다.
+
+결과 행에는 최종 라벨 하나와 함께 판정 근거를 담는다(결과 페이지용).
+    A.checks: 원료·수치 하나마다 판정한 결과
 """
 
 from ..claim_types.result import OUT_OF_SCOPE
@@ -64,7 +67,8 @@ def final_label(a_label: str | None, b_label: str | None) -> tuple[str, list[str
 
 
 def _a_part(claim: dict) -> dict:
-    return {"label": claim["label"], "reason_codes": claim["reason_codes"]}
+    """A 라벨과 항목별 판정(원료·수치 하나마다 status, reason, 대조한 DB 값)."""
+    return {"label": claim["label"], "reason_codes": claim["reason_codes"], "checks": claim.get("checks", [])}
 
 
 def _b_part(record: dict) -> dict:

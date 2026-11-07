@@ -92,3 +92,14 @@ def test_main_runs_a_and_writes_final_file(tmp_path):
     assert [r["final_label"] for r in final["results"]] == ["OUT_OF_SCOPE", "OVERCLAIM", "OUT_OF_SCOPE"]
     summary = json.loads((tmp_path / "out" / "final_summary.json").read_text(encoding="utf-8"))
     assert summary["labels"] == {"OVERCLAIM": 1, "OUT_OF_SCOPE": 2}
+
+
+def test_row_keeps_a_checks():
+    check = {"claim_type": "COMPOSITION", "status": "VIOLATION", "code": "INGREDIENT_ABSENT", "reason": "없음",
+             "target": "비타민C", "claim_value": "비타민C", "evidence": [{"field": "RAWMTRL_NM", "value": "녹차추출물"}]}
+    a = _a([{**_a_claim("c01", "VIOLATION"), "checks": [check]}])
+    row = merge([_video([_claim("c01", "COMPOSITION")])], [a], [])[0]
+    assert row["A"]["checks"] == [check]
+    row = merge([_video([_claim("c01", "QUANTITY")])], [_a([_a_claim("c01", "SUPPORTED")])], [])[0]
+    assert row["A"]["checks"] == []
+
