@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from claim_verification.final.merge import MergeError, final_label, merge
+from claim_verification.final.merge import MergeError, final_label, merge, video_info
 from claim_verification.final.run import main
 
 
@@ -129,4 +129,16 @@ def test_main_writes_product_official_info_once_per_video(tmp_path):
     [p] = v["products"]
     assert p["manufacturing_report_number"] == "2013" and p["match_status"] == "confirmed"
     assert p["DB"]["COMPOSITION"]["RAWMTRL_NM"] == "녹차추출물"
+    assert v["summary"] == {"claims": 1, "labels": {"OUT_OF_SCOPE": 1}}
 
+
+def test_video_summary_counts_only_that_video_in_label_order():
+    v1 = _video([_claim("c01", "QUANTITY"), _claim("c02", "QUANTITY"), _claim("c03", "QUANTITY")])
+    v2 = {**_video([_claim("c01", "QUANTITY")]), "video_id": "v2"}
+    a1 = _a([_a_claim("c01", "SUPPORTED"), _a_claim("c02", "UNCLEAR"), _a_claim("c03", "SUPPORTED")])
+    a2 = {**_a([_a_claim("c01", "VIOLATION")]), "video_id": "v2"}
+    rows = merge([v1, v2], [a1, a2], [])
+    s1 = video_info(v1, rows)["summary"]
+    assert s1 == {"claims": 3, "labels": {"UNCLEAR": 1, "SUPPORTED": 2}}
+    assert list(s1["labels"]) == ["UNCLEAR", "SUPPORTED"]
+    assert video_info(v2, rows)["summary"] == {"claims": 1, "labels": {"VIOLATION": 1}}
