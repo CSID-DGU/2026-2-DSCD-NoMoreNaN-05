@@ -16,8 +16,10 @@ A가 제품 미확정으로 건너뛴 클레임(skipped)은 근거가 없으므�
 결과 행에는 최종 라벨 하나와 함께 판정 근거를 담는다(결과 페이지용).
     A.checks: 원료·수치 하나마다 판정한 결과
     parsed: 클레임에서 뽑은 원료·수치·효능 / t_start·t_end: 재생 구간
-공식 정보(제품 DB)는 video_info()로 영상마다 따로 담는다.
+공식 정보(제품 DB)와 영상별 집계는 video_info()로 영상마다 따로 담는다.
 """
+
+from collections import Counter
 
 from ..claim_types.result import OUT_OF_SCOPE
 from ..claim_types.tags import EFFECT, claim_types, types_of
@@ -80,15 +82,26 @@ def _a_part(claim: dict) -> dict:
     return {"label": claim["label"], "reason_codes": claim["reason_codes"], "checks": claim.get("checks", [])}
 
 
-def video_info(video: dict) -> dict:
-    """영상 한 편의 공식 정보. 제품마다 한 번만 담고, 결과 행은 video_id + product_ref로 찾아간다."""
+def video_summary(rows: list[dict]) -> dict:
+    """영상 한 편의 클레임 수와 최종 라벨별 건수. 라벨 순서는 LABELS, 0건인 라벨은 뺀다."""
+    labels = Counter(r["final_label"] for r in rows)
+    return {"claims": len(rows), "labels": {label: labels[label] for label in LABELS if labels[label]}}
+
+
+def video_info(video: dict, rows: list[dict]) -> dict:
+    """영상 한 편의 공식 정보와 집계. 제품마다 한 번만 담고, 결과 행은 video_id + product_ref로 찾아간다.
+
+    rows는 merge 결과 전체다. 이 영상의 행만 골라 센다.
+    """
     products = []
     for p in video["products"]:
         info = {k: p.get(k) for k in PRODUCT_FIELDS}
         info["match_status"] = p["match"]["status"]
         info["DB"] = p.get("DB")
         products.append(info)
-    return {"video_id": video["video_id"], "url": video.get("url"), "products": products}
+    mine = [r for r in rows if r["video_id"] == video["video_id"]]
+    return {"video_id": video["video_id"], "url": video.get("url"), "products": products,
+            "summary": video_summary(mine)}
 
 
 def _b_part(record: dict) -> dict:
