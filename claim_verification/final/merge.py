@@ -15,6 +15,7 @@ A가 제품 미확정으로 건너뛴 클레임(skipped)은 근거가 없으므�
 
 결과 행에는 최종 라벨 하나와 함께 판정 근거를 담는다(결과 페이지용).
     A.checks: 원료·수치 하나마다 판정한 결과
+    parsed: 클레임에서 뽑은 원료·수치·효능 / t_start·t_end: 재생 구간
 """
 
 from ..claim_types.result import OUT_OF_SCOPE
@@ -66,6 +67,12 @@ def final_label(a_label: str | None, b_label: str | None) -> tuple[str, list[str
     raise MergeError("A·B 라벨이 모두 없음")
 
 
+# 결과 페이지가 "광고에서 어떻게 말했는지"를 보여줄 수 있게 입력 클레임에서 그대로 옮기는 필드.
+CLAIM_PARSED = ("ingredients", "effect", "quantity", "intake_basis")
+# 영상 재생 구간. 지금 입력(claims_with_db)에는 없어서 null로 나간다. 클레임 추출 결과에는 있다.
+CLAIM_TIME = ("t_start", "t_end")
+
+
 def _a_part(claim: dict) -> dict:
     """A 라벨과 항목별 판정(원료·수치 하나마다 status, reason, 대조한 DB 값)."""
     return {"label": claim["label"], "reason_codes": claim["reason_codes"], "checks": claim.get("checks", [])}
@@ -90,7 +97,9 @@ def merge_video(video: dict, a_result: dict, b_index: dict[tuple, dict], used: s
             if not has_effect:
                 raise MergeError(f"EFFECT가 없는 클레임에 B 결과가 있음: {k}")
         row = {"video_id": vid, "product_ref": claim.get("product_ref"), "claim_id": cid,
-               "claim_type": types_of(claim), "text": claim["text"]}
+               "claim_type": types_of(claim), "text": claim["text"],
+               **{f: claim.get(f) for f in CLAIM_TIME},
+               "parsed": {f: claim.get(f) for f in CLAIM_PARSED}}
         if cid in skipped:
             row.update(final_label=UNCLEAR, decided_by=[], skipped_reason=skipped[cid], A=None,
                        B=_b_part(b) if b else None)

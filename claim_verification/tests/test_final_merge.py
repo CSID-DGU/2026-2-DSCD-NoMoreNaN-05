@@ -103,3 +103,15 @@ def test_row_keeps_a_checks():
     row = merge([_video([_claim("c01", "QUANTITY")])], [_a([_a_claim("c01", "SUPPORTED")])], [])[0]
     assert row["A"]["checks"] == []
 
+
+def test_row_keeps_parsed_fields_and_time():
+    claim = {**_claim("c01", "COMPOSITION"), "ingredients": ["비타민C"], "t_start": 41.0, "t_end": 45.0}
+    row = merge([_video([claim])], [_a([_a_claim("c01", "SUPPORTED")])], [])[0]
+    assert row["parsed"]["ingredients"] == ["비타민C"] and row["parsed"]["quantity"] is None
+    assert (row["t_start"], row["t_end"]) == (41.0, 45.0)
+
+
+def test_row_time_is_null_when_input_has_none():
+    row = merge([_video([_claim("c01", "QUANTITY")])], [_a([_a_claim("c01", "SUPPORTED")])], [])[0]
+    assert row["t_start"] is None and row["t_end"] is None
+
