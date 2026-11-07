@@ -16,6 +16,7 @@ A가 제품 미확정으로 건너뛴 클레임(skipped)은 근거가 없으므�
 결과 행에는 최종 라벨 하나와 함께 판정 근거를 담는다(결과 페이지용).
     A.checks: 원료·수치 하나마다 판정한 결과
     parsed: 클레임에서 뽑은 원료·수치·효능 / t_start·t_end: 재생 구간
+공식 정보(제품 DB)는 video_info()로 영상마다 따로 담는다.
 """
 
 from ..claim_types.result import OUT_OF_SCOPE
@@ -71,11 +72,23 @@ def final_label(a_label: str | None, b_label: str | None) -> tuple[str, list[str
 CLAIM_PARSED = ("ingredients", "effect", "quantity", "intake_basis")
 # 영상 재생 구간. 지금 입력(claims_with_db)에는 없어서 null로 나간다. 클레임 추출 결과에는 있다.
 CLAIM_TIME = ("t_start", "t_end")
+PRODUCT_FIELDS = ("product_ref", "product_name", "brand_name", "manufacturer_name", "manufacturing_report_number")
 
 
 def _a_part(claim: dict) -> dict:
     """A 라벨과 항목별 판정(원료·수치 하나마다 status, reason, 대조한 DB 값)."""
     return {"label": claim["label"], "reason_codes": claim["reason_codes"], "checks": claim.get("checks", [])}
+
+
+def video_info(video: dict) -> dict:
+    """영상 한 편의 공식 정보. 제품마다 한 번만 담고, 결과 행은 video_id + product_ref로 찾아간다."""
+    products = []
+    for p in video["products"]:
+        info = {k: p.get(k) for k in PRODUCT_FIELDS}
+        info["match_status"] = p["match"]["status"]
+        info["DB"] = p.get("DB")
+        products.append(info)
+    return {"video_id": video["video_id"], "url": video.get("url"), "products": products}
 
 
 def _b_part(record: dict) -> dict:

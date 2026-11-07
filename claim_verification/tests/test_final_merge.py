@@ -115,3 +115,18 @@ def test_row_time_is_null_when_input_has_none():
     row = merge([_video([_claim("c01", "QUANTITY")])], [_a([_a_claim("c01", "SUPPORTED")])], [])[0]
     assert row["t_start"] is None and row["t_end"] is None
 
+
+def test_main_writes_product_official_info_once_per_video(tmp_path):
+    video = {**_video([_claim("c01", ["ETC"])]), "url": "https://youtu.be/x"}
+    video["products"][0].update(manufacturing_report_number="2013", DB={"COMPOSITION": {"RAWMTRL_NM": "녹차추출물"}})
+    source, b_path = tmp_path / "in.json", tmp_path / "b.json"
+    source.write_text(json.dumps([video], ensure_ascii=False), encoding="utf-8")
+    b_path.write_text("[]", encoding="utf-8")
+    assert main([str(source), str(b_path), str(tmp_path / "out")]) == 0
+    final = json.loads((tmp_path / "out" / "final_results.json").read_text(encoding="utf-8"))
+    [v] = final["videos"]
+    assert v["video_id"] == "v1" and v["url"] == "https://youtu.be/x"
+    [p] = v["products"]
+    assert p["manufacturing_report_number"] == "2013" and p["match_status"] == "confirmed"
+    assert p["DB"]["COMPOSITION"]["RAWMTRL_NM"] == "녹차추출물"
+

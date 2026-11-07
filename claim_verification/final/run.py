@@ -4,7 +4,8 @@
 
 A는 이 자리에서 돌린다. B는 B 담당 결과 json({"results": [...]} 또는 목록)을 읽는다.
 b_source에는 B 결과를 만든 코드 위치(브랜치@커밋 등)를 적는다. 최종 결과 파일 meta에 남는다.
-out_dir에 final_results.json(클레임마다 한 건)과 final_summary.json을 쓴다.
+out_dir에 final_results.json과 final_summary.json을 쓴다.
+    final_results.json = {"meta", "videos": 영상·제품 공식 정보(DB 포함), "results": 클레임마다 한 건}
 입력에 정답(gold_label)이 있으면 판정 전에 지운다.
 """
 
@@ -15,7 +16,7 @@ from pathlib import Path
 
 from ..claim_types.judge import judge_video
 from ..claim_types.run import GOLD, load_videos, strip_gold
-from .merge import LABELS, merge
+from .merge import LABELS, merge, video_info
 
 
 def load_b(path: str | Path) -> list[dict]:
@@ -48,8 +49,8 @@ def main(argv: list[str]) -> int:
             "label_order": ["DISCLAIMER(먼저)", *LABELS[1:]]}
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    (out / "final_results.json").write_text(json.dumps({"meta": meta, "results": rows}, ensure_ascii=False, indent=2),
-                                            encoding="utf-8")
+    final = {"meta": meta, "videos": [video_info(v) for v in videos], "results": rows}
+    (out / "final_results.json").write_text(json.dumps(final, ensure_ascii=False, indent=2), encoding="utf-8")
     summary = summarize(rows)
     (out / "final_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"최종 {summary['claims']}건: {summary['labels']}", file=sys.stderr)
