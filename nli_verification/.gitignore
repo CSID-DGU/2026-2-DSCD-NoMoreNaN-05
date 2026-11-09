@@ -1,0 +1,9 @@
+# DB에서 뽑거나 스크립트로 다시 만들 수 있는 큰 데이터
+*.sqlite
+products_selected.csv
+evidence.csv
+premises_product.csv
+premises_ingredient.csv
+prep_report.txt
+*_results.csv
+__pycache__/
