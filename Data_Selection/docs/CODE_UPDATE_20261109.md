@@ -38,6 +38,10 @@ python scripts/remap_product_input.py \
 - `configs/eval100_review_batch6_20261105.json`
 - `configs/eval100_review_final_overrides_20261105.json`
 
-`configs/manufacturer_pairs.json`은 과거 추적본을 그대로 유지함. 이번에 변경하지 않음. requirements 파일로 환경을 설치하고, 실제 인증 값은 개인 `.env` 또는 환경변수로 설정함.
+후속 요청에 따라 브랜치에서 JSON/JSONL 추적 파일을 모두 제거함. `configs/manufacturer_pairs.json`도 로컬에서 별도로 준비해야 함. requirements 파일로 환경을 설치하고, 실제 인증 값은 개인 `.env` 또는 환경변수로 설정함.
+
+## JSON 제거 후속 작업
+
+최신 브랜치에서는 JSON/JSONL 파일을 추적하지 않음. 로컬 원본과 업로드용 폴더의 파일은 보존하고 Git 추적만 해제함. 과거 커밋과 기존 ZIP·분할 ZIP 백업은 그대로이므로, 이 작업은 민감정보의 이력 완전 삭제가 아님. 백업 manifest JSON 역시 별도 준비가 필요함. 저장소의 과거 백업 복원 설명은 당시 manifest가 있을 때의 절차임.
 
 로컬 단위 테스트 171개가 통과했으며 Mechanism A/B 실제 수신 코드 실행은 별도로 검증하지 않음.
