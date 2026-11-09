@@ -50,6 +50,6 @@ class SnapshotTests(unittest.TestCase):
                 restore(temp,temp)
 
     def test_url_key_and_known_secret_are_removed(self):
-        result=scrub(b'https://example.com?serviceKey=[REDACTED]&x=1 password=example-secret',[b'example-secret'])
+        result=scrub(b'https://example.com?serviceKey=example-secret&x=1 password=example-secret',[b'example-secret'])
         self.assertNotIn(b'example-secret',result)
         self.assertIn(b'&x=1',result)
