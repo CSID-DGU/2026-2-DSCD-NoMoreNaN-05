@@ -80,5 +80,10 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
   },
 }
 
+/** 건너뜀은 판단 보류 색을 그대로 써요(노랑). 색을 고를 때 이 함수로 바꿔서 찾아요. */
+export function toneColors(tone: LabelTone): LabelStyle {
+  return LABEL_STYLES[tone === 'SKIPPED' ? 'UNCLEAR' : tone]
+}
+
 /** 확인 필요 = 위반 + 과장 + 판단 보류 (결과 화면 헤드라인, 개발 노트 §4) */
 export const NEEDS_REVIEW: readonly Label[] = ['VIOLATION', 'OVERCLAIM', 'UNCLEAR']
