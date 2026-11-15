@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 루트 .gitignore의 Python용 lib/ 규칙이 프론트 src/lib까지 무시하지 않도록
+!src/lib/
