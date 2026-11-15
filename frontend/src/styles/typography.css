@@ -1,0 +1,110 @@
+/*
+ * 글자 스타일 토큰 — Figma 글자 스타일 TRUEAD/v4.1/* (크기 / 줄 높이 / 자간 / 굵기)
+ * 클래스 하나로 네 가지가 한꺼번에 적용돼요:  text-h2  →  22px / 32px / -0.3px / 700
+ * 폰트는 fonts.css의 기본 폰트(Noto Sans KR)를 그대로 써요.
+ * 필요하면 leading-*, tracking-*, font-* 클래스로 덮어쓸 수 있어요.
+ */
+@theme {
+  /* Tailwind 기본 크기(text-sm, text-xl 등)를 꺼서 Figma 스타일만 쓰게 해요 */
+  --text-*: initial;
+
+  /* Hero — S1 큰 제목 */
+  --text-hero: 52px;
+  --text-hero--line-height: 66px;
+  --text-hero--letter-spacing: -1.5px;
+  --text-hero--font-weight: 700;
+
+  /* Title — S2·S3 화면 제목 */
+  --text-title: 34px;
+  --text-title--line-height: 46px;
+  --text-title--letter-spacing: -0.6px;
+  --text-title--font-weight: 700;
+
+  /* Num — 단계 번호 01·02·03 */
+  --text-num: 32px;
+  --text-num--line-height: 40px;
+  --text-num--letter-spacing: -0.5px;
+  --text-num--font-weight: 700;
+
+  /* H2 — 팝업 제목 */
+  --text-h2: 22px;
+  --text-h2--line-height: 32px;
+  --text-h2--letter-spacing: -0.3px;
+  --text-h2--font-weight: 700;
+
+  /* Wordmark — 로고 글자 TRUEAD */
+  --text-wordmark: 20px;
+  --text-wordmark--line-height: 28px;
+  --text-wordmark--letter-spacing: 0.5px;
+  --text-wordmark--font-weight: 700;
+
+  /* H3 — 단계 이름, 소제목 */
+  --text-h3: 18px;
+  --text-h3--line-height: 28px;
+  --text-h3--letter-spacing: -0.2px;
+  --text-h3--font-weight: 700;
+
+  /* Claim — 주장 카드의 광고 문장 */
+  --text-claim: 18px;
+  --text-claim--line-height: 28px;
+  --text-claim--letter-spacing: -0.2px;
+  --text-claim--font-weight: 500;
+
+  /* Body / Body-M — 본문, 버튼 */
+  --text-body: 16px;
+  --text-body--line-height: 26px;
+  --text-body--letter-spacing: 0px;
+  --text-body--font-weight: 400;
+
+  --text-body-m: 16px;
+  --text-body-m--line-height: 26px;
+  --text-body-m--letter-spacing: 0px;
+  --text-body-m--font-weight: 500;
+
+  /* Small / Small-M — 카드 설명, 단계 설명, 토글 */
+  --text-small: 15px;
+  --text-small--line-height: 24px;
+  --text-small--letter-spacing: 0px;
+  --text-small--font-weight: 400;
+
+  --text-small-m: 15px;
+  --text-small-m--line-height: 24px;
+  --text-small-m--letter-spacing: 0px;
+  --text-small-m--font-weight: 500;
+
+  /* Nav — 상단 메뉴 */
+  --text-nav: 15px;
+  --text-nav--line-height: 22px;
+  --text-nav--letter-spacing: 0px;
+  --text-nav--font-weight: 500;
+
+  /* Mark — 제품 상태 글자 */
+  --text-mark: 14px;
+  --text-mark--line-height: 20px;
+  --text-mark--letter-spacing: 0px;
+  --text-mark--font-weight: 500;
+
+  /* Meta / Meta-M — 보조 정보, 태그(md) */
+  --text-meta: 13px;
+  --text-meta--line-height: 20px;
+  --text-meta--letter-spacing: 0px;
+  --text-meta--font-weight: 400;
+
+  --text-meta-m: 13px;
+  --text-meta-m--line-height: 20px;
+  --text-meta-m--letter-spacing: 0px;
+  --text-meta-m--font-weight: 500;
+
+  /* 아래 두 개는 Figma에 이름 있는 스타일이 없지만 실제로 쓰여요 */
+  /* Tag sm — 상세 행의 작은 태그 (v5/Tag size=sm) */
+  --text-tag-sm: 12px;
+  --text-tag-sm--line-height: 18px;
+  --text-tag-sm--letter-spacing: 0px;
+  --text-tag-sm--font-weight: 500;
+
+  /* Chip label — 결과 화면 맨 위 라벨 칩 (v5/Chip) */
+  --text-chip-label: 16px;
+  --text-chip-label--line-height: 24px;
+  --text-chip-label--letter-spacing: 0px;
+  --text-chip-label--font-weight: 700;
+}
