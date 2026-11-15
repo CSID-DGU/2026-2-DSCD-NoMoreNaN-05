@@ -1,0 +1,37 @@
+/*
+ * 기본 색 토큰 — Figma 변수 이름을 그대로 따라요.
+ *   Figma `text/primary`  →  --color-text-primary  →  클래스 `text-text-primary`
+ *   Figma `bg/page`       →  --color-bg-page       →  클래스 `bg-bg-page`
+ *   Figma `line/hair`     →  --color-line-hair     →  클래스 `border-line-hair`
+ * 같은 흰색이라도 bg-page / bg-raised처럼 역할이 다르면 따로 둬요.
+ */
+@theme {
+  /* Tailwind 기본 색(red-500 등)을 꺼서 Figma에 없는 색을 못 쓰게 해요.
+     이 초기화는 이 파일에서만 해요(뒤에 오면 앞서 정의한 라벨 색까지 지워짐). */
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* 글자 */
+  --color-text-primary: #1b1b1a;
+  --color-text-secondary: #4d4d4a;
+  --color-text-tertiary: #6b6b67;
+  --color-text-disabled: #8a8a86;
+  --color-text-on-dark: #ffffff;
+
+  /* 배경 */
+  --color-bg-page: #ffffff;
+  --color-bg-raised: #ffffff;
+  --color-bg-sunken: #f3f3f1;
+  --color-bg-disabled: #e6e6e3;
+  --color-bg-player: #161616;
+
+  /* 선 */
+  --color-line-hair: #e6e6e3;
+  --color-line-mid: #cfcfcb;
+  --color-line-strong: #1b1b1a;
+
+  /* 브랜드 */
+  --color-brand-magenta: #b5177e;
+  --color-brand-magenta-strong: #951268;
+}
