@@ -1,0 +1,10 @@
+/*
+ * 폰트: Noto Sans KR (Figma 글자 스타일 TRUEAD/v4.1/* 전부 이 폰트)
+ * 가변(variable) 폰트 하나로 400·500·700을 모두 써요.
+ * 글자 범위별로 124개 파일로 나뉘어 있어서, 화면에 나온 글자가 든 파일만 내려받아요.
+ */
+@import "@fontsource-variable/noto-sans-kr";
+
+@theme {
+  --font-sans: "Noto Sans KR Variable", "Noto Sans KR", system-ui, sans-serif;
+}
