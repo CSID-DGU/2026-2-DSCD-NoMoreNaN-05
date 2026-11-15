@@ -1,0 +1,30 @@
+/*
+ * 모서리·그림자·배치 토큰 — Figma에 변수는 없고, v5 final 화면·컴포넌트에서 뽑은 값이에요.
+ * 간격(padding, gap 등)은 Tailwind 기본 4px 단위로 모두 표현돼서 따로 두지 않아요.
+ *   예: 22px = px-5.5, 7px = gap-1.75
+ * 한 컴포넌트에서만 쓰는 값(영상 크기, 진행 막대 두께, 카드 띠 4px, S1 배경 그라데이션,
+ * 팝업 뒤 배경 = text-primary 42%)은 각 컴포넌트에 직접 적어요.
+ */
+@theme {
+  /* 모서리 — Tailwind 기본(rounded-md 등)은 끄고 쓰임새 이름으로 */
+  --radius-*: initial;
+  --radius-status: 1px;   /* 제품 상태 네모 */
+  --radius-progress: 2px; /* 진행 막대 */
+  --radius-checkbox: 4px; /* 체크박스, 드롭다운 목록 항목 */
+  --radius-control: 6px;  /* 버튼, 입력창 */
+  --radius-popover: 8px;  /* 영상 플레이어, 드롭다운 */
+  --radius-dialog: 10px;  /* 실패 팝업 */
+  --radius-card: 12px;    /* 주장 카드, 묶음 카드 */
+  --radius-pill: 999px;   /* 태그, 칩 */
+
+  /* 그림자 — Tailwind 기본(shadow-md 등)은 끄고 2개만 */
+  --shadow-*: initial;
+  --shadow-dialog: 0 12px 40px 0 rgb(0 0 0 / 0.16);  /* 실패 팝업 */
+  --shadow-popover: 0 4px 16px 0 rgb(0 0 0 / 0.1);   /* 제품 목록 드롭다운 */
+
+  /* 배치 (1440 화면 기준) */
+  --container-content: 1200px;  /* 본문 폭        → max-w-content */
+  --spacing-gutter: 120px;      /* 좌우 여백      → px-gutter */
+  --spacing-nav: 72px;          /* 상단 메뉴 높이 → h-nav */
+  --spacing-sticky-offset: 96px; /* 결과 화면 왼쪽 열 고정 위치 → top-sticky-offset */
+}
