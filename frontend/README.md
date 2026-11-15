@@ -9,7 +9,7 @@ SNS 건강기능식품 광고 영상의 주장을 식약처 공개 데이터와 
 ```bash
 cd frontend
 npm install
-npm run dev      # http://localhost:5173  (컴포넌트 미리보기: /#gallery)
+npm run dev      # http://localhost:5173  (컴포넌트 미리보기: /#gallery, 한 섹션만: /?only=cards#gallery)
 npm run build    # 타입 검사 + 배포용 빌드
 npm run lint
 ```
