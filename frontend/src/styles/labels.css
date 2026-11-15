@@ -1,0 +1,50 @@
+/*
+ * 라벨 색 토큰 — Figma 변수 label/* 그대로 (개발 노트 §8 색표와 동일)
+ * 라벨마다 4가지 역할:
+ *   label-<이름>        글자            text-label-violation
+ *   label-<이름>-vivid  카드 왼쪽 띠·점  bg-label-violation-vivid
+ *   label-<이름>-tint   태그·칩 바탕     bg-label-violation-tint
+ *   label-<이름>-line   칩 테두리        border-label-violation-line
+ * 이름 대응: violation 위반 · overclaim 과장 · unclear 판단 보류 · supported 일치 ·
+ *            outofscope 검증 대상 아님 · disclaimer 면책 문구 · pending 대기
+ */
+@theme {
+  /* 위반 */
+  --color-label-violation: #c8102e;
+  --color-label-violation-vivid: #f0304a;
+  --color-label-violation-tint: #ffecef;
+  --color-label-violation-line: #ffc9d1;
+
+  /* 과장 */
+  --color-label-overclaim: #c2410c;
+  --color-label-overclaim-vivid: #ff8a1f;
+  --color-label-overclaim-tint: #fff1e3;
+  --color-label-overclaim-line: #ffd2a6;
+
+  /* 판단 보류 — 노랑 위에서 탁해 보이지 않게 글자는 거의 검정 */
+  --color-label-unclear: #4a4000;
+  --color-label-unclear-vivid: #f7c600;
+  --color-label-unclear-tint: #fff8c2;
+  --color-label-unclear-line: #f6de5c;
+
+  /* 일치 */
+  --color-label-supported: #067a45;
+  --color-label-supported-vivid: #12b76a;
+  --color-label-supported-tint: #e4faee;
+  --color-label-supported-line: #a9edc8;
+
+  /* 검증 대상 아님 */
+  --color-label-outofscope: #4a5f78;
+  --color-label-outofscope-vivid: #8ca3bc;
+  --color-label-outofscope-tint: #eef3f8;
+  --color-label-outofscope-line: #cbd8e6;
+
+  /* 면책 문구 */
+  --color-label-disclaimer: #1f5fd0;
+  --color-label-disclaimer-vivid: #4c8df6;
+  --color-label-disclaimer-tint: #e9f1ff;
+  --color-label-disclaimer-line: #bbd4ff;
+
+  /* 대기 */
+  --color-label-pending: #9a9a95;
+}
