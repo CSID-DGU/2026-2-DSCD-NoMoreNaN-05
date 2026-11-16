@@ -31,6 +31,10 @@
   --color-line-mid: #cfcfcb;
   --color-line-strong: #1b1b1a;
 
+  /* S1 배경 그라데이션 (Figma S1-01: 위 #fee6f4 → #fdf4f9 → 흰색). Figma 변수는 없어서 여기서만 정해요 */
+  --color-bg-hero-top: #fee6f4;
+  --color-bg-hero-mid: #fdf4f9;
+
   /* 브랜드 */
   --color-brand-magenta: #b5177e;
   --color-brand-magenta-strong: #951268;

@@ -9,6 +9,7 @@
  *   cached → 캐시 적중(바로 완료)     multi → 제품 2개(일부 매핑 실패)  clean → 확인 필요 0개
  *   그 밖 → 제품 1개 정상 결과. 단계마다 2초씩 걸려요.
  */
+import { isSupportedVideoUrl } from '@/features/input/videoUrl'
 import { API_BASE } from '@/lib/api/client'
 import type { FailureCode, JobStatusResponse, StepNo, StepState } from '@/lib/api/types'
 import { buildResult, type ResultVariant } from '@/mocks/fixtures'
@@ -55,9 +56,6 @@ const json = (status: number, body: unknown) =>
 const ok = (status: number, data: unknown) => json(status, { success: true, code: status, message: '요청 성공', data })
 const fail = (status: number, code: string, message: string) =>
   json(status, { success: false, code: status, message, error: { code }, data: null })
-
-const URL_PATTERN =
-  /^https?:\/\/(?:www\.|m\.)?(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/|instagram\.com\/(?:reels?|p)\/|tiktok\.com\/@[^/]+\/video\/|v[mt]\.tiktok\.com\/)\S+/i
 
 function statusOf(job: MockJob): JobStatusResponse {
   const elapsed = job.cached ? 0 : Date.now() - job.createdAt
@@ -110,7 +108,7 @@ async function handle(path: string, init?: RequestInit): Promise<Response> {
       return fail(400, 'COMMON_400', '잘못된 요청입니다.')
     }
     if (typeof url !== 'string') return fail(400, 'COMMON_400', '잘못된 요청입니다.')
-    if (!URL_PATTERN.test(url))
+    if (!isSupportedVideoUrl(url))
       return fail(400, 'URL_001', '영상 주소가 아니에요. YouTube · Instagram · TikTok 영상 주소를 넣어 주세요.')
     if (url.includes('private')) return fail(400, 'URL_002', '비공개이거나 삭제된 영상이에요. 공개된 영상 주소를 넣어 주세요.')
     if (url.includes('error500')) return fail(500, 'JOB_001', '검증을 시작하지 못했어요. 잠시 후 다시 눌러 주세요.')
