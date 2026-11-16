@@ -1,5 +1,5 @@
 /**
- * 컴포넌트 미리보기 (개발용) — http://localhost:5173/#gallery
+ * 컴포넌트 미리보기 (개발용) — http://localhost:5173/gallery
  * Figma v5 · Components 시트와 나란히 놓고 비교하는 용도예요. 배포 빌드에는 들어가지 않아요.
  * 컴포넌트를 하나 만들 때마다 여기에 섹션을 추가해요.
  */
