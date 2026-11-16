@@ -18,8 +18,10 @@ export type ClaimPart =
       tone?: LabelTone
       aHead: string
       aValue: string
-      bHead: string
-      bValue: string
+      /** 오른쪽 열(공식 근거). 근거가 없으면 비워 두고 왼쪽 열만 보여요 */
+      bHead?: string
+      /** 여러 줄이면 배열 (예: 기준·규격 원문 + 섭취 방법) */
+      bValue?: string | string[]
       explain?: string
     }
   | {
@@ -65,10 +67,16 @@ export function ClaimPartRow({ part, showTag }: ClaimPartRowProps) {
               <p className="text-meta text-text-tertiary">{part.aHead}</p>
               <p className="text-body text-text-primary">{part.aValue}</p>
             </div>
-            <div className="flex min-w-0 flex-1 flex-col gap-1">
-              <p className="text-meta text-text-tertiary">{part.bHead}</p>
-              <p className="text-body text-text-primary">{part.bValue}</p>
-            </div>
+            {part.bHead && part.bValue !== undefined && (
+              <div className="flex min-w-0 flex-1 flex-col gap-1">
+                <p className="text-meta text-text-tertiary">{part.bHead}</p>
+                {(Array.isArray(part.bValue) ? part.bValue : [part.bValue]).map((line, i) => (
+                  <p key={i} className="text-body break-words text-text-primary">
+                    {line}
+                  </p>
+                ))}
+              </div>
+            )}
           </div>
           {part.explain && <p className="text-small text-text-secondary">{part.explain}</p>}
         </div>

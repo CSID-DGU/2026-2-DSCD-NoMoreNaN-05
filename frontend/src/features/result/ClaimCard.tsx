@@ -14,7 +14,7 @@ type ClaimCardProps = {
   /** 광고 속 주장 문장 */
   sentence: string
   /** 한 줄 설명 */
-  explain: string
+  explain?: string | null
   /** 건너뜀일 때 태그 왼쪽 안내 (예: 판정 건너뜀 · 제품 후보 여러 개) */
   skipNote?: string
   /** 상세 결과 행들. 비어 있으면 "상세 결과 보기"가 안 보여요. */
@@ -52,7 +52,7 @@ export function ClaimCard({
       </div>
 
       <p className="pt-2 text-claim text-text-primary">{sentence}</p>
-      <p className="pt-1.5 text-small text-text-secondary">{explain}</p>
+      {explain && <p className="pt-1.5 text-small text-text-secondary">{explain}</p>}
 
       {open && parts.length > 0 && (
         <div id={detailId} className="pt-4.5">
