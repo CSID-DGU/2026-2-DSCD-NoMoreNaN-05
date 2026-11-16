@@ -8,6 +8,7 @@
  *   noclaims → 주장 없음             nomap → 제품 전부 매핑 실패      verifyfail → 그 밖의 검증 실패
  *   cached → 캐시 적중(바로 완료)     multi → 제품 2개(일부 매핑 실패)  clean → 확인 필요 0개
  *   그 밖 → 제품 1개 정상 결과. 단계마다 2초씩 걸려요.
+ * 입력 없이 바로 보려면 /check/demo-fail1, /result/demo-multi 처럼 작업 id에 demo-<낱말>을 넣어요.
  */
 import { isSupportedVideoUrl } from '@/features/input/videoUrl'
 import { API_BASE } from '@/lib/api/client'
@@ -56,6 +57,19 @@ const json = (status: number, body: unknown) =>
 const ok = (status: number, data: unknown) => json(status, { success: true, code: status, message: '요청 성공', data })
 const fail = (status: number, code: string, message: string) =>
   json(status, { success: false, code: status, message, error: { code }, data: null })
+
+/** 주소에 든 낱말로 시나리오를 정해 작업을 만들어요 */
+function makeJob(jobId: string, url: string): MockJob {
+  const key = Object.keys(FAILURES).find((k) => url.includes(k))
+  return {
+    job_id: jobId,
+    url,
+    createdAt: Date.now(),
+    cached: url.includes('cached'),
+    failure: key ? FAILURES[key] : null,
+    variant: url.includes('multi') ? 'multi' : url.includes('clean') ? 'clean' : 'single',
+  }
+}
 
 function statusOf(job: MockJob): JobStatusResponse {
   const elapsed = job.cached ? 0 : Date.now() - job.createdAt
@@ -113,15 +127,7 @@ async function handle(path: string, init?: RequestInit): Promise<Response> {
     if (url.includes('private')) return fail(400, 'URL_002', '비공개이거나 삭제된 영상이에요. 공개된 영상 주소를 넣어 주세요.')
     if (url.includes('error500')) return fail(500, 'JOB_001', '검증을 시작하지 못했어요. 잠시 후 다시 눌러 주세요.')
 
-    const key = Object.keys(FAILURES).find((k) => url.includes(k))
-    const job: MockJob = {
-      job_id: `mock_${Date.now().toString(36)}`,
-      url,
-      createdAt: Date.now(),
-      cached: url.includes('cached'),
-      failure: key ? FAILURES[key] : null,
-      variant: url.includes('multi') ? 'multi' : url.includes('clean') ? 'clean' : 'single',
-    }
+    const job = makeJob(`mock_${Date.now().toString(36)}`, url)
     saveJob(job)
     const s = statusOf(job)
     return ok(201, { job_id: job.job_id, url, created_at: s.created_at, expires_at: s.expires_at, cached: job.cached })
@@ -129,7 +135,10 @@ async function handle(path: string, init?: RequestInit): Promise<Response> {
 
   const m = path.match(/^\/jobs\/([^/]+)(\/result)?$/)
   if (m && method === 'GET') {
-    const job = loadJobs()[decodeURIComponent(m[1])]
+    const id = decodeURIComponent(m[1])
+    // /check/demo-fail1 처럼 주소로 바로 들어오면 그 시나리오 작업을 그 자리에서 만들어요(화면 확인용)
+    if (!loadJobs()[id] && id.startsWith('demo-')) saveJob(makeJob(id, `https://youtu.be/${id}`))
+    const job = loadJobs()[id]
     if (!job) return fail(404, 'JOB_002', '검증 기록을 찾을 수 없어요. 영상 주소를 다시 넣어 주세요.')
     const s = statusOf(job)
     if (!m[2]) return ok(200, s)
