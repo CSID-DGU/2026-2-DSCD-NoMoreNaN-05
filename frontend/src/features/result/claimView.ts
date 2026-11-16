@@ -44,6 +44,9 @@ const B_COMPARE = new Set([
 ])
 const B_EXPRESSION = new Set(['DISEASE_CLAIM', 'DRUG_CLAIM', 'DISEASE_DRUG_UNCERTAIN', 'EXAGGERATION_NO_EVIDENCE'])
 
+/** 처음 보는 skipped_reason이 와도 깨지지 않게 */
+const SKIP_FALLBACK = { note: '판정 건너뜀', text: '제품을 확인하지 못해 이 주장은 판정하지 않았어요.' }
+
 const DISCLAIMER_NOTICE: ClaimPart = {
   kind: 'notice',
   item: '안내',
@@ -81,8 +84,12 @@ function partFromA(check: ACheck, fallbackText: string): ClaimPart {
   const branch = check.status === 'UNCLEAR' ? unclearBranch(check.code) : null
   const itemNote = check.code === 'GMP_BY_INDUSTRY' ? '간접 확인' : (branch ?? undefined)
 
-  if (check.evidence.length > 0) {
-    const values = check.evidence.map((e) => e.value)
+  // 명세상 evidence는 배열이지만, 비어 오거나 값이 문자열이 아니어도 깨지지 않게 걸러요
+  const evidence = (Array.isArray(check.evidence) ? check.evidence : []).filter(
+    (e) => e && typeof e.value === 'string' && e.value.trim() !== '',
+  )
+  if (evidence.length > 0) {
+    const values = evidence.map((e) => e.value)
     let bValue: string | string[] = values
     if (check.code === 'HFF_ON_RECORD') bValue = '건강기능식품으로 신고된 제품' // 신고번호 값은 보여 주지 않아요(카탈로그)
     else if (check.code === 'INGREDIENT_ABSENT') bValue = values.join(', ')
@@ -94,7 +101,7 @@ function partFromA(check: ACheck, fallbackText: string): ClaimPart {
       aHead: '광고에서',
       aValue: adValue(check.target, check.claim_value) ?? fallbackText,
       bHead: evidenceHead(
-        check.evidence.map((e) => e.field),
+        evidence.map((e) => e.field),
         check.code === 'INGREDIENT_ABSENT',
       ),
       bValue,
@@ -119,13 +126,14 @@ function partFromB(b: BPart, claim: Claim, mainFunction: string | null): ClaimPa
 
   const item = itemName('EFFECT', code)
   const branch = b.label === 'UNCLEAR' ? unclearBranch(code) : null
-  const adPhrase = claim.parsed.effect ?? claim.text
+  const adPhrase = claim.parsed?.effect ?? claim.text
+  const evidenceText = typeof b.evidence_text === 'string' && b.evidence_text.trim() ? b.evidence_text : null
 
   if (B_EXPRESSION.has(code)) {
     const isOverclaim = code === 'EXAGGERATION_NO_EVIDENCE'
     // 질병·의약품 코드의 evidence_text는 공식 근거가 아니라 표현 유형이라 '지적 유형'으로 보여요(§5-3)
     const bHead = isOverclaim ? '비교한 인정 기능성' : '지적 유형'
-    const bValue = isOverclaim ? mainFunction : b.evidence_text
+    const bValue = isOverclaim ? mainFunction : evidenceText
     return {
       kind: 'compare',
       item,
@@ -138,8 +146,8 @@ function partFromB(b: BPart, claim: Claim, mainFunction: string | null): ClaimPa
     }
   }
 
-  if (B_COMPARE.has(code) && b.evidence_text) {
-    const lines = b.evidence_text.split(' / ').filter(Boolean)
+  if (B_COMPARE.has(code) && evidenceText) {
+    const lines = evidenceText.split(' / ').filter(Boolean)
     const bHead =
       code === 'PRECAUTION_CONFLICT'
         ? '식약처 등록 정보 · 섭취 시 주의사항'
@@ -194,7 +202,7 @@ export function buildClaimView(claim: Claim, products: Product[]): ClaimView {
   }
 
   if (claim.skipped_reason) {
-    const copy = SKIP_COPY[claim.skipped_reason]
+    const copy = SKIP_COPY[claim.skipped_reason] ?? SKIP_FALLBACK
     return {
       ...base,
       tone: 'SKIPPED',
@@ -206,7 +214,7 @@ export function buildClaimView(claim: Claim, products: Product[]): ClaimView {
   if (claim.final_label === 'DISCLAIMER') return { ...base, tone: 'DISCLAIMER', parts: [DISCLAIMER_NOTICE] }
 
   const parts: ClaimPart[] = [
-    ...(claim.A?.checks ?? []).map((check) => partFromA(check, claim.text)),
+    ...(Array.isArray(claim.A?.checks) ? claim.A.checks : []).map((check) => partFromA(check, claim.text)),
     ...(claim.B ? [partFromB(claim.B, claim, mainFunctionOf(claim, products))] : []),
   ]
   return { ...base, tone: claim.final_label, parts }
@@ -214,7 +222,7 @@ export function buildClaimView(claim: Claim, products: Product[]): ClaimView {
 
 /** 검증 대상 아님·면책 문구 묶음 카드의 한 줄 */
 export function buildGroupItem(claim: Claim, products: Product[]): GroupItem {
-  const code = claim.A?.checks[0]?.code ?? claim.B?.reason_code
+  const code = claim.A?.checks?.[0]?.code ?? claim.B?.reason_code
   return {
     productName: productNameOf(claim, products),
     timeRange: formatTimeRange(claim.t_start, claim.t_end),
