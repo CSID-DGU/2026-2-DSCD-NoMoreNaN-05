@@ -31,9 +31,10 @@ const PAGE_SIZE = 20
 /** S3 결과 화면 (Figma S3-01~07, 제품 여러 개 S3-P1~P7) */
 export default function ResultPage() {
   const { jobId = '' } = useParams()
-  const { data, error, isPending } = useJobResult(jobId)
+  const { data, error, isPending, isFetching } = useJobResult(jobId)
 
-  if (error instanceof ApiError) {
+  // 다시 불러오는 중이면 예전 오류(예: 아까 받은 JOB_004)로 이동하지 않아요 — S2 ↔ S3를 오가는 반복을 막아요
+  if (error instanceof ApiError && !isFetching) {
     // 없는·만료(JOB_002) → S1 안내 / 아직 처리 중(JOB_004)·실패(JOB_005) → 처리 화면으로
     if (error.status === 404) return <Navigate to="/" replace state={{ error: error.message } satisfies InputPageState} />
     if (error.code === 'JOB_004' || error.code === 'JOB_005')

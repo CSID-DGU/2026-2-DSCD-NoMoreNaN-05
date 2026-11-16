@@ -1,3 +1,4 @@
+import { useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
 import { Nav } from '@/components/layout/Nav'
@@ -10,7 +11,7 @@ import { TitleProgress } from '@/features/progress/TitleProgress'
 import { useElapsed } from '@/features/progress/useElapsed'
 import { ApiError } from '@/lib/api/client'
 import { jobVideoUrl } from '@/lib/api/jobs'
-import { useJobStatus } from '@/lib/api/queries'
+import { jobKeys, useJobStatus } from '@/lib/api/queries'
 import type { JobStatusResponse, StepState } from '@/lib/api/types'
 import { formatDuration } from '@/lib/format'
 import type { InputPageState } from '@/pages/InputPage'
@@ -58,6 +59,7 @@ function CheckLoading({ errorMessage }: { errorMessage: string | null }) {
 
 function CheckBody({ jobId, job, receivedAt }: { jobId: string; job: JobStatusResponse; receivedAt: number }) {
   const navigate = useNavigate()
+  const queryClient = useQueryClient()
   const [dialogDismissed, setDialogDismissed] = useState(false)
   const failed = job.status === 'FAILED'
   const done = job.status === 'DONE'
@@ -136,7 +138,11 @@ function CheckBody({ jobId, job, receivedAt }: { jobId: string; job: JobStatusRe
               <Button
                 className="h-13 w-132"
                 disabled={!done}
-                onClick={() => navigate(`/result/${encodeURIComponent(jobId)}`)}
+                onClick={() => {
+                  // 완료 전에 받아 둔 결과 오류(JOB_004)가 남아 있으면 지우고 새로 받아요
+                  queryClient.removeQueries({ queryKey: jobKeys.result(jobId) })
+                  navigate(`/result/${encodeURIComponent(jobId)}`)
+                }}
               >
                 결과 보기
               </Button>
