@@ -44,6 +44,14 @@ export function headline(result: JobResultResponse): { title: string; sub: strin
   const asideText = aside.length ? `${aside.join('와 ')}는 목록 아래에 따로 모았어요.` : ''
   const supported = counts.SUPPORTED ? `일치하는 주장 ${counts.SUPPORTED}개는 등록 정보와 같${aside.length ? '고, ' : '아요.'}` : ''
 
+  // 확인할 것도, 일치한 것도 없으면(모두 검증 대상 아님·면책 문구) '신뢰 가능'이라고 하지 않아요
+  if (review === 0 && counts.SUPPORTED === 0) {
+    return {
+      title: '검증할 수 있는 주장이 없어요',
+      sub: [`주장 ${total}개가 모두 검증 대상이 아니거나 면책 문구예요.`, asideText].filter(Boolean).join(' '),
+    }
+  }
+
   if (review === 0) {
     return {
       title: '신뢰 가능한 광고예요',
