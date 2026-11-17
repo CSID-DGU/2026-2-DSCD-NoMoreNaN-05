@@ -1,6 +1,7 @@
 import { useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
+import { Footer } from '@/components/layout/Footer'
 import { Nav } from '@/components/layout/Nav'
 import { Button } from '@/components/ui/Button'
 import { Player } from '@/components/video/Player'
@@ -32,7 +33,7 @@ export default function CheckPage() {
   return (
     <div className="flex min-h-screen flex-col bg-bg-page">
       <Nav />
-      <main className="mx-auto w-full max-w-content pt-16 pb-24">
+      <main className="mx-auto w-full max-w-content flex-1 pt-16 pb-24">
         {data ? (
           // key: 다른 작업으로 바뀌면 팝업 닫음 상태 등을 처음으로
           <CheckBody key={jobId} jobId={jobId} job={data} receivedAt={dataUpdatedAt} />
@@ -40,6 +41,7 @@ export default function CheckPage() {
           <CheckLoading errorMessage={error instanceof ApiError ? error.message : null} />
         )}
       </main>
+      <Footer />
     </div>
   )
 }

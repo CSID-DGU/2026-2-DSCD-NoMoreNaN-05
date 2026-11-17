@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
+import { Footer } from '@/components/layout/Footer'
 import { Nav } from '@/components/layout/Nav'
 import { Button } from '@/components/ui/Button'
 import { Tab } from '@/components/ui/Tab'
@@ -44,7 +45,7 @@ export default function ResultPage() {
   return (
     <div className="flex min-h-screen flex-col bg-bg-page">
       <Nav />
-      <main className="mx-auto w-full max-w-content pt-16 pb-24">
+      <main className="mx-auto w-full max-w-content flex-1 pt-16 pb-24">
         {data ? (
           <ResultBody key={jobId} jobId={jobId} result={data} />
         ) : (
@@ -53,6 +54,7 @@ export default function ResultPage() {
           </p>
         )}
       </main>
+      <Footer />
     </div>
   )
 }
