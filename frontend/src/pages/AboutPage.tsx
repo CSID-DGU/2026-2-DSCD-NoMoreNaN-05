@@ -45,8 +45,8 @@ const PREVIEW_PARTS: ClaimPart[] = [
 const PAINS = [
   {
     icon: Sparkles,
-    title: '말과 자막이 너무 빨리 지나가요',
-    text: '짧은 영상 속 말과 자막을 하나하나 따져 보기 어려워요.',
+    title: '과장된 말은 몇 초 만에 지나가요',
+    text: '‘하루 만에’, ‘100% 효과’ 같은 말이 순식간에 지나가, 사실인지 따져 볼 틈이 없어요.',
   },
   {
     icon: SearchX,
@@ -69,7 +69,7 @@ const STEPS = [
 
 const CHECKS = [
   { icon: FlaskConical, title: '성분', quote: '“비타민D 듬뿍”', text: '들어 있다고 한 성분이 실제 제품에 들어 있는지' },
-  { icon: Ruler, title: '숫자', quote: '“하루 3정이면 충분”', text: '함량, 하루에 먹는 양, 소비기한 같은 숫자가 맞는지' },
+  { icon: Ruler, title: '수치', quote: '“하루 3정이면 충분”', text: '함량, 하루에 먹는 양, 소비기한 같은 수치가 맞는지' },
   { icon: BadgeCheck, title: '인증', quote: '“식약처 인정 원료”', text: '‘건강기능식품’, ‘식약처 인정’ 같은 말이 사실인지' },
   { icon: HeartPulse, title: '효과', quote: '“먹기만 해도 살이 쏙”', text: '인정된 효과보다 부풀리거나, 병을 고친다고 말하지 않는지' },
 ]
@@ -84,7 +84,7 @@ export default function AboutPage() {
         <>
           광고에서 한 말,
           <br />
-          진짜인지 확인해 드려요
+          사실인지 확인해 드려요
         </>
       }
       sub="건강기능식품 광고 영상 주소를 넣으면, 광고에서 한 말을 하나하나 찾아 식약처에 등록된 제품 정보와 비교해 드려요."

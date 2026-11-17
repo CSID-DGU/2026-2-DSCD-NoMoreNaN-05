@@ -28,7 +28,7 @@
 
   /* Hero — S1 큰 제목 */
   --text-hero: 52px;
-  --text-hero--line-height: 66px;
+  --text-hero--line-height: 74px; /* 두 줄 제목(서비스 소개) 행간을 넉넉하게 — 66에서 늘림 */
   --text-hero--letter-spacing: -1.5px;
   --text-hero--font-weight: 700;
 

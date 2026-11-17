@@ -7,7 +7,7 @@ export type FaqCategory = 'use' | 'result' | 'trust'
 export const FAQ_CATEGORIES: { key: FaqCategory; label: string }[] = [
   { key: 'use', label: '이용 방법' },
   { key: 'result', label: '결과 보기' },
-  { key: 'trust', label: '믿을 수 있나요' },
+  { key: 'trust', label: '데이터 출처와 한계' },
 ]
 
 export type FaqItem = { category: FaqCategory; q: string; a: string[] }
@@ -54,7 +54,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'result',
     q: '한 문장에 결과가 하나만 나오는 이유는 뭔가요?',
     a: [
-      '한 문장에 성분, 숫자, 효과가 섞여 있으면 따로따로 확인한 뒤, 가장 주의가 필요한 결과를 보여 드려요.',
+      '한 문장에 성분, 수치, 효과가 섞여 있으면 따로따로 확인한 뒤, 가장 주의가 필요한 결과를 보여 드려요.',
       '결과 카드의 [상세 결과 보기]를 누르면 부분마다 나온 결과와 근거를 모두 볼 수 있어요.',
     ],
   },

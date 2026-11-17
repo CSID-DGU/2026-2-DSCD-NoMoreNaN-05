@@ -9,13 +9,16 @@ type InfoLayoutProps = {
   eyebrow: string
   title: ReactNode
   sub: ReactNode
-  /** 제목 오른쪽 그림 영역 — 없으면 제목이 가운데 정렬 */
+  /** 제목 오른쪽 그림 영역 */
   aside?: ReactNode
+  /** 그림이 없을 때 머리 정렬 — 아래 본문 정렬에 맞춰요 (검증 기준: 왼쪽, 자주 묻는 질문: 가운데) */
+  align?: 'left' | 'center'
   children: ReactNode
 }
 
 /** 서비스 소개·검증 기준·자주 묻는 질문 공통 틀 — S1과 같은 분홍 그라데이션 머리 + 본문 + 바닥글 */
-export function InfoLayout({ active, eyebrow, title, sub, aside, children }: InfoLayoutProps) {
+export function InfoLayout({ active, eyebrow, title, sub, aside, align = 'left', children }: InfoLayoutProps) {
+  const centered = !aside && align === 'center'
   return (
     <div className="flex min-h-screen flex-col bg-bg-page">
       <Nav active={active} />
@@ -23,13 +26,13 @@ export function InfoLayout({ active, eyebrow, title, sub, aside, children }: Inf
         <div
           className={cn(
             'mx-auto flex w-full max-w-content gap-16 pt-20 pb-16',
-            aside ? 'items-center justify-between' : 'flex-col items-center text-center',
+            aside ? 'items-center justify-between' : centered ? 'flex-col items-center text-center' : 'flex-col',
           )}
         >
-          <div className={cn('flex flex-col gap-4', aside ? 'max-w-130' : 'max-w-200 items-center')}>
+          <div className={cn('flex flex-col gap-4', aside ? 'max-w-130' : centered ? 'max-w-200 items-center' : 'max-w-260')}>
             <p className="text-small-m text-brand-magenta">{eyebrow}</p>
-            <h1 className={cn('text-text-primary', aside ? 'text-hero' : 'text-title')}>{title}</h1>
-            <p className="text-body text-text-secondary">{sub}</p>
+            <h1 className="text-hero text-text-primary">{title}</h1>
+            <p className="text-lead text-text-secondary">{sub}</p>
           </div>
           {aside}
         </div>

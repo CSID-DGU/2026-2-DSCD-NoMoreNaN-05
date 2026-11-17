@@ -12,7 +12,7 @@ const PRIORITY: Label[] = ['VIOLATION', 'OVERCLAIM', 'UNCLEAR', 'SUPPORTED', 'OU
 /** 팀 문서 §2-1 표의 예시 문장 */
 const EXAMPLE_PARTS: { item: string; value: string; tone: Label }[] = [
   { item: '성분', value: '비타민D', tone: 'SUPPORTED' },
-  { item: '숫자', value: '0.5mg', tone: 'VIOLATION' },
+  { item: '수치', value: '0.5mg', tone: 'VIOLATION' },
   { item: '효과', value: '뼈 형성에 필요', tone: 'SUPPORTED' },
 ]
 
@@ -34,13 +34,13 @@ const REASONS = [
     icon: Bot,
     title: '자동 판단 실패',
     text: '자동 분석이 정확하게 판단하지 못했어요.',
-    examples: ['처음 보는 브랜드 이름의 성분', '무엇과 비교할지 정하기 어려운 숫자', '뜻이 애매해서 판단이 엇갈린 문장'],
+    examples: ['처음 보는 브랜드 이름의 성분', '무엇과 비교할지 정하기 어려운 수치', '뜻이 애매해서 판단이 엇갈린 문장'],
   },
 ]
 
 const COMPARE_ROWS = [
   { item: '성분', ad: '‘○○ 성분이 들어 있어요’', official: '제품에 등록된 원료 목록 (다른 이름으로 적힌 것도 찾아요)' },
-  { item: '숫자', ad: '함량, 하루에 먹는 양, 소비기한, 하루 권장량 대비 %', official: '제품에 등록된 함량·먹는 방법·소비기한, 식약처 영양성분 기준' },
+  { item: '수치', ad: '함량, 하루에 먹는 양, 소비기한, 하루 권장량 대비 %', official: '제품에 등록된 함량·먹는 방법·소비기한, 식약처 영양성분 기준' },
   { item: '인증', ad: '‘건강기능식품’, ‘식약처 인정 원료’, ‘GMP 인증’', official: '식약처 제품 신고 정보, 식약처가 인정한 원료 정보, 제조 업체 정보' },
   { item: '효과', ad: '‘피로 회복에 좋아요’ 같은 효과', official: '식약처가 인정한 효과 문구, 먹을 때 주의사항, 질병·의약품 표현 기준' },
 ]
@@ -65,11 +65,12 @@ export default function CriteriaPage() {
   return (
     <InfoLayout
       active="criteria"
+      align="left"
       eyebrow="검증 기준"
       title="이렇게 확인해요"
-      sub="광고에서 한 말을 성분·숫자·효과처럼 확인할 수 있는 부분으로 나누고, 식약처에 등록된 정보와 하나씩 비교해요."
+      sub="광고에서 한 말을 성분·수치·효과처럼 확인할 수 있는 부분으로 나누고, 식약처에 등록된 정보와 하나씩 비교해요."
     >
-      <nav aria-label="이 페이지 목차" className="flex justify-center gap-2 pt-2">
+      <nav aria-label="이 페이지 목차" className="flex flex-wrap gap-2 pt-2">
         {TOC.map(([id, label]) => (
           <a
             key={id}
@@ -110,7 +111,7 @@ export default function CriteriaPage() {
       <InfoSection
         id="priority"
         title="한 문장에 결과가 여러 개면"
-        sub="한 문장에 성분, 숫자, 효과가 함께 있으면 따로따로 확인해요. 그중 가장 주의가 필요한 결과를 그 문장의 결과로 보여 드려요."
+        sub="한 문장에 성분, 수치, 효과가 함께 있으면 따로따로 확인해요. 그중 가장 주의가 필요한 결과를 그 문장의 결과로 보여 드려요."
       >
         <div className="grid grid-cols-[1fr_1.15fr] gap-5">
           <div className="flex flex-col gap-6 rounded-card bg-bg-sunken p-8">

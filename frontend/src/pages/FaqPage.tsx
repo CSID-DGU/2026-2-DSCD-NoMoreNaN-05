@@ -21,6 +21,7 @@ export default function FaqPage() {
   return (
     <InfoLayout
       active="faq"
+      align="center"
       eyebrow="자주 묻는 질문"
       title="무엇이 궁금하세요?"
       sub="TRUEAD를 쓰면서 많이 궁금해하시는 내용을 모았어요."
