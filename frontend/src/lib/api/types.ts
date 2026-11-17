@@ -90,6 +90,8 @@ export type ACheck = {
   target: string | null
   claim_value: string | null
   evidence: Evidence[]
+  /** 이 부분의 사용자용 설명 (LLM 리포트). 리포트 작업 전에는 오지 않을 수 있어요 */
+  explanation?: string | null
 }
 
 export type APart = {
@@ -105,6 +107,8 @@ export type BPart = {
   reason: string
   /** 사유 코드마다 뜻이 달라요(인정 기능성 문장 / 표현 유형 / 주의사항 원문 / null) */
   evidence_text: string | null
+  /** 이 부분의 사용자용 설명 (LLM 리포트). 리포트 작업 전에는 오지 않을 수 있어요 */
+  explanation?: string | null
 }
 
 export type Claim = {
@@ -126,8 +130,8 @@ export type Claim = {
   A: APart | null
   B: BPart | null
   /**
-   * 카드 두 번째 줄 사용자용 설명 문장.
-   * 백엔드가 LLM으로 만들어 넣기로 함(2026-11-16 결정). 아직 명세에 없어 이름은 가정이에요 — 확정되면 맞춰요.
+   * 카드 두 번째 줄 — 주장 전체 요약 설명 (LLM 리포트, 명세 R01).
+   * 명세상 string이지만 리포트 작업 전에는 오지 않을 수 있어 비어 있어도 되게 둬요.
    */
   explanation?: string | null
 }

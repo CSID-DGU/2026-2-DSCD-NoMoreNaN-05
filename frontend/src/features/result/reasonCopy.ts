@@ -1,7 +1,7 @@
 /**
  * 사유 코드 → 화면 문구. Figma v5 케이스 카탈로그와 팀 문서 final_result_ui_cases.md(§2-2, §3, §5)를 옮겼어요.
  * 값(수치·원문)은 API의 target·claim_value·evidence로 채우고, 여기에는 값이 없는 고정 문구만 둬요.
- * 카드 두 번째 줄 설명(claim.explanation)은 백엔드 LLM이 만들어요. 여기 문구는 상세 행 안의 짧은 설명이에요.
+ * 설명 문장은 백엔드 LLM 리포트(claim·checks[]·B의 explanation)가 먼저예요. 여기 문구는 그게 없을 때 쓰는 기본 문구예요.
  */
 import type { ClaimType, SkippedReason } from '@/lib/api/types'
 

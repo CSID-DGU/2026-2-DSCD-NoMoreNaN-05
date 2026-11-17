@@ -2,6 +2,7 @@
  * API 결과(R01)의 주장 하나 → 화면 카드 값.
  * 상세 행 모양은 팀 문서 §2-2 규칙: A 부분은 evidence가 있으면 ① 근거 비교, 없으면 ③ 사유만.
  * B는 사유 코드로 ①·②·③을 고르고, 면책 문구·판정 건너뜀은 ④ 안내.
+ * 설명 문장은 백엔드 LLM 리포트(claim·checks[]·B의 explanation)를 먼저 쓰고, 없으면 사유 코드별 기본 문구를 써요.
  */
 import type { GroupItem } from '@/features/result/GroupCard'
 import type { ClaimPart } from '@/features/result/ClaimPart'
@@ -52,6 +53,11 @@ const DISCLAIMER_NOTICE: ClaimPart = {
   item: '안내',
   head: '판정 대상 아님',
   text: '광고 속 고지 문구라 판정하지 않고 ‘면책 문구’ 묶음에 모아 보여 드려요.',
+}
+
+/** LLM 설명이 글자로 왔을 때만 써요. 없거나 비어 있으면 null → 사유 코드별 기본 문구 */
+function llmText(v: unknown): string | null {
+  return typeof v === 'string' && v.trim() ? v.trim() : null
 }
 
 /** 받침 여부에 맞춰 조사를 붙여요. 한글이 아니면 앞 조사(받침 있음)를 써요. */
@@ -105,7 +111,7 @@ function partFromA(check: ACheck, fallbackText: string): ClaimPart {
         check.code === 'INGREDIENT_ABSENT',
       ),
       bValue,
-      explain: COMPARE_EXPLAIN[check.code] ?? FALLBACK_TEXT,
+      explain: llmText(check.explanation) ?? COMPARE_EXPLAIN[check.code] ?? FALLBACK_TEXT,
     }
   }
 
@@ -115,7 +121,7 @@ function partFromA(check: ACheck, fallbackText: string): ClaimPart {
     item,
     tone: check.status,
     head: reasonHead(check.status, check.code),
-    text: fillTarget(REASON_TEXT[check.code] ?? FALLBACK_TEXT, check.target),
+    text: llmText(check.explanation) ?? fillTarget(REASON_TEXT[check.code] ?? FALLBACK_TEXT, check.target),
     target: target ? `확인한 대상 · ${target}` : undefined,
   }
 }
@@ -128,6 +134,7 @@ function partFromB(b: BPart, claim: Claim, mainFunction: string | null): ClaimPa
   const branch = b.label === 'UNCLEAR' ? unclearBranch(code) : null
   const adPhrase = claim.parsed?.effect ?? claim.text
   const evidenceText = typeof b.evidence_text === 'string' && b.evidence_text.trim() ? b.evidence_text : null
+  const llm = llmText(b.explanation)
 
   if (B_EXPRESSION.has(code)) {
     const isOverclaim = code === 'EXAGGERATION_NO_EVIDENCE'
@@ -142,7 +149,7 @@ function partFromB(b: BPart, claim: Claim, mainFunction: string | null): ClaimPa
       aHead: '지적된 표현',
       aValue: `“${adPhrase}”`,
       ...(bValue ? { bHead, bValue } : {}),
-      explain: EXPRESSION_EXPLAIN[code] ?? FALLBACK_TEXT,
+      explain: llm ?? EXPRESSION_EXPLAIN[code] ?? FALLBACK_TEXT,
     }
   }
 
@@ -165,7 +172,7 @@ function partFromB(b: BPart, claim: Claim, mainFunction: string | null): ClaimPa
       aValue: adPhrase,
       bHead,
       bValue: lines,
-      explain: COMPARE_EXPLAIN[code] ?? FALLBACK_TEXT,
+      explain: llm ?? COMPARE_EXPLAIN[code] ?? FALLBACK_TEXT,
     }
   }
 
@@ -174,7 +181,7 @@ function partFromB(b: BPart, claim: Claim, mainFunction: string | null): ClaimPa
     item,
     tone: b.label,
     head: reasonHead(b.label, code),
-    text: REASON_TEXT[code] ?? FALLBACK_TEXT,
+    text: llm ?? REASON_TEXT[code] ?? FALLBACK_TEXT,
   }
 }
 
@@ -198,7 +205,7 @@ export function buildClaimView(claim: Claim, products: Product[]): ClaimView {
     productName: productNameOf(claim, products),
     timeRange: formatTimeRange(claim.t_start, claim.t_end),
     sentence: claim.text,
-    explain: claim.explanation ?? null,
+    explain: llmText(claim.explanation),
   }
 
   if (claim.skipped_reason) {

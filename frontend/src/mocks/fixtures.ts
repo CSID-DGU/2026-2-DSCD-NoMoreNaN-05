@@ -1,6 +1,6 @@
 /**
  * 가짜 API 결과 데이터 — Figma v5 final·케이스 카탈로그의 예시 문장을 명세(R01) 모양으로 옮겼어요.
- * explanation(카드 설명 문장)은 백엔드 LLM이 만들 예정이라 여기서는 예시 문장을 넣어 둬요.
+ * explanation(LLM 리포트)은 명세 예시를 따라 넣었어요. 일부 부분은 일부러 비워 두어 기본 문구로 보이는지도 확인해요.
  */
 import type { Claim, JobResultResponse, Product } from '@/lib/api/types'
 import { LABELS, type Label } from '@/lib/labels'
@@ -75,6 +75,7 @@ const BASE_CLAIMS: Claim[] = [
           target: null,
           claim_value: '국내 최초!',
           evidence: [{ field: 'PRMS_DT', value: '2024년 9월 12일' }],
+          explanation: '인허가일만으로는 ‘최초’인지 확인할 수 없어요. 날짜는 참고로만 보여 드려요.',
         },
       ],
     },
@@ -125,6 +126,7 @@ const BASE_CLAIMS: Claim[] = [
           target: null,
           claim_value: '하루 하나',
           evidence: [{ field: 'SRV_USE', value: '1일 2회, 1회 1정' }],
+          explanation: '광고는 하루 1정, 등록된 섭취 방법은 하루 2정이에요.',
         },
       ],
     },
@@ -160,6 +162,7 @@ const BASE_CLAIMS: Claim[] = [
       reason_code: 'TRIAL_RESULT',
       reason: '',
       evidence_text: '파비플로라생강뿌리추출물은 체지방 감소에 도움을 줄 수 있다',
+      explanation: '인정 기능성 문구로는 시험 결과가 사실인지 확인할 수 없어요.',
     },
     explanation: '시험 결과를 말하는 문장이라 인정 기능성 문구로는 사실인지 판단할 수 없어요.',
   }),
