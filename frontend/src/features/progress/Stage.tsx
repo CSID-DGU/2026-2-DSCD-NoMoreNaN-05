@@ -1,4 +1,4 @@
-import iconActive from '@/assets/icons/stage-active.svg'
+import { LoaderCircle } from 'lucide-react'
 import iconDone from '@/assets/icons/stage-done.svg'
 import iconFail from '@/assets/icons/stage-fail.svg'
 import iconWait from '@/assets/icons/stage-wait.svg'
@@ -6,9 +6,10 @@ import { cn } from '@/lib/cn'
 
 export type StageState = 'done' | 'active' | 'wait' | 'fail'
 
-const STATES: Record<StageState, { icon: string; label: string; badge: string; num: string }> = {
+// 진행 중은 그림 대신 도는 로딩 아이콘이라 icon이 없어요
+const STATES: Record<StageState, { icon?: string; label: string; badge: string; num: string }> = {
   done: { icon: iconDone, label: '완료', badge: 'text-label-supported', num: 'text-text-primary' },
-  active: { icon: iconActive, label: '진행 중', badge: 'text-brand-magenta', num: 'text-brand-magenta' },
+  active: { label: '진행 중', badge: 'text-brand-magenta', num: 'text-brand-magenta' },
   wait: { icon: iconWait, label: '대기', badge: 'text-text-tertiary', num: 'text-text-tertiary' },
   fail: { icon: iconFail, label: '실패', badge: 'text-label-violation', num: 'text-label-violation' },
 }
@@ -38,7 +39,12 @@ export function Stage({ no, title, description, state, progress, className }: St
         <div className="flex items-center justify-between pt-1.5">
           <p className={cn('text-h3', isWait ? 'text-text-tertiary' : 'text-text-primary')}>{title}</p>
           <p className={cn('flex items-center gap-1.5 text-small-m', s.badge)}>
-            <img src={s.icon} alt="" width={16} height={16} />
+            {s.icon ? (
+              <img src={s.icon} alt="" width={16} height={16} />
+            ) : (
+              // 움직임 줄이기 설정을 켠 사람에게는 돌지 않아요
+              <LoaderCircle aria-hidden size={16} strokeWidth={2.5} className="animate-spin motion-reduce:animate-none" />
+            )}
             {s.label}
           </p>
         </div>
