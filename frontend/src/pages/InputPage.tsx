@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router'
 import { Footer } from '@/components/layout/Footer'
 import { Nav } from '@/components/layout/Nav'
+import { OrbitBackdrop } from '@/features/input/OrbitBackdrop'
 import { UrlForm } from '@/features/input/UrlForm'
 import { NETWORK_ERROR_MESSAGE, isApiError } from '@/lib/api/client'
 import { useCreateJob } from '@/lib/api/queries'
@@ -27,10 +28,12 @@ export default function InputPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-bg-page bg-linear-to-b from-bg-hero-top from-[4.783%] via-bg-hero-mid via-[22.359%] to-bg-page to-[55.701%]">
+    <div className="flex min-h-screen flex-col bg-bg-page bg-linear-to-b from-bg-hero-top from-5% via-bg-hero-mid via-55% to-bg-page to-95%">
       <Nav active="verify" />
-      <main className="flex flex-1 flex-col items-center justify-center px-gutter py-24">
-        <div className="flex w-217.75 max-w-full flex-col items-center">
+      {/* 궤도 그림은 메뉴와 바닥글 사이에만 깔려요. 넘치는 부분은 잘라요 */}
+      <main className="relative isolate flex flex-1 flex-col items-center justify-center overflow-hidden px-gutter py-24">
+        <OrbitBackdrop />
+        <div className="relative flex w-217.75 max-w-full flex-col items-center">
           <h1 className="text-center text-hero text-text-primary">지금 보고 있는 광고, 사실일까요?</h1>
           <p className="pt-5 text-center text-body text-text-secondary">
             SNS 건강기능식품 광고 영상의 주소를 넣으면, 음성과 화면에서 주장을 뽑아 식약처 공개 데이터와 하나씩 대조해
