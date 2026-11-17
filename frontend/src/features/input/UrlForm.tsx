@@ -2,7 +2,7 @@ import { type FormEvent, useId, useState } from 'react'
 import errorIcon from '@/assets/icons/error.svg'
 import linkIcon from '@/assets/icons/link.svg'
 import { Button } from '@/components/ui/Button'
-import { URL_FORMAT_ERROR, isSupportedVideoUrl } from '@/features/input/videoUrl'
+import { URL_FORMAT_ERROR, URL_HTTPS_ERROR, isSupportedVideoUrl, startsWithHttps } from '@/features/input/videoUrl'
 import { cn } from '@/lib/cn'
 
 type UrlFormProps = {
@@ -22,17 +22,21 @@ type UrlFormProps = {
  */
 export function UrlForm({ defaultUrl = '', serverError, pending, onSubmit, onEdit }: UrlFormProps) {
   const [url, setUrl] = useState(defaultUrl)
-  const [formatError, setFormatError] = useState(false)
+  const [formatError, setFormatError] = useState<string | null>(null)
   const inputId = useId()
   const messageId = useId()
-  const error = formatError ? URL_FORMAT_ERROR : (serverError ?? null)
+  const error = formatError ?? serverError ?? null
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     if (pending) return
     const value = url.trim()
+    if (!startsWithHttps(value)) {
+      setFormatError(URL_HTTPS_ERROR)
+      return
+    }
     if (!isSupportedVideoUrl(value)) {
-      setFormatError(true)
+      setFormatError(URL_FORMAT_ERROR)
       return
     }
     onSubmit(value)
@@ -62,13 +66,13 @@ export function UrlForm({ defaultUrl = '', serverError, pending, onSubmit, onEdi
             value={url}
             onChange={(e) => {
               setUrl(e.target.value)
-              setFormatError(false)
+              setFormatError(null)
               onEdit()
             }}
             placeholder="https://www.youtube.com/shorts/…"
             aria-invalid={Boolean(error)}
             aria-describedby={messageId}
-            className="min-w-0 flex-1 bg-transparent text-body text-text-primary outline-none placeholder:text-text-secondary"
+            className="min-w-0 flex-1 bg-transparent text-body text-text-primary outline-none placeholder:text-text-disabled"
           />
         </div>
         <Button type="submit" disabled={pending} className="self-stretch">

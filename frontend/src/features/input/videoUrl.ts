@@ -7,6 +7,10 @@
  * TikTok    tiktok.com/@<user>/video/<id> · vm.tiktok.com/<id> · vt.tiktok.com/<id>
  */
 export const URL_FORMAT_ERROR = '영상 주소가 아니에요. YouTube · Instagram · TikTok 영상 주소를 넣어 주세요.'
+export const URL_HTTPS_ERROR = 'https://로 시작하는 영상 주소를 넣어 주세요.'
+
+/** 화면에서는 https 주소만 받아요(명세는 http도 허용 — 더 좁게 막는 쪽) */
+export const startsWithHttps = (raw: string) => /^https:\/\//i.test(raw.trim())
 
 export function isSupportedVideoUrl(raw: string): boolean {
   let url: URL
