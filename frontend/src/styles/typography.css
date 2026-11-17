@@ -8,6 +8,24 @@
   /* Tailwind 기본 크기(text-sm, text-xl 등)를 꺼서 Figma 스타일만 쓰게 해요 */
   --text-*: initial;
 
+  /* Display — S1 첫 화면 제목 (hero보다 크게, 사용자 요청 2026-11-17) */
+  --text-display: 64px;
+  --text-display--line-height: 80px;
+  --text-display--letter-spacing: -2px;
+  --text-display--font-weight: 700;
+
+  /* Lead — S1 설명 문장 · 입력창 글자 */
+  --text-lead: 19px;
+  --text-lead--line-height: 30px;
+  --text-lead--letter-spacing: 0px;
+  --text-lead--font-weight: 400;
+
+  /* Lead M — 큰 버튼 글자 (S1 검증하기) */
+  --text-lead-m: 18px;
+  --text-lead-m--line-height: 28px;
+  --text-lead-m--letter-spacing: 0px;
+  --text-lead-m--font-weight: 500;
+
   /* Hero — S1 큰 제목 */
   --text-hero: 52px;
   --text-hero--line-height: 66px;

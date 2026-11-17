@@ -33,9 +33,9 @@ export default function InputPage() {
       {/* 궤도 그림은 메뉴와 바닥글 사이에만 깔려요. 넘치는 부분은 잘라요 */}
       <main className="relative isolate flex flex-1 flex-col items-center justify-center overflow-hidden px-gutter py-24">
         <OrbitBackdrop />
-        <div className="relative flex w-217.75 max-w-full flex-col items-center">
-          <h1 className="text-center text-hero text-text-primary">지금 보고 있는 광고, 사실일까요?</h1>
-          <p className="pt-5 text-center text-body text-text-secondary">
+        <div className="relative flex w-250 max-w-full flex-col items-center">
+          <h1 className="text-center text-display text-text-primary">지금 보고 있는 광고, 사실일까요?</h1>
+          <p className="pt-6 text-center text-lead text-text-secondary">
             SNS 건강기능식품 광고 영상의 주소를 넣으면, 음성과 화면에서 주장을 뽑아 식약처 공개 데이터와 하나씩 대조해
             드려요.
           </p>

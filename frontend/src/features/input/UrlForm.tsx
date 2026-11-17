@@ -43,20 +43,20 @@ export function UrlForm({ defaultUrl = '', serverError, pending, onSubmit, onEdi
   }
 
   return (
-    <form noValidate onSubmit={handleSubmit} className={cn('flex w-full flex-col gap-2', error ? 'pt-8.75' : 'pt-8')}>
+    <form noValidate onSubmit={handleSubmit} className={cn('flex w-full flex-col gap-2.5', error ? 'pt-9' : 'pt-10')}>
       <label htmlFor={inputId} className={error ? 'text-small-m text-text-primary' : 'sr-only'}>
         광고 영상 주소
       </label>
       <div className="flex w-full gap-2">
         <div
           className={cn(
-            'flex h-13 min-w-0 flex-1 items-center gap-2.5 rounded-control bg-bg-raised px-4',
+            'flex h-16 min-w-0 flex-1 items-center gap-3 rounded-control bg-bg-raised px-5',
             error
               ? 'border-[1.5px] border-label-violation-vivid'
               : 'border border-line-mid focus-within:border-text-secondary',
           )}
         >
-          <img src={linkIcon} alt="" width={18} height={18} />
+          <img src={linkIcon} alt="" width={20} height={20} />
           <input
             id={inputId}
             type="url"
@@ -72,20 +72,20 @@ export function UrlForm({ defaultUrl = '', serverError, pending, onSubmit, onEdi
             placeholder="https://www.youtube.com/shorts/…"
             aria-invalid={Boolean(error)}
             aria-describedby={messageId}
-            className="min-w-0 flex-1 bg-transparent text-body text-text-primary outline-none placeholder:text-text-disabled"
+            className="min-w-0 flex-1 bg-transparent text-lead text-text-primary outline-none placeholder:text-text-disabled"
           />
         </div>
-        <Button type="submit" disabled={pending} className="self-stretch">
+        <Button type="submit" size="lg" disabled={pending} className="self-stretch">
           검증하기
         </Button>
       </div>
       {error ? (
-        <p id={messageId} role="alert" className="flex items-center gap-1.5 text-meta-m text-label-violation">
-          <img src={errorIcon} alt="" width={14} height={14} />
+        <p id={messageId} role="alert" className="flex items-center gap-1.5 text-small-m text-label-violation">
+          <img src={errorIcon} alt="" width={16} height={16} />
           {error}
         </p>
       ) : (
-        <p id={messageId} className="text-meta text-text-secondary">
+        <p id={messageId} className="text-small text-text-secondary">
           YouTube · Instagram · TikTok 영상 주소를 넣을 수 있어요
         </p>
       )}
