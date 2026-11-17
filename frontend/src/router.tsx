@@ -4,6 +4,7 @@ import { RootLayout } from '@/components/layout/RootLayout'
 import AboutPage from '@/pages/AboutPage'
 import CheckPage from '@/pages/CheckPage'
 import CriteriaPage from '@/pages/CriteriaPage'
+import FaqPage from '@/pages/FaqPage'
 import InputPage from '@/pages/InputPage'
 import ResultPage from '@/pages/ResultPage'
 
@@ -17,6 +18,7 @@ const routes: RouteObject[] = [
   { path: '/result/:jobId', element: <ResultPage /> },
   { path: '/about', element: <AboutPage /> },
   { path: '/criteria', element: <CriteriaPage /> },
+  { path: '/faq', element: <FaqPage /> },
   ...(Gallery ? [{ path: '/gallery', element: <Gallery /> }] : []),
   { path: '*', element: <Navigate to="/" replace /> },
 ]
