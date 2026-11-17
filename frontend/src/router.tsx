@@ -4,6 +4,7 @@ import { RootLayout } from '@/components/layout/RootLayout'
 import AboutPage from '@/pages/AboutPage'
 import CheckPage from '@/pages/CheckPage'
 import CriteriaPage from '@/pages/CriteriaPage'
+import ErrorPage from '@/pages/ErrorPage'
 import FaqPage from '@/pages/FaqPage'
 import InputPage from '@/pages/InputPage'
 import ResultPage from '@/pages/ResultPage'
@@ -23,4 +24,5 @@ const routes: RouteObject[] = [
   { path: '*', element: <Navigate to="/" replace /> },
 ]
 
-export const router = createBrowserRouter([{ element: <RootLayout />, children: routes }])
+// errorElement: 어느 화면에서든 그리다 멈추면 흰 화면 대신 오류 화면
+export const router = createBrowserRouter([{ element: <RootLayout />, errorElement: <ErrorPage />, children: routes }])
