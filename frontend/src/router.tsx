@@ -3,6 +3,7 @@ import { createBrowserRouter, Navigate, type RouteObject } from 'react-router'
 import { RootLayout } from '@/components/layout/RootLayout'
 import AboutPage from '@/pages/AboutPage'
 import CheckPage from '@/pages/CheckPage'
+import CriteriaPage from '@/pages/CriteriaPage'
 import InputPage from '@/pages/InputPage'
 import ResultPage from '@/pages/ResultPage'
 
@@ -15,6 +16,7 @@ const routes: RouteObject[] = [
   { path: '/check/:jobId', element: <CheckPage /> },
   { path: '/result/:jobId', element: <ResultPage /> },
   { path: '/about', element: <AboutPage /> },
+  { path: '/criteria', element: <CriteriaPage /> },
   ...(Gallery ? [{ path: '/gallery', element: <Gallery /> }] : []),
   { path: '*', element: <Navigate to="/" replace /> },
 ]
