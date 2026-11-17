@@ -44,7 +44,7 @@ export default function ResultPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-bg-page">
-      <Nav />
+      <Nav active="verify" />
       <main className="mx-auto w-full max-w-content flex-1 pt-16 pb-24">
         {data ? (
           <ResultBody key={jobId} jobId={jobId} result={data} />

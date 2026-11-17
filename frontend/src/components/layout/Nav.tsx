@@ -1,22 +1,22 @@
 import { Link } from 'react-router'
 import { cn } from '@/lib/cn'
 
-export type NavKey = 'home' | 'about' | 'criteria' | 'faq'
+export type NavKey = 'verify' | 'about' | 'criteria' | 'faq'
 
 const ITEMS: { key: NavKey; label: string; href: string }[] = [
-  { key: 'home', label: '홈', href: '/' },
+  { key: 'verify', label: '광고 검증', href: '/' },
   { key: 'about', label: '서비스 소개', href: '/about' },
   { key: 'criteria', label: '검증 기준', href: '/criteria' },
   { key: 'faq', label: '자주 묻는 질문', href: '/faq' },
 ]
 
 type NavProps = {
-  /** 밑줄로 표시할 메뉴. S2·S3처럼 메뉴에 없는 화면은 null */
+  /** 밑줄로 표시할 메뉴. 검증 흐름(S1·S2·S3)은 모두 'verify', 오류 화면은 null */
   active?: NavKey | null
   className?: string
 }
 
-/** Figma v5/Nav — 모든 화면 맨 위 메뉴(높이 72). 로고·홈을 누르면 S1로 가요. */
+/** Figma v5/Nav — 모든 화면 맨 위 메뉴(높이 72). 로고·광고 검증을 누르면 S1로 가요. */
 export function Nav({ active = null, className }: NavProps) {
   return (
     <header

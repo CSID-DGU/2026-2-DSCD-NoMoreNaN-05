@@ -237,7 +237,7 @@ export default function Gallery() {
 
       <Section title="Nav (홈 활성 / 없음) — 실제로는 화면 전체 폭">
         <div className="-mx-6 space-y-6 bg-bg-sunken py-6">
-          <Nav active="home" />
+          <Nav active="verify" />
           <Nav />
         </div>
       </Section>

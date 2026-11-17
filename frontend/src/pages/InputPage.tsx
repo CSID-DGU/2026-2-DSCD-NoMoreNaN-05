@@ -28,7 +28,7 @@ export default function InputPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-bg-page bg-linear-to-b from-bg-hero-top from-[4.783%] via-bg-hero-mid via-[22.359%] to-bg-page to-[55.701%]">
-      <Nav active="home" />
+      <Nav active="verify" />
       <main className="flex flex-1 flex-col items-center justify-center px-gutter py-24">
         <div className="flex w-217.75 max-w-full flex-col items-center">
           <h1 className="text-center text-hero text-text-primary">지금 보고 있는 광고, 사실일까요?</h1>

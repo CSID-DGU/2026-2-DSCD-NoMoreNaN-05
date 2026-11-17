@@ -32,7 +32,7 @@ export default function CheckPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-bg-page">
-      <Nav />
+      <Nav active="verify" />
       <main className="mx-auto w-full max-w-content flex-1 pt-16 pb-24">
         {data ? (
           // key: 다른 작업으로 바뀌면 팝업 닫음 상태 등을 처음으로
