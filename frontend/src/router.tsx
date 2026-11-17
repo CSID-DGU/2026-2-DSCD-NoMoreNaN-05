@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import { createBrowserRouter, Navigate, type RouteObject } from 'react-router'
 import { RootLayout } from '@/components/layout/RootLayout'
+import AboutPage from '@/pages/AboutPage'
 import CheckPage from '@/pages/CheckPage'
 import InputPage from '@/pages/InputPage'
 import ResultPage from '@/pages/ResultPage'
@@ -13,6 +14,7 @@ const routes: RouteObject[] = [
   // 명세: 작업을 만들면 /check/{jobId}로 들어가 상태를 폴링해요.
   { path: '/check/:jobId', element: <CheckPage /> },
   { path: '/result/:jobId', element: <ResultPage /> },
+  { path: '/about', element: <AboutPage /> },
   ...(Gallery ? [{ path: '/gallery', element: <Gallery /> }] : []),
   { path: '*', element: <Navigate to="/" replace /> },
 ]
