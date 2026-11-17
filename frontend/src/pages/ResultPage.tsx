@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
-import { Footer } from '@/components/layout/Footer'
-import { Nav } from '@/components/layout/Nav'
+import { SheetPage } from '@/components/layout/SheetPage'
 import { Button } from '@/components/ui/Button'
 import { Tab } from '@/components/ui/Tab'
 import { Player } from '@/components/video/Player'
@@ -43,19 +42,15 @@ export default function ResultPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-bg-page">
-      <Nav active="verify" />
-      <main className="mx-auto w-full max-w-content flex-1 pt-16 pb-24">
-        {data ? (
-          <ResultBody key={jobId} jobId={jobId} result={data} />
-        ) : (
-          <p className="text-body text-text-secondary" role="status">
-            {isPending ? '결과를 불러오고 있어요' : (error?.message ?? '결과를 불러오지 못했어요')}
-          </p>
-        )}
-      </main>
-      <Footer />
-    </div>
+    <SheetPage>
+      {data ? (
+        <ResultBody key={jobId} jobId={jobId} result={data} />
+      ) : (
+        <p className="text-body text-text-secondary" role="status">
+          {isPending ? '결과를 불러오고 있어요' : (error?.message ?? '결과를 불러오지 못했어요')}
+        </p>
+      )}
+    </SheetPage>
   )
 }
 
@@ -91,7 +86,7 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
     <>
       <ResultSummary result={result} />
 
-      <div className="flex items-start gap-14 pt-12">
+      <div className="mt-12 flex items-start gap-14 border-t border-line-hair pt-12">
         {/* 왼쪽 열: 영상 + 제품 정보, 스크롤해도 따라와요(개발 노트 §4 sticky top 96) */}
         <aside className="sticky top-sticky-offset flex w-136 shrink-0 flex-col">
           <Player size="md" src={jobVideoUrl(jobId)} />

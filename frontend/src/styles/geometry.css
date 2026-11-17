@@ -15,15 +15,18 @@
   --radius-popover: 8px;  /* 영상 플레이어, 드롭다운 */
   --radius-dialog: 10px;  /* 실패 팝업 */
   --radius-card: 12px;    /* 주장 카드, 묶음 카드 */
+  --radius-sheet: 20px;   /* 결과 리포트 흰 시트 */
   --radius-pill: 999px;   /* 태그, 칩 */
 
   /* 그림자 — Tailwind 기본(shadow-md 등)은 끄고 2개만 */
   --shadow-*: initial;
   --shadow-dialog: 0 12px 40px 0 rgb(0 0 0 / 0.16);  /* 실패 팝업 */
   --shadow-popover: 0 4px 16px 0 rgb(0 0 0 / 0.1);   /* 제품 목록 드롭다운 */
+  --shadow-sheet: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 8px 28px 0 rgb(0 0 0 / 0.06); /* S2·S3 리포트 시트 — 흰 배경 위에서도 가장자리가 보이게 */
 
   /* 배치 (1440 화면 기준) */
   --container-content: 1200px;  /* 본문 폭        → max-w-content */
+  --container-sheet: 1600px;    /* S2·S3 리포트 시트 최대 폭 (1440 화면에선 바깥 여백 20으로 꽉 채움) → max-w-sheet */
   --spacing-gutter: 120px;      /* 좌우 여백      → px-gutter */
   --spacing-nav: 72px;          /* 상단 메뉴 높이 → h-nav */
   --spacing-sticky-offset: 96px; /* 결과 화면 왼쪽 열 고정 위치 → top-sticky-offset */

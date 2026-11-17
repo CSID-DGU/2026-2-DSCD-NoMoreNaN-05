@@ -1,8 +1,7 @@
 import { useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router'
-import { Footer } from '@/components/layout/Footer'
-import { Nav } from '@/components/layout/Nav'
+import { SheetPage } from '@/components/layout/SheetPage'
 import { Button } from '@/components/ui/Button'
 import { Player } from '@/components/video/Player'
 import { FailDialog } from '@/features/progress/FailDialog'
@@ -31,18 +30,14 @@ export default function CheckPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-bg-page">
-      <Nav active="verify" />
-      <main className="mx-auto w-full max-w-content flex-1 pt-16 pb-24">
-        {data ? (
-          // key: 다른 작업으로 바뀌면 팝업 닫음 상태 등을 처음으로
-          <CheckBody key={jobId} jobId={jobId} job={data} receivedAt={dataUpdatedAt} />
-        ) : (
-          <CheckLoading errorMessage={error instanceof ApiError ? error.message : null} />
-        )}
-      </main>
-      <Footer />
-    </div>
+    <SheetPage fill>
+      {data ? (
+        // key: 다른 작업으로 바뀌면 팝업 닫음 상태 등을 처음으로
+        <CheckBody key={jobId} jobId={jobId} job={data} receivedAt={dataUpdatedAt} />
+      ) : (
+        <CheckLoading errorMessage={error instanceof ApiError ? error.message : null} />
+      )}
+    </SheetPage>
   )
 }
 
@@ -129,14 +124,14 @@ function CheckBody({ jobId, job, receivedAt }: { jobId: string; job: JobStatusRe
               />
             ))}
           </div>
-          <div className="flex h-16.75 items-end justify-end">
+          <div className="flex h-20 items-end justify-end">
             {failed && dialogDismissed ? (
-              <Button className="h-13 w-132" onClick={goHome}>
+              <Button className="h-13 w-full" onClick={goHome}>
                 처음으로 돌아가기
               </Button>
             ) : (
               <Button
-                className="h-13 w-132"
+                className="h-13 w-full"
                 disabled={!done}
                 onClick={() => {
                   // 완료 전에 받아 둔 결과 오류(JOB_004)가 남아 있으면 지우고 새로 받아요

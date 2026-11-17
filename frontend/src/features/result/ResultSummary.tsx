@@ -13,7 +13,15 @@ export function ResultSummary({ result }: { result: JobResultResponse }) {
     <section className="flex flex-col">
       <p className="flex items-center gap-1.5 text-meta text-text-secondary">
         <img src={doneIcon} alt="" width={16} height={16} />
-        검증 완료
+        <span className="text-meta-m text-label-supported">검증 완료</span>
+        {result.video?.title && (
+          <>
+            <span aria-hidden className="text-text-disabled">
+              ·
+            </span>
+            <span className="truncate">{result.video.title}</span>
+          </>
+        )}
       </p>
       <h1 className="pt-3.5 text-title text-text-primary">{title}</h1>
       <p className="pt-3 text-body text-text-secondary">{sub}</p>
