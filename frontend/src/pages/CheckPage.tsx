@@ -32,8 +32,6 @@ export default function CheckPage() {
   return (
     <div className="flex min-h-screen flex-col bg-bg-page">
       <Nav />
-      {/* 메뉴 아래 3px 고정 구분선 — 진행도를 나타내지 않아요(개발 노트 §1) */}
-      <div className="h-0.75 w-full bg-line-hair" />
       <main className="mx-auto w-full max-w-content pt-16 pb-24">
         {data ? (
           // key: 다른 작업으로 바뀌면 팝업 닫음 상태 등을 처음으로
