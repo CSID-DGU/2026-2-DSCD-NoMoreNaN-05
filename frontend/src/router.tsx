@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import { createBrowserRouter, Navigate, type RouteObject } from 'react-router'
+import { RootLayout } from '@/components/layout/RootLayout'
 import CheckPage from '@/pages/CheckPage'
 import InputPage from '@/pages/InputPage'
 import ResultPage from '@/pages/ResultPage'
@@ -16,4 +17,4 @@ const routes: RouteObject[] = [
   { path: '*', element: <Navigate to="/" replace /> },
 ]
 
-export const router = createBrowserRouter(routes)
+export const router = createBrowserRouter([{ element: <RootLayout />, children: routes }])

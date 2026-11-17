@@ -1,18 +1,18 @@
+import { Link } from 'react-router'
 import { cn } from '@/lib/cn'
 
-type NavItem = { key: string; label: string; href?: string }
+export type NavKey = 'home' | 'about' | 'criteria' | 'faq'
 
-// 서비스 소개·검증 기준·자주 묻는 질문은 아직 화면이 없어서 링크 없이 글자만 보여요.
-const ITEMS: NavItem[] = [
+const ITEMS: { key: NavKey; label: string; href: string }[] = [
   { key: 'home', label: '홈', href: '/' },
-  { key: 'about', label: '서비스 소개' },
-  { key: 'criteria', label: '검증 기준' },
-  { key: 'faq', label: '자주 묻는 질문' },
+  { key: 'about', label: '서비스 소개', href: '/about' },
+  { key: 'criteria', label: '검증 기준', href: '/criteria' },
+  { key: 'faq', label: '자주 묻는 질문', href: '/faq' },
 ]
 
 type NavProps = {
-  /** 밑줄로 표시할 메뉴. S1은 'home', S2·S3는 없음(null) */
-  active?: 'home' | null
+  /** 밑줄로 표시할 메뉴. S2·S3처럼 메뉴에 없는 화면은 null */
+  active?: NavKey | null
   className?: string
 }
 
@@ -25,26 +25,27 @@ export function Nav({ active = null, className }: NavProps) {
         className,
       )}
     >
-      <a href="/" className="text-wordmark text-text-primary">
+      <Link to="/" className="text-wordmark text-text-primary">
         TRUE<span className="text-brand-magenta">AD</span>
-      </a>
+      </Link>
       <nav aria-label="주 메뉴">
         <ul className="flex items-center gap-9">
           {ITEMS.map((item) => {
             const isActive = item.key === active
-            const cls = cn(
-              'block border-b-2 pt-6.25 pb-5.75 text-nav whitespace-nowrap',
-              isActive ? 'border-text-primary text-text-primary' : 'border-transparent text-text-secondary',
-            )
             return (
               <li key={item.key}>
-                {item.href ? (
-                  <a href={item.href} aria-current={isActive ? 'page' : undefined} className={cls}>
-                    {item.label}
-                  </a>
-                ) : (
-                  <span className={cls}>{item.label}</span>
-                )}
+                <Link
+                  to={item.href}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={cn(
+                    'block border-b-2 pt-6.25 pb-5.75 text-nav whitespace-nowrap transition-colors',
+                    isActive
+                      ? 'border-text-primary text-text-primary'
+                      : 'border-transparent text-text-secondary hover:text-text-primary',
+                  )}
+                >
+                  {item.label}
+                </Link>
               </li>
             )
           })}
