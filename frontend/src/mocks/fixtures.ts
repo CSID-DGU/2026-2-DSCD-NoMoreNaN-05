@@ -253,6 +253,50 @@ const BASE_CLAIMS: Claim[] = [
     A: { label: 'DISCLAIMER', reason_codes: [], checks: [] },
     B: { label: 'DISCLAIMER', reason_code: 'DISCLAIMER', reason: '', evidence_text: null },
   }),
+  // 한 문장에 부분 판정이 여러 개(일치·판단 보류·과장) → 대표 라벨은 과장 하나
+  claim({
+    claim_id: 'c14',
+    product_ref: 'p01',
+    claim_type: ['COMPOSITION', 'QUANTITY', 'EFFECT'],
+    text: '식약처 인정 원료 파비플로라 300mg 함유, 먹기만 해도 살이 쭉쭉 빠져요',
+    t_start: 52,
+    t_end: 55,
+    final_label: 'OVERCLAIM',
+    A: {
+      label: 'UNCLEAR',
+      reason_codes: ['INGREDIENT_FOUND', 'SPEC_NOT_FOUND'],
+      checks: [
+        {
+          claim_type: 'COMPOSITION',
+          status: 'SUPPORTED',
+          code: 'INGREDIENT_FOUND',
+          reason: '',
+          target: '파비플로라생강뿌리추출물',
+          claim_value: '파비플로라',
+          evidence: [{ field: 'RAWMTRL_NM', value: '파비플로라생강뿌리추출물' }],
+          explanation: '광고한 원료가 등록된 원재료 목록에 있어요.',
+        },
+        {
+          claim_type: 'QUANTITY',
+          status: 'UNCLEAR',
+          code: 'SPEC_NOT_FOUND',
+          reason: '',
+          target: '파비플로라생강뿌리추출물',
+          claim_value: '300mg',
+          evidence: [],
+          explanation: '등록 정보에 이 원료의 함량이 없어 300mg이 맞는지 확인할 수 없어요.',
+        },
+      ],
+    },
+    B: {
+      label: 'OVERCLAIM',
+      reason_code: 'EXAGGERATION_NO_EVIDENCE',
+      reason: '',
+      evidence_text: '파비플로라생강뿌리추출물은 체지방 감소에 도움을 줄 수 있다',
+      explanation: '인정된 기능성은 체지방 감소에 도움을 줄 수 있다는 정도인데, 먹기만 해도 살이 빠진다고 단정해요.',
+    },
+    explanation: '원료는 등록 정보와 맞지만, 효과를 부풀렸고 함량은 확인할 수 없어요.',
+  }),
 ]
 
 const MULTI_EXTRA: Claim[] = [
