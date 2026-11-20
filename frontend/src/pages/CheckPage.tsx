@@ -100,7 +100,7 @@ function CheckBody({ jobId, job, receivedAt }: { jobId: string; job: JobStatusRe
       </div>
 
       <div className="flex items-start gap-16 pt-7.25">
-        <div className="flex shrink-0 flex-col">
+        <div className="flex w-152 shrink-0 flex-col">
           <Player
             size="lg"
             src={job.video?.ready ? jobVideoUrl(jobId) : undefined}
