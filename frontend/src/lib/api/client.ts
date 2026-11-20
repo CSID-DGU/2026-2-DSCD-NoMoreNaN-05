@@ -1,6 +1,6 @@
 import type { ApiEnvelope } from '@/lib/api/types'
 
-/** 프론트는 /api로 부르고, 개발 서버 프록시가 /api를 떼서 백엔드로 넘겨요(vite.config.ts). */
+/** 프론트는 /api로 부르고, 개발 서버 프록시가 그대로 백엔드로 넘겨요(백엔드 경로가 /api/jobs…, vite.config.ts). */
 export const API_BASE = '/api'
 
 /**

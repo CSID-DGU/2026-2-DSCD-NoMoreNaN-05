@@ -25,12 +25,10 @@ export default defineConfig(({ mode }) => {
       // 5173이 사용 중이면 다른 포트로 옮기지 않고 실패 (포트 연결이 어긋나지 않게)
       strictPort: true,
       proxy: {
-        // 화면 주소(/check/…)와 API 주소(/jobs/…)가 섞이지 않게 프론트는 /api/jobs로 부르고,
-        // 백엔드에는 /api를 떼서 /jobs로 넘겨요 (백엔드 명세의 경로에는 /api가 없음).
+        // 백엔드 실제 경로가 /api/jobs…라서 /api로 시작하는 요청을 그대로 넘겨요(백엔드 openapi.json 기준).
         '/api': {
           target: apiTarget,
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ''),
         },
       },
     },
