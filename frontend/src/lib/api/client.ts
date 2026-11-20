@@ -1,7 +1,11 @@
 import type { ApiEnvelope } from '@/lib/api/types'
 
-/** 프론트는 /api로 부르고, 개발 서버 프록시가 그대로 백엔드로 넘겨요(백엔드 경로가 /api/jobs…, vite.config.ts). */
-export const API_BASE = '/api'
+/**
+ * API 시작 주소. 백엔드 경로는 /api/jobs…예요.
+ * - 비워 두면 '/api' → 개발 서버 프록시가 백엔드로 넘겨요(내 컴퓨터, vite.config.ts)
+ * - VITE_API_BASE=http://<서버IP>:<백엔드 포트>/api → 브라우저가 백엔드를 직접 불러요(팀 서버. 백엔드가 이 화면 주소를 CORS로 허용)
+ */
+export const API_BASE = (import.meta.env.VITE_API_BASE as string | undefined)?.replace(/\/$/, '') || '/api'
 
 /**
  * API 실패. message는 화면에 그대로 보여도 되는 문장(명세), code는 분기용(URL_001, JOB_002 …).
