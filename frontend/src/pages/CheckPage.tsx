@@ -73,7 +73,7 @@ function CheckBody({ jobId, job, receivedAt }: { jobId: string; job: JobStatusRe
     ? `3단계 모두 끝났어요 · 걸린 시간 ${formatDuration(elapsed)}`
     : failed
       ? `${STEP_MARKS[step]} ${STEP_NAMES[step]} 단계에서 멈췄어요 · 경과 ${formatDuration(elapsed)}`
-      : `3단계 중 ${STEP_MARKS[step]} ${STEP_NAMES[step]} · 경과 ${formatDuration(elapsed)} · 보통 1분 안팎 걸려요`
+      : `3단계 중 ${STEP_MARKS[step]} ${STEP_NAMES[step]} · 경과 ${formatDuration(elapsed)}`
 
   const videoFailed = failed && job.failure?.step === 1
   const videoTitle = job.video?.title ?? (videoFailed ? '영상 정보를 가져오지 못했어요' : '영상 정보를 가져오는 중이에요')

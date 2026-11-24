@@ -123,7 +123,7 @@ export default function AboutPage() {
         </div>
       </InfoSection>
 
-      <InfoSection title="어떻게 확인하나요" sub="주소를 넣으면 세 단계를 거쳐요. 보통 1분 안팎이면 끝나요.">
+      <InfoSection title="어떻게 확인하나요" sub="주소를 넣으면 세 단계를 거쳐요.">
         <ol className="relative grid grid-cols-3 gap-5">
           {/* 단계를 잇는 선 */}
           <div aria-hidden className="absolute top-6 right-[16.6%] left-[16.6%] h-px bg-line-mid" />

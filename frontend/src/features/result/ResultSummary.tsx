@@ -32,7 +32,6 @@ export function ResultSummary({ result }: { result: JobResultResponse }) {
           </li>
         ))}
       </ul>
-      <p className="pt-4 text-meta text-text-tertiary">식약처 공개 데이터와 대조한 결과이며 법적 판단이 아니에요.</p>
     </section>
   )
 }
