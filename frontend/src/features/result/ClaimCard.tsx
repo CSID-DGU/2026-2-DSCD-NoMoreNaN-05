@@ -1,7 +1,9 @@
 import { useId, useState } from 'react'
 import { Tag } from '@/components/ui/Tag'
 import { Toggle } from '@/components/ui/Toggle'
-import type { LabelTone } from '@/lib/labels'
+import type { TextMark } from '@/features/result/claimMarks'
+import { cn } from '@/lib/cn'
+import { LABEL_STYLES, type LabelTone } from '@/lib/labels'
 import { ClaimMeta } from '@/features/result/ClaimMeta'
 import { type ClaimPart, ClaimPartRow } from '@/features/result/ClaimPart'
 import { ResultCardFrame } from '@/features/result/ResultCardFrame'
@@ -13,6 +15,8 @@ type ClaimCardProps = {
   timeRange?: string | null
   /** 광고 속 주장 문장 */
   sentence: string
+  /** 라벨이 붙은 부분 형광펜. 없으면 문장 그대로 */
+  marks?: TextMark[]
   /** 한 줄 설명 */
   explain?: string | null
   /** 건너뜀일 때 태그 왼쪽 안내 (예: 판정 건너뜀 · 제품 후보 여러 개) */
@@ -32,6 +36,7 @@ export function ClaimCard({
   productName,
   timeRange,
   sentence,
+  marks,
   explain,
   skipNote,
   parts = [],
@@ -51,7 +56,19 @@ export function ClaimCard({
         </div>
       </div>
 
-      <p className="pt-2 text-claim text-text-primary">{sentence}</p>
+      <p className="pt-2 text-claim text-text-primary">
+        {marks
+          ? marks.map((m, i) =>
+              m.tone ? (
+                <mark key={i} className={cn('bg-transparent box-decoration-clone text-inherit', LABEL_STYLES[m.tone].mark)}>
+                  {m.text}
+                </mark>
+              ) : (
+                m.text
+              ),
+            )
+          : sentence}
+      </p>
       {explain && <p className="pt-1.5 text-small text-text-secondary">{explain}</p>}
 
       {open && parts.length > 0 && (

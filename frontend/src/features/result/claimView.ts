@@ -18,6 +18,7 @@ import {
 } from '@/features/result/reasonCopy'
 import type { ACheck, BPart, Claim, Product } from '@/lib/api/types'
 import { formatTimeRange } from '@/lib/format'
+import { markClaimText, type TextMark } from '@/features/result/claimMarks'
 import type { Label, LabelTone } from '@/lib/labels'
 
 export type ClaimView = {
@@ -28,6 +29,8 @@ export type ClaimView = {
   productName: string | null
   timeRange: string | null
   sentence: string
+  /** 문장을 라벨별 형광펜 조각으로 나눈 것 */
+  sentenceMarks: TextMark[]
   explain: string | null
   skipNote?: string
   parts: ClaimPart[]
@@ -205,6 +208,7 @@ export function buildClaimView(claim: Claim, products: Product[]): ClaimView {
     productName: productNameOf(claim, products),
     timeRange: formatTimeRange(claim.t_start, claim.t_end),
     sentence: claim.text,
+    sentenceMarks: markClaimText(claim),
     explain: llmText(claim.explanation),
   }
 

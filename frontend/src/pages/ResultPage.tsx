@@ -191,6 +191,7 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
                     productName={v.productName}
                     timeRange={v.timeRange}
                     sentence={v.sentence}
+                    marks={v.sentenceMarks}
                     explain={v.explain}
                     skipNote={v.skipNote}
                     parts={v.parts}

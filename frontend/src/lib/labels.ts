@@ -32,6 +32,8 @@ type LabelStyle = {
   tint: string
   /** 칩 테두리 */
   line: string
+  /** 클레임 문장 형광펜 — 글자 아래쪽 절반에 아주 연한 라벨 색(tint) */
+  mark: string
 }
 
 // Tailwind는 파일에 적힌 클래스 이름만 만들어요. 그래서 클래스 이름을 조합하지 않고 통째로 적어요.
@@ -42,6 +44,7 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
     vivid: 'bg-label-violation-vivid',
     tint: 'bg-label-violation-tint',
     line: 'border-label-violation-line',
+    mark: 'bg-[linear-gradient(transparent_52%,var(--color-label-violation-tint)_52%)]',
   },
   OVERCLAIM: {
     name: '과장',
@@ -49,6 +52,7 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
     vivid: 'bg-label-overclaim-vivid',
     tint: 'bg-label-overclaim-tint',
     line: 'border-label-overclaim-line',
+    mark: 'bg-[linear-gradient(transparent_52%,var(--color-label-overclaim-tint)_52%)]',
   },
   UNCLEAR: {
     name: '판단 보류',
@@ -56,6 +60,7 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
     vivid: 'bg-label-unclear-vivid',
     tint: 'bg-label-unclear-tint',
     line: 'border-label-unclear-line',
+    mark: 'bg-[linear-gradient(transparent_52%,var(--color-label-unclear-tint)_52%)]',
   },
   SUPPORTED: {
     name: '일치',
@@ -63,6 +68,7 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
     vivid: 'bg-label-supported-vivid',
     tint: 'bg-label-supported-tint',
     line: 'border-label-supported-line',
+    mark: 'bg-[linear-gradient(transparent_52%,var(--color-label-supported-tint)_52%)]',
   },
   OUT_OF_SCOPE: {
     name: '검증 대상 아님',
@@ -70,6 +76,7 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
     vivid: 'bg-label-outofscope-vivid',
     tint: 'bg-label-outofscope-tint',
     line: 'border-label-outofscope-line',
+    mark: 'bg-[linear-gradient(transparent_52%,var(--color-label-outofscope-tint)_52%)]',
   },
   DISCLAIMER: {
     name: '면책 문구',
@@ -77,6 +84,7 @@ export const LABEL_STYLES: Record<Label, LabelStyle> = {
     vivid: 'bg-label-disclaimer-vivid',
     tint: 'bg-label-disclaimer-tint',
     line: 'border-label-disclaimer-line',
+    mark: 'bg-[linear-gradient(transparent_52%,var(--color-label-disclaimer-tint)_52%)]',
   },
 }
 
