@@ -136,7 +136,8 @@ function CheckBody({ jobId, job, receivedAt }: { jobId: string; job: JobStatusRe
                 onClick={() => {
                   // 완료 전에 받아 둔 결과 오류(JOB_004)가 남아 있으면 지우고 새로 받아요
                   queryClient.removeQueries({ queryKey: jobKeys.result(jobId) })
-                  navigate(`/result/${encodeURIComponent(jobId)}`)
+                  // intro: 결과 화면에서 카드가 하나씩 들어오는 효과를 이때만 켜요
+                  navigate(`/result/${encodeURIComponent(jobId)}`, { state: { intro: true } })
                 }}
               >
                 결과 보기

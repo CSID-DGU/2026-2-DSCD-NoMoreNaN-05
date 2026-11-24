@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Navigate, useNavigate, useParams } from 'react-router'
+import { useEffect, useMemo, useState } from 'react'
+import { Navigate, useLocation, useNavigate, useParams } from 'react-router'
 import { SheetPage } from '@/components/layout/SheetPage'
 import { Button } from '@/components/ui/Button'
 import { Tab } from '@/components/ui/Tab'
@@ -25,11 +25,14 @@ import { ApiError } from '@/lib/api/client'
 import { jobVideoUrl } from '@/lib/api/jobs'
 import { useJobResult } from '@/lib/api/queries'
 import type { JobResultResponse } from '@/lib/api/types'
+import { cn } from '@/lib/cn'
 import { LABEL_STYLES, LABELS } from '@/lib/labels'
 import type { InputPageState } from '@/pages/InputPage'
 
 /** 처음에 보여 줄 카드 수. 넘으면 "주장 N개 더 보기" (Figma S3-P3) */
 const PAGE_SIZE = 20
+/** S2에서 넘어올 때 카드가 하나씩 들어오는 간격 */
+const INTRO_STEP_MS = 140
 
 /** S3 결과 화면 (Figma S3-01~07, 제품 여러 개 S3-P1~P7) */
 export default function ResultPage() {
@@ -64,6 +67,21 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
   const [tab, setTab] = useState<TabKey>('ALL')
   const [shown, setShown] = useState(PAGE_SIZE)
   const [sortKey, setSortKey] = useState<SortKey>('RISK')
+
+  // S2에서 '결과 보기'로 넘어왔을 때만 카드가 왼쪽에서 하나씩 들어와요.
+  // 효과가 끝나면 끄고, 새로고침해도 다시 나오지 않게 주소 기록의 state를 비워요.
+  const location = useLocation()
+  const [intro, setIntro] = useState(() => (location.state as { intro?: boolean } | null)?.intro === true)
+  useEffect(() => {
+    if (!intro) return
+    navigate(location.pathname, { replace: true, state: null })
+    const t = setTimeout(() => setIntro(false), INTRO_STEP_MS * (PAGE_SIZE + 2) + 400)
+    return () => clearTimeout(t)
+    // 처음 한 번만
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  const introStyle = (i: number) => (intro ? { animationDelay: `${i * INTRO_STEP_MS}ms` } : undefined)
+  const introClass = intro ? 'motion-safe:animate-card-in' : undefined
 
   const sorted = useMemo(() => sortClaims(result.claims, sortKey), [result.claims, sortKey])
   const visible = useMemo(() => filterByProducts(sorted, multi ? enabled : null), [sorted, multi, enabled])
@@ -154,19 +172,20 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
           </div>
 
           <div className="flex flex-col gap-4 pt-3" role="tabpanel">
-            {listClaims.slice(0, shown).map((c) => {
+            {listClaims.slice(0, shown).map((c, i) => {
               const v = buildClaimView(c, result.products)
               return (
-                <ClaimCard
-                  key={v.id}
-                  tone={v.tone}
-                  productName={v.productName}
-                  timeRange={v.timeRange}
-                  sentence={v.sentence}
-                  explain={v.explain}
-                  skipNote={v.skipNote}
-                  parts={v.parts}
-                />
+                <div key={v.id} className={introClass} style={introStyle(i)}>
+                  <ClaimCard
+                    tone={v.tone}
+                    productName={v.productName}
+                    timeRange={v.timeRange}
+                    sentence={v.sentence}
+                    explain={v.explain}
+                    skipNote={v.skipNote}
+                    parts={v.parts}
+                  />
+                </div>
               )
             })}
             {listClaims.length > shown && (
@@ -182,7 +201,10 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
           </div>
 
           {(outOfScope.length > 0 || disclaimers.length > 0) && (
-            <div className="flex flex-col gap-4 pt-10">
+            <div
+              className={cn('flex flex-col gap-4 pt-10', introClass)}
+              style={introStyle(Math.min(listClaims.length, shown))}
+            >
               <p className="text-small-m text-text-tertiary">목록에서 따로 모은 문장</p>
               {outOfScope.length > 0 && (
                 <GroupCard
