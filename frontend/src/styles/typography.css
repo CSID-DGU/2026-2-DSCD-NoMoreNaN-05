@@ -8,9 +8,9 @@
   /* Tailwind 기본 크기(text-sm, text-xl 등)를 꺼서 Figma 스타일만 쓰게 해요 */
   --text-*: initial;
 
-  /* Display — S1 첫 화면 제목 (hero보다 크게, 사용자 요청 2026-11-17) */
-  --text-display: 64px;
-  --text-display--line-height: 80px;
+  /* Display — S1 첫 화면 제목 (hero보다 크게, 사용자 요청 2026-11-17 · 64에서 6 줄임 2026-11-24) */
+  --text-display: 58px;
+  --text-display--line-height: 72px;
   --text-display--letter-spacing: -2px;
   --text-display--font-weight: 700;
 
