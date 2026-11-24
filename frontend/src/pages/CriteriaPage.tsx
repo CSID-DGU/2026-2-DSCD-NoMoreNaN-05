@@ -4,10 +4,7 @@ import { Tag } from '@/components/ui/Tag'
 import { IconTile, InfoLayout, InfoSection } from '@/features/info/InfoLayout'
 import { LABEL_GUIDE } from '@/features/info/labelGuide'
 import { cn } from '@/lib/cn'
-import { LABEL_STYLES, LABELS, type Label } from '@/lib/labels'
-
-/** 한 문장의 결과를 고르는 순서 (면책 문구는 그 전에 먼저 골라내요) — 팀 문서 §2-1 */
-const PRIORITY: Label[] = ['VIOLATION', 'OVERCLAIM', 'UNCLEAR', 'SUPPORTED', 'OUT_OF_SCOPE']
+import { LABEL_PRIORITY as PRIORITY, LABEL_STYLES, LABELS, type Label } from '@/lib/labels'
 
 /** 팀 문서 §2-1 표의 예시 문장 */
 const EXAMPLE_PARTS: { item: string; value: string; tone: Label }[] = [

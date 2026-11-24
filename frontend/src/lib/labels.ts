@@ -85,5 +85,11 @@ export function toneColors(tone: LabelTone): LabelStyle {
   return LABEL_STYLES[tone === 'SKIPPED' ? 'UNCLEAR' : tone]
 }
 
+/**
+ * 한 문장의 결과를 고르는 순서 (면책 문구는 그 전에 먼저 골라내서 빠져요) — 팀 문서 §2-1.
+ * 검증 기준 페이지와 결과 화면 '위험도 순' 정렬이 함께 써요.
+ */
+export const LABEL_PRIORITY: readonly Label[] = ['VIOLATION', 'OVERCLAIM', 'UNCLEAR', 'SUPPORTED', 'OUT_OF_SCOPE']
+
 /** 확인 필요 = 위반 + 과장 + 판단 보류 (결과 화면 헤드라인, 개발 노트 §4) */
 export const NEEDS_REVIEW: readonly Label[] = ['VIOLATION', 'OVERCLAIM', 'UNCLEAR']
