@@ -19,10 +19,11 @@ export function SheetPage({ children, fill = false }: SheetPageProps) {
     // 배경: 연한 분홍 → 흰색 그라데이션. 경계는 시트 테두리·그림자로 구분해요
     <div className="flex min-h-screen flex-col bg-bg-page bg-linear-to-b from-bg-hero-mid to-bg-page to-50%">
       <Nav active="verify" />
-      <main className={cn('flex-1 px-5 pt-6 pb-10', fill && 'flex flex-col')}>
+      {/* 좌우 여백 = 헤더와 같은 px-gutter — 시트 양끝이 로고 왼쪽 끝 · 메뉴 오른쪽 끝에 맞아요 */}
+      <main className={cn('flex-1 px-gutter pt-6 pb-10', fill && 'flex flex-col')}>
         <div
           className={cn(
-            'mx-auto w-full max-w-sheet rounded-sheet border border-line-mid/60 bg-bg-raised px-14 pt-14 pb-16 shadow-sheet',
+            'w-full rounded-sheet border border-line-mid/60 bg-bg-raised px-14 pt-14 pb-16 shadow-sheet',
             fill && 'flex-1',
           )}
         >

@@ -26,7 +26,6 @@
 
   /* 배치 (1440 화면 기준) */
   --container-content: 1200px;  /* 본문 폭        → max-w-content */
-  --container-sheet: 1600px;    /* S2·S3 리포트 시트 최대 폭 (1440 화면에선 바깥 여백 20으로 꽉 채움) → max-w-sheet */
   --spacing-gutter: 120px;      /* 좌우 여백      → px-gutter */
   --spacing-nav: 72px;          /* 상단 메뉴 높이 → h-nav */
   --spacing-sticky-offset: 96px; /* 결과 화면 왼쪽 열 고정 위치 → top-sticky-offset */
