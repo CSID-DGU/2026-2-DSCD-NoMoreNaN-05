@@ -9,6 +9,7 @@ import { buildClaimView, buildGroupItem } from '@/features/result/claimView'
 import { GroupCard } from '@/features/result/GroupCard'
 import { ProductFilter } from '@/features/result/ProductFilter'
 import { ProductRow } from '@/features/result/ProductRow'
+import { ProductSwitches } from '@/features/result/ProductSwitches'
 import {
   type SortKey,
   type TabKey,
@@ -117,7 +118,17 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
               <h2 id="claims-title" className="text-h2 text-text-primary">
                 주장별 결과
               </h2>
-              {multi ? (
+              {result.products.length === 2 ? (
+                <ProductSwitches
+                  products={result.products}
+                  claimCounts={productClaimCounts}
+                  enabled={enabled}
+                  onChange={(next) => {
+                    setEnabled(next)
+                    setShown(PAGE_SIZE)
+                  }}
+                />
+              ) : multi ? (
                 <ProductFilter
                   products={result.products}
                   claimCounts={productClaimCounts}
