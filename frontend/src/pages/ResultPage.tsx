@@ -21,6 +21,7 @@ import {
 } from '@/features/result/resultModel'
 import { ResultSummary } from '@/features/result/ResultSummary'
 import { SortSwitch } from '@/features/result/SortSwitch'
+import { SummaryDialog } from '@/features/result/SummaryDialog'
 import { ApiError } from '@/lib/api/client'
 import { jobVideoUrl } from '@/lib/api/jobs'
 import { useJobResult } from '@/lib/api/queries'
@@ -68,20 +69,29 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
   const [shown, setShown] = useState(PAGE_SIZE)
   const [sortKey, setSortKey] = useState<SortKey>('RISK')
 
-  // S2에서 '결과 보기'로 넘어왔을 때만 카드가 왼쪽에서 하나씩 들어와요.
-  // 효과가 끝나면 끄고, 새로고침해도 다시 나오지 않게 주소 기록의 state를 비워요.
+  // S2에서 '결과 보기'로 넘어왔을 때만:
+  //   popup — popup_summary가 있으면 요약 팝업을 먼저 띄워요(뒤의 카드는 숨겨 둬요)
+  //   cards — 팝업을 닫으면(또는 요약이 없으면 바로) 카드가 왼쪽에서 하나씩 들어와요
+  //   off   — 효과 끝. 새로고침해도 다시 나오지 않게 주소 기록의 state를 비워요
   const location = useLocation()
-  const [intro, setIntro] = useState(() => (location.state as { intro?: boolean } | null)?.intro === true)
+  const popupSummary = result.popup_summary?.trim() ?? ''
+  const [intro, setIntro] = useState<'popup' | 'cards' | 'off'>(() => {
+    if ((location.state as { intro?: boolean } | null)?.intro !== true) return 'off'
+    return popupSummary ? 'popup' : 'cards'
+  })
   useEffect(() => {
-    if (!intro) return
-    navigate(location.pathname, { replace: true, state: null })
-    const t = setTimeout(() => setIntro(false), INTRO_STEP_MS * (PAGE_SIZE + 2) + 400)
-    return () => clearTimeout(t)
+    if (intro !== 'off') navigate(location.pathname, { replace: true, state: null })
     // 처음 한 번만
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  const introStyle = (i: number) => (intro ? { animationDelay: `${i * INTRO_STEP_MS}ms` } : undefined)
-  const introClass = intro ? 'motion-safe:animate-card-in' : undefined
+  useEffect(() => {
+    if (intro !== 'cards') return
+    const t = setTimeout(() => setIntro('off'), INTRO_STEP_MS * (PAGE_SIZE + 2) + 600)
+    return () => clearTimeout(t)
+  }, [intro])
+  const introStyle = (i: number) => (intro === 'cards' ? { animationDelay: `${i * INTRO_STEP_MS}ms` } : undefined)
+  const introClass =
+    intro === 'popup' ? 'opacity-0' : intro === 'cards' ? 'motion-safe:animate-card-in' : undefined
 
   const sorted = useMemo(() => sortClaims(result.claims, sortKey), [result.claims, sortKey])
   const visible = useMemo(() => filterByProducts(sorted, multi ? enabled : null), [sorted, multi, enabled])
@@ -232,6 +242,15 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
           </div>
         </section>
       </div>
+
+      {popupSummary && (
+        <SummaryDialog
+          open={intro === 'popup'}
+          result={result}
+          summary={popupSummary}
+          onClose={() => setIntro('cards')}
+        />
+      )}
     </>
   )
 }

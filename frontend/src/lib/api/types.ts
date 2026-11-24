@@ -149,6 +149,8 @@ export type JobResultResponse = {
     claims: number
     labels: Record<Label, number>
   }
+  /** LLM이 쓴 결과 요약 — S2에서 넘어올 때 팝업으로 보여요. 없거나 빈 문자열이면 팝업을 안 띄워요 */
+  popup_summary?: string | null
   claims: Claim[]
   meta: {
     db_version: string | null
