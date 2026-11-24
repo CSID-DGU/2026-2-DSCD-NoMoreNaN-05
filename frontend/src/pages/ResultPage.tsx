@@ -10,14 +10,16 @@ import { GroupCard } from '@/features/result/GroupCard'
 import { ProductFilter } from '@/features/result/ProductFilter'
 import { ProductRow } from '@/features/result/ProductRow'
 import {
+  type SortKey,
   type TabKey,
   filterByProducts,
   filterByTab,
   isGrouped,
-  sortByAppearance,
+  sortClaims,
   tabCounts,
 } from '@/features/result/resultModel'
 import { ResultSummary } from '@/features/result/ResultSummary'
+import { SortSwitch } from '@/features/result/SortSwitch'
 import { ApiError } from '@/lib/api/client'
 import { jobVideoUrl } from '@/lib/api/jobs'
 import { useJobResult } from '@/lib/api/queries'
@@ -60,8 +62,9 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
   const [enabled, setEnabled] = useState<Set<string>>(() => new Set(result.products.map((p) => p.product_ref)))
   const [tab, setTab] = useState<TabKey>('ALL')
   const [shown, setShown] = useState(PAGE_SIZE)
+  const [sortKey, setSortKey] = useState<SortKey>('RISK')
 
-  const sorted = useMemo(() => sortByAppearance(result.claims), [result.claims])
+  const sorted = useMemo(() => sortClaims(result.claims, sortKey), [result.claims, sortKey])
   const visible = useMemo(() => filterByProducts(sorted, multi ? enabled : null), [sorted, multi, enabled])
   const counts = useMemo(() => tabCounts(visible), [visible])
   const inTab = filterByTab(visible, tab)
@@ -125,9 +128,7 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
                     setShown(PAGE_SIZE)
                   }}
                 />
-              ) : (
-                <span className="text-meta text-text-tertiary">영상 등장 순</span>
-              )}
+              ) : null}
             </div>
             <div role="tablist" aria-label="라벨별 보기" className="mt-3 flex gap-5 overflow-x-auto border-b border-line-hair">
               {(['ALL', ...LABELS] as TabKey[]).map((key) => (
@@ -136,9 +137,12 @@ function ResultBody({ jobId, result }: { jobId: string; result: JobResultRespons
                 </Tab>
               ))}
             </div>
+            <div className="flex justify-end pt-3 pb-1">
+              <SortSwitch value={sortKey} onChange={setSortKey} />
+            </div>
           </div>
 
-          <div className="flex flex-col gap-4 pt-5" role="tabpanel">
+          <div className="flex flex-col gap-4 pt-3" role="tabpanel">
             {listClaims.slice(0, shown).map((c) => {
               const v = buildClaimView(c, result.products)
               return (

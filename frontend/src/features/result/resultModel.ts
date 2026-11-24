@@ -3,7 +3,7 @@
  * 화면 코드와 분리해 둔 순수 함수예요.
  */
 import type { Claim, JobResultResponse } from '@/lib/api/types'
-import { LABEL_STYLES, LABELS, NEEDS_REVIEW, type Label } from '@/lib/labels'
+import { LABEL_PRIORITY, LABEL_STYLES, LABELS, NEEDS_REVIEW, type Label } from '@/lib/labels'
 
 /** 목록 아래 묶음 카드로 따로 모으는 라벨 */
 export const GROUPED_LABELS: readonly Label[] = ['OUT_OF_SCOPE', 'DISCLAIMER']
@@ -22,6 +22,22 @@ export function sortByAppearance(claims: Claim[]): Claim[] {
     })
     .map(({ c }) => c)
 }
+
+export type SortKey = 'RISK' | 'APPEARANCE'
+
+/** 위험도 순 — 팀이 정한 라벨 우선순위(위반 → 과장 → 판단 보류 → 일치 → 검증 대상 아님), 같은 라벨은 영상 등장 순 */
+export function sortByRisk(claims: Claim[]): Claim[] {
+  // 면책 문구는 우선순위에 없어서 맨 뒤로 가요(어차피 목록 아래 묶음 카드로 따로 보여요)
+  const rank = (label: Label) => {
+    const i = LABEL_PRIORITY.indexOf(label)
+    return i === -1 ? LABEL_PRIORITY.length : i
+  }
+  // sort는 안정 정렬이라, 등장 순으로 먼저 줄 세운 뒤 라벨로 나누면 같은 라벨 안의 등장 순이 그대로 남아요
+  return sortByAppearance(claims).sort((a, b) => rank(a.final_label) - rank(b.final_label))
+}
+
+export const sortClaims = (claims: Claim[], key: SortKey) =>
+  key === 'RISK' ? sortByRisk(claims) : sortByAppearance(claims)
 
 /** 라벨 6칸을 항상 채워요. summary에 빠진 라벨은 0 (카탈로그 labels_zero_filled) */
 export function labelCounts(result: JobResultResponse): Record<Label, number> {
