@@ -9,7 +9,7 @@ SNS 건강기능식품 광고 영상의 주장을 식약처 공개 데이터와 
 ```bash
 cd frontend
 npm install
-npm run dev      # http://localhost:5173  (컴포넌트 미리보기: /gallery, 한 섹션만: /gallery?only=cards)
+npm run dev      # http://localhost:5173
 npm run build    # 타입 검사 + 배포용 빌드
 npm run lint
 ```
@@ -21,7 +21,7 @@ npm run lint
 ```
 src/
 ├─ main.tsx              앱 시작점
-├─ router.tsx            화면 주소: / (S1) · /check/:jobId (S2) · /result/:jobId (S3) · /gallery (개발용)
+├─ router.tsx            화면 주소: / (S1) · /check/:jobId (S2) · /result/:jobId (S3)
 ├─ index.css             Tailwind + 디자인 토큰 불러오기
 ├─ styles/               디자인 토큰 (Figma 변수 → Tailwind @theme)
 │  ├─ fonts.css            Noto Sans KR
@@ -39,8 +39,7 @@ src/
 ├─ features/             화면(단계)별 부품. 그 화면에서만 써요
 │  ├─ progress/            S2 처리 중: Stage, FailDialog
 │  └─ result/              S3 결과: ClaimCard, GroupCard, ProductRow …
-├─ pages/                화면 단위 조립: InputPage(S1) · CheckPage(S2) · ResultPage(S3)
-└─ dev/                  개발용 미리보기 (/gallery). 배포 빌드에는 안 들어가요
+└─ pages/                화면 단위 조립: InputPage(S1) · CheckPage(S2) · ResultPage(S3)
 ```
 
 ### 규칙
