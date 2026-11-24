@@ -172,7 +172,8 @@ export const COMPARE_EXPLAIN: Record<string, string> = {
   PERCENT_MATCHES_LABEL: '표시량 기준으로 계산한 값과 같아요.',
   SHELF_LIFE_MATCHES: '등록된 소비기한과 같아요.',
   HFF_ON_RECORD: '건강기능식품으로 신고된 제품이 맞아요.',
-  GMP_BY_INDUSTRY: 'GMP 인증 기록이 아니라, 업종으로 GMP 대상임을 간접 확인했어요.',
+  // 건강기능식품 제조업은 2019년 12월부터 모두 GMP 적용이 의무라, 업종으로 GMP 시설임을 확인할 수 있어요
+  GMP_BY_INDUSTRY: '건강기능식품 제조업은 GMP(우수제조기준) 적용이 의무예요. 등록된 업종으로 GMP 시설임을 확인했어요.',
   FUNCTION_ON_RECORD: '신고된 기능성에 있어요.',
   RECOGNITION_ON_PRODUCT: '제품의 기능성 원료에 개별인정 번호가 있어요.',
   INGREDIENT_ON_RECORD: '원재료에서 확인했어요.',

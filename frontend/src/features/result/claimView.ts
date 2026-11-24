@@ -91,7 +91,7 @@ function adValue(target: string | null, value: string | null) {
 function partFromA(check: ACheck, fallbackText: string): ClaimPart {
   const item = itemName(check.claim_type, check.code)
   const branch = check.status === 'UNCLEAR' ? unclearBranch(check.code) : null
-  const itemNote = check.code === 'GMP_BY_INDUSTRY' ? '간접 확인' : (branch ?? undefined)
+  const itemNote = check.code === 'GMP_BY_INDUSTRY' ? '업종으로 확인' : (branch ?? undefined)
 
   // 명세상 evidence는 배열이지만, 비어 오거나 값이 문자열이 아니어도 깨지지 않게 걸러요
   const evidence = (Array.isArray(check.evidence) ? check.evidence : []).filter(

@@ -12,7 +12,7 @@ export type ClaimPart =
       kind: 'compare'
       /** 왼쪽 열 항목 이름 (섭취 방법, 효능 표현 …) */
       item: string
-      /** 항목 이름 아래 작은 글자 (예: 간접 확인) */
+      /** 항목 이름 아래 작은 글자 (예: 업종으로 확인) */
       itemNote?: string
       /** 이 부분만의 판정 — 상세 행이 2개 이상일 때 작은 태그로 보여요 */
       tone?: LabelTone
