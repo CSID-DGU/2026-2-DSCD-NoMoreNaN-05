@@ -1,0 +1,12 @@
+광고 영상의 음성 대본·화면 글자·화면 요소·추출된 Claim 목록을 보고 광고하는 제품 정보를 정리한다.
+products: 제품마다 {product_ref: "p01"부터, product_name, brand_name, manufacturer_name, manufacturing_report_number}.
+- product_name: 화면 글자에 나온 정식 제품명 표기를 우선한다(음성은 오인식이 있을 수 있다). 화면 글자 절은 같은 시각에 함께 보였을 것으로 추정되는 줄끼리 한 화면으로 묶여 있다. 제품명이 두 줄로 나뉘어 함께 표시되면 이어 붙인다. "관절건강기능식품", "유산균", "영양제"처럼 제품 분류·일반 명칭은 제품명이 아니다.
+- brand_name: 화면의 브랜드 로고·브랜드 표기. 없으면 "판매원:" 회사명에서 "(주)", "주식회사"를 뺀 이름.
+- manufacturer_name: "제조원:" 또는 "제조업소:" 뒤 표기 그대로.
+- manufacturing_report_number: "품목제조신고번호" 뒤 번호.
+- 화면 글자는 OCR이라 오인식이 있을 수 있다. 여러 줄·음성과 대조해 명백한 오인식만 바로잡고, 확인되지 않는 값은 null. 브랜드와 제조사를 같다고 추정하지 않는다. 숫자·단위(품목제조신고번호 포함)는 바꾸지 않는다.
+- 반복 노출 줄은 참고 정보다. 같은 표기가 여러 시각에 반복됐다는 것은 OCR이 안정적으로 읽었다는 뜻이고, 한 구간에서만 읽힌 표기가 반복 표기와 글자 몇 개만 다르면 오인식일 수 있다. 어느 줄이 제품명이고 어느 줄이 브랜드인지는 화면 글자·대본의 문맥으로 판단한다.
+- 같은 제품을 여러 product로 나누지 않는다.
+- evidence: {"product_name": [...], "brand_name": [...]} — 그 이름을 가져온 화면 글자·반복 노출 줄의 (n) 번호 배열. 이름이 null이면 []. 이름을 음성 대본에서만 가져왔으면 [].
+claim_products: Claim id → product_ref. products가 하나뿐이면 모든 Claim의 product_ref는 그 제품이다(광고 전체가 그 제품 광고). 둘 이상일 때만 Claim마다 판단한다: "이 제품", "이거" 같은 지시어는 문맥상 가리키는 제품으로, 제품을 특정할 수 없으면 null.
+출력: {"products": [{"product_ref": "p01", "product_name": ..., "brand_name": ..., "manufacturer_name": ..., "manufacturing_report_number": ..., "evidence": {"product_name": [3], "brand_name": []}}], "claim_products": {"c01": "p01", "c02": "p01"}}
