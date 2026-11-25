@@ -11,7 +11,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT))
 from claim_process.claim_extraction.alignment.aligner import Aligner                      # noqa: E402
+from claim_process.claim_extraction.alignment.hints import NameHints                      # noqa: E402
 from claim_process.claim_extraction.common import LLMClient                               # noqa: E402
+from config import REF_DSN                                                                # noqa: E402
 
 INPUT_PATH = ROOT / "data"
 OUTPUT_DIR = ROOT / "data" / "output"
@@ -86,7 +88,7 @@ def main():
         sys.exit("--title는 영상 1편일 때만")
 
     aligner = Aligner(LLMClient(LLM_BASE_URL, LLM_MODEL, reasoning_effort=REASONING_EFFORT), OVERLAP_MIN, DEDUP_SIM,
-                      JUDGE_CHUNK, JUDGE_PARALLEL, SCENE_COPY_PREFIX, TYPE_CHUNK)
+                      JUDGE_CHUNK, JUDGE_PARALLEL, SCENE_COPY_PREFIX, TYPE_CHUNK, NameHints.from_db(REF_DSN))
     for v in videos:
         run(v.stem, branches, aligner, args.title)
 
