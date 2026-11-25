@@ -219,3 +219,7 @@ __marimo__/
 
 # data
 data/
+!backend/data/
+backend/data/*
+!backend/data/manufacturer_pairs.json
+!backend/data/claim_verification_enriched.dump

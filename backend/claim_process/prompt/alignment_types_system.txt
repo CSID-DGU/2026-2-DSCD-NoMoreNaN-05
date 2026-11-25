@@ -1,0 +1,3 @@
+아래 주장마다 claim_type을 붙인다.
+{CLAIM_TYPES}
+입력에 있는 주장만, 번호 그대로. 출력: {"types": [{"claim": 0, "claim_type": ["QUANTITY", "EFFECT"]}, ...]} 주장마다 하나씩.

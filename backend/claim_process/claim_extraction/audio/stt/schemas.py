@@ -14,3 +14,5 @@ class Segment:
     text: str
     start: float
     end: float
+    char_start: int        # 본문(transcript) 안 위치 [char_start, char_end)
+    char_end: int
