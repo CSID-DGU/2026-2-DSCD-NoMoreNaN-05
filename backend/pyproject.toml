@@ -1,0 +1,25 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+markers = ["gpu: GPU·llama-server·네트워크가 필요한 통합 테스트"]
+
+[tool.ruff]
+extend-exclude = [
+    "claim_process/claim_extraction/audio",
+    "claim_process/claim_extraction/visual",
+    "claim_process/claim_extraction/alignment",
+    "claim_process/claim_extraction/common.py",
+    "claim_process/claim_extraction/main.py",
+    "claim_process/claim_verification/product_mapping/scripts",
+    "claim_process/claim_verification/product_mapping/src",
+    "claim_process/claim_verification/verdict_b/nli.py",
+    "claim_process/claim_verification/verdict_b/verify.py",
+    "claim_process/claim_verification/verdict_b/evidence_prep.py",
+    "claim_process/claim_verification/verdict_b/hypothesis.py",
+    "claim_process/claim_verification/verdict_b/summarize.py",
+    "claim_process/claim_verification/verdict_b/run_effect.py",
+    "claim_process/claim_verification/verdict_b/overclaim.py",
+    "claim_process/claim_verification/verdict_a/claim_verification",
+]
+
+[tool.ruff.lint]
+ignore = ["BLE001"]
