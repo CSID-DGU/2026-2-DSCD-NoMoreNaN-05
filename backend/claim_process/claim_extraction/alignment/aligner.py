@@ -3,6 +3,7 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 
 from ..common import LLMClient, canon_equal, clean_types, keep, merge_safe, norm, parse_json_object, similarity
+from .hints import NameHints
 from .prompts import (JUDGE_SYSTEM, PRODUCTS_SCHEMA, PRODUCTS_SYSTEM, PRODUCTS_TITLE_RULES, TYPES_SYSTEM,
                       format_judge_input, format_products_input, format_types_input, judge_schema, screens, shown_from,
                       types_schema)
@@ -67,7 +68,7 @@ class UnionFind:
 
 class Aligner:
     def __init__(self, llm: LLMClient, overlap_min: float, dedup_sim: float, judge_chunk: int, judge_parallel: int,
-                 scene_copy_prefix: re.Pattern, type_chunk: int):
+                 scene_copy_prefix: re.Pattern, type_chunk: int, hints: NameHints):
         self.llm = llm
         self.overlap_min = overlap_min
         self.dedup_sim = dedup_sim
@@ -75,6 +76,7 @@ class Aligner:
         self.judge_parallel = judge_parallel
         self.scene_copy_prefix = scene_copy_prefix
         self.type_chunk = type_chunk
+        self.hints = hints
 
     # ── 0. scene 글자 복사 제거 ──────────────────────────
     def drop_scene_copies(self, data: dict) -> tuple[list[dict], list[dict]]:
@@ -198,10 +200,10 @@ class Aligner:
 
     # ── 8. products (LLM 1회) ──────────────────────────
     def products(self, data: dict, claims: list[FinalClaim],
-                 title: str | None = None) -> tuple[list[Product], dict, list[dict]]:
+                 title: str | None = None, hints=()) -> tuple[list[Product], dict, list[dict]]:
         """(products, claim_products, products_evidence). 파싱·구조 실패는 ([], {}, []). title이 있으면 제목 규칙을 붙인다."""
         system = PRODUCTS_SYSTEM + ("\n" + PRODUCTS_TITLE_RULES if title else "")
-        raw = self.llm.chat(system, format_products_input(data, [(c.claim_id, c.text) for c in claims], title),
+        raw = self.llm.chat(system, format_products_input(data, [(c.claim_id, c.text) for c in claims], title, hints),
                             schema=PRODUCTS_SCHEMA)
         try:
             out = parse_json_object(raw)
@@ -268,6 +270,7 @@ class Aligner:
         if "scene" in data and "text" in data:
             kept, dropped_scene = self.drop_scene_copies(data)
             data = {**data, "scene": {**data["scene"], "claims": kept}}
+        hints = self.hints.rows(data, title)
         claims = {b: data[b]["claims"] for b in BRANCH_PRIORITY if b in data}
         by_id = {c["claim_id"]: c for cs in claims.values() for c in cs}
         branch_of = {c["claim_id"]: b for b, cs in claims.items() for c in cs}
@@ -375,7 +378,7 @@ class Aligner:
                             "rouge": round(rouge_l_recall(by_id[a]["text"], by_id[b]["text"]), 3),
                             "verdict": outcome[(a, b)]})
 
-        products, mapping, evidence = self.products(data, final, title)
+        products, mapping, evidence = self.products(data, final, title, hints)
         refs = {p.product_ref for p in products}
         for c in final:
             ref = mapping.get(c.claim_id)

@@ -10,7 +10,7 @@ TYPES_SYSTEM = render(load("alignment_types_system", "CLAIM_TYPES"), CLAIM_TYPES
 TYPES_USER = load("alignment_types_user", "claims")
 PRODUCTS_SYSTEM = load("alignment_products_system")
 PRODUCTS_TITLE_RULES = load("alignment_products_title_system")
-PRODUCTS_USER = load("alignment_products_user", "audio", "screens", "repeats", "scene", "claims")
+PRODUCTS_USER = load("alignment_products_user", "audio", "screens", "repeats", "db_hints", "scene", "claims")
 PRODUCTS_TITLE_USER = load("alignment_products_title_user", "title")
 
 _NAME = {"type": ["string", "null"]}
@@ -121,8 +121,8 @@ def screens(data: dict) -> list[dict]:
     return data["scene"].get("screen_texts", []) if "scene" in data else []
 
 
-def format_products_input(data: dict, claims: list[tuple[str, str]], title: str | None = None) -> str:
-    """data: 브랜치 → 브랜치 파일 내용, claims: [(claim_id, text)]. 꺼진 브랜치 절은 (없음). title이 있으면 맨 앞에 제목 절."""
+def format_products_input(data: dict, claims: list[tuple[str, str]], title: str | None = None, hints=()) -> str:
+    """data: 브랜치 → 브랜치 파일 내용, claims: [(claim_id, text)], hints: 식약처 DB 참고 줄. 꺼진 브랜치 절은 (없음). title이 있으면 맨 앞에 제목 절."""
     audio = data["audio"]["transcript"] if "audio" in data else []
     texts = screens(data)
     scene = data["scene"]["claims"] if "scene" in data else []
@@ -134,6 +134,7 @@ def format_products_input(data: dict, claims: list[tuple[str, str]], title: str 
                   audio=rows([f"{_t(s)}: {s['text']}" for s in audio]),
                   screens=rows(format_screens(texts)),
                   repeats=rows(format_repeats(texts)),
+                  db_hints=rows(list(hints)),
                   scene=rows([f"{_t(c)}: {c['text']}" for c in scene]),
                   claims=rows([f"[{cid}] {text}" for cid, text in claims])).strip()
     return (render(PRODUCTS_TITLE_USER, title=title) if title else "") + body
